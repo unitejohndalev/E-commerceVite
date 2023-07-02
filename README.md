@@ -1,7 +1,7 @@
 # E-commerceVite
 
 create using react vite with git bash<br/>
-$ npm create vite@latest your-app-name -- -- template react &nbsp; &nbsp; &nbsp;  // create a vite app<br/>
+$ npm create vite@latest your-app-name -- -- template react &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// create a vite app<br/>
 $ npm i                                                      // to install dependencies<br/>
 $ code .                                                     // to open code editor<br/>
 $ npm run dev                                                // to star app<br/>
