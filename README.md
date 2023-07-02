@@ -14,6 +14,7 @@ Created using react vite with git bash<br/>
 ```$ npm run dev ```
 -- to star app<br/>
 
+
 Install tailwind with postcss and autoprefixer <br/>
 
 ```npm install -D tailwindcss postcss autoprefixer ```
