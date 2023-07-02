@@ -12,7 +12,7 @@ npx tailwindcss init -p &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 
 configure tailwind and index.css<br/>
 
-copy the code below and paste it in tailwind.config.js<br/>
+```copy the code below and paste it in tailwind.config.js<br/>```
 ```/** @type {import('tailwindcss').Config} */<br/>
 export default {
   content: [
