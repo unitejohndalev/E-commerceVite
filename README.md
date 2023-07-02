@@ -1,10 +1,10 @@
 # E-commerceVite
 
 create using react vite with git bash<br/>
-$ npm create vite@latest your-app-name -- -- template react  // create a vite app<br/>
-$ npm i                                                      // to install dependencies<br/>
-$ code .                                                     // to open code editor<br/>
-$ npm run dev                                                // to star app<br/>
+$ npm create vite@latest your-app-name -- -- template react$~~~~~~~~~~~$// create a vite app<br/>
+$ npm i$~~~~~~~~~~~$// to install dependencies<br/>
+$ code . $~~~~~~~~~~~$                                                    // to open code editor<br/>
+$ npm run dev           $~~~~~~~~~~~$                                     // to star app<br/>
 
 install tailwind with postcss and autoprefixer <br/>
 npm install -D tailwindcss postcss autoprefixer              // to install packages<br/>
