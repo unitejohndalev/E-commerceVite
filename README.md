@@ -6,7 +6,7 @@ Created using react vite with git bash<br/>
 -- to create a react vite app<br/>
 
 ```$ npm i ```
--- to install dependencies<br/>
+-- to install app packages<br/>
 
 ```$ code .```
 -- to open code editor<br/>
