@@ -12,8 +12,8 @@ npx tailwindcss init -p &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 
 configure tailwind and index.css<br/>
 
-```copy the code below and paste it in tailwind.config.js<br/>```
-```/** @type {import('tailwindcss').Config} */<br/>
+```copy the code below and paste it in tailwind.config.js```
+```/** @type {import('tailwindcss').Config} *
 export default {
   content: [
     "./index.html",<
@@ -27,7 +27,7 @@ export default {
 }
 ```
 
-```copy the code below and paste it in index.css<br/>```
+```copy the code below and paste it in index.css```
 ```
 @tailwind base; <br/>
 @tailwind components;<br/>
