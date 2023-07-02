@@ -55,10 +55,8 @@ export default {
 
 copy the code below and paste it in index.css
 
-@tailwind base;
-
+@tailwind base; <br/>
 @tailwind components;
-
 @tailwind utilities;
 
 
