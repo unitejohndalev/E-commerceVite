@@ -1,6 +1,6 @@
 # E-commerceVite
 
-created using react vite with git bash<br/>
+Created using react vite with git bash<br/>
 
 ```$ npm create vite@latest your-app-name -- -- template react ```
 -- to create a react vite app<br/>
@@ -14,7 +14,7 @@ created using react vite with git bash<br/>
 ```$ npm run dev ```
 -- to star app<br/>
 
-install tailwind with postcss and autoprefixer <br/>
+Install tailwind with postcss and autoprefixer <br/>
 
 ```npm install -D tailwindcss postcss autoprefixer ```
 -- to install packages<br/>
@@ -22,7 +22,7 @@ install tailwind with postcss and autoprefixer <br/>
 ```npx tailwindcss init -p```
 -- to install tailwind.config.js and postcss.config.js<br/>
 
-configure tailwind and index.css<br/>
+Configure tailwind and index.css<br/>
 
 ```copy the code below and paste it in tailwind.config.js```
 ```/** @type {import('tailwindcss').Config} *
