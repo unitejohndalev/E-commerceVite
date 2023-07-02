@@ -24,7 +24,7 @@ export default {<br/>
     extend: {},<br/>
   },<br/>
   plugins: [],<br/>
-}<br/>```
+}<br/>
 
 copy the code below and paste it in index.css<br/>
 @tailwind base; <br/>
