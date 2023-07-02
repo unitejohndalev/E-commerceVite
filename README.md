@@ -15,8 +15,12 @@ created using react vite with git bash<br/>
 -- to star app<br/>
 
 install tailwind with postcss and autoprefixer <br/>
-npm install -D tailwindcss postcss autoprefixer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// to install packages<br/>
-npx tailwindcss init -p &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// to install tailwind.config.js and postcss.config.js<br/>
+
+```npm install -D tailwindcss postcss autoprefixer ```
+-- to install packages<br/>
+
+```npx tailwindcss init -p```
+-- to install tailwind.config.js and postcss.config.js<br/>
 
 configure tailwind and index.css<br/>
 
