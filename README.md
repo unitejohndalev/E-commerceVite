@@ -13,7 +13,7 @@ npx tailwindcss init -p                                      // to install tailw
 configure tailwind and index.css<br/>
 
 copy the code below and paste it in tailwind.config.js<br/>
-/** @type {import('tailwindcss').Config} */<br/>
+```/** @type {import('tailwindcss').Config} */<br/>
 export default {<br/>
   content: [<br/>
     "./index.html",<br/>
@@ -24,7 +24,7 @@ export default {<br/>
     extend: {},<br/>
   },<br/>
   plugins: [],<br/>
-}<br/>
+}<br/>```
 
 copy the code below and paste it in index.css<br/>
 @tailwind base; <br/>
