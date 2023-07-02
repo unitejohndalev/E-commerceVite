@@ -1,0 +1,902 @@
+{
+    "shoes": [
+        {
+            "id": 1,
+            "name": "Air Jordan Mid",
+            "price": 125,
+            "gender": "Men's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5bf8e7f4-18c7-4826-9bab-7b9532a5e3b6/air-jordan-1-mid-mens-shoes-b3js2D.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "This iteration of the AJ1 reimagines Mike's first signature model with a fresh mix of colors. Premium materials, soft cushioning and a padded ankle collar offer total support and celebrate the shoe that started it all.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0d155329-9e17-48cb-a28a-2808721a906f/air-jordan-1-mid-big-kids-shoes-pGNQSG.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0179791e-2416-45da-a7c9-682e385d158f/air-jordan-1-mid-big-kids-shoes-pGNQSG.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/54769c76-c7a0-4529-9289-b1571eebda9d/air-jordan-1-mid-big-kids-shoes-pGNQSG.png"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Nike Air VaporMax 2021 FK",
+            "price": 129.97,
+            "gender": "Men's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dfe54c4c-1c62-4f11-b9b9-c22125d3fc6e/air-vapormax-2021-fk-mens-shoes-NpTfFz.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Made from at least 40% recycled materials by weight, the Nike Air VaporMax 2021 FK is airy and easy to wear with superstretchy, recycled Flyknit fabric (plus a soft collar that sculpts your ankle). The stitched-on Swoosh and recycled TPU heel clip add a splash of intrigue as you float down the streets on incredibly soft VaporMax cushioning.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5ee4e8c7-7911-45b2-bec8-7fe8816931dc/air-vapormax-2021-fk-mens-shoes-NpTfFz.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4792b4f8-8e47-43bc-b597-b237d9c4aee2/air-vapormax-2021-fk-mens-shoes-NpTfFz.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e84e01c9-fd96-4ffe-8131-d69dff671dd4/air-vapormax-2021-fk-mens-shoes-NpTfFz.png"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Nike Gamma Force",
+            "price": 90,
+            "gender": "Women's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5227ae6b-fd89-4d4c-9e95-dc9ac45fc6b7/gamma-force-womens-shoes-4TR9Xf.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Layers upon layers of dimensional style—that's a force to be reckoned with. Offering both comfort and versatility, these kicks are rooted in heritage basketball culture. Collar materials pay homage to vintage sport while the subtle platform elevates your look, literally. The Gamma Force is forging its own legacy: court style that can be worn all day, wherever you go.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/16a85db2-7489-46d2-bcd7-86b31b77c9e7/gamma-force-womens-shoes-4TR9Xf.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c1494c5f-c616-43f7-a18c-41a0884309c8/gamma-force-womens-shoes-4TR9Xf.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a4d8c86a-6bfd-4f9c-9cc3-90020ed09602/gamma-force-womens-shoes-4TR9Xf.png"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Nike Tech Hera",
+            "price": 110,
+            "gender": "Women's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/45eb504d-4ca0-4675-80cf-720913d53f3e/tech-hera-womens-shoes-NjvkxR.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The Tech Hera is here to fulfill all of your chunky sneaker wishes. The wavy lifted midsole and gold pops level up your look while keeping you comfortable. Its durable design holds up beautifully to everyday wear—which is perfect, because you'll definitely want to wear these every day.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0fe9b58b-6b9f-4a63-ae48-03ae925b9cb1/tech-hera-womens-shoes-NjvkxR.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/be4c6801-7e0c-4d40-9670-6a7874f59d5e/tech-hera-womens-shoes-NjvkxR.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/21df5051-5a6d-419a-bc34-99de0d493bf6/tech-hera-womens-shoes-NjvkxR.png"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Air Jordan 1 Low",
+            "price": 110,
+            "gender": "Men's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/28812013-b5f3-4148-a1b4-170227e0e0fe/air-jordan-1-low-mens-shoes-0LXhbn.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low offers a clean, classic look that's familiar yet always fresh. With an iconic design that pairs perfectly with any 'fit, these kicks ensure you'll always be on point.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/50ebba7a-bcb5-4a67-a401-6a0319b4a814/air-jordan-1-low-mens-shoes-0LXhbn.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8256d061-41be-409a-b641-03c39335ab81/air-jordan-1-low-mens-shoes-0LXhbn.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f04be7b4-4bba-48b2-8472-bfbc08e2d904/air-jordan-1-low-mens-shoes-0LXhbn.png"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Air Jordan 1 Mid SE",
+            "price": 135,
+            "gender": "Men's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3b8a8a4b-7dcb-4495-a3aa-83386f143cc8/air-jordan-1-mid-se-mens-shoes-Zn07hL.png",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Every time the AJ1 gets a remake, you get the classic sneaker in new colors and textures for an exciting, revamped look but with all the familiar comforts you know. Premium materials and accents give modern expression to an all-time favorite.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/266f9922-ec59-41e3-9b36-85c5fab5c1ec/air-jordan-1-mid-se-mens-shoes-Zn07hL.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0911dfdd-0bbd-41e2-aa3c-576b77cbf788/air-jordan-1-mid-se-mens-shoes-Zn07hL.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7256420f-2e4b-4129-87fa-0564629afef3/air-jordan-1-mid-se-mens-shoes-Zn07hL.png"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Nike Court Borough Low 2 SE",
+            "price": 65,
+            "gender": "Kid's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4b01331d-a93f-4c4f-b618-ff21c2877255/court-borough-low-2-se-big-kids-shoes-5n5Wzk.png",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The Nike Court Borough Low 2 brings the power of pink to future all-stars. From the laces to the Swoosh design to the sole, pink isn’t just a color on these kicks—it’s an attitude! Made to be durable, these shoes have a classic look and feel that’s ready for everyday play.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/617f12f0-92eb-4c60-80c7-650ed20be38f/court-borough-low-2-se-big-kids-shoes-5n5Wzk.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/70afc53e-379b-4d30-b62c-77b0f8f896f3/court-borough-low-2-se-big-kids-shoes-5n5Wzk.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ac505911-fb1f-41c0-9386-4b951297aa24/court-borough-low-2-se-big-kids-shoes-5n5Wzk.png"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Nike Free Metcon 5",
+            "price": 120,
+            "gender": "Women's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/06938c0c-5229-4311-90d1-9f1ae727f1fb/free-metcon-5-womens-training-shoes-z3mwK7.png",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "When your workouts wade into the nitty gritty, the Nike Free Metcon 5 can meet you in the depths, help you dig deep to find that final ounce of force and come out of the other side on a high. It matches style with substance, forefoot flexibility with backend stability, perfect for flying through a cardio day or enhancing your agility. A revamped upper offers easier entry with a collar made just for your ankle.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c9c6c1be-190c-4676-8678-73b506ee2569/free-metcon-5-womens-training-shoes-z3mwK7.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/13565310-7f6d-4a56-87f6-b046786f2e16/free-metcon-5-womens-training-shoes-z3mwK7.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/58c069e0-9d2a-48cf-a9d1-51718e195c2a/free-metcon-5-womens-training-shoes-z3mwK7.png"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Nike SuperRep Go 3 Flyknit Next Nature",
+            "price": 100,
+            "gender": "Women's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6384d3b5-c48d-4f56-8c5f-b5904fc83e0a/superrep-go-3-flyknit-next-nature-womens-training-shoes-hSZBdX.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The new Nike SuperRep Go 3 Flyknit is a radical design story rooted in innovation. Made with at least 20% recycled content by weight, the zoned Flyknit construction wraps your foot in 360 degrees of comfort and support. A finely ground, reclaimed foam midsole gives you responsive cushioning for high-impact training. The lightweight, packable design lets you keep them close, no matter where your next workout takes you.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5dd2e87a-3daa-419e-8aa3-03a6b482a799/superrep-go-3-flyknit-next-nature-womens-training-shoes-hSZBdX.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6eb1cd60-0572-4ff2-b561-7bf20e1d80c6/superrep-go-3-flyknit-next-nature-womens-training-shoes-hSZBdX.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/feb2ea0a-e6f5-45d9-917d-7acb2d040665/superrep-go-3-flyknit-next-nature-womens-training-shoes-hSZBdX.png"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Nike Air Force 1 '07 LX",
+            "price": 130,
+            "gender": "Women's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e2616858-d1ca-43cd-8e23-2cee7dedbe58/air-force-1-07-lx-womens-shoes-VVL5B1.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Take your love for the game with you wherever you go. Crossing hardwood comfort with off-court flair, these kicks put a fresh spin on a hoops classic with washed-out neon colors and classic paisley print. Of course, we kept the same era-echoing '80s construction and hidden Nike Air units you know and love for that legendary AF1 feel. Go ahead, slip into a slam dunk.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fdde9b2d-a355-47a9-a486-5bcf438a61c9/air-force-1-07-lx-womens-shoes-VVL5B1.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ba5bd1b3-2c20-4ca8-b9a5-e625be67ea0a/air-force-1-07-lx-womens-shoes-VVL5B1.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/478f34e0-3e7d-460c-a06f-361c1b9178de/air-force-1-07-lx-womens-shoes-VVL5B1.png"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Nike Go FlyEase",
+            "price": 125,
+            "gender": "Unisex Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/247616b5-1d3b-4777-abbb-d5e08a924b78/go-flyease-easy-on-off-shoes-LGmqKx.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Ditch the laces and get outside. These kicks feature Nike's revolutionary FlyEase technology, making on-and-off a breeze. With a heel that pivots open for a totally hands-free entry, they're great for people with limited mobility—or anyone who wants a quicker way to get going.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bbe6f776-12d9-43b3-a8d0-338a95180a0c/go-flyease-easy-on-off-shoes-LGmqKx.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0af510b3-6532-46c9-a315-95405e03ae52/go-flyease-easy-on-off-shoes-LGmqKx.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4face735-6dae-4db4-8456-99936374addf/go-flyease-easy-on-off-shoes-LGmqKx.png"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "LeBron Witness 6",
+            "price": 73.97,
+            "gender": "Unisex Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3771fc51-4baa-40d9-ad02-c5f523079eb6/lebron-witness-6-basketball-shoes-HXbMw7.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "For this iteration of the LeBron Witness, we swapped out Zoom Air for visible Max Air cushioning—LeBron's favorite—to help dissipate impact forces and provide a responsive sensation. The lightweight, reinforced mesh upper keeps you contained all around, from the webbing that harnesses your forefoot to the external molded pieces that lock in your heel.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5c33dc48-ac6d-4af7-8de2-091a955365bd/lebron-witness-6-basketball-shoes-HXbMw7.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0fd1052d-0bc9-4f6f-a2b3-01094305afa0/lebron-witness-6-basketball-shoes-HXbMw7.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3506d602-3243-442f-ba17-e1b8e3443fda/lebron-witness-6-basketball-shoes-HXbMw7.png"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Air Jordan XXXVII",
+            "price": 120.97,
+            "gender": "Unisex Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/86333f8d-24fa-4cb3-bbb9-672df75e1d99/air-jordan-xxxvii-basketball-shoes-MttxV5.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "You've got the hops and the speed—lace up in shoes that enhance what you bring to the court. The latest AJ is all about takeoffs and landings, with multiple Air units to get you off the ground and our signature Formula 23 foam to cushion your impact. Up top, you'll find layers of tough, reinforced leno-weave fabric that'll keep you contained—and leave your game uncompromised.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ea4f635d-4080-4185-a492-4b3317b3ced9/air-jordan-xxxvii-basketball-shoes-MttxV5.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1c2d6dfa-78ca-4182-ba65-d73eac4a58a5/air-jordan-xxxvii-basketball-shoes-MttxV5.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2c45fc69-8c47-4a47-b9c0-c3dc66d67f25/air-jordan-xxxvii-basketball-shoes-MttxV5.png"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Air Jordan 1 Zoom CMFT 2",
+            "price": 130,
+            "gender": "Unisex Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c3dead19-8a8f-42b7-8de7-d56cc9d8550f/air-jordan-1-zoom-cmft-2-mens-shoes-Tw02qw.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Premium suede and Jordan Brand's signature Formula 23 foam come together to give you an extra luxurious (and extra cozy) AJ1. You don't need to play 'either or' when it comes to choosing style or comfort with this one—which is nice, 'cause you deserve both.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a850315e-574c-4b36-aaa3-b7fa7f0ed08f/air-jordan-1-zoom-cmft-2-mens-shoes-Tw02qw.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/58226b3f-3933-4eb6-889e-b9078f15c5d3/air-jordan-1-zoom-cmft-2-mens-shoes-Tw02qw.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/934d6d66-9662-4bd7-9f55-96dda66c0133/air-jordan-1-zoom-cmft-2-mens-shoes-Tw02qw.png"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Converse Chuck Taylor All Star High Top",
+            "price": 65,
+            "gender": "Unisex Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bede0d26-4ee8-4a8b-8442-43f17d174fe2/converse-chuck-taylor-all-star-high-top-unisex-shoe-xX439O.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "You need a style to rely on. The Chuck Taylor All-Star is a staple: the high-top and oxford silhouettes stay simply classic, while the white laces and star ankle patch give a nod to the legacy of the Chuck. This is the go-with-everything go-to that you won’t get sick of going to. Stock up.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/niqxgivhgkx90h8mh9a2/converse-chuck-taylor-all-star-high-top-unisex-shoe-xX439O.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/pjhcuf7hfmbrwra1qiiz/converse-chuck-taylor-all-star-high-top-unisex-shoe-xX439O.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/iypynxyq2mz04kvrn48v/converse-chuck-taylor-all-star-high-top-unisex-shoe-xX439O.png"
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Nike SB Force 58",
+            "price": 80,
+            "gender": "Unisex Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/767e3cea-b920-4519-a744-8d8f29973006/sb-force-58-skate-shoes-Txk6xG.png",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The latest and greatest innovation to hit the streets, the Force 58 gives you the durability of a cupsole with the flexibility of vulcanized shoes. Made from canvas and suede and finished with perforations on the toe, the whole look is infused with heritage basketball DNA.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5e853f08-ec80-4714-9fb8-f5abdda3bb7c/sb-force-58-skate-shoes-Txk6xG.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7b0d3a90-9265-4b5d-81f7-08ca4c01ed80/sb-force-58-skate-shoes-Txk6xG.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0a8d2b7c-30f6-4d7d-ba2c-5c342223b949/sb-force-58-skate-shoes-Txk6xG.png"
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Nike Killshot 2 Leather",
+            "price": 90,
+            "gender": "Unisex Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/exz5hx5lva0ysh6ghhco/killshot-2-leather-mens-shoe-zrq1wk.png",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Inspired by the original low-profile tennis shoe, the Nike Killshot 2 updates the upper with a variety of textured leathers to create a fresh look. From soft suedes to smooth leathers with the perfect sheen, it's court-side attitude with a modern touch. To prove you're on top, the rubber gum sole adds the cherry on bottom.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/qrqehie3tnppk5bpxhx2/killshot-2-leather-mens-shoe-zrq1wk.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fdo3tgnypep0tza18mai/killshot-2-leather-mens-shoe-zrq1wk.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/h5p0tmfjbgh0iiub0ngo/killshot-2-leather-mens-shoe-zrq1wk.png"
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Air Jordan 1 Mid",
+            "price": 125,
+            "gender": "Unisex Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fabe3ef1-263d-42ee-b24b-09a9a47a61ee/air-jordan-1-mid-mens-shoes-b3js2D.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Inspired by the original AJ1, this mid-top edition maintains the iconic look you love while choice colors and crisp leather give it a distinct identity.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f3c594b4-5e8a-4327-87c4-4d55aa3aa69e/air-jordan-1-mid-mens-shoes-b3js2D.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3587121c-5ff8-45b0-90b2-2cef3cb78b61/air-jordan-1-mid-mens-shoes-b3js2D.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c2bd1f9d-2bfb-4f4d-9f92-23bc7eadc95e/air-jordan-1-mid-mens-shoes-b3js2D.png"
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Freak 4 (Team)",
+            "price": 65.97,
+            "gender": "Unisex Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2c182397-9600-42e9-8809-fb5738e81c22/freak-4-team-basketball-shoes-p95BnP.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Giannis is an incessant storm of stamina and skill that keeps coming at opponents for 4 quarters or more. The forward-thinking design of his latest signature shoe helps propel you down the court in a lightweight fit that moves with you. It can handle quick changes in direction on both sides of the floor, giving you side-to-side stability and multidirectional traction as you Euro step to the hoop.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/18dca228-01d7-46f1-b64a-50d748fca6d9/freak-4-team-basketball-shoes-p95BnP.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ee73ca1a-b158-4d06-9ccb-14d0105ea450/freak-4-team-basketball-shoes-p95BnP.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/41997b5b-84ea-4024-a0d3-030cd82be30c/freak-4-team-basketball-shoes-p95BnP.png"
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Nike SB Zoom Blazer Mid",
+            "price": 80.97,
+            "gender": "Unisex Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/af8fc2f0-ea7f-4d94-926d-6fcca8c40112/sb-zoom-blazer-mid-skate-shoes-ZLRvRZ.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The Nike SB Zoom Blazer Mid takes a heritage design and tailors it to the needs of the modern skateboarder. Soft cushioning and a flexible sole work together to provide great boardfeel and traction.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a6bc14de-99a5-4a03-999b-781db60b09a2/sb-zoom-blazer-mid-skate-shoes-ZLRvRZ.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a9fb74e3-0dc0-46d6-9773-56903c5eca23/sb-zoom-blazer-mid-skate-shoes-ZLRvRZ.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b631bd5d-76ff-4bef-8c1c-ae3c83c5c35a/sb-zoom-blazer-mid-skate-shoes-ZLRvRZ.png"
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Nike Dunk Low Retro",
+            "price": 110,
+            "gender": "Men's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9c9308fc-1651-40b2-9f2e-d85697d05027/dunk-low-retro-mens-shoes-9k2Xt6.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Recognizing the Dunk's roots as the top-ranking college team sneaker, the 'Be True To Your School' pack looks to the original ad campaign for inspiration. Colors represent top-flight universities, while crisp leather has the perfect amount of sheen to make 'em a hands-down win. So lace up and show off that varsity spirit. Ya game?",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/740eb427-d393-4ad6-bb35-190c10797ace/dunk-low-retro-mens-shoes-9k2Xt6.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3e5758fd-9415-4f82-9540-bc555f52b3b2/dunk-low-retro-mens-shoes-9k2Xt6.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6780c387-7a42-460a-950b-fd51257cc641/dunk-low-retro-mens-shoes-9k2Xt6.png"
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Nike Pegasus 40 SE",
+            "price": 130,
+            "gender": "Men's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f147a002-d8af-4ce1-acd8-6b7b90a0be83/pegasus-40-se-mens-road-running-shoes-MCGW9h.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "A springy ride for every run, the Peg’s familiar, just-for-you feel returns to help you accomplish your goals. This version has the same responsiveness and neutral support you love, but with improved comfort in those sensitive areas of your foot, like the arch and toes. Whether you’re logging long marathon miles, squeezing in a speed session before the sun goes down or hopping into a spontaneous group jaunt, it’s still the established road runner you can put your faith in, day after day, run after run. This vibrantly bold, asymmetrical design is all about celebrating your mixing and matching magnificence for the miles ahead.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8488f5d5-da21-42b4-87d0-1d178a03f2d7/pegasus-40-se-mens-road-running-shoes-MCGW9h.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb6f574-12d0-4b3e-a40e-e30f96d8ab26/pegasus-40-se-mens-road-running-shoes-MCGW9h.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3e3a863d-20b1-4697-b2e0-39e150c0c1b4/pegasus-40-se-mens-road-running-shoes-MCGW9h.png"
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Nike Invincible 3 SE",
+            "price": 180,
+            "gender": "Men's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b2930d94-38ed-4033-9176-f6a9c11dc281/invincible-3-se-mens-road-running-shoes-Xrd0px.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "With maximum cushioning to support every mile, the Invincible 3 gives you Nike Running's highest level of comfort underfoot to help you stay on your feet today, tomorrow and beyond. Designed to help keep you on the run, it’s super supportive and bouncy, so that you can propel down your preferred path and come back for your next run feeling ready and reinvigorated. This vibrantly bold, asymmetrical design is all about celebrating your mixing and matching magnificence for the miles ahead.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/70f99c42-17e2-4be1-b83d-1882908ff497/invincible-3-se-mens-road-running-shoes-Xrd0px.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b299bb2b-1b99-4a46-a425-39d2c7e2adc7/invincible-3-se-mens-road-running-shoes-Xrd0px.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ac2ba868-8bf7-4684-9cff-807cb05c28d6/invincible-3-se-mens-road-running-shoes-Xrd0px.png"
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "name": "LeBron 20",
+            "price": 200,
+            "gender": "Men's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/78b8f078-4e8e-4b9c-9680-2c3e380c3c62/lebron-20-basketball-shoes-ct1qVm.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Nearly 2 decades into a career exceeding every lofty expectation, LeBron James has refused to settle for anything less than greatness, even when he was the one setting the standard for generations to come. Now, his latest signature shoe, the LeBron XX (or LeBron 20) is lighter, low to the ground and turbo-like. It’s unlike any design LeBron has donned before—comfortable and supportive, yet low-cut, feathery-fast and created to stay ahead of today’s frenzied style of play.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/52c4e8aa-a6fb-4af3-97a7-6433819b8aa8/lebron-20-basketball-shoes-ct1qVm.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/08cf9b3b-5436-4e13-ac54-ece056202b9c/lebron-20-basketball-shoes-ct1qVm.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/46d63a45-420b-4550-a674-14d0e30770a0/lebron-20-basketball-shoes-ct1qVm.png"
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "name": "LeBron NXXT Gen",
+            "price": 160,
+            "gender": "Men's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3880705a-6a0d-4007-b85e-c496c048c664/lebron-nxxt-gen-basketball-shoes-55g4w1.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Whether you’re a dunk contest-like leaper or a below-the-rim wonder roaming the baseline, feel faster, lower to the court and assured in the LeBron NXXT Gen. We specifically tailored it to meet the demands of today’s fast-paced game, so that you can stay ahead of the opposition with your speed and force in all directions.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/10a3bc4a-237d-4e57-9e8b-a73295d8d32a/lebron-nxxt-gen-basketball-shoes-55g4w1.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/065124bc-d6f1-46b9-96cf-d315c4420ed8/lebron-nxxt-gen-basketball-shoes-55g4w1.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/48be15b3-e156-4964-816f-4ed15fffbee0/lebron-nxxt-gen-basketball-shoes-55g4w1.png"
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Nike Dunk High Retro",
+            "price": 125,
+            "gender": "Men's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fd17b420-b388-4c8a-aaaa-e0a98ddf175f/dunk-high-retro-mens-shoe-dTVTCk.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Created for the hardwood but taken to the streets, the '80s b-ball icon returns with perfectly sheened overlays and original university colors. With its classic hoops design, the Nike Dunk High Retro channels '80s vintage back onto the streets while its padded, high-top collar adds an old-school look rooted in comfort.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ac4c2d4d-06fc-4e92-9fec-c78cbb110c5f/dunk-high-retro-mens-shoe-dTVTCk.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/811b9857-d626-46d0-b2ff-7a8858717fc6/dunk-high-retro-mens-shoe-dTVTCk.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4a789a9d-dc8b-420f-ac4e-4dcc4a232c54/dunk-high-retro-mens-shoe-dTVTCk.png"
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Nike Air Max 1 '87",
+            "price": 160,
+            "gender": "Women's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8ac34384-c1ec-430d-8dee-185ebd7b578b/air-max-1-87-womens-shoes-lVMBTB.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The bandana is your wardrobe’s unrivaled accessory for a reason. Conjuring images of on-court stardom, cowgirl style and chic glam, it's adaptable, timeless—and above all else, quick to put on. Pair this effortless hit of Americana with the iconic Air Max 1 and voila! An energetic new look. Earthy colors refresh the classic paisley pattern. Metallic branding and dangling Swoosh pendants make your every move shine. And if you've never walked on a rainbow, well, now's your chance. Step in and feel free.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3b372062-9c4f-4d0e-8836-e64fc9e0f2af/air-max-1-87-womens-shoes-lVMBTB.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc99913f-6b4a-468b-b36a-55ab4d88aefe/air-max-1-87-womens-shoes-lVMBTB.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1732f33c-809a-45ca-ba8f-2985a20f5814/air-max-1-87-womens-shoes-lVMBTB.png"
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Nike Pegasus 40",
+            "price": 130,
+            "gender": "Women's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a056f685-3b15-4b05-9989-412893c6dae8/pegasus-40-womens-road-running-shoes-cnNqtF.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "A springy ride for any run, the Peg’s familiar, just-for-you feel returns to help you accomplish your goals. This version has the same responsiveness and neutral support you love, but with improved comfort in those sensitive areas of your foot, like the arch and toes. Whether you’re logging long marathon miles, squeezing in a speed session before the sun goes down or hopping into a spontaneous group jaunt, it’s still the established road runner you can put your faith in, day after day, run after run.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3443184a-117f-4117-8e03-e2f1bf9070cf/pegasus-40-womens-road-running-shoes-cnNqtF.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cea468f4-af69-4385-bd74-83562644a151/pegasus-40-womens-road-running-shoes-cnNqtF.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/28b6be67-2a40-4faf-8322-25e295032a93/pegasus-40-womens-road-running-shoes-cnNqtF.png"
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "name": "Nike Vaporfly 3",
+            "price": 250,
+            "gender": "Women's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0c25a661-0784-4ec3-b03c-ed9580028154/vaporfly-next-3-womens-road-racing-shoes-KcmWJb.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Catch ‘em if you can. The Nike Vaporfly NEXT% 3 is made for the chasers, the racers, the elevated pacers who can’t turn down the thrill of the pursuit. We reworked the leader of the super shoe pack and tuned the engine underneath for those who see speed as a gateway to more miles and more seemingly uncatchable highs. From elite runners to those new to racing, this versatile road-racing workhorse is built for all athletes chasing personal bests from a 10K to marathon.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/28922f8f-5ed3-47d4-8eeb-c26e49d6dae4/vaporfly-next-3-womens-road-racing-shoes-KcmWJb.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a2f9cadc-3237-4d76-9dc1-a6be0adf42b4/vaporfly-next-3-womens-road-racing-shoes-KcmWJb.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/889ae534-6396-438d-b1cb-2266d80f6017/vaporfly-next-3-womens-road-racing-shoes-KcmWJb.png"
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "name": "Nike Court Legacy Lift",
+            "price": 90,
+            "gender": "Women's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0f75e71-7eed-4543-841f-77686c7e3a3a/court-legacy-lift-womens-shoes-x0B6BB.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Elevate your style with the Nike Court Legacy Lift. Its platform midsole delivers a bold statement on top of the classic, easy-to-wear design. And don't worry, we've kept the fit you love.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/eecaefa7-0d29-4efe-b671-3438dc6df887/court-legacy-lift-womens-shoes-x0B6BB.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/900eb19c-2d7e-4657-9412-169b56ec9a37/court-legacy-lift-womens-shoes-x0B6BB.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c9de7bbc-ca10-4673-af8a-a8384ddc0a21/court-legacy-lift-womens-shoes-x0B6BB.png"
+                }
+            ]
+        },
+        {
+            "id": 31,
+            "name": "Nike Court Legacy Next Nature",
+            "price": 70,
+            "gender": "Women's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/46c88fa2-8d40-46ad-8c0c-c40e05776738/court-legacy-next-nature-womens-shoes-8r07x0.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Honoring a history rooted in tennis culture, the Nike Court Legacy Next Nature brings you a time-tested staple in a design that's made from at least 20% recycled materials by weight. Its synthetic leather and retro design let you blend sport and fashion. Do good by looking good.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2bbc427b-0b6b-458a-ab2f-15f12b82089a/court-legacy-next-nature-womens-shoes-8r07x0.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/75fd8b40-d06d-40f5-a2ed-c5839b8b4ed0/court-legacy-next-nature-womens-shoes-8r07x0.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dee8478d-ad93-4200-945f-b4326a47ed2b/court-legacy-next-nature-womens-shoes-8r07x0.png"
+                }
+            ]
+        },
+        {
+            "id": 32,
+            "name": "Nike Flex Runner 2",
+            "price": 45,
+            "gender": "Kid's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3c5f7119-731c-4220-bbc8-103142124aa3/flex-runner-2-little-kids-shoes-5nS0pV.png",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Running shoes made easy! The Nike Flex Runner 2 is for the kid on the go who loves to play all day—from gym class to a sprint down the block. They're lace-free, meaning super quick to slip on and off. Who’s ready to race?",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e72dd4f1-682d-421c-9140-431d54a43088/flex-runner-2-big-kids-road-running-shoes-klcs9r.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/34b41ec9-23e2-4fcf-a6b2-c85a9e248411/flex-runner-2-big-kids-road-running-shoes-klcs9r.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/95c9977a-bf23-46a3-8290-5ed94cfc27f1/flex-runner-2-big-kids-road-running-shoes-klcs9r.png"
+                }
+            ]
+        },
+        {
+            "id": 33,
+            "name": "Nike Air Force 1 LV8",
+            "price": 70.97,
+            "gender": "Kid's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/edc253c4-28e6-4511-ba7d-650329c4fcec/air-force-1-lv8-big-kids-shoes-1lGPrs.png",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Start your day the Nike way with a fresh take on a legendary classic. Fruit-inspired colors give this Nike Air Force 1 LV8 mouth-watering style. Smooth leather keeps them durable while Nike Air unit in the heels cushion your every step, letting you play all day.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/16589d54-db8a-470e-ba26-324e4cb20c81/air-force-1-lv8-big-kids-shoes-1lGPrs.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f4b9550e-8876-4e29-99e5-bfd6f784c58d/air-force-1-lv8-big-kids-shoes-1lGPrs.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e6b38eaa-e480-4455-9f66-fb7b7344da7b/air-force-1-lv8-big-kids-shoes-1lGPrs.png"
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Air Jordan 1 Low SE",
+            "price": 95,
+            "gender": "Kid's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/55f09217-cbc2-4883-9143-4f9287cc02aa/air-jordan-1-low-se-big-kids-shoes-fS3WJJ.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Wether you're cheering for your home team or checking out a faraway city, these AJ1s got you. The always stylish and comfortable silhouette gets a hot remake with red leather and jersey-inspired textile.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f4d18646-6269-4fa1-87cb-892c8def87b8/air-jordan-1-low-se-big-kids-shoes-fS3WJJ.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/60aeac43-9db2-4e4a-93a0-bf42e79649fe/air-jordan-1-low-se-big-kids-shoes-fS3WJJ.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c8fe5dcb-4f65-4d8f-b26f-48a852b29ddf/air-jordan-1-low-se-big-kids-shoes-fS3WJJ.png"
+                }
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Nike Force 1 Low",
+            "price": 70,
+            "gender": "Kid's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/20bed071-33e4-4f7f-8031-a598045c1f74/force-1-low-little-kids-shoes-3g5plb.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "First on the basketball courts in the '80s. Now wearable everywhere from class to the playground, they've been an icon for decades—meaning a long time! Smooth, durable leather is built to last for many days of play, and the rubber outsole gives traction so littles can move on many surfaces. This is what legends are made of.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0e1683ab-0fa1-4b51-ba16-482acac04928/force-1-low-little-kids-shoes-3g5plb.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ac094b62-2772-4613-9879-481f10db3705/force-1-low-little-kids-shoes-3g5plb.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/949c8bcd-01a1-4594-89c7-4a6ba5f75bcd/force-1-low-little-kids-shoes-3g5plb.png"
+                }
+            ]
+        },
+        {
+            "id": 36,
+            "name": "Nike Dunk Low Next Nature",
+            "price": 95,
+            "gender": "Kid's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/637f30a7-cd9e-40df-8ada-e8fe71dc6315/dunk-low-next-nature-big-kids-shoes-LNbkBF.png",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "If you love old-school hoops, you'll love this Nike Dunk. Thoughtfully made with durable synthetic leather for a classic court feel, these kicks honor a hardwood icon with a design you can easily rock in class, at the park or when hanging out with friends. Double-stacked Swoosh logos add bold energy. But best of all? They're always ready for playtime!",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cba849a7-9b7a-4833-a427-6f85437e55de/dunk-low-next-nature-big-kids-shoes-LNbkBF.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6191dee6-108e-49b1-a15e-0ff61977435f/dunk-low-next-nature-big-kids-shoes-LNbkBF.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/54bb02a9-56a9-4ad8-9013-02578b936bb3/dunk-low-next-nature-big-kids-shoes-LNbkBF.png"
+                }
+            ]
+        },
+        {
+            "id": 37,
+            "name": "Nike Air Force 1 LE",
+            "price": 90,
+            "gender": "Kid's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d9f1d9ee-a848-4a36-aab9-48b241078ebb/air-force-1-le-big-kids-shoes-3JNSvS.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "This is what legends are made of. The Nike Air Force 1 LE brings back the ’82 hardwood icon into an everyday style in all-white or all-black. The durability, feel and Air are still there for those who love a classic.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/37a8100f-518e-42a6-b09b-bd3c259a59b1/air-force-1-le-big-kids-shoes-3JNSvS.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/469a549f-81fb-4f84-bfd5-e8d01827e2cb/air-force-1-le-big-kids-shoes-3JNSvS.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1072d0c3-ef31-45f1-8cf8-004920fe3563/air-force-1-le-big-kids-shoes-3JNSvS.png"
+                }
+            ]
+        },
+        {
+            "id": 38,
+            "name": "Nike Air Max 270",
+            "price": 130,
+            "gender": "Kid's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8ce0bdb4-1870-42d3-9137-2cdd3ccf755d/air-max-270-big-kids-shoes-HbtNX3.png",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The Nike Air Max 270 combines the exaggerated tongue from the Air Max 180 and classic elements from the Air Max 93. It features Nike's biggest heel Air unit yet for a supersoft ride that feels as impossible as it looks.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ff947ae3-f2ef-497f-a752-e6ae96c007b4/air-max-270-big-kids-shoes-HbtNX3.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c6e2ae00-5af7-469e-b387-f54e34d85aba/air-max-270-big-kids-shoes-HbtNX3.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c1b90024-42c2-468d-aa21-5db4a60d6c21/air-max-270-big-kids-shoes-HbtNX3.png"
+                }
+            ]
+        },
+        {
+            "id": 39,
+            "name": "Nike Court Legacy",
+            "price": 40,
+            "gender": "Kid's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dd015ce2-2db6-432c-8d6c-48cb1b87fade/court-legacy-baby-toddler-shoes-NzVpPc.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The Nike Court Legacy serves up classic tennis style for kiddos. They're durable and comfy with heritage stitching and a retro Swoosh. When your lil’ one puts these on—it’s game, set, match.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ae0040fc-c052-4831-a6a7-dd149f48a6bd/court-legacy-little-kids-shoes-Mb7npn.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d3a498c9-ab2d-4ea3-9e46-0ddbcf5aeb32/court-legacy-little-kids-shoes-Mb7npn.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3fad7326-321d-4943-a366-1df6d5a708b6/court-legacy-little-kids-shoes-Mb7npn.png"
+                }
+            ]
+        },
+        {
+            "id": 40,
+            "name": "Air Jordan 1 Mid SE Craft",
+            "price": 90,
+            "gender": "Kid's Shoes",
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/39342a4d-2c36-4f3b-8d3b-3f8ae8037a96/air-jordan-1-mid-se-craft-big-kids-shoes-VJv0Nj.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Keep things fresh with an 'inside-out' flip of the iconic AJ1. Featuring exposed-foam accents and special stitching on the Swoosh, these J's are stylish enough for lunchroom 'fit checks—and comfortable enough for all your playground heroics.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2a0a38d9-a03c-494c-96b0-669b5a5c6954/air-jordan-1-mid-se-craft-big-kids-shoes-VJv0Nj.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a2791223-252b-4433-b121-0f2e9bc3d813/air-jordan-1-mid-se-craft-big-kids-shoes-VJv0Nj.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/688b6b55-b366-4323-a8c3-d962756a7a4b/air-jordan-1-mid-se-craft-big-kids-shoes-VJv0Nj.png"
+                }
+            ]
+        }
+    ],
+    "hats": [
+        {
+            "id": 1,
+            "name": "Unstructured Futura Wash Cap",
+            "price": 26,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/33c9b90d-5f23-464b-a870-7cfd9ceebe61/club-unstructured-futura-wash-cap-77d39b.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "A classic mid-depth cap with plenty of styling options, this Nike Club Cap comes in smooth cotton twill that has a soft wash for easy comfort from day 1. The precurved bill lends itself to casual styling, and the adjustable back-strap lets you find the right fit.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9f5910b5-e567-4785-be4c-0e1e92b65c32/club-unstructured-futura-wash-cap-77d39b.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/49ede8ae-f974-4831-ad0d-91211dfbc85f/club-unstructured-futura-wash-cap-77d39b.png"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Unstructured JDI Cap",
+            "price": 28,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/08c3c044-7882-4b26-a79b-99ac2c2895c0/club-unstructured-jdi-cap-Xr7txF.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "When your outfit needs that final touch, that last pop of color to pull everything together, the Nike Club cap answers the call. A classic 6-panel layout and soft, unstructured design brings casual comfort you can rock all day. Don't think twice—Just Do It.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fed46065-3721-4edc-a198-cd73e0ec6614/club-unstructured-jdi-cap-Xr7txF.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ad6bf5a2-f1e7-4127-a2e6-716d25404795/club-unstructured-jdi-cap-Xr7txF.png"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Futura Washed Bucket Hat",
+            "price": 30,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d2eec20a-6e5d-4579-bf9d-9cd4b165e1d1/apex-futura-washed-bucket-hat-TtDq3t.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Welcome the Nike Apex Bucket into your lineup. The mid-depth design is made with soft cotton and features an embroidered Futura logo for a clean Nike finish. The wash treatment softens the feel and gives it a vintage look that keeps aging to perfection the more you wear it.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a207cf5b-ece4-4481-9a43-aa813b19bf8a/apex-futura-washed-bucket-hat-TtDq3t.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e153749c-87c6-4807-ad90-68287223bd3e/apex-futura-washed-bucket-hat-TtDq3t.png"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Unstructured Futura Cap",
+            "price": 28,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8d475101-166e-4ac8-a2f4-d3d5bfd9d4f2/fly-unstructured-futura-cap-L2mRCG.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Our Nike Fly cap is a low-profile design made to sit snug on your head for easy wear through your day’s activities. This version is made with durable ripstop and a webbing backstrap for easy comfort that lasts.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a606365c-e92d-4580-820a-e93c9c948e89/fly-unstructured-futura-cap-L2mRCG.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/68c1b202-e633-4af2-b8e6-79a05eba161d/fly-unstructured-futura-cap-L2mRCG.png"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Unstructured Swoosh Cap",
+            "price": 26,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ea940986-4724-4ab6-875a-20dbf40b97e4/club-unstructured-swoosh-cap-fcrZ5f.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Bring the casual vibes to any outfit with our Nike Club cap. Its classic 6-panel design comes in soft, unstructured twill fabric with a pre-curved bill for easy styling. The mid-depth crown features an outlined Swoosh for a polished finish. The back strap and tri-glide closure helps you find the right fit.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a8b2f86e-0147-4913-ad56-5260bdd92bf4/club-unstructured-swoosh-cap-fcrZ5f.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f7160f99-37d9-49a0-91bc-ec84fba00044/club-unstructured-swoosh-cap-fcrZ5f.png"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Bucket Hat",
+            "price": 40,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/565dded6-d1b9-4e2b-80cf-4788c370f7ed/acg-bucket-hat-MQ8CCT.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "For rainy hikes or sunny adventures, the Nike ACG Bucket Hat keeps you covered. It's lightweight and comfortable, with a low-key chin strap for on-the-go adjustments.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/21e8ff7d-c3bd-4f49-805c-81618af66094/acg-bucket-hat-MQ8CCT.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/203929d0-559a-4789-85cd-9b2b71a1f2c6/acg-bucket-hat-MQ8CCT.png"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Nike ACG Heritage86",
+            "price": 36,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bcd0a915-e86f-470c-baa6-97b014c8bf32/acg-heritage86-cap-76dljF.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The Nike ACG Heritage86 Cap is made with washed organic cotton for a soft, familiar feel. An embroidered patch and a woven label at the closure bring the Nike look home for this classic.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1fd956e8-3ff3-414e-87e3-f6538345f9de/acg-heritage86-cap-76dljF.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/666608d9-7f9a-4a3d-8fb4-f91b1342ffb7/acg-heritage86-cap-76dljF.png"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Kid's Unstructured Futura Wash Cap",
+            "price": 22,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/43bbea17-44c4-4e33-b9c3-8b283c5720c1/club-kids-unstructured-futura-wash-cap-pPvb8C.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Fly under the radar in this unstructured, mid-depth Nike Club Cap. Washed for a well-worn, well-loved look, it's a lightweight, easy-to-wear curved-brim cap with a simple design that you can add to practically any look.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/443cae5c-faea-4918-85ea-2d2353791b98/club-kids-unstructured-futura-wash-cap-pPvb8C.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/06ed7632-87ef-4cc8-934a-57c308596c65/club-kids-unstructured-futura-wash-cap-pPvb8C.png"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Nike Dri-FIT Cap",
+            "price": 24,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f205124e-309a-4098-bdaa-7f5a24278ea7/dri-fit-club-kids-unstructured-metal-swoosh-cap-MfPJz0.png",
+            "status": "Just In",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Step your Swoosh game up with this mid-depth, unstructured Club Cap. Its curved bill and metal Swoosh logo give your look a clean finish while sweat-wicking tech helps you stay cool and comfortable while you make the most of warm, sunny weather.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5a65ea77-0fe5-4c27-817f-c239fd500efb/dri-fit-club-kids-unstructured-metal-swoosh-cap-MfPJz0.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/621a9cd3-ae3a-46eb-b3dd-e7baa5896a83/dri-fit-club-kids-unstructured-metal-swoosh-cap-MfPJz0.png"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Nike Rise Cap",
+            "price": 28,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bfd77d3a-e963-4635-875c-13703b161ee4/rise-cap-structured-trucker-cap-QVCQf7.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The Nike Rise Cap brings the classic trucker hat look to your collection. This structured, high-depth design features a foam front panel combined with mesh on the back for that signature look.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/da64fb06-57c0-4609-86e6-49586786246f/rise-cap-structured-trucker-cap-QVCQf7.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b82fe699-3eb3-4bca-b410-71f2c13eef94/rise-cap-structured-trucker-cap-QVCQf7.png"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Nike Terra Beanie",
+            "price": 36,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/473aa8c6-22b4-4f96-91e3-a570f50628c4/terra-tie-dye-beanie-32WxLQ.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Crafted for warmth, comfort and style, our low-profile Nike Terra beanie brings the goods for any cool weather outing. The tie-dye finish and simple cuffed design let you style it to your preference.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a00bcf6d-eb94-4dd7-9da1-90a2546d6ad9/terra-tie-dye-beanie-32WxLQ.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/579418bc-f2c8-490b-81aa-05776c7ea5cc/terra-tie-dye-beanie-32WxLQ.png"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Nike Peak Beanie",
+            "price": 28,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/48845032-6e4b-44a7-9bca-468bd259ae49/peak-standard-cuff-futura-beanie-44Jf5h.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Our Nike Peak beanie gives you stylish options to help conquer the cold. Plush knit yarns hug your head for comfort that lasts all day. Cut with plenty of fabric, the Peak beanie is designed to fit over your ears for warmth in colder conditions.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e20912ed-d4d0-484d-8bf3-addedcb4cfb5/peak-standard-cuff-futura-beanie-44Jf5h.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c64e25c0-c16c-4f17-8403-972c6d08df19/peak-standard-cuff-futura-beanie-44Jf5h.png"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Nike Peak Tall Cuff Beanie",
+            "price": 30,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a532d2f5-344c-4d02-8667-e39e9d8a07ae/peak-tall-cuff-futura-beanie-S5gBGl.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Crafted for warmth, comfort and style, our Nike Peak beanie brings the goods for any cool weather outing. The cuffed design with an embroidered Nike Futura logo on the cuff is classic and easy to style. Feeling slouchy? Uncuff it. Going for the fisherman look? Cuff it up and let it ride a bit higher.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/239f1c90-ddee-46f5-9f37-482d785fd2a7/peak-tall-cuff-futura-beanie-S5gBGl.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/50b30bef-3f85-451b-9e43-6c953d561bbb/peak-tall-cuff-futura-beanie-S5gBGl.png"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Nike AeroBill Tailwind Cap",
+            "price": 22.97,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/p7m1besl1mhfu1ylkkkh/aerobill-tailwind-running-cap-jx0vWd.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Top off your warm-weather look with the Nike AeroBill Tailwind Cap. Laser perforations strategically optimize breathability on the front and side panels, while moisture-wicking comfort helps you stay dry on the trail. This product is made with at least 50% recycled polyester fibers.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9f37e375-68da-4adb-aaa9-bd3ea6541bbf/aerobill-tailwind-running-cap-jx0vWd.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b396e065-ea7d-4e26-94ff-76c5e0e570fd/aerobill-tailwind-running-cap-jx0vWd.png"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Boonie Bucket Hat",
+            "price": 30.97,
+            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f3dac96d-e577-4a05-9d2c-1801d921ecca/boonie-bucket-hat-29XPbW.png",
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The Nike Boonie Bucket Hat has you covered with a 360-degree brim and a drawcord that cinches down for a stay-put fit when you're on the move. Sweat-wicking power and built-in vents team up to help keep your head dry and cool.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ef5c9310-6e77-46ae-a636-1ed3ec9d7bcd/boonie-bucket-hat-29XPbW.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b34b54bd-e20e-4d03-9df3-73f7b75ca469/boonie-bucket-hat-29XPbW.png"
+                }
+            ]
+        }
+    ]
+}

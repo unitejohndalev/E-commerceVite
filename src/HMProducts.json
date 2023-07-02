@@ -1,0 +1,726 @@
+{
+    "jackets": [
+        {
+            "id": 1,
+            "name": "Jacquard-weave jacket",
+            "price": "126.12",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Loose-fit jacket in an elegant jacquard weave with a collar and buttons down the front. Double-layered yoke, dropped shoulders and long, wide sleeves with a slit and buttoned cuffs. Flap chest pockets with a button, pleats at the back and tabs with a button at the back of the hem. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F85%2F7b%2F857bd9342c5ccdc3ecfcc5f736063e591ae9a71a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F91%2Fbd%2F91bdc2b0fb1705ca3933a755a0db2c9627afa5d1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F4c%2F18%2F4c18b2a6168878f891b4285c5e58e2ae1b77afec.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/d7/d5/d7d586d13aa1afb10eadc4d7ae006e67b75c4e18.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 2,
+            "name": "Drawstring-waist puffer jacket",
+            "price": "48.53",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Puffer jacket in a quilted weave. Relaxed fit with a stand-up collar, lined hood, zip and wind flap with press-studs down the front, gently dropped shoulders and long sleeves with covered elastication at the cuffs. Drawstring at the waist and discreet pockets in the side seams. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F0a%2Feb%2F0aeb2e367f4b20f78ce4b95440a10875cce68afd.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F26%2F99%2F26991cd101798734cbe7cbe67a65c95fb4a95885.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F0f%2Ff1%2F0ff18511f013360ac6a50cc4e2bd12ae348cdd40.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/af/11/af11deb691f15fd4fa3a10b4cc174f9cef7f40f1.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 3,
+            "name": "Shacket",
+            "price": "46.73",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Shacket in woven fabric with a soft, brushed finish. Relaxed fit with a collar, press-studs down the front and a yoke with pleats at the back. Dropped shoulders and long sleeves with a press-stud at the cuffs. Flap chest pockets, discreet side pockets and a rounded hem. Slightly longer at the back. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F8c%2F7f%2F8c7fd4ee284c459a1fba6e073294c457427bb642.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F8f%2F23%2F8f2397b450e72b738ff339cf109a625890300ecc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fab%2F9e%2Fab9e79d78022a24e609466289b4113489742b2ce.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/9b/0f/9b0fb0117f65a64b66f6a884dccae7a927205aff.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 4,
+            "name": "Denim jacket",
+            "price": "30.49",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Jacket in sturdy cotton denim with a collar, buttons down the front and a yoke at the back. Loose fit with gently dropped shoulders, long sleeves with buttoned cuffs, flap chest pockets with a button and discreet front pockets.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fd1%2Fcf%2Fd1cf8b39d07909d33d67775c9fdf867bdc99b668.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F7f%2F32%2F7f322af68b66f9ea5816db152ff46a66232c1de8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F0b%2F66%2F0b667db33136631b956cf040e35f99964da1560c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/f2/a7/f2a7982b569cf036d9cb63cd8799f523727970a6.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 5,
+            "name": "Puffer jacket",
+            "price": "41.32",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Quilted puffer jacket in woven fabric. Relaxed fit with a stand-up collar, zip down the front, welt front pockets, covered elastication at the cuffs and an elasticated drawstring with cord stoppers at the hem. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb7%2F05%2Fb705369620197c933f311fe4a5bf6b6f2bc749cc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F97%2Fed%2F97ed8a554caa7bd9fc31a02dcdc91660bcb56ddf.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F57%2Fae%2F57ae93f2d4b899701dbb3e9b6ae7d022aeb8a4df.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/ce/53/ce53a6ef590fdf566a6a53762e97a2a09defbcaa.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 6,
+            "name": "Bouclé jacket",
+            "price": "41.32",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Jacket in a textured bouclé weave with a round neckline, buttons down the front and a yoke at the back. Open chest pockets and patch front pockets. Long sleeves with shoulder pads, and a straight-cut hem. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F53%2F1b%2F531ba8b41d212574cc0a0edff48b60faf1e145b2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fe0%2Fd7%2Fe0d7cd85abb720761dafafde51a2c32ca623442d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fd0%2F1d%2Fd01d078dfcdadd3afe680bdee9427fde61877e1c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/ad/71/ad712246f89e132516cbaac87575d0973d522c19.jpg],origin[dam],category[ladies_jacketscoats_jackets],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 7,
+            "name": "Knee-length down jacket",
+            "price": "81.01",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Knee-length jacket in nylon with a filling of 80% down and 20% feathers. Relaxed fit with a hood, stand-up collar with a chin guard and a practical two-way zip down the front for easy access. Long raglan sleeves with an adjustable hook and loop tab at the cuffs, discreet side pockets and a concealed elasticated drawstring at the hem. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F82%2Fde%2F82defc27253ac009f820d14e660d5d16d626f0ad.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F40%2Fad%2F40ad53b1107d9961f9666b63fe352c1565f6763a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F02%2F76%2F0276ffc1e473009b2c89ff7fd2941987167b16e0.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb5%2Fed%2Fb5edb8a78503f51746b6757cc699d9a4904c56eb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jacketscoats_jackets%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+        },
+        {
+            "id": 8,
+            "name": "H&M+ Denim jacket",
+            "price": "41.32",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Jacket in cotton denim with a collar, metal buttons down the front and a yoke at the back. Low dropped shoulders, wide sleeves with buttoned cuffs, flap chest pockets with a button and welt side pockets. Straight-cut hem with an adjustable tab and metal buttons at the sides.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc5%2Fee%2Fc5ee43d1e33a66b8ee3020ebc725b4d5605ae821.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F6b%2F8f%2F6b8f5f678e4baf45ec3c93eedf3dffc314761d56.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fbd%2F71%2Fbd71d74b6bed3dcef06d299f23adf1afb6b883ad.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/1a/c6/1ac62dd5fb3939e7bcb11caf7de053ac7eda1da6.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 9,
+            "name": "Appliquéd denim jacket",
+            "price": "59.36",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Jacket in sturdy cotton denim with embroidered appliqués on the front and back. Collar in soft teddy, buttons down the front and a yoke at the front and back. Dropped shoulders, buttoned cuffs, flap chest pockets with a button and discreet side pockets. Unlined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fd1%2F22%2Fd122d2459e412f5aad33f895cb2c717b4efb96be.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F67%2F86%2F6786d6751232fa4dd550e3050742fa604ae0cd66.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F27%2Ff1%2F27f1b2482f0a516e04413e8acf67e7d198771d0f.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/ac/9c/ac9c177b92209da6ada8ff1433cce597aeb60717.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 10,
+            "name": "Baseball jacket",
+            "price": "41.32",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Baseball jacket in soft, felted fabric with lightly padded sleeves in a contrasting colour. Loose fit with a small, ribbed collar, press-studs down the front and dropped shoulders. Diagonal welt pockets at the front and ribbing at the cuffs and hem. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe2%2F38%2Fe23870e229ebf67e62598476af96ecd2f1af30c4.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Ff5%2F40%2Ff54012254ac39a9d908d3bca11bd8e984835a3e6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F6b%2F26%2F6b26b664b0ee3c5534293fa4bf1fe69c0f4f527a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/9a/ca/9acaa9b9b2d7b542777171f23c7733ee1dba1b28.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 11,
+            "name": "Padded hooded outdoor jacket",
+            "price": "41.32",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Fitted outdoor jacket in woven fabric with a double-layered hood, stand-up collar and zip down the front with an anti-chafe chin guard. Padded front and back sections to keep you warm. Long sleeves in a raglan cut to minimise the risk of friction from the seams, and thumbhole trims to hold the sleeves in place and keep your wrists and hands extra warm. Stretch panel at each side for increased mobility, zipped front pockets for safe storage of valuables, and a rounded hem. Longer at the back for a better fit when moving. Partly lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F7b%2F22%2F7b2220449bece7ead2ea5ce4970a40c104c8bb7a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F43%2F6b%2F436bb172940b9ad102142bf231d19e8713279763.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb1%2F96%2Fb196b9cb33830f866adb95ad58ef64ed83c2ce1b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/e6/c6/e6c6294d6a30dc511d154f7af3408c06c91e7d61.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 12,
+            "name": "Short jacket",
+            "price": "48.53",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Short jacket in woven fabric with a collar, buttons down the front and flap pockets with a button. Long sleeves with decorative buttons at the cuffs. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe9%2Fe2%2Fe9e2975b27c4be0db1d2d6970d0a709a7b6992e8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Ff3%2Fdc%2Ff3dcbc21a8553211fc05887902dd4830ee1d575d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F44%2F4a%2F444a7b06c49bac15572631cf0dd1caf1363947bc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/e4/8c/e48cd92194f2ea5930d50db97a0fa5bbdb1dd99d.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 13,
+            "name": "Teddy-lined jacket",
+            "price": "59.36",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Short, boxy-style jacket with a large collar, cuffs, hem and lining in soft teddy. Buttons down the front, long sleeves and diagonal welt pockets at the front.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F1c%2F44%2F1c4492d3a1c49040567438ce217a3dc196969915.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F32%2F69%2F32695cc3c18a3e8b26c5d508ccffcbbbf7a33a53.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F13%2Fbf%2F13bfe4352d950b47c1c8db53e5d9a777e81b0e8f.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/6e/1b/6e1b21bc8fa1f0d914671127ca736d88ffe95c8f.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 14,
+            "name": "H&M+ Teddy jacket",
+            "price": "48.53",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Boxy-style jacket in soft teddy with a collar and zip down the front. Relaxed fit with dropped shoulders, long sleeves and diagonal welt pockets at the front. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F11%2F00%2F1100391bf3f7441f927518c29257691653f69abb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F20%2F1a%2F201ae2a6f5488ce7771df0e790b3753ed1b589d2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F52%2F30%2F52302ef4bdc2b59a20da1bb844e6c62b90453bc6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/46/9b/469ba43c7ecfa2773934447e95b5e31c386eea12.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 15,
+            "name": "Twill shacket",
+            "price": "35.90",
+            "gender": "Women's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Loose-fit shacket in cotton twill with a collar and concealed buttons down the front. Dropped shoulders, long sleeves and a concealed drawstring at the waist. Fake welt pocket on the chest, flap front pockets and a rounded hem. Slightly longer at the back. Unlined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fad%2Fab%2Fadab54fe48993b922fb8a6be4514a28b4d42c6ef.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fbf%2F7d%2Fbf7dad6be44afa020ae793c9cd5840008c26b775.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F0b%2F37%2F0b3717d314ea00a47b5bae44d0afff59b4eceed6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/2c/2a/2c2a48ca50d6036b3609693e080c3a7fa058923f.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 16,
+            "name": "Baseball jacket",
+            "price": "81.01",
+            "gender": "Man's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Baseball jacket in soft, felted fabric with lightly padded sleeves in a contrasting colour. Regular fit with press-studs down the front and welt front pockets with a press-stud. Small, ribbed stand-up collar and matching ribbing at the cuffs and hem. Inner pocket with a press-stud. Quilted lining.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F9c%2F8d%2F9c8d3b74ab81c37ebd27aca4fa5d7aceec1a130a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F3b%2F47%2F3b475f7f85ed755908c467eef5b43bef0f3092cb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Ff2%2Fd5%2Ff2d51c48f62daec4ce4ffa7493d04bddaefd5884.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/a3/5f/a35f03fe9e87afba4991ec36c4604c5831f33a1c.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 17,
+            "name": "Water-repellent hooded jacket",
+            "price": "62.97",
+            "gender": "Man's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Boxy-style jacket in windproof, water-repellent functional fabric designed to keep you dry during light showers and protect you from the wind. Hood with a peak and an elasticated drawstring. Zip and wind flap with press-studs down the front. Flap chest and front pockets with concealed press-studs and one inner pocket with a press-stud. Long sleeves with a press-stud at the cuffs and an elasticated drawstring at the hem for an adjustable fit. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F34%2Fcb%2F34cbbda63e5729cb8c0b412f30347d3b254bebc9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F20%2F66%2F206658733a786a62b1ee1c02863bef5ee430d181.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F4b%2Fd3%2F4bd35a0accd1ee5ce777e9f048286a9da1544ba8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/99/52/995251e30c2f1945bedd4c7e051c7d74008297c6.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 18,
+            "name": "Regular Fit Waterproof shell jacket",
+            "price": "144.16",
+            "gender": "Man's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Regular-fit shell jacket in wind- and waterproof functional fabric designed to keep you dry in the rain and protect you from the wind. Hood with an elasticated drawstring at the back to help it stay in place and fit snugly on the head, and a zip down the front with an anti-chafe chin guard. Zipped chest pocket for safe storage of valuables and zipped handwarmer pockets in each side. Zip under each sleeve for ventilation, adjustable hook and loop tab at the cuffs and an elasticated drawstring at the hem. Taped seams on the inside.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fe5%2F24%2Fe5240eb41978d7b06e51f8fcba0e12d5366a617b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F0d%2F52%2F0d52572d77bd94fff936a9164cc843c7d09c754b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F76%2Fc5%2F76c5235cf266b15e324db81cf7b149defdc36b9b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/84/f4/84f42f6046c2e158a077242153c2a439e410a5bf.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 19,
+            "name": "Wool-blend coat",
+            "price": "81.01",
+            "gender": "Man's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Coat in a soft, felted wool blend with notch lapels and buttons down the front. Long sleeves with decorative buttons at the cuffs. Flap front pockets, two inner pockets and a single back vent. Twill lining.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3f%2Ff6%2F3ff63f8674620de187067746b1cfc3753ea10a7e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F55%2Fdb%2F55db99106bf0ddec8580be937be993fecf8e9952.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb3%2F4d%2Fb34dd5588e45ba0a18da32aaa113eb2e724cbfef.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/cd/d1/cdd117820304127068095565d804e5444f73f7cc.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 20,
+            "name": "Water-repellent puffer jacket",
+            "price": "62.97",
+            "gender": "Man's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Quilted puffer jacket in windproof, water-repellent fabric. Lined, trimmed hood that can be unzipped and detached and has a concealed, elastic drawstring. Stand-up collar and a zip and wind flap with press-studs down the front. Side seam pockets with a press-stud, and one inner pocket with a press-stud. Concealed, elastic drawstring at the hem. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fcd%2Fe9%2Fcde9ddef845d5d4a49b1c760374b826956fc5e54.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Ffe%2Fa0%2Ffea02926fe22a2f2f9fd8d257236fd26721fa612.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F8b%2Fea%2F8bea70669535b674416b1f97b2ac2698459cc252.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/a7/fb/a7fbe332ad49afda6ca8fbd0a9107e6384253443.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 21,
+            "name": "Oversized Fit Bomber jacket",
+            "price": "90.03",
+            "gender": "Man's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Lightly padded bomber jacket in woven fabric with embroidered motifs on the front and back. Oversized fit with a ribbed, stand-up collar and a zip down the front. Flap side pockets and two inner pockets with a concealed press-stud, and a zipped sleeve pocket. Wide ribbing at the cuffs and hem. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fcf%2F0e%2Fcf0e0a3c02a7e34ac3a6328654f9f138640a14e5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3c%2F48%2F3c48518e41c6208f35b889625367cf3fdf486e79.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F2f%2F6f%2F2f6fc2cefc30634c07eed824dfef30987b33e8df.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/fa/42/fa425d067933b5c92ab6333156a7dd572e86551e.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 22,
+            "name": "Bomber jacket",
+            "price": "35.90",
+            "gender": "Man's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Lightweight bomber jacket in woven fabric with a ribbed stand-up collar and zip down the front. Side pockets with a concealed press-stud, and an inner pocket with a press-stud. Wide ribbing at the cuffs and hem. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd4%2F4e%2Fd44e83d817895c490b869864e65407da20d0c30c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fd4%2Fe6%2Fd4e6c39fad87d43b92bcd787218e250c62725918.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F87%2Ff1%2F87f19d12d76f53efaffbd4446caa57fb3a2f59d2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/e3/a8/e3a8271acf38f9ec4863dea6e0eef850546967b9.jpg],origin[dam],category[men_jacketscoats_bomberjackets],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 23,
+            "name": "Water-repellent jacket",
+            "price": "59.36",
+            "gender": "Man's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Padded jacket in windproof, water-repellent functional fabric designed to keep you dry during light showers and protect you from the wind. Stand-up collar, zip down the front, a zipped chest pocket, discreet side pockets and an inner pocket with a hook and loop fastening. Covered elastication and an adjustable tab with a press-stud at the cuffs. Concealed, elasticated drawstring at the hem. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Ff7%2F31%2Ff73136afcabbf89b0c5e569e89c04f643135dd26.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F5a%2Fe1%2F5ae1de5049e3fce1f84fb46cf1f5f7136539405b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fe3%2Feb%2Fe3eb044328d672567c1ab2437dd93e4e6a775f23.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/ad/e6/ade695195aef6ef2a2abbd2b2e4266ae074f82a9.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 24,
+            "name": "Softshell parka",
+            "price": "90.03",
+            "gender": "Man's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Softshell parka in windproof, water-repellent functional fabric designed to help keep you dry during light showers and protect you from the wind. Hood with an elasticated drawstring at the front and back to help it stay in place and fit snugly on the head. Stand-up collar, a two-way zip down the front with an anti-chafe chin guard, a concealed chest pocket with a zip, and zipped side pockets. Long sleeves with an adjustable hook and loop tab at the cuffs.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb2%2Fcd%2Fb2cda30f539083e2b1b07d0fdd2cbe9144cd2264.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F7b%2F56%2F7b560ec478ec67e0e7cde83723b7a6ecefcebff9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fad%2F41%2Fad41675b34af01c04df9bab642bf383dec3cc0b9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/c6/da/c6da6957a0920039a91180e1fb4f8f7bfa2b6f5b.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 25,
+            "name": "Regular Fit Fleece sports jacket",
+            "price": "48.53",
+            "gender": "Man's jacket",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Regular-fit sports jacket made partly from thermal fleece and partly from windproof, water-repellent functional fabric designed to keep you dry during light showers and protect you from the wind. Stand-up collar and a zip down the front. Two flap chest pockets with hook and loop fastening, one zipped chest pocket, and a zipped welt pocket in each side for safe storage of valuables. Elastic trims at the cuffs and hem. Unlined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F89%2Fb1%2F89b1ebc25082cffd33f8508f85bd02adeb792a3e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F03%2F80%2F03807dc392600dcbff157463fd67cfe1d251f14a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Faf%2F44%2Faf44cc5b36cafbf862fd9e2041a916fea9a341b5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/a6/79/a67906eb84dd2c52ecb2352988ace0d64c58a005.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        }
+    ],
+    "clothes": [
+        {
+            "id": 1,
+            "name": "Fringe-trimmed silk-blend dress",
+            "price": "144.16",
+            "gender": "Women's dress",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Ankle-length, fitted dress in a viscose and silk weave with fringe trims. V-shaped neckline, wide, double-layered shoulder straps and a concealed zip at one side. Viscose lining.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F2e%2Fb6%2F2eb64596df4305559dc789c22c3e134720f9bac4.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F4f%2Fbd%2F4fbdaede7a3ead6690d42661b2bec044b6aefff9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F1a%2Fb1%2F1ab166be9aa5c89125c20c93831dea3bfc4d05e7.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/de/13/de13417b566e50ae139ba4f0c95962674f41b53f.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 2,
+            "name": "A-line silk skirt",
+            "price": "144.16",
+            "gender": "Women's dress",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Long, A-line skirt in softly draping silk. High waist with covered elastication and discreet pockets in the side seams. Soft viscose twill lining.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fba%2Fea%2Fbaea6d359dda1de1d9c81386c76efc81e0fb2ae2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fc8%2F42%2Fc8421ecb48d5b16d7dc8e56843df6b7246dbd05a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F0e%2Fb5%2F0eb53ce9663ca8384a8fedcc1ca1a5577de1b3ca.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/80/b3/80b3c78a7553edba0a38edd83a54048f4cbcb204.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 3,
+            "name": "Lyocell-blend tunic dress",
+            "price": "126.12",
+            "gender": "Women's dress",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Long tunic dress in woven fabric made from a lyocell blend with stripes in contrasting colours containing some glittery threads. Loose fit with a slight A-line shape, a deep, round neckline and long, wide sleeves. Seams with delicate piping at the cuffs and hem. Unlined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F40%2F2f%2F402f506477faab576f9f47e4b21fe82106a1ebe6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F71%2F8d%2F718d48c6ebf93d1c876cc4db114b9b3f24a42854.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fd5%2Fa2%2Fd5a241b80d3c348952a107ebb96721212b67c1e1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/a6/52/a6528b21abdb24dba8d8ca9e6ac58477a2ff6911.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 4,
+            "name": "Rhinestone-embellished net dress",
+            "price": "99.05",
+            "gender": "Women's dress",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Long, fitted net dress scattered with shimmering rhinestones. Round neckline and long sleeves with gently flared cuffs. Raw-cut edges at the cuffs and hem. Unlined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F69%2F50%2F6950d52954562d3eef481a872df95a4ec75e84a6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Ff6%2Fe9%2Ff6e93bfe3d7489ba8ec36ca0357e89619391601a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F04%2Fec%2F04ecda5bbc31597eaddf9b92cbbb994596922f25.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/bc/c5/bcc52c78aa137b051c2fceddd1ebcc101260e25e.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 5,
+            "name": "Embroidered dress",
+            "price": "90.03",
+            "gender": "Women's dress",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Calf-length, fitted dress in an embroidered cotton weave with scalloped edges. V-shaped neckline and spaghetti shoulder straps that cross and lace through the low-cut back. Concealed zip and a hook-and-eye fastener at one side. Lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F23%2F38%2F233849f8621c2daa3c55da12e4774b3a3194f206.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F48%2F20%2F48200711a23b08050379ff2989a7f64b7510d70a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb9%2F82%2Fb982d4cb3266789729d381cf43b0d5fb77c5cff8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/c6/08/c6084cb373d85352c61ecdc58487b206efd61696.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 6,
+            "name": "Flounce-trimmed dress",
+            "price": "90.03",
+            "gender": "Women's dress",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Calf-length dress in an airy weave made from a lyocell blend with wide, billowing flounces. Deep V-neckline, narrow, horizontal ties at the back of the neck and a concealed zip at one side. Partly lined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fcd%2F90%2Fcd90c817ad1de9dac5aab60a413fce0b3f436128.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F92%2Fdc%2F92dceb49e11a832613a4981e501bdd40af410456.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F27%2F7d%2F277d19b7a0f1662c205064fb043494daf265beb1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/bc/f9/bcf906abdc8f14d68dcd94784959012db84df277.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 7,
+            "name": "Crochet-look dress",
+            "price": "84.62",
+            "gender": "Women's dress",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Calf-length, sleeveless dress in lace with a crocheted look. Round neckline, a concealed zip at the back and a scalloped hem. Jersey lining.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ff7%2Fea%2Ff7ea314a5b217de98a7a92832d92bebbd95b9319.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F2f%2F91%2F2f91ad31ed1c86b736172a81c1415ba6278bef62.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fdd%2Fd6%2Fddd6b4a0c5929bec73c7af39cdffe316ab06691c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/74/2d/742dd1cf26c526c0ad5cd8691a8083d34b1bf275.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 8,
+            "name": "Broderie anglaise dress",
+            "price": "81.01",
+            "gender": "Women's dress",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Short dress in woven fabric with broderie anglaise. Round neckline and an opening with a concealed button at the back of the neck. Long, flared sleeves and a gently A-line skirt. Scalloped edges at the cuffs and hem. Underdress in a soft viscose weave with narrow, adjustable shoulder straps.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F9a%2F73%2F9a739bded1ae2284d43cf8055746a1536ad6936d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fe8%2Fd5%2Fe8d5d02349c8d0d28c6b65f1b735c7fd98d38893.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb9%2Fb1%2Fb9b11701f18b8e68829b20118e816e64a40e6e41.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/df/5f/df5f105ab9d69967c366fd8b54f9499bf6de8d17.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 9,
+            "name": "Embroidered dress",
+            "price": "81.01",
+            "gender": "Women's dress",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Short dress in woven fabric with elegant embroidery in the same tone. Round neckline, a keyhole opening with a covered button and a concealed zip at the back. Long balloon sleeves with narrow elastication at the cuffs. Gathered seam at the waist and a gently flared skirt. Unlined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F8a%2F5d%2F8a5d53b97a113c42ed3aa677c5d65238ab89d9ed.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F1b%2F16%2F1b16701fd2373e1f6407de16fafa43b3a66117b1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F56%2F42%2F56428b047725ee1360c56a4b947fa247dfa1a6b9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/b5/96/b5964f904378b2d7434146f128099051250b07d8.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 10,
+            "name": "Embroidered tunic dress",
+            "price": "62.97",
+            "gender": "Women's dress",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Short, oversized dress in a lyocell and cotton weave with a collar and a V-shaped opening at the front. Dropped shoulders, long, voluminous sleeves with broderie anglaise and cuffs with a slit and spaghetti ties. Scallop-edged hem with decorative embroidery. Unlined.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F98%2F27%2F9827daa3a29e4698a1f92f19e083057bc65b9d96.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fee%2Fb2%2Feeb2ac007941d9b37a0ec60323584e8666274b38.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F2c%2F50%2F2c50d72aea4486bb2db16e565b791eb6f82c7638.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/c2/4a/c24a1071f460ace040df4209a01d57925c544b90.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 11,
+            "name": "Relaxed Fit Embroidered resort shirt",
+            "price": "41.32",
+            "gender": "Men's shirt",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Short-sleeved shirt in crisp cotton poplin with embroidered motifs. Relaxed fit with a resort collar, French front, buttons down the front and a yoke at the back. Open chest pocket and a straight-cut hem.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F14%2Ffc%2F14fc62fe286a2a78ed52e1d46e3a1868d9ef8706.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Ff9%2F6c%2Ff96c00aa510c866d4a9010f40da16683fc419afb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F16%2F77%2F1677e91af711ca69b10297632b0c227d9f695c8c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fbe%2Fe8%2Fbee8434ce5454d291c3841193abeda5891c5b62c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+        },
+        {
+            "id": 12,
+            "name": "Regular Fit Textured-knit resort shirt",
+            "price": "41.32",
+            "gender": "Men's shirt",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Short-sleeved shirt in a textured knit made from a cotton and viscose blend. Regular fit with a resort collar, classic front and a straight hem.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ff6%2F10%2Ff61080215e20c58e0c7407930cdc4c64cd88b982.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F2b%2Fa0%2F2ba0b3c734b60eee08aba20fa0a961ea856bea14.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F0d%2Fd1%2F0dd128707d169b61e754132b7621ecff95476616.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/5f/23/5f236190edc773b1a8dc36301c12a29805674316.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 13,
+            "name": "Regular Fit Crochet-look resort shirt",
+            "price": "41.32",
+            "gender": "Men's shirt",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Short-sleeved shirt in pointelle-knit cotton with a crocheted look. Regular fit with a resort collar, buttons down the front and a straight hem.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F01%2F73%2F0173538d83ea28fba4ea32d55e9050c492f00ea8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F1d%2Fb5%2F1db5d7b45981e9ede032cf187d08a310121e0865.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F93%2F53%2F9353f0295ed6382cbe06480ea0847a1f6fba9d7d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/39/49/3949194c193543fb724f22ce694a5a8cc4587003.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 14,
+            "name": "Oversized Fit Corduroy overshirt",
+            "price": "59.36",
+            "gender": "Men's shirt",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Oversized overshirt in soft cotton corduroy with embroidered appliqués. Turn-down collar, press-studs down the front, an open chest pocket and a yoke at the back. Long sleeves with buttoned cuffs and a sleeve placket with a link button. Rounded hem.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fbf%2F0c%2Fbf0cfbe03b76d7b21e72f85018d52bacfe1876b6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fe7%2F6a%2Fe76a6bd678e4da0750d089c928ca18904e42c996.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F1e%2F69%2F1e6948d72117a41e0d8764c1494988057745f140.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F12%2F1a%2F121a44574db536ffcb2cb8dd6b2ea3642608b59e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+        },
+        {
+            "id": 15,
+            "name": "Water-repellent shirt with detachable sleeves",
+            "price": "59.36",
+            "gender": "Men's shirt",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Lightweight shirt in stretch, windproof, water-repellent functional fabric designed to keep you dry during light showers and protect you from the wind. Oversized fit with a collar, press-studs down the front, daisy chain loops with a carabiner hook on the chest and a rounded hem. Large front pockets and a back pocket with a hook and loop fastening. Dropped shoulders and long sleeves with a sleeve placket and press-studs at the cuffs. The sleeves are detachable with a concealed zip and can be stored in the back pocket.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fdf%2F65%2Fdf6534304c02adf5d7d7f6db6d1ff2d37483a01f.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F71%2Fad%2F71ad6291940a5861818348420d0c27fb89697cbd.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F4f%2F74%2F4f741a3abf7fd75cc0ca8e6d246134b484679ad9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/53/a5/53a5ff688580236ba0245722ccb8f0b94facf086.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 16,
+            "name": "Relaxed Fit T-shirt",
+            "price": "16.22",
+            "gender": "Men's shirt",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "T-shirt in soft, printed cotton jersey. Relaxed fit with dropped shoulders and a round neckline with a narrow trim.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F69%2F26%2F6926631086337d2449c1555b7518e09d173a82d8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F2e%2Fcb%2F2ecb4aadbf79e818cd9917fafe2af53580e59b28.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F1f%2Ff0%2F1ff073cf1f0ab25627e28a49f5381f15a9eb97bd.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fcc%2F25%2Fcc25c4be291bc7a35fddace51ded9d3dac6d7ade.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+        },
+        {
+            "id": 17,
+            "name": "Relaxed Fit Patterned resort shirt",
+            "price": "16.22",
+            "gender": "Men's shirt",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Relaxed-fit shirt in a patterned viscose weave with a resort collar, French front, short sleeves and a straight-cut hem.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F92%2F1d%2F921dd52558769607b95bd052265a7db4e479eb25.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F52%2F5e%2F525e2e1761f3d6a93c582c865c4b12973647d25e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F20%2F96%2F209611be763ff52477502ec587957582e3b12e47.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/f1/22/f12277ca9dea7a546e497733a5c1551026f7133a.jpg],origin[dam],category[men_shirts_shortsleeved],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 18,
+            "name": "Relaxed Fit Patterned resort shirt",
+            "price": "16.22",
+            "gender": "Men's shirt",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Relaxed-fit shirt in a patterned viscose weave with a resort collar, French front, short sleeves and a straight-cut hem.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F78%2F65%2F786548d5e525a8f11ba5429642e6949445e36a3d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Ff4%2Fd9%2Ff4d9c3e171e71258072a1520ff23cae923e72db5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F82%2F6c%2F826c78ec6fe291c60947a2ae3760f81a814e191a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/a8/ca/a8ca1d5d8c85c0a3610ac84ff1423d6e210d0626.jpg],origin[dam],category[men_shirts_shortsleeved],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 19,
+            "name": "Regular Fit Short-sleeved lyocell shirt",
+            "price": "27.95",
+            "gender": "Men's shirt",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Short-sleeved shirt in a patterned lyocell weave. Regular fit with a turn-down collar, French front and straight-cut hem with a slit in each side. Fabric made from lyocell is super soft, wrinkle resistant and drapes beautifully.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F74%2Fe2%2F74e2b9bb07d0a3eed2dea48aaaec38bf75259926.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fab%2F55%2Fab559f6cc8121adb14f70595ef5d402f0751b48d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fc5%2F72%2Fc5723af82e936c9e5ba0e198eeb1de376657dc91.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/73/9b/739bdd817e84951faa55c054d4ce9bed836bcd03.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        },
+        {
+            "id": 20,
+            "name": "Relaxed Fit Short-sleeved shirt",
+            "price": "10.81",
+            "gender": "Men's shirt",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Relaxed-fit shirt in a cotton weave with a turn-down collar, classic front and a yoke at the back. Open chest pocket, long sleeves and a straight-cut hem.",
+                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F13%2F39%2F1339a9feb8e1df56c99659ef1e8d91a511d6f7e6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Feb%2F98%2Feb98c1fecbb474c22f11783d024b9e905c498646.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F3d%2Ff9%2F3df9ef6571855fd29a4cc18bafcb48e043a2b060.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                }
+            ],
+            "img": "https://lp2.hm.com/hmgoepprod?set=source[/85/8a/858add0c134433efbce45ce9357d39970623c4f1.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        }
+    ]
+}

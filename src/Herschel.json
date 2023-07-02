@@ -1,0 +1,388 @@
+{
+    "bags": [
+            {
+                "id": 1,
+                "name": "Herschel Retreat™ Backpack",
+                "price": "110",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Ankle-length, fitted dress in a viscose and silk weave with fringe trims. V-shaped neckline, wide, double-layered shoulder straps and a concealed zip at one side. Viscose lining.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11397/11397-00001-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11397/11397-00001-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11397/11397-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11397/11397-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11397/11397-00001-OS_01.jpg.sthumbnails.680.850.webp"
+            },
+                {
+                "id": 2,
+                "name": "Herschel Heritage™ Backpack",
+                "price": "80",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Never gets old. Featuring our signature diamond detail, this timeless backpack is made for today's journeys. A padded sleeve protects your laptop and a front pocket organizes the little things.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11383/11383-00055-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11383/11383-00055-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11383/11383-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11383/11383-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11383/11383-00055-OS_01.jpg.sthumbnails.680.850.webp"
+            },
+            {
+                "id": 3,
+                "name": "Herschel Nova™ Backpack",
+                "price": "80",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Built to go. Made from our 100% recycled EcoSystem™ fabrics, the Nova Backpack comfortably carries the essentials you need to move through busy days.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11392/11392-05655-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11392/11392-05655-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11392/11392-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11392/11392-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11392/11392-05655-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 4,
+                "name": "Herschel Little America™ Backpack",
+                "price": "130.",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Our signature backpack. Iconic mountain style, reinvented with recycled EcoSystem™ materials — this one's built to carry everything you need for a full day.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11390/11390-00001-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11390/11390-00001-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11390/11390-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11390/11390-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11390/11390-00001-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 5,
+                "name": "Kaslo Backpack Tech",
+                "price": "150",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Stay connected with the Kaslo Backpack Tech. Reimagined with 100% recycled EcoSystem™ materials made from post-consumer water bottles, it features a convenient luggage trolley sleeve and pockets for in-flight essentials. Pack everything you need in three main compartments designed with organizers for well-packed journeys.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11288/11288-01866-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11288/11288-01866-OS_04.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11288/11288-01866-OS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11288/11288-01866-OS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11288/11288-01866-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 6,
+                "name": "Pop Quiz Backpack",
+                "price": "95",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Ready for anything. Made with 100% recycled EcoSystem™ fabrics, this backpack has multiple pockets — inside and out — to keep everything organized on journeys to school or work.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11405/11405-00055-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11405/11405-00055-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11405/11405-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11405/11405-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11405/11405-00055-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 7,
+                "name": "Herschel Classic Backpack | XL",
+                "price": "65",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Room for adventure. Sized for everything you love to do, this backpack is made with 100% recycled EcoSystem™ fabrics and has the volume you need to pack everything in.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11380/11380-05886-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11380/11380-05886-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11380/11380-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11380/11380-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11380/11380-05886-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 8,
+                "name": "Seymour Backpack",
+                "price": "100",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Pack your day. Combining a streamlined design with innovative features and intuitive organization, this backpack fits everything you need for work — and whatever you're doing after.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11403/11403-05913-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11403/11403-05913-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11403/11403-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11403/11403-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11403/11403-05913-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 9,
+                "name": "Herschel Survey Backpack",
+                "price": "90",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Lean, clean, made to move. Created to navigate city terrain on bike or foot, streamlined to glide through crowded buses and trains — however you commute, the Survey Backpack carries your workday essentials.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11404/11404-00001-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11404/11404-00001-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11404/11404-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11404/11404-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11404/11404-00001-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 10,
+                "name": "Kaslo Daypack Tech",
+                "price": "130",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Stay connected with the Kaslo Daypack Tech. Reimagined with 100% recycled EcoSystem™ materials made from post-consumer water bottles, it features multiple compartments and pockets for organizing devices and essentials on every journey.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11289/11289-01866-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11289/11289-01866-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11289/11289-01866-OS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11289/11289-01866-OS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11289/11289-01866-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 11,
+                "name": "Settlement Backpack",
+                "price": "80",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Keep it simple. The minimalist Settlement Backpack carries and organizes the essentials you need to navigate life and work.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11407/11407-04281-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11407/11407-04281-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11407/11407-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11407/11407-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11407/11407-04281-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 12,
+                "name": "Herschel™ Classic Backpack | Mini",
+                "price": "45",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Our Classic made mini. Made from 100% recycled EcoSystem™ fabrics, our most compact Classic Backpack carries and organizes the essentials for work and play.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11379/11379-05899-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11379/11379-05899-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11379/11379-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11379/11379-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11379/11379-05899-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 13,
+                "name": "Herschel Heritage Backpack | Kids",
+                "price": "45",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Offering the same look as the timeless signature silhouette, but sized for children who are 3 - 7 years old, the durable Herschel Heritage™ Kids backpack is perfect for a trip to the playground.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11387/11387-05891-OS_03.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11387/11387-05891-OS_04.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11387/11387-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11387/11387-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11387/11387-05891-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 14,
+                "name": "Herschel Heritage Backpack | Youth",
+                "price": "55",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Preserving the timeless appeal of a signature design, but sized for children who are 8 - 12 years old, the Herschel Heritage™ Youth backpack is a stylish playground staple with functional storage features.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11389/11389-05896-OS_03.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11389/11389-05896-OS_04.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11389/11389-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11389/11389-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11389/11389-05896-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 15,
+                "name": "Herschel Nova Backpack | Mini",
+                "price": "60",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Small backpack for big plans. Sized for the essentials, the smaller Nova Backpack holds what you need for daily journeys and spontaneous adventures.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11395/11395-05881-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11395/11395-05881-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11395/11395-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11395/11395-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11395/11395-05881-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 16,
+                "name": "Survey Backpack II Weather Resistant",
+                "price": "110",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Made for your daily commute. Constructed with recycled materials and a matte coating, the Weather Resistant Herschel Survey™ II backpack features a laptop sleeve and mesh organizers for journeys through the city.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/10999/10999-00001-OS_03.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/10999/10999-00001-OS_04.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/10999/10999-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/10999/10999-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/10999/10999-00001-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 17,
+                "name": "Roll Top Backpack Weather Resistant",
+                "price": "115",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Ready for rain. Constructed with recycled materials and a matte coating, the Weather Resistant Roll Top backpack features a roll up sealing system to keep your tech and essentials dry on daily journeys.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11194/11194-00001-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11194/11194-00001-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11194/11194-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11194/11194-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11194/11194-00001-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 18,
+                "name": "City Backpack",
+                "price": "75",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Light, fast and made to get to work. This streamlined backpack has the pockets to organize your work tools and a sleek profile that moves effortlessly through busy sidewalks and crowded subways.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11376/11376-00001-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11376/11376-00001-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11376/11376-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11376/11376-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11376/11376-00001-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 19,
+                "name": "Little America Backpack Heavyweight Canvas",
+                "price": "198",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Room for adventure. Sized for everything you love to do, this backpack is made with 100% recycled EcoSystem™ fabrics and has the volume you need to pack everything in.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11001/11001-00528-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11001/11001-00528-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11001/11001-00528-OS_03.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11001/11001-00528-OS_04.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11001/11001-00528-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 20,
+                "name": "Heritage Backpack Heavyweight Canvas",
+                "price": "135",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Better with time. Constructed with weather-resistant canvas, the Heavyweight Canvas Herschel Heritage™ backpack features a diamond detail inspired by classic mountaineering styles.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11000/11000-00001-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11000/11000-00001-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11000/11000-00001-OS_03.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11000/11000-00001-OS_04.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11000/11000-00001-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 21,
+                "name": "Bamfield Tote Heavyweight Canvas",
+                "price": "100",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Better with time. Constructed with weather-resistant canvas, the Heavyweight Canvas Bamfield tote is a structured, classic style for everyday use.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11037/11037-00001-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11037/11037-00001-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11037/11037-ALLCOLORS_04.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11037/11037-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11037/11037-00001-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 22,
+                "name": "Herschel Heritage Crossbody Weather Resistant",
+                "price": "50",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Made for your daily commute. Constructed with recycled materials and a matte coating, the Weather Resistant Herschel Heritage™ Crossbody is a boxy style with an adjustable shoulder strap for hands free journeys in any weather.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11240/11240-05726-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11240/11240-05726-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11240/11240-05752-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/11240/11240-05752-OS_02.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11240/11240-05726-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 23,
+                "name": "Grade Messenger | Mid-Volume",
+                "price": "50",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "A modern rendition of a timeless commuter style, the sized-down Grade Mid-Volume messenger offers convenient storage options and a clip-fastened crossbody strap.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/10687/10687-05643-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/10687/10687-05643-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/10687/10687-05643-OS_03.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/10687/10687-05643-OS_04.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/10687/10687-05643-OS_01.jpg.sthumbnails.2000.2500.webp"
+            },
+            {
+                "id": 24,
+                "name": "Outfitter 30L Duffle",
+                "price": "130",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "The Outfitter travel duffle features Herschel Supply's innovative shoe compartment, stowable backpack straps and a U-shaped closure for convenient packing and easy access.",
+                        "img1": "https://herschel.com/content/dam/herschel/products/10796/10796-00001-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/10796/10796-00001-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/10796/10796-00001-OS_03.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://herschel.com/content/dam/herschel/products/10796/10796-00001-OS_04.jpg.sthumbnails.2000.2500.webp"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/10796/10796-00001-OS_01.jpg.sthumbnails.2000.2500.webp"
+            }
+    ]
+}
