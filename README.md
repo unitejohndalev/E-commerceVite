@@ -1,35 +1,49 @@
 # E-commerceVite
 
-create using react vite with git bash
+Created using react vite with git bash<br/>
 
-$ npm create vite@latest your-app-name -- -- template react  // create a vite app
-$ npm i                                                      // to install dependencies
-$ code .                                                     // to open code editor
-$ npm run dev                                                // to star app
+```$ npm create vite@latest your-app-name -- -- template react ```
+-- to create a react vite app<br/>
 
-install tailwind with postcss and autoprefixer 
-npm install -D tailwindcss postcss autoprefixer              // to install packages
-npx tailwindcss init -p                                      // to install tailwind.config.js and postcss.config.js
+```$ npm i ```
+-- to install app packages<br/>
 
+```$ code .```
+-- to open code editor<br/>
 
-configure tailwind and index.css
-copy the code below and paste it in tailwind.config.js
+```$ npm run dev ```
+-- to star app<br/>
 
-/** @type {import('tailwindcss').Config} */
+<br/>
+Install tailwind with postcss and autoprefixer <br/>
+
+```npm install -D tailwindcss postcss autoprefixer ```
+-- to install packages<br/>
+
+```npx tailwindcss init -p```
+-- to install tailwind.config.js and postcss.config.js<br/>
+
+<br/>
+Configure tailwind and index.css<br/>
+
+```copy the code below and paste it in tailwind.config.js```
+```/** @type {import('tailwindcss').Config} *
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+    "./index.html",<
+    "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {},
-  },
+  },<br/>
   plugins: [],
 }
+```
 
-copy the code below and paste it in index.css
-
-@tailwind base;
-@tailwind components;
+```copy the code below and paste it in index.css```
+```
+@tailwind base; <br/>
+@tailwind components;<br/>
 @tailwind utilities;
+```
+
 
