@@ -40,7 +40,7 @@ export default {
   plugins: [],
 }
 ```
-<br/>
+
 ```copy the code below and paste it in index.css```
 ```
 @tailwind base; <br/>
