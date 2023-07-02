@@ -67,9 +67,7 @@ copy the code below and paste it in index.css
 
 @tailwind base;
 
-
 @tailwind components;
-
 
 @tailwind utilities;
 
