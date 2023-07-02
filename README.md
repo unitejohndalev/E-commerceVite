@@ -14,17 +14,18 @@ configure tailwind and index.css<br/>
 
 copy the code below and paste it in tailwind.config.js<br/>
 ```/** @type {import('tailwindcss').Config} */<br/>
-export default {<br/>
-  content: [<br/>
-    "./index.html",<br/>
-    "./src/**/*.{js,ts,jsx,tsx}",<br/>
+export default {
+  content: [
+    "./index.html",<
+    "./src/**/*.{js,ts,jsx,tsx}",
     
-  ],<br/>
-  theme: {<br/>
-    extend: {},<br/>
+  ],
+  theme: {
+    extend: {},
   },<br/>
-  plugins: [],<br/>
-}<br/>
+  plugins: [],
+}
+```
 
 copy the code below and paste it in index.css<br/>
 @tailwind base; <br/>
