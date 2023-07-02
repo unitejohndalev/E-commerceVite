@@ -3,9 +3,17 @@
 create using react vite with git bash
 
 $ npm create vite@latest your-app-name -- -- template react  // create a vite app
+
+
 $ npm i                                                      // to install dependencies
+
+
 $ code .                                                     // to open code editor
+
+
 $ npm run dev                                                // to star app
+
+
 
 install tailwind with postcss and autoprefixer 
 npm install -D tailwindcss postcss autoprefixer              // to install packages
