@@ -30,7 +30,7 @@ const NikeProducts = () => {
   return (
     <div className="container max-w-[100%] ">
       <div ref={nikeRef} className="relative ">
-      {/* toggle button */}
+        {/* toggle button */}
         <button
           className=" lg:h-[50px] lg:w-[150px] rounded-xl mt-2 bg-red-600 text-white font-medium
            text-[1.2rem] fixed top-1 z-10 px-[2px] transition-all"
@@ -39,11 +39,11 @@ const NikeProducts = () => {
           NIKE
         </button>
         <div>
-        {/* show state */}
+          {/* show state */}
           {show && (
-            <div className="overflow-hidden">
+            <div className="h-[100vh] overflow-auto">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-9 mt-[150px] transition-all">
-              {/* map first data */}
+                {/* map first data */}
                 {shoes.map((products) => {
                   //destructure product shoes data
                   const { id, name, price, gender, img } = products;
@@ -71,7 +71,7 @@ const NikeProducts = () => {
                 })}
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-10">
-              {/* map first data */}
+                {/* map first data */}
                 {hats.map((products) => {
                   //destructure product hats data
                   const { id, name, price, img } = products;

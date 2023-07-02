@@ -29,7 +29,7 @@ const NikeProductDescription = () => {
   return (
     <div>
       <div ref={NikeRef} className="">
-      {/* toggle button */}
+        {/* toggle button */}
         <button
           className="top-[45px] ml-[16px] lg:h-[50px] lg:w-[150px] rounded-xl mt-2 bg-red-600 text-white font-medium
          text-[1.2rem] lg:ml-[750px] lg:top-1 fixed z-10 px-[2px] transition-all"
@@ -39,18 +39,20 @@ const NikeProductDescription = () => {
         </button>
         {/* show state */}
         {show && (
-          <div>
+          <div className="h-[100vh] overflow-auto">
             <div>
-            {/* map first data */}
+              {/* map first data */}
               {shoes.map((info) => {
-                {/* destructure data */}
+                {
+                  /* destructure data */
+                }
                 const { description, name, id } = info;
                 return (
                   <div key={id} className="relative">
-                  {/* get nested data */}
+                    {/* get nested data */}
                     {description && (
                       <div className="mt-10 shadow-xl w-[90%] mx-auto">
-                      {/* map second data */}
+                        {/* map second data */}
                         {description.map((desInfo) => {
                           const { id, info, img1, img2, img3 } = desInfo;
                           return (

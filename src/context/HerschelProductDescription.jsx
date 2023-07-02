@@ -32,7 +32,7 @@ const HerschelProductDescription = () => {
           HerschelInfo
         </button>
         {show && (
-          <div>
+          <div className="h-[100vh] overflow-auto">
             {bags.map((jacketsData) => {
               const { name, description, id } = jacketsData;
               return (

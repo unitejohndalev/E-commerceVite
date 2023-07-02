@@ -32,7 +32,7 @@ const HMProductDescription = () => {
           HMInfo
         </button>
         {show && (
-          <div>
+          <div className="h-[100vh] overflow-auto">
             <div>
               <div>
                 {jackets.map((jacketsData) => {

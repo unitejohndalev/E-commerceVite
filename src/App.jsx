@@ -9,12 +9,12 @@ import HerschelProductDescription from "./context/HerschelProductDescription";
 function App() {
   return (
     <>
-      {/* <NikeProducts /> */}
+      <NikeProducts />
       <HMProducts />
-      {/* <HerschelProducts /> */}
-      {/* <NikeProductDescription /> */}
+      <HerschelProducts />
+      <NikeProductDescription />
       <HMProductDescription />
-      {/* <HerschelProductDescription /> */}
+      <HerschelProductDescription />
     </>
   );
 }

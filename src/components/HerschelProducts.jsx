@@ -33,7 +33,7 @@ const HerschelProducts = () => {
         </button>
         <div>
           {show && (
-            <div className="overflow-hidden">
+            <div className="h-[100vh] overflow-auto">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-[200px] mt-[150px] transition-all">
                 {bags.map((products) => {
                   const { id, name, price, img } = products;
