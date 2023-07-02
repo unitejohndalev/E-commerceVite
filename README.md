@@ -27,7 +27,7 @@ export default {
 }
 ```
 
-copy the code below and paste it in index.css<br/>
+```copy the code below and paste it in index.css<br/>```
 ```
 @tailwind base; <br/>
 @tailwind components;<br/>
