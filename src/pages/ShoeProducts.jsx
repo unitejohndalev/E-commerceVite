@@ -7,7 +7,7 @@ import NikeProducts from "../components/NikeProducts"
 
 const ShoeProducts = () => {
   return (
-    <div className="border-solid border-2 border-red-800">
+    <div className=" ">
       <NikeProducts />
       <NikeProductDescription />
     </div>

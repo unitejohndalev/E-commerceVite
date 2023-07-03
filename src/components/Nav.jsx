@@ -189,7 +189,7 @@ function NavListMenu() {
           </Typography>
         </MenuHandler>
 
-        <MenuList className=" hidden lg:block mt-2 w-[100%] bg-transparent shadow-none ">
+        <MenuList className=" hidden lg:block mt-2 w-[100%] bg-transparent shadow-none border-none">
           <ul className="grid grid-cols-4 gap-y-2 w-[80%] m-auto rounded-xl shadow-md bg-white p-2">
             {renderItems}
           </ul>

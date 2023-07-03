@@ -41,7 +41,7 @@ const NikeProducts = () => {
         <div>
           {/* show state */}
           {show && (
-            <div className="h-[100vh] overflow-hidden">
+            <div className="h-[100vh] overflow-auto">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-9 mt-[150px] transition-all">
                 {/* map first data */}
                 {shoes.map((products) => {
