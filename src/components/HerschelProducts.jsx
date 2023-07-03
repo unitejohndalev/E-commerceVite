@@ -25,7 +25,7 @@ const HerschelProducts = () => {
     <div className="px-[20px]">
       <div ref={HerschelRef} className="relative">
         <button
-          className="ml-[190px] lg:h-[50px] lg:w-[150px] rounded-xl mt-2 bg-red-600 text-white font-medium
+          className="ml-[190px] lg:h-[50px] lg:w-[150px] rounded-xl mt-[100px] bg-red-600 text-white font-medium
          text-[1.2rem] lg:ml-[490px] fixed top-1 z-10 px-[2px] transition-all"
           onClick={toggle}
         >

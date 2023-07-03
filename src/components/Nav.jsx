@@ -1,11 +1,7 @@
 import React from "react";
 
-
-
-
 //import link
 import { Link } from "react-router-dom";
-
 
 // import material-tailwind components
 import {
@@ -22,7 +18,6 @@ import {
   MenuItem,
   Chip,
 } from "@material-tailwind/react";
-
 
 //import hero icons
 import {
@@ -53,26 +48,26 @@ const colors = {
 };
 
 const navListMenuItems = [
-    {
-      color: "purple",
-      icon: RocketLaunchIcon,
-      title: "Shoes",
-      link: "/shoeproducts",
-      description: "Your favorite shoes, with brand new products every week.",
-    },
+  {
+    color: "purple",
+    icon: RocketLaunchIcon,
+    title: "Shoes",
+    link: "/shoeproducts",
+    description: "Your favorite shoes, with brand new products every week.",
+  },
   {
     color: "orange",
     icon: ChatBubbleOvalLeftIcon,
     title: "Clothing",
-    link: "/hmproducts",
-    description: "Clothes for anyone, with brand new products every week",
+    link: "/clothingproducts",
+    description: "Your favorite clothes, with brand new products every week.",
   },
 
   {
     color: "blue-gray",
     icon: FolderIcon,
     title: "Bags",
-    link: "/herschelproducts",
+    link: "/bagproducts",
     description: "Your favorite bags, with brand new products every week.",
   },
   {
@@ -80,35 +75,40 @@ const navListMenuItems = [
     icon: UsersIcon,
     title: (
       <div className="flex items-center gap-1">
-        Careers{" "}
+        Unknown
         <Chip
           size="sm"
           color="green"
           variant="ghost"
-          value="We're hiring!"
+          value="put whatever"
           className="capitalize"
         />
       </div>
     ),
-    description: "We are always looking for talented people. Join us!",
+    link: "/firstunknownproducts",
+
+    description: "put any description here.",
   },
   {
     color: "teal",
     icon: FaceSmileIcon,
-    title: "Icons",
-    description: "Set of beautiful icons that you can use in your project.",
+    title: "Unknown",
+    link: "/secondunknownproducts",
+    description: "put any description here.",
   },
   {
     color: "cyan",
     icon: PuzzlePieceIcon,
-    title: "UI Kits",
-    description: "High quality UI Kits helps you to 2x faster.",
+    title: "Feature Products",
+    link: "/featureproducts",
+    description: "Discover our most popular products.",
   },
   {
     color: "pink",
     icon: GiftIcon,
-    title: "Open Source",
-    description: "List of all our open-source projects, it's all free.",
+    title: "Off Products",
+    link: "/offproducts",
+    description: "Check out our discounted products.",
   },
   {
     color: "blue",
@@ -231,8 +231,7 @@ const Nav = () => {
             className="mr-4 cursor-pointer py-1.5 lg:ml-2"
           >
             <Link to={"/"}>
-
-            <img alt="OUR E-COMMERCE LOGO" />
+              <img alt="OUR E-COMMERCE LOGO" />
             </Link>
           </Typography>
           <div className="hidden lg:block">

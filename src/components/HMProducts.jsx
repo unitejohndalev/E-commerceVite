@@ -25,7 +25,7 @@ const HMProducts = () => {
     <div className="px-[20px]">
       <div ref={HMRef} className="relative">
         <button
-          className="ml-[90px] lg:h-[50px] lg:w-[150px] rounded-xl mt-2 bg-red-600 text-white font-medium
+          className="ml-[90px] lg:h-[50px] lg:w-[150px] rounded-xl mt-[100px] bg-red-600 text-white font-medium
          text-[1.2rem] lg:ml-[250px] fixed top-1 z-10 px-[2px] transition-all"
           onClick={toggle}
         >
@@ -34,7 +34,7 @@ const HMProducts = () => {
         <div>
           {show && (
             <div className="h-[100vh] overflow-auto">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-[200px] mt-[150px] transition-all">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-[200px] mt-[200px] transition-all">
                 {jackets.map((products) => {
                   const { id, name, price, img } = products;
                   return (

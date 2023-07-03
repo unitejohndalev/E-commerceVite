@@ -1,17 +1,15 @@
-//import components
-import Home from "./pages/Home";
-
-import HMProducts from "./components/HMProducts";
-import HerschelProducts from "./components/HerschelProducts";
-
-import HMProductDescription from "./context/HMProductDescription";
-import HerschelProductDescription from "./context/HerschelProductDescription";
 
 //import pages
-import ProductsInfo from "./pages/ProductsInfo";
+import Home from "./pages/Home";
 import ErrorPage from "./pages/errorpage";
-import AboutUs from "./pages/AboutUs";
+import BagProducts from "./pages/BagProducts";
 import ShoeProducts from "./pages/ShoeProducts";
+import ClothingProducts from "./pages/ClothingProducts";
+import FirstUnknownProducts from "./pages/FirstUnknownProducts";
+import SecondUnknownProducts from "./pages/SecondUnknownProducts";
+import FeatureProducts from "./pages/FeatureProducts";
+import OffProducts from "./pages/OffProducts";
+import AboutUs from "./pages/AboutUs";
 
 //import nav
 import Nav from "./components/Nav";
@@ -26,19 +24,21 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shoeproducts" element={<ShoeProducts />} />
-        <Route path="/hmproducts" element={<HMProductDescription />} />
+        <Route path="/clothingproducts" element={<ClothingProducts />} />
+        <Route path="/bagproducts" element={<BagProducts />} />
         <Route
-          path="/herschelproducts"
-          element={<HerschelProductDescription />}
+          path="/firstunknownproducts"
+          element={<FirstUnknownProducts />}
         />
+        <Route
+          path="/secondunknownproducts"
+          element={<SecondUnknownProducts />}
+        />
+        <Route path="/featureproducts" element={<FeatureProducts />} />
+        <Route path="/offproducts" element={<OffProducts />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      {/* <HMProducts /> */}
-      {/* <HerschelProducts /> */}
-
-      {/* <HMProductDescription /> */}
-      {/* <HerschelProductDescription /> */}
     </Router>
   );
 }
