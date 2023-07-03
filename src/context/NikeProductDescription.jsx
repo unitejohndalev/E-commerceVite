@@ -31,7 +31,7 @@ const NikeProductDescription = () => {
       <div ref={NikeRef} className="">
         {/* toggle button */}
         <button
-          className="top-[45px] ml-[16px] lg:h-[50px] lg:w-[150px] rounded-xl mt-2 bg-red-600 text-white font-medium
+          className="top-[45px] ml-[16px] lg:h-[50px] lg:w-[150px] rounded-xl mt-[100px] bg-red-600 text-white font-medium
          text-[1.2rem] lg:ml-[750px] lg:top-1 fixed z-10 px-[2px] transition-all"
           onClick={toggle}
         >
@@ -51,7 +51,7 @@ const NikeProductDescription = () => {
                   <div key={id} className="relative">
                     {/* get nested data */}
                     {description && (
-                      <div className="mt-10 shadow-xl w-[90%] mx-auto">
+                      <div className="mt-[200px] shadow-xl w-[90%] mx-auto">
                         {/* map second data */}
                         {description.map((desInfo) => {
                           const { id, info, img1, img2, img3 } = desInfo;

@@ -25,7 +25,7 @@ const HMProductDescription = () => {
     <div>
       <div ref={HMRef}>
         <button
-          className="top-[45px] ml-[120px] lg:h-[50px] lg:w-[150px] rounded-xl mt-2 bg-red-600 text-white font-medium
+          className="top-[45px] ml-[120px] lg:h-[50px] lg:w-[150px] rounded-xl mt-[100px] bg-red-600 text-white font-medium
          text-[1.2rem] lg:ml-[990px] lg:top-1 fixed z-10 px-[2px] transition-all"
           onClick={toggle}
         >
@@ -47,7 +47,7 @@ const HMProductDescription = () => {
                             return (
                               <div
                                 key={id}
-                                className="relative h-[100vh] max-w-[1440px] flex m-auto mt-[150px] bg-white"
+                                className="relative h-[100vh] max-w-[1440px] flex m-auto mt-[200px] bg-white"
                               >
                                 <div className="flex flex-col mt-10">
                                   <div className="">

@@ -28,11 +28,11 @@ const NikeProducts = () => {
   });
 
   return (
-    <div className="container max-w-[100%] ">
+    <div className="container max-w-[100%] mt-[200px]">
       <div ref={nikeRef} className="relative ">
         {/* toggle button */}
         <button
-          className=" lg:h-[50px] lg:w-[150px] rounded-xl mt-2 bg-red-600 text-white font-medium
+          className=" lg:h-[50px] lg:w-[150px] rounded-xl mt-[100px] bg-red-600 text-white font-medium
            text-[1.2rem] fixed top-1 z-10 px-[2px] transition-all"
           onClick={toggle}
         >
@@ -41,7 +41,7 @@ const NikeProducts = () => {
         <div>
           {/* show state */}
           {show && (
-            <div className="h-[100vh] overflow-auto">
+            <div className="h-[100vh] overflow-hidden">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-9 mt-[150px] transition-all">
                 {/* map first data */}
                 {shoes.map((products) => {
@@ -51,7 +51,7 @@ const NikeProducts = () => {
                   return (
                     <div
                       key={id}
-                      className="relative flex flex-col items-center text-center"
+                      className="relative flex flex-col items-center text-center "
                     >
                       {/* <h1 className="font-medium text-[3rem] absolute left-2">{id}</h1> */}
                       <h1 className="font-medium text-[1.5rem] lg:text-[1.7rem] xl:text-[1.9rem] absolute -top-5">
