@@ -41,8 +41,8 @@ export default {
 
 ```copy the code below and paste it in index.css```
 ```
-@tailwind base; <br/>
-@tailwind components;<br/>
+@tailwind base; 
+@tailwind components;
 @tailwind utilities;
 ```
 
