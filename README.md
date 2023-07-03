@@ -54,7 +54,8 @@ Install Material Tailwind<br/>
 <br/>
 Configure tailwind
 
-```const withMT = require("@material-tailwind/react/utils/withMT");
+```
+const withMT = require("@material-tailwind/react/utils/withMT");
  
 module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
