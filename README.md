@@ -41,9 +41,29 @@ export default {
 
 ```copy the code below and paste it in index.css```
 ```
-@tailwind base; <br/>
-@tailwind components;<br/>
+@tailwind base; 
+@tailwind components;
 @tailwind utilities;
+```
+
+<br/>
+Install Material Tailwind<br/>
+
+```npm i @material-tailwind/react```
+
+<br/>
+Configure tailwind
+
+```
+const withMT = require("@material-tailwind/react/utils/withMT");
+ 
+module.exports = withMT({
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+});
 ```
 
 
