@@ -80,20 +80,8 @@ const navListMenuItems = [
   {
     color: "green",
     icon: UsersIcon,
-    title: (
-      <div className="flex items-center gap-1">
-        Unknown
-        <Chip
-          size="sm"
-          color="green"
-          variant="ghost"
-          value="put whatever"
-          className="capitalize"
-        />
-      </div>
-    ),
-    link: "/firstunknownproducts",
-
+    title:"Accessories",
+    link: "/accessoriesproducts",
     description: "put any description here.",
   },
   {
