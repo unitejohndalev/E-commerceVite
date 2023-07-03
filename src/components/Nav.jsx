@@ -240,7 +240,7 @@ const Nav = () => {
             <Link to={"/"}>
             <div class=" grid-cols-3 flex items-center justify-between ">
               <img className= "w-auto h-14 " src= {Logo} alt="Logo" />
-              <span class="py-4 text-lg text-gray-900 dark:text-white justify">ExpressShop</span>
+              <span class="font-primary py-4 text-lg text-gray-900 dark:text-white justify">ExpressShop</span>
               </div>
             </Link>
           </Typography>
