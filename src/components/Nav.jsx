@@ -3,6 +3,9 @@ import React from "react";
 //import link
 import { Link } from "react-router-dom";
 
+//logo
+import Logo from "./img/logo.png"; 
+
 // import material-tailwind components
 import {
   Navbar,
@@ -35,6 +38,8 @@ import {
   GiftIcon,
 } from "@heroicons/react/24/outline";
 
+
+
 //custom color
 const colors = {
   blue: "bg-blue-50 text-blue-500",
@@ -46,6 +51,8 @@ const colors = {
   cyan: "bg-cyan-50 text-cyan-500",
   pink: "bg-pink-50 text-pink-500",
 };
+
+
 
 const navListMenuItems = [
   {
@@ -231,7 +238,10 @@ const Nav = () => {
             className="mr-4 cursor-pointer py-1.5 lg:ml-2"
           >
             <Link to={"/"}>
-              <img alt="OUR E-COMMERCE LOGO" />
+            <div class=" grid-cols-3 flex items-center justify-between ">
+              <img className= "w-auto h-14 " src= {Logo} alt="Logo" />
+              <span class="py-4 text-lg text-gray-900 dark:text-white justify">ExpressShop</span>
+              </div>
             </Link>
           </Typography>
           <div className="hidden lg:block">
