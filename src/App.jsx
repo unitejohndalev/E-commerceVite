@@ -5,7 +5,7 @@ import ErrorPage from "./pages/errorpage";
 import BagProducts from "./pages/BagProducts";
 import ShoeProducts from "./pages/ShoeProducts";
 import ClothingProducts from "./pages/ClothingProducts";
-import FirstUnknownProducts from "./pages/FirstUnknownProducts";
+import AccessoriesProducts from "./pages/AccessoriesProducts";
 import SecondUnknownProducts from "./pages/SecondUnknownProducts";
 import FeatureProducts from "./pages/FeatureProducts";
 import OffProducts from "./pages/OffProducts";
@@ -27,8 +27,8 @@ function App() {
         <Route path="/clothingproducts" element={<ClothingProducts />} />
         <Route path="/bagproducts" element={<BagProducts />} />
         <Route
-          path="/firstunknownproducts"
-          element={<FirstUnknownProducts />}
+          path="/accessoriesproducts"
+          element={<AccessoriesProducts />}
         />
         <Route
           path="/secondunknownproducts"
