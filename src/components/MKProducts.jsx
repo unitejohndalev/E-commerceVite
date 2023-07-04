@@ -1,7 +1,7 @@
 import React from "react";
 
-import MKProduct from "../M"
-import MKProps from "../properties/MKProps"
+import MKProduct from "../MKProducts.json";
+import MKProps from "../properties/MKProps";
 
 export const MKShop = () => {
 
