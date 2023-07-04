@@ -31,6 +31,22 @@
                 }
             ],
             "img": "https://herschel.com/content/dam/herschel/products/11383/11383-00055-OS_01.jpg.sthumbnails.680.850.webp"
+        },
+        {
+            "id": 3,
+            "name": "Herschel Heritage™ Backpack",
+            "price": "80",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Never gets old. Featuring our signature diamond detail, this timeless backpack is made for today's journeys. A padded sleeve protects your laptop and a front pocket organizes the little things.",
+                    "img1": "https://herschel.com/content/dam/herschel/products/11383/11383-00055-OS_01.jpg.sthumbnails.2000.2500.webp",
+                    "img2": "https://herschel.com/content/dam/herschel/products/11383/11383-00055-OS_02.jpg.sthumbnails.2000.2500.webp",
+                    "img3": "https://herschel.com/content/dam/herschel/products/11383/11383-ALLCOLORS_05.jpg.sthumbnails.2000.2500.webp",
+                    "img4": "https://herschel.com/content/dam/herschel/products/11383/11383-ALLCOLORS_06.jpg.sthumbnails.2000.2500.webp"
+                }
+            ],
+            "img": "https://herschel.com/content/dam/herschel/products/11383/11383-00055-OS_01.jpg.sthumbnails.680.850.webp"
         }
     ]
 }

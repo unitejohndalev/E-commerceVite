@@ -1,4 +1,5 @@
 import React from 'react'
+import MKProducts from "../components/MKProducts"
 
 const AccessoriesProducts = () => {
   return (
@@ -6,6 +7,7 @@ const AccessoriesProducts = () => {
       <h1 className="text-[5rem]"> AccessoriesProducts</h1>
 
     </div>
+   
   );
 }
 
