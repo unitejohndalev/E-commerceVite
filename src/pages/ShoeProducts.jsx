@@ -9,7 +9,6 @@ const ShoeProducts = () => {
   return (
     <div className=" ">
       <NikeProducts />
-      <NikeProductDescription />
     </div>
   );
 }
