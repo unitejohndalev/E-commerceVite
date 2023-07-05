@@ -1,20 +1,32 @@
 import React from "react";
 
-import MKProduct from "../MKProducts.json";
-import MKProps from "../properties/MKProps";
+import MKProducts from "../data/MKProducts.json";
 
-export const MKShop = () => {
-
+const MKProducts = () => {
+//destructure data
+    const {bags} = data;
+    console.log(data)
     return (
-        <div className="">
-            <div className="shopTitle">
-            <h1>MK Products</h1>
-            </div>
-<div className="mkproducts"> {""} 
-{MKProduct.map((mkproduct) => (
-    <MKProps data={mkproduct} />
-))}
-</div>
-</div>
-    )
+    <div className="h-[100vh] flex flex-col justify-center items-center">
+        {bags.map((MKbags) => {
+            //destructure data
+            const {name, id, color, desctription} =MKbags;
+
+            return (
+                <div key={id} className="nt-10">
+                    <div>
+                        {desctription.map((infobags)  => {
+                            //destructure data
+                            const {info, img1} = infobags;
+                            return <div> {info} </div>;
+
+                        })}
+                    </div>
+                    </div>
+            );
+        })}
+    </div>
+);
 };
+export  default MKProducts
+       
