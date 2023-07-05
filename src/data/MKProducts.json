@@ -1,22 +1,132 @@
 {
-   "bags" : [
+  "bags": [
     {
-   "id": 1,
-    "name": "Jet set cross-body bag",
-    "price": 125,
-    "color": "Brown and Beige",
-    "img": "https://cdn-images.farfetch-contents.com/13/25/39/99/13253999_21888978_1000.jpg",
-    "status": "Best Seller",
-    "description": [
-      {
-        "id": 1,
-        "info": "Renowned for its edgy mix of modern elegance and fashion-forward details, Michael Michael Kors shows what downtown edge is all about, as showcased by this dark brown Jet set cross-body bag. Featuring an adjustable shoulder strap, gold-tone hardware, a top zip fastening, a hanging tassel, a main internal compartment and MK logos all over.",
-        "img1": "https://cdn-images.farfetch-contents.com/13/25/39/99/13253999_21889025_1000.jpg",
-        "img2": "https://cdn-images.farfetch-contents.com/13/25/39/99/13253999_21888992_1000.jpg",
-        "img3": "https://cdn-images.farfetch-contents.com/13/25/39/99/13253999_21889039_1000.jpg"
-      }
-    ]
-  }
-]
-   
+      "id": 1,
+      "name": "Jet Set Travel Large 2-in-1 Nylon Gabardine Tote Bag",
+      "price": "128.00",
+      "color": "Black",
+      "img": "https://michaelkors.scene7.com/is/image/MichaelKors/30H0GTVT4C-0001_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+      "status": "Best Seller",
+      "description": [
+        {
+          "id": 1,
+          "info": "Designed for frequent travelers, this tote bag is made from lightweight yet durable nylon gabardine in a generous size that’s perfect for overnight stays. A removable zip pouch comes in handy for storing smaller items. Use the outside slip pocket to keep your smartphone and passport within easy reach.",
+          "img1": "https://michaelkors.scene7.com/is/image/MichaelKors/30H0GTVT4C-0001_2?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+          "img2": "https://michaelkors.scene7.com/is/image/MichaelKors/30H0GTVT4C-0001_4?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Rhea Medium Color-Block Logo Backpack",
+      "price": "153.43",
+      "color": "Brown and Beige",
+      "img": "https://michaelkors.scene7.com/is/image/MichaelKors/30S0GEZB2V-2618_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+      "status": "Best Seller",
+      "description": [
+        {
+          "id": 1,
+          "info": "Laid-back yet luxe, our Rhea backpack redefines big-city accessorizing. We love the combination of color-blocked logo print twill and polished hardware. With its multiple zipper pockets and delicate shoulder straps, it’s a stylish update to the enduring design.",
+          "img2": "https://michaelkors.scene7.com/is/image/MichaelKors/30S0GEZB2V-2618_3?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+          "img3": "https://michaelkors.scene7.com/is/image/MichaelKors/30S0GEZB2V-2618_4?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Apple AirPods Pro",
+      "price": "258.00",
+      "color": "Black",
+      "img": "https://michaelkors.scene7.com/is/image/MichaelKors/32R3SJ6C8C-0001_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+      "status": "Best Seller",
+      "description": [
+        {
+          "id": 1,
+          "info": "Our Jet Set crossbody bag is the perfect blend of timeless and of-the-moment style. Featuring a detachable case to safely store your Apple Airpods Pro®, it’s crafted from nylon-gabardine with polished hardware for sporty-chic appeal",
+          "img1": "https://michaelkors.scene7.com/is/image/MichaelKors/32R3SJ6C8C-0001_2?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+          "img2": "https://michaelkors.scene7.com/is/image/MichaelKors/32R3SJ6C8C-0001_4?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Jet Set Small Pebbled Leather Chain-Link Smartphone Crossbody Bag",
+      "price": "198.00",
+      "color": "Black",
+      "img": "https://michaelkors.scene7.com/is/image/MichaelKors/32S3GJ6C2L-0001_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+      "status": "Best Seller",
+      "description": [
+        {
+          "id": 1,
+          "info": "When the moment calls for just the essentials, our compact crossbody bag is a sleek choice. Crafted from durable pebbled leather, it features elegant chain detailing that makes it work for a multitude of occasions. It’s sized to hold most smartphones, so you can bike, dance, and do whatever you need to do, hands-free.",
+          "img1": "https://michaelkors.scene7.com/is/image/MichaelKors/32S3GJ6C2L-0001_2?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+          "img2": "https://michaelkors.scene7.com/is/image/MichaelKors/32S3GJ6C2L-0001_3?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Ruby Medium Logo Messenger Bag",
+      "price": "278.00",
+      "color": "Camel",
+      "img": "https://michaelkors.scene7.com/is/image/MichaelKors/30S3GR0M2O-0220_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+      "status": "Best Seller",
+      "description": [
+        {
+          "id": 1,
+          "info": "Our Signature print Ruby messenger is a minimalist design distinguished by a polished padlock charm for decorative appeal. Sized to fit everyday must-haves, it has a lined interior with a median zip pocket and a removable crossbody strap. Pair it with easygoing wardrobe essentials for a look that exudes effortless style.",
+          "img1": "https://michaelkors.scene7.com/is/image/MichaelKors/30S3GR0M2O-0220_2?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+          "img2": "https://michaelkors.scene7.com/is/image/MichaelKors/30S3GR0M2O-0220_4?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Parker Medium Empire Logo Jacquard Crossbody Bag",
+      "price": "298.00",
+      "color": "Natural Luggage",
+      "img": "https://michaelkors.scene7.com/is/image/MichaelKors/32S3G7PC8J-1251_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+      "status": "Best Seller",
+      "description": [
+        {
+          "id": 1,
+          "info": "This season’s leather-trimmed Parker crossbody bag is woven with the brand’s lettering and features our iconic Empire hardware. An array of inside pockets provides practical storage, while an adjustable nylon strap ensures comfortable, hands-free wear from day to dark.",
+          "img1": "https://michaelkors.scene7.com/is/image/MichaelKors/32S3G7PC8J-1251_2?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+          "img2": "https://michaelkors.scene7.com/is/image/MichaelKors/32S3G7PC8J-1251_3?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Williamsburg Extra-Small Logo Crossbody Bag",
+      "price": "228.00",
+      "color": "Van Cream",
+      "img": "https://michaelkors.scene7.com/is/image/MichaelKors/32F3G6WC0V-2543_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+      "status": "Best Seller",
+      "description": [
+        {
+          "id": 1,
+          "info": "This mini-sized version of the Williamsburg bag features our Signature-print canvas punctuated with leather trim and gold-tone hardware. The beauty lies in its versatility—it can be carried hands-free with the help of the chain-link strap, or in hand by the top handles. It’s perfect for so many occasions, day or night.",
+          "img1": "https://michaelkors.scene7.com/is/image/MichaelKors/32F3G6WC0V-2543_2?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+          "img2": "https://michaelkors.scene7.com/is/image/MichaelKors/32F3G6WC0V-2543_4?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Jet Set Medium Logo Crossbody Bag",
+      "price": "198.00",
+      "color": "Pink",
+      "img": "https://michaelkors.scene7.com/is/image/MichaelKors/32F7SGNM8L-0650_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+      "status": "Best Seller",
+      "description": [
+        {
+          "id": 1,
+          "info": "The Jet Set crossbody bag is the perfect balance between understated and luxe, with a lightly structured yet compact design that’s rendered in pebbled leather. Finished with chain-link accents and an oversized tassel, this everyday favorite is an easy way to elevate any outfit.",
+          "img1": "https://michaelkors.scene7.com/is/image/MichaelKors/32F7SGNM8L-0650_2?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+          "img2": "hhttps://michaelkors.scene7.com/is/image/MichaelKors/32F7SGNM8L-0650_4?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90"
+        }
+      ]
+    }
+  ]
 }
