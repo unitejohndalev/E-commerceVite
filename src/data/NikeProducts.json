@@ -6,6 +6,7 @@
             "price": 125,
             "gender": "Men's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5bf8e7f4-18c7-4826-9bab-7b9532a5e3b6/air-jordan-1-mid-mens-shoes-b3js2D.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -23,6 +24,7 @@
             "price": 129.97,
             "gender": "Men's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dfe54c4c-1c62-4f11-b9b9-c22125d3fc6e/air-vapormax-2021-fk-mens-shoes-NpTfFz.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -40,6 +42,7 @@
             "price": 90,
             "gender": "Women's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5227ae6b-fd89-4d4c-9e95-dc9ac45fc6b7/gamma-force-womens-shoes-4TR9Xf.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -57,6 +60,7 @@
             "price": 110,
             "gender": "Women's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/45eb504d-4ca0-4675-80cf-720913d53f3e/tech-hera-womens-shoes-NjvkxR.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -74,6 +78,7 @@
             "price": 110,
             "gender": "Men's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/28812013-b5f3-4148-a1b4-170227e0e0fe/air-jordan-1-low-mens-shoes-0LXhbn.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -139,6 +144,7 @@
             "price": 100,
             "gender": "Women's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6384d3b5-c48d-4f56-8c5f-b5904fc83e0a/superrep-go-3-flyknit-next-nature-womens-training-shoes-hSZBdX.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -156,6 +162,7 @@
             "price": 130,
             "gender": "Women's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e2616858-d1ca-43cd-8e23-2cee7dedbe58/air-force-1-07-lx-womens-shoes-VVL5B1.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -173,6 +180,7 @@
             "price": 125,
             "gender": "Unisex Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/247616b5-1d3b-4777-abbb-d5e08a924b78/go-flyease-easy-on-off-shoes-LGmqKx.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -190,6 +198,7 @@
             "price": 73.97,
             "gender": "Unisex Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3771fc51-4baa-40d9-ad02-c5f523079eb6/lebron-witness-6-basketball-shoes-HXbMw7.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -207,6 +216,7 @@
             "price": 120.97,
             "gender": "Unisex Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/86333f8d-24fa-4cb3-bbb9-672df75e1d99/air-jordan-xxxvii-basketball-shoes-MttxV5.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -224,6 +234,7 @@
             "price": 130,
             "gender": "Unisex Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c3dead19-8a8f-42b7-8de7-d56cc9d8550f/air-jordan-1-zoom-cmft-2-mens-shoes-Tw02qw.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -241,6 +252,7 @@
             "price": 65,
             "gender": "Unisex Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bede0d26-4ee8-4a8b-8442-43f17d174fe2/converse-chuck-taylor-all-star-high-top-unisex-shoe-xX439O.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -290,6 +302,7 @@
             "price": 125,
             "gender": "Unisex Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fabe3ef1-263d-42ee-b24b-09a9a47a61ee/air-jordan-1-mid-mens-shoes-b3js2D.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -307,6 +320,7 @@
             "price": 65.97,
             "gender": "Unisex Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2c182397-9600-42e9-8809-fb5738e81c22/freak-4-team-basketball-shoes-p95BnP.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -324,6 +338,7 @@
             "price": 80.97,
             "gender": "Unisex Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/af8fc2f0-ea7f-4d94-926d-6fcca8c40112/sb-zoom-blazer-mid-skate-shoes-ZLRvRZ.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -341,6 +356,7 @@
             "price": 110,
             "gender": "Men's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9c9308fc-1651-40b2-9f2e-d85697d05027/dunk-low-retro-mens-shoes-9k2Xt6.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -358,6 +374,7 @@
             "price": 130,
             "gender": "Men's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f147a002-d8af-4ce1-acd8-6b7b90a0be83/pegasus-40-se-mens-road-running-shoes-MCGW9h.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -375,6 +392,7 @@
             "price": 180,
             "gender": "Men's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b2930d94-38ed-4033-9176-f6a9c11dc281/invincible-3-se-mens-road-running-shoes-Xrd0px.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -392,6 +410,7 @@
             "price": 200,
             "gender": "Men's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/78b8f078-4e8e-4b9c-9680-2c3e380c3c62/lebron-20-basketball-shoes-ct1qVm.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -409,6 +428,7 @@
             "price": 160,
             "gender": "Men's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3880705a-6a0d-4007-b85e-c496c048c664/lebron-nxxt-gen-basketball-shoes-55g4w1.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -426,6 +446,7 @@
             "price": 125,
             "gender": "Men's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fd17b420-b388-4c8a-aaaa-e0a98ddf175f/dunk-high-retro-mens-shoe-dTVTCk.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -443,6 +464,7 @@
             "price": 160,
             "gender": "Women's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8ac34384-c1ec-430d-8dee-185ebd7b578b/air-max-1-87-womens-shoes-lVMBTB.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -460,6 +482,7 @@
             "price": 130,
             "gender": "Women's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a056f685-3b15-4b05-9989-412893c6dae8/pegasus-40-womens-road-running-shoes-cnNqtF.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -477,6 +500,7 @@
             "price": 250,
             "gender": "Women's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0c25a661-0784-4ec3-b03c-ed9580028154/vaporfly-next-3-womens-road-racing-shoes-KcmWJb.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -494,6 +518,7 @@
             "price": 90,
             "gender": "Women's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0f75e71-7eed-4543-841f-77686c7e3a3a/court-legacy-lift-womens-shoes-x0B6BB.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -511,6 +536,7 @@
             "price": 70,
             "gender": "Women's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/46c88fa2-8d40-46ad-8c0c-c40e05776738/court-legacy-next-nature-womens-shoes-8r07x0.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -560,6 +586,7 @@
             "price": 95,
             "gender": "Kid's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/55f09217-cbc2-4883-9143-4f9287cc02aa/air-jordan-1-low-se-big-kids-shoes-fS3WJJ.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -577,6 +604,7 @@
             "price": 70,
             "gender": "Kid's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/20bed071-33e4-4f7f-8031-a598045c1f74/force-1-low-little-kids-shoes-3g5plb.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -610,6 +638,7 @@
             "price": 90,
             "gender": "Kid's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d9f1d9ee-a848-4a36-aab9-48b241078ebb/air-force-1-le-big-kids-shoes-3JNSvS.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -643,6 +672,7 @@
             "price": 40,
             "gender": "Kid's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dd015ce2-2db6-432c-8d6c-48cb1b87fade/court-legacy-baby-toddler-shoes-NzVpPc.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -660,6 +690,7 @@
             "price": 90,
             "gender": "Kid's Shoes",
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/39342a4d-2c36-4f3b-8d3b-3f8ae8037a96/air-jordan-1-mid-se-craft-big-kids-shoes-VJv0Nj.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -678,6 +709,7 @@
             "name": "Unstructured Futura Wash Cap",
             "price": 26,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/33c9b90d-5f23-464b-a870-7cfd9ceebe61/club-unstructured-futura-wash-cap-77d39b.png",
+            "bestSeller": null,
             "status": "Just In",
             "description": [
                 {
@@ -693,6 +725,7 @@
             "name": "Unstructured JDI Cap",
             "price": 28,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/08c3c044-7882-4b26-a79b-99ac2c2895c0/club-unstructured-jdi-cap-Xr7txF.png",
+            "bestSeller": true,
             "status": "Just In",
             "description": [
                 {
@@ -708,6 +741,7 @@
             "name": "Futura Washed Bucket Hat",
             "price": 30,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d2eec20a-6e5d-4579-bf9d-9cd4b165e1d1/apex-futura-washed-bucket-hat-TtDq3t.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -723,6 +757,7 @@
             "name": "Unstructured Futura Cap",
             "price": 28,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8d475101-166e-4ac8-a2f4-d3d5bfd9d4f2/fly-unstructured-futura-cap-L2mRCG.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -738,6 +773,7 @@
             "name": "Unstructured Swoosh Cap",
             "price": 26,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ea940986-4724-4ab6-875a-20dbf40b97e4/club-unstructured-swoosh-cap-fcrZ5f.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -753,6 +789,7 @@
             "name": "Bucket Hat",
             "price": 40,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/565dded6-d1b9-4e2b-80cf-4788c370f7ed/acg-bucket-hat-MQ8CCT.png",
+            "bestSeller": null,
             "status": "Just In",
             "description": [
                 {
@@ -768,6 +805,7 @@
             "name": "Nike ACG Heritage86",
             "price": 36,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bcd0a915-e86f-470c-baa6-97b014c8bf32/acg-heritage86-cap-76dljF.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -783,6 +821,7 @@
             "name": "Kid's Unstructured Futura Wash Cap",
             "price": 22,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/43bbea17-44c4-4e33-b9c3-8b283c5720c1/club-kids-unstructured-futura-wash-cap-pPvb8C.png",
+            "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
@@ -798,6 +837,7 @@
             "name": "Nike Dri-FIT Cap",
             "price": 24,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f205124e-309a-4098-bdaa-7f5a24278ea7/dri-fit-club-kids-unstructured-metal-swoosh-cap-MfPJz0.png",
+            "bestSeller": true,
             "status": "Just In",
             "description": [
                 {
@@ -813,6 +853,7 @@
             "name": "Nike Rise Cap",
             "price": 28,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bfd77d3a-e963-4635-875c-13703b161ee4/rise-cap-structured-trucker-cap-QVCQf7.png",
+            "bestSeller": false,
             "status": "Best Seller",
             "description": [
                 {
@@ -828,6 +869,7 @@
             "name": "Nike Terra Beanie",
             "price": 36,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/473aa8c6-22b4-4f96-91e3-a570f50628c4/terra-tie-dye-beanie-32WxLQ.png",
+            "bestSeller": false,
             "status": "Best Seller",
             "description": [
                 {
@@ -843,6 +885,7 @@
             "name": "Nike Peak Beanie",
             "price": 28,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/48845032-6e4b-44a7-9bca-468bd259ae49/peak-standard-cuff-futura-beanie-44Jf5h.png",
+            "bestSeller": false,
             "status": "Best Seller",
             "description": [
                 {
@@ -858,6 +901,7 @@
             "name": "Nike Peak Tall Cuff Beanie",
             "price": 30,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a532d2f5-344c-4d02-8667-e39e9d8a07ae/peak-tall-cuff-futura-beanie-S5gBGl.png",
+            "bestSeller": true,
             "status": "Best Seller",
             "description": [
                 {
@@ -873,6 +917,7 @@
             "name": "Nike AeroBill Tailwind Cap",
             "price": 22.97,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/p7m1besl1mhfu1ylkkkh/aerobill-tailwind-running-cap-jx0vWd.png",
+            "bestSeller": false,
             "status": "Best Seller",
             "description": [
                 {
@@ -888,6 +933,7 @@
             "name": "Boonie Bucket Hat",
             "price": 30.97,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f3dac96d-e577-4a05-9d2c-1801d921ecca/boonie-bucket-hat-29XPbW.png",
+            "bestSeller": null,
             "status": "Best Seller",
             "description": [
                 {

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+
+//import components
+import SignIn from "./SignIn";
 
 //import link
 import { Link } from "react-router-dom";
 
 //logo
-import Logo from "./img/logo.png"; 
+import Logo from "./img/logo.png";
 
 // import material-tailwind components
 import {
@@ -38,8 +41,6 @@ import {
   GiftIcon,
 } from "@heroicons/react/24/outline";
 
-
-
 //custom color
 const colors = {
   blue: "bg-blue-50 text-blue-500",
@@ -51,8 +52,6 @@ const colors = {
   cyan: "bg-cyan-50 text-cyan-500",
   pink: "bg-pink-50 text-pink-500",
 };
-
-
 
 const navListMenuItems = [
   {
@@ -190,7 +189,7 @@ function NavListMenu() {
           </ul>
         </MenuList>
       </Menu>
-      <div className="block lg:hidden border-solid border-2 border-red-800 h-[500px] overflow-auto">
+      <div className="block lg:hidden overflow-auto">
         <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
       </div>
     </React.Fragment>
@@ -215,6 +214,46 @@ const Nav = () => {
     );
   }, []);
 
+  //login state for desktop
+  const [logInShow, setLogInShow] = useState();
+
+  //button function for desktop
+  const toggle = () => {
+    setLogInShow((prevLogInShow) => !prevLogInShow);
+  };
+
+  //LogIn ref for desktop
+  let LogInRef = useRef();
+
+  //login handle side effects for desktop
+  useEffect(() => {
+    document.addEventListener("mousedown", (e) => {
+      if (!LogInRef.current.contains(e.target)) {
+        setLogInShow(false);
+      }
+    });
+  });
+
+  //login state for desktop
+  const [logInMobileShow, setLogInMobileShow] = useState();
+
+  //button function for desktop
+  const toggleMobile = () => {
+    setLogInMobileShow((prevLogInShow) => !prevLogInShow);
+  };
+
+  //LogIn ref for mobile
+  let LogInMobileRef = useRef();
+
+  //login handle side effects for mobile
+  useEffect(() => {
+    document.addEventListener("mousedown", (e) => {
+      if (!LogInMobileRef.current.contains(e.target)) {
+        setLogInMobileShow(false);
+      }
+    });
+  });
+
   return (
     <div className="w-[100%] flex justify-center">
       <Navbar className="fixed max-w-screen-xl px-4 py-2 mt-2 z-20">
@@ -226,16 +265,18 @@ const Nav = () => {
             className="mr-4 cursor-pointer py-1.5 lg:ml-2"
           >
             <Link to={"/"}>
-            <div className=" grid-cols-3 flex items-center justify-between ">
-              <img className= "w-auto h-14 " src= {Logo} alt="Logo" />
-              <span className="font-primary py-4 text-lg text-gray-900 dark:text-white justify">ExpressShop</span>
+              <div className=" grid-cols-3 flex items-center justify-between ">
+                <img className="w-auto h-14 " src={Logo} alt="Logo" />
+                <span className="font-primary py-4 text-lg text-gray-900 dark:text-white justify">
+                  ExpressShop
+                </span>
               </div>
             </Link>
           </Typography>
           <div className="hidden lg:block">
             <NavList />
           </div>
-          <div className="relative mr-[10px] lg:mr-[0] w-[250px]">
+          <div className="relative mr-[10px] lg:mr-[0] w-[250px] lg:w-[450px]">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               <svg
                 className="w-5 h-5 text-gray-500"
@@ -244,11 +285,7 @@ const Nav = () => {
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path
-              
-                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-           
-                ></path>
+                <path d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"></path>
               </svg>
             </div>
             <input
@@ -259,9 +296,26 @@ const Nav = () => {
             />
           </div>
           <div className="hidden gap-2 lg:flex">
-            <Button variant="text" size="sm" color="blue-gray">
-              Sign In
-            </Button>
+            <div ref={LogInRef}>
+              <Button
+                variant="text"
+                size="sm"
+                color="blue-gray"
+                onClick={toggle}
+              >
+                Sign In
+              </Button>
+              <div className="relative">
+                {logInShow && (
+                  <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid border-2 border-red-800 bg-white/70">
+                    <div className="border-solid border-2 border-red-800 w-[50%] max-w-[500px] h-[80%] flex justify-center items-center bg-pink-400">
+                      <SignIn />
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+
             <Button variant="gradient" size="sm">
               Sign Up
             </Button>
@@ -281,11 +335,31 @@ const Nav = () => {
         </div>
         <Collapse open={openNav} className="">
           <NavList />
-          <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-            <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
-              Sign In
-            </Button>
-            <Button variant="gradient" size="sm" fullWidth>
+          <div className=" flex w-full flex-nowrap items-center gap-2 lg:hidden ">
+            <div className=" w-[100%]">
+              <div ref={LogInMobileRef}>
+                <Button
+                  onClick={toggleMobile}
+                  variant="outlined"
+                  size="sm"
+                  color="blue-gray"
+                  className="w-[100%]"
+                >
+                  Sign In
+                </Button>
+                <div className="relative">
+                  {logInMobileShow && (
+                    <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid border-2 border-red-800 bg-white/70">
+                      <div className="border-solid border-2 border-red-800 w-[50%] max-w-[500px] h-[80%] flex justify-center items-center bg-pink-400">
+                        <SignIn />
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            <Button variant="gradient" size="sm" className="w-[100%]">
               Sign Up
             </Button>
           </div>

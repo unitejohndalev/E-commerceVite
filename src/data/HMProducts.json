@@ -5,6 +5,7 @@
             "name": "Jacquard-weave jacket",
             "price": "126.12",
             "gender": "Women's jacket",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -85,6 +86,7 @@
             "name": "Bouclé jacket",
             "price": "41.32",
             "gender": "Women's jacket",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -101,6 +103,7 @@
             "name": "Knee-length down jacket",
             "price": "81.01",
             "gender": "Women's jacket",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -117,6 +120,7 @@
             "name": "H&M+ Denim jacket",
             "price": "41.32",
             "gender": "Women's jacket",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -133,6 +137,7 @@
             "name": "Appliquéd denim jacket",
             "price": "59.36",
             "gender": "Women's jacket",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -181,6 +186,7 @@
             "name": "Short jacket",
             "price": "48.53",
             "gender": "Women's jacket",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -229,6 +235,7 @@
             "name": "Twill shacket",
             "price": "35.90",
             "gender": "Women's jacket",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -277,6 +284,7 @@
             "name": "Regular Fit Waterproof shell jacket",
             "price": "144.16",
             "gender": "Man's jacket",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -309,6 +317,7 @@
             "name": "Water-repellent puffer jacket",
             "price": "62.97",
             "gender": "Man's jacket",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -341,6 +350,7 @@
             "name": "Bomber jacket",
             "price": "35.90",
             "gender": "Man's jacket",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -405,6 +415,7 @@
             "name": "Fringe-trimmed silk-blend dress",
             "price": "144.16",
             "gender": "Women's dress",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -453,6 +464,7 @@
             "name": "Rhinestone-embellished net dress",
             "price": "99.05",
             "gender": "Women's dress",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -501,6 +513,7 @@
             "name": "Crochet-look dress",
             "price": "84.62",
             "gender": "Women's dress",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -597,6 +610,7 @@
             "name": "Regular Fit Crochet-look resort shirt",
             "price": "41.32",
             "gender": "Men's shirt",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -629,6 +643,7 @@
             "name": "Water-repellent shirt with detachable sleeves",
             "price": "59.36",
             "gender": "Men's shirt",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -677,6 +692,7 @@
             "name": "Relaxed Fit Patterned resort shirt",
             "price": "16.22",
             "gender": "Men's shirt",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -709,6 +725,7 @@
             "name": "Relaxed Fit Short-sleeved shirt",
             "price": "10.81",
             "gender": "Men's shirt",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -721,5 +738,4 @@
             "img": "https://lp2.hm.com/hmgoepprod?set=source[/85/8a/858add0c134433efbce45ce9357d39970623c4f1.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
         }
     ]
-
 }

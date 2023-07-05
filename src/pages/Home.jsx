@@ -6,6 +6,7 @@ const Home = () => {
       <h1 className='text-[10rem]'> Home Page</h1>
       </div>
 
+
   );
 }
 
