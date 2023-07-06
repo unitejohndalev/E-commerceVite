@@ -1,15 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
 
-//import themeprovider to use custom themes
+//import product context provider
+import ProductsContextProvider from "./context/ProductContext.jsx";
+
+//import router
+import {BrowserRouter as Router} from "react-router-dom"
+ReactDOM.createRoot(document.getElementById("root")).render(
+
+  <Router>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Router>
 
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-
-    <App />
-
-  </React.StrictMode>,
-)
+);

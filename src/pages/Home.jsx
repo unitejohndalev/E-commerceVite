@@ -1,32 +1,13 @@
-import React from "react";
+import React from 'react';
 
-//import data
-import data from "../data/Acc.json";
-
-console.log(data);
 const Home = () => {
-  //destructure data
-  const { bags } = data;
-
   return (
-    <div className="h-[100vh] flex flex-col justify-center items-center">
-      {bags.map((bagproducts) => {
-        //destructure bagproducts
-        const { description, id } = bagproducts;
-     
-        return (
-          <div key={id} className=" mt-10">
-            <div>
-              {description.map((infobag) => {
-                const { info, img1 } = infobag;
-                return <div>{info}</div>;
-              })}
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
-};
+    <div className="h-[100vh] flex justify-center items-center text-center">
+      <h1 className='text-[10rem]'> Home Page</h1>
+      </div>
 
-export default Home;
+
+  );
+}
+
+export default Home

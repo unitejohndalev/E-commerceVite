@@ -1,5 +1,7 @@
 import React, { Suspense, lazy } from "react";
 
+
+
 //import pages
 import Home from "./pages/Home";
 import ErrorPage from "./pages/errorpage";
@@ -8,7 +10,7 @@ import ErrorPage from "./pages/errorpage";
 import Nav from "./components/Nav";
 
 //import routes and route
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {Route, Routes } from "react-router-dom";
 
 //code splitting by using lazy and suspense from react
 const HatProducts = lazy(() => import("./pages/HatProducts"))
@@ -31,44 +33,49 @@ const AboutUs = lazy(() => import("./pages/AboutUs"));
 
 function App() {
   return (
-    <Router>
-      <Nav />
-      <Suspense fallback={<h1>loading ....</h1>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/hatproducts" element={<HatProducts />} />
-          <Route
-            path="/hatdescription/:id"
-            element={<HatProductDescription />}
-          />
-          <Route path="/clothingproducts" element={<ClothingProducts />} />
-          <Route
-            path="/clothdescription/:id"
-            element={<ClothProductDescription />}
-          />
+ 
+      <>
+        <Nav />
+        <Suspense fallback={<h1>loading ....</h1>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/hatproducts" element={<HatProducts />} />
+            <Route
+              path="/hatdescription/:id"
+              element={<HatProductDescription />}
+            />
+            <Route path="/clothingproducts" element={<ClothingProducts />} />
+            <Route
+              path="/clothdescription/:id"
+              element={<ClothProductDescription />}
+            />
 
-          <Route path="/shoeproducts" element={<ShoeProducts />} />
-          <Route
-            path="/shoedescription/:id"
-            element={<ShoeProductDescription />}
-          />
-          <Route path="/bagproducts" element={<BagProducts />} />
-          <Route path="/bagdescription/:id" element={<BagProductDescription />} />
-          <Route
-            path="/accessoriesproducts"
-            element={<AccessoriesProducts />}
-          />
-          <Route
-            path="/secondunknownproducts"
-            element={<SecondUnknownProducts />}
-          />
-          <Route path="/featureproducts" element={<FeatureProducts />} />
-          <Route path="/offproducts" element={<OffProducts />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-      </Suspense>
-    </Router>
+            <Route path="/shoeproducts" element={<ShoeProducts />} />
+            <Route
+              path="/shoedescription/:id"
+              element={<ShoeProductDescription />}
+            />
+            <Route path="/bagproducts" element={<BagProducts />} />
+            <Route
+              path="/bagdescription/:id"
+              element={<BagProductDescription />}
+            />
+            <Route
+              path="/accessoriesproducts"
+              element={<AccessoriesProducts />}
+            />
+            <Route
+              path="/secondunknownproducts"
+              element={<SecondUnknownProducts />}
+            />
+            <Route path="/featureproducts" element={<FeatureProducts />} />
+            <Route path="/offproducts" element={<OffProducts />} />
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </Suspense>
+      </>
+
   );
 }
 
