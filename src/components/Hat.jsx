@@ -6,9 +6,9 @@ const Hat = () => {
   //destructure data
   const { hats } = data;
   return (
-    <div className="container max-w-[100%] mt-[200px]">
+    <div className="container max-w-[100%] mt-[150px]">
       <div className="relative">
-        <div className="h-[100vh] overflow-auto">
+        <div className="h-[82vh] lg:h-[70vh] overflow-auto no-scrollbar">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-10">
             {/* map first data */}
             {hats.map((products) => {
