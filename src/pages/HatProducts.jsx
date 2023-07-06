@@ -8,7 +8,7 @@ const HatProducts = () => {
 
 
   return (
-   <div>
+   <div >
     <Hat/>
    </div>
   );

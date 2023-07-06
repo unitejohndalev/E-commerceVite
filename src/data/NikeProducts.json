@@ -711,6 +711,7 @@
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/33c9b90d-5f23-464b-a870-7cfd9ceebe61/club-unstructured-futura-wash-cap-77d39b.png",
             "bestSeller": null,
             "status": "Just In",
+                "gender": "Men's Cap",
             "description": [
                 {
                     "id": 1,
@@ -726,7 +727,8 @@
             "price": 28,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/08c3c044-7882-4b26-a79b-99ac2c2895c0/club-unstructured-jdi-cap-Xr7txF.png",
             "bestSeller": true,
-            "status": "Just In",
+                "gender": "Men's Cap",
+                "status": "Just In",
             "description": [
                 {
                     "id": 1,
@@ -742,7 +744,8 @@
             "price": 30,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d2eec20a-6e5d-4579-bf9d-9cd4b165e1d1/apex-futura-washed-bucket-hat-TtDq3t.png",
             "bestSeller": false,
-            "status": "Just In",
+                "gender": "Men's Hat",
+                "status": "Just In",
             "description": [
                 {
                     "id": 1,
@@ -758,7 +761,8 @@
             "price": 28,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8d475101-166e-4ac8-a2f4-d3d5bfd9d4f2/fly-unstructured-futura-cap-L2mRCG.png",
             "bestSeller": false,
-            "status": "Just In",
+                "gender": "Men's Cap",
+                "status": "Just In",
             "description": [
                 {
                     "id": 1,
@@ -774,7 +778,8 @@
             "price": 26,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ea940986-4724-4ab6-875a-20dbf40b97e4/club-unstructured-swoosh-cap-fcrZ5f.png",
             "bestSeller": false,
-            "status": "Just In",
+                "gender": "Men's Cap",
+                "status": "Just In",
             "description": [
                 {
                     "id": 1,
@@ -790,7 +795,8 @@
             "price": 40,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/565dded6-d1b9-4e2b-80cf-4788c370f7ed/acg-bucket-hat-MQ8CCT.png",
             "bestSeller": null,
-            "status": "Just In",
+                "gender": "Men's Hat",
+                "status": "Just In",
             "description": [
                 {
                     "id": 1,
@@ -806,7 +812,8 @@
             "price": 36,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bcd0a915-e86f-470c-baa6-97b014c8bf32/acg-heritage86-cap-76dljF.png",
             "bestSeller": false,
-            "status": "Just In",
+                "gender": "Men's Cap",
+                "status": "Just In",
             "description": [
                 {
                     "id": 1,
@@ -822,7 +829,8 @@
             "price": 22,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/43bbea17-44c4-4e33-b9c3-8b283c5720c1/club-kids-unstructured-futura-wash-cap-pPvb8C.png",
             "bestSeller": false,
-            "status": "Just In",
+                "gender": "Women's Cap",
+                "status": "Just In",
             "description": [
                 {
                     "id": 1,
@@ -838,7 +846,8 @@
             "price": 24,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f205124e-309a-4098-bdaa-7f5a24278ea7/dri-fit-club-kids-unstructured-metal-swoosh-cap-MfPJz0.png",
             "bestSeller": true,
-            "status": "Just In",
+                "gender": "Women's Cap",
+                "status": "Just In",
             "description": [
                 {
                     "id": 1,
@@ -854,7 +863,8 @@
             "price": 28,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bfd77d3a-e963-4635-875c-13703b161ee4/rise-cap-structured-trucker-cap-QVCQf7.png",
             "bestSeller": false,
-            "status": "Best Seller",
+                "gender": "Women's Cap",
+                "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -870,7 +880,8 @@
             "price": 36,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/473aa8c6-22b4-4f96-91e3-a570f50628c4/terra-tie-dye-beanie-32WxLQ.png",
             "bestSeller": false,
-            "status": "Best Seller",
+                "gender": "Men's Beanie",
+                "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -886,7 +897,8 @@
             "price": 28,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/48845032-6e4b-44a7-9bca-468bd259ae49/peak-standard-cuff-futura-beanie-44Jf5h.png",
             "bestSeller": false,
-            "status": "Best Seller",
+                "gender": "Women's Beanie",
+                "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -902,7 +914,8 @@
             "price": 30,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a532d2f5-344c-4d02-8667-e39e9d8a07ae/peak-tall-cuff-futura-beanie-S5gBGl.png",
             "bestSeller": true,
-            "status": "Best Seller",
+                "gender": "Women's Beanie",
+                "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -918,7 +931,8 @@
             "price": 22.97,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/p7m1besl1mhfu1ylkkkh/aerobill-tailwind-running-cap-jx0vWd.png",
             "bestSeller": false,
-            "status": "Best Seller",
+                "gender": "Women's Cap",
+                "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -934,7 +948,8 @@
             "price": 30.97,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f3dac96d-e577-4a05-9d2c-1801d921ecca/boonie-bucket-hat-29XPbW.png",
             "bestSeller": null,
-            "status": "Best Seller",
+                "gender": "Man's Hat",
+                "status": "Best Seller",
             "description": [
                 {
                     "id": 1,

@@ -24,20 +24,18 @@ const ShoesDescriptions = () => {
   //destructure shoeproduct
   const { description, name } = shoeproduct;
 
+  //state for img show and hide onMouseOver/onMouseOut
   const [show, setShow] = useState(false);
 
 
 
   return (
-    <div className="h-[100vh] flex justify-center items-center ">
+    <div className="h-[100vh] flex justify-center items-center overflow-auto no-scrollbar ">
       <div className="mt-[200px] shadow-xl w-[90%] mx-auto">
         {description.map((producinfo) => {
           const { id, info, img1, img2, img3 } = producinfo;
           return (
-            <div
-              key={id}
-              className="flex flex-col h-[100vh]"
-            >
+            <div key={id} className="flex flex-col h-[100vh] ">
               <Link to={"/hatproducts"}>
                 <Button className="absolute mt-5 ml-0 z-10">BACK</Button>
               </Link>
@@ -46,26 +44,14 @@ const ShoesDescriptions = () => {
                         items-center"
               >
                 <div
-                  className="w-[100%] hidden lg:flex flex-col gap-y-6 
+                  className="w-[100%] hidden lg:flex flex-col gap-y-2 
                  h-[100%] relative z-9 px-10 "
                 >
-                  <img
-                    className="rounded-xl "
-                    src={img1}
-                    width={150}
-                  
-           
-                  />
+                  <img className="rounded-xl " src={img1} width={150} />
                   <div>
-              
-                      <div className="absolute left-[16vw] top-0">
-                        <img
-                          src={img1}
-                          className="w-[400px] h-[500px]"
-                          alt=""
-                        />
-                      </div>
-       
+                    <div className="absolute left-[16vw] top-0">
+                      <img src={img1} className="w-[400px] h-[500px]" alt="" />
+                    </div>
                   </div>
                   <img
                     className="rounded-xl "
@@ -96,7 +82,7 @@ const ShoesDescriptions = () => {
                   />
 
                   <div className="flex items-center absolute h-[100%] xl:w-[100%] w-[100%] lg:right-0">
-                    <div className="absolute w-[100%] flex justify-center text-center top-10">
+                    <div className="absolute w-[100%] flex justify-center text-center top-0">
                       <h1 className=" text-[1rem] xl:text-[2.3rem] xxl:text-[2.5rem] font-light">
                         {name}
                       </h1>
