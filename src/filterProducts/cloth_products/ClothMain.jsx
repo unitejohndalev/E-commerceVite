@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 //import data
-import { hats } from "../../data/NikeProducts.json";
+import {clothes} from '../../data/HMProducts.json'
 
 //import FilterSelectFunction components
 import FilterSelectFunction from "../FilterSelectFunction";
 
 //import filterProducts
-import HatFiltered from "./HatFilteredList";
+import ClothFilteredList from "./ClothFilteredList";
 
-const HatMain = () => {
+const ClothMain = () => {
   //state for hat products data
-  const [Product, setProduct] = useState(hats);
+  const [Product, setProduct] = useState(clothes);
 
   //state for filtered data
   const [filterHatProduct, setFilterHatProduct] = useState("Best Seller");
@@ -36,11 +36,11 @@ const HatMain = () => {
           {/* filterselectfunction reusable function component */}
           <FilterSelectFunction filterValueSelected={onFilterValueSelected} />
         </div>
-        {/* hatfiltered components */}
-        <HatFiltered filterProductList={filterProductList} />
+        {/* clothfiltered components */}
+        <ClothFilteredList filterProductList={filterProductList} />
       </div>
     </div>
   );
 };
 
-export default HatMain;
+export default ClothMain;
