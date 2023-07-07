@@ -1,6 +1,6 @@
 import React from "react";
 
-import data from "../data/MKProducts.json";
+import data from "../data/MKBags.json";
 
 const MKProducts = () => {
   //destructure data
@@ -21,6 +21,7 @@ const MKProducts = () => {
                     className="relative flex flex-col items-center text-center"
                   >
                     <p className="text-base "></p>
+
                     <img className="rounded-3xl w-48 h-45 " src={img}></img>
                     <p className=" text-black text-center w-60 font-medium text-sm m-5">
                       <p className="font-bold text-xs mb-2">Michael Kors</p>
