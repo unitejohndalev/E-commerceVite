@@ -1,17 +1,28 @@
-import React from "react";
-import data from "../data/NikeProducts.json";
+/* eslint-disable react/prop-types */
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Button } from "@material-tailwind/react";
+
+//import product context 
+import { ProductContext } from "../contexts/ProductContext";
+
+//import cart context
+import { CartContext } from "../contexts/CartContext";
+
 
 const Hat = () => {
-  //destructure data
-  const { hats } = data;
+//get hat products from product context
+const {hatProducts} = useContext(ProductContext)
+const {addToCart} = useContext(CartContext)
+
   return (
     <div className="h-[100vh] overflow-auto no-scrollbar">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-[200px] mt-[150px] w-[90%] m-auto transition-all">
         {/* map first data */}
-        {hats.map((products) => {
+        {hatProducts.map((products) => {
           //destructure product hats data
           const { id, name, price, img, gender } = products;
+
           return (
             <div
               key={id}
@@ -21,11 +32,14 @@ const Hat = () => {
                 <h1 className="font-medium text-[1.5rem] absolute -top-5">
                   {name}
                 </h1>
-        
-                  <Link to={`/hatdescription/${id}`}>
-                    <img className="rounded-xl" src={img} alt="" />
-                  </Link>
-           
+                <div className="absolute right-5 top-5">
+                  <Button onClick={() => addToCart(products, id)} >ADD</Button>
+                </div>
+
+                <Link to={`/hatdescription/${id}`}>
+                  <img className="rounded-xl" src={img} alt="" />
+                </Link>
+
                 <p className="font-light text-[1rem] absolute bottom-0 left-4">
                   {gender}
                 </p>

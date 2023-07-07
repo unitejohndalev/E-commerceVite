@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 
 //import components
 import SignIn from "./SignIn";
@@ -8,6 +8,9 @@ import { Link } from "react-router-dom";
 
 //logo
 import Logo from "./img/logo.png";
+
+//import cart context to get itemAmount function for cart button
+import { CartContext } from "../contexts/CartContext";
 
 // import material-tailwind components
 import {
@@ -205,6 +208,9 @@ function NavList() {
 }
 
 const Nav = () => {
+  //useContext for CartContext
+  const { itemAmount } = useContext(CartContext);
+
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -255,11 +261,10 @@ const Nav = () => {
   });
 
   return (
-    <div className="w-[100%] flex justify-center">
+    <div className="w-[100%] flex justify-center relative">
       <Navbar className="fixed max-w-screen-xl px-4 py-2 mt-2 z-20">
         <div className="flex items-center justify-evenly text-blue-gray-900 ">
           <Typography
-
             href="#"
             variant="h6"
             className="mr-4 cursor-pointer py-1.5 lg:ml-2"
@@ -319,6 +324,16 @@ const Nav = () => {
             <Button variant="gradient" size="sm">
               Sign Up
             </Button>
+            <Link to={"/yourcart"}>
+            <div
+            className="bg-red-500 absolute right-5 text-[12px]
+            w-[18px] h-[18px] text-white rounded-full flex justify-center
+            items-center"
+            >
+              {itemAmount}
+            </div>
+              <Button className="bg-white-800 text-black">Cart</Button>
+            </Link>
           </div>
           <IconButton
             variant="text"
@@ -361,6 +376,9 @@ const Nav = () => {
 
             <Button variant="gradient" size="sm" className="w-[100%]">
               Sign Up
+            </Button>
+            <Button variant="gradient" size="sm" className="w-[100%]">
+              Cart
             </Button>
           </div>
         </Collapse>
