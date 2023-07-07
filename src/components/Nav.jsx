@@ -324,14 +324,21 @@ const Nav = () => {
             <Button variant="gradient" size="sm">
               Sign Up
             </Button>
+
             <Link to={"/yourcart"}>
-            <div
-            className="bg-red-500 absolute right-5 text-[12px]
+              {itemAmount > 0 ? (
+                <div
+                  className="bg-red-500 absolute right-5 text-[12px]
             w-[18px] h-[18px] text-white rounded-full flex justify-center
             items-center"
-            >
-              {itemAmount}
-            </div>
+                >
+                  {itemAmount}
+                </div>
+              ) : (
+                <div
+                 
+                ></div>
+              )}
               <Button className="bg-white-800 text-black">Cart</Button>
             </Link>
           </div>

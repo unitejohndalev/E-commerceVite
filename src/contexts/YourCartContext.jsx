@@ -16,13 +16,12 @@ const YourCartContext = () => {
     clearCart,
     increaseAmount,
     decreaseAmount,
-    itemAmount,
     total,
   } = useContext(CartContext);
 
   return (
     <div className="h-[100vh] overflow-hidden flex flex-col justify-center items-center">
-      <div className="relative">
+      <div className="relative w-[500px]">
         <div className="h-[70vh] relative overflow-auto mt-10 no-scrollbar">
           {cart.map((hats, idx) => {
             //destructure hats data
