@@ -1,9 +1,9 @@
 import React, { Suspense, lazy } from "react";
 
 //import pages
-// import Home from "../pages/Home";
+import Home from "../pages/Home";
 import ErrorPage from "../pages/errorpage";
-import ProductProvider from "../contexts/ProductContext";
+// import ProductProvider from "../contexts/ProductContext";
 
 //import nav
 import Nav from "./Nav";
@@ -55,7 +55,7 @@ const Router = () => {
       <Nav />
       <Suspense fallback={<h1>loading ....</h1>}>
         <Routes>
-          <Route path="/" element={<ProductProvider />} />
+          <Route path="/" element={<Home />} />
           <Route path="/yourcart" element={<YourCartContext/>}/>
           <Route path="/hatproducts" element={<HatProducts />} />
           <Route
