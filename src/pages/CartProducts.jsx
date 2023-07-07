@@ -7,7 +7,7 @@ const CartProducts = () => {
     }
   return (
     <div>
-        <Hat addToCart = {addToCart}/>
+        <Hat />
     </div>
   )
 }
