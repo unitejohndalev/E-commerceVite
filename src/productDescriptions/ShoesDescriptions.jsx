@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 //import data
 import data from "../data/NikeProducts.json";
+
+//import product context to get shoes data
+import { ProductContext } from "../contexts/ProductContext";
+
+//import cart context
+import { CartContext } from "../contexts/CartContext";
 
 //import useParams
 import { Link, useParams } from "react-router-dom";
@@ -9,7 +15,14 @@ import { Link, useParams } from "react-router-dom";
 //import material tailwind button
 import { Button } from "@material-tailwind/react";
 
-const ShoesDescriptions = () => {
+// eslint-disable-next-line react/prop-types
+const ShoesDescriptions = ({product}) => {
+  //get hat products from product context
+  const { shoeProducts } = useContext(ProductContext);
+
+  //get addToCart function from cart context
+  const { addToCart } = useContext(CartContext);
+
   //destructure data
   const { shoes } = data;
 
@@ -21,17 +34,17 @@ const ShoesDescriptions = () => {
   });
 
   //destructure shoeproduct
-  const { description, name } = shoeproduct;
+  const { description, name, price} = shoeproduct;
 
   //state for img show and hide onMouseOver/onMouseOut
   const [show, setShow] = useState(false);
-  const [show1, setShow1] = useState(false)
+  const [show1, setShow1] = useState(false);
 
   return (
     <div className="h-[100vh] flex justify-center items-center overflow-auto no-scrollbar">
       <div className="mt-[200px] shadow-xl w-[90%] mx-auto">
-        {description.map((producinfo) => {
-          const { id, info, img1, img2, img3 } = producinfo;
+        {description.map((products) => {
+          const { id, info, img1, img2, img3} = products;
           return (
             <div key={id} className="flex flex-col h-[100vh] ">
               <Link to={"/shoeproducts"}>
@@ -102,6 +115,14 @@ const ShoesDescriptions = () => {
                       <h1 className=" text-[1rem] xl:text-[2.3rem] xxl:text-[2.5rem] font-light">
                         {name}
                       </h1>
+                      <div className="absolute right-5 top-5 z-10">
+                        <Button onClick={() => addToCart(shoeproduct, shoeproduct.id)}>
+                          ADD
+                        </Button>
+                      </div>
+                      <p className="font-medium text-[1.5rem] absolute bottom-0 right-4">
+                        $ {price}
+                      </p>
                     </div>
                     <div className="h-[30%] absolute bottom-[100px] ">
                       <p className="font-light text-[1rem] xl:text-[1.2rem]">
