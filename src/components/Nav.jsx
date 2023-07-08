@@ -194,7 +194,7 @@ function NavListMenu() {
       </Menu>
       <div className="block lg:hidden  ">
         <Collapse open={isMobileMenuOpen}>
-          <div className="h-[55vh] overflow-auto no-scrollbar ">
+          <div className="h-[55vh] overflow-auto no-scrollbar border-solid border-2 border-red-800 ">
             {renderItems}
           </div>
         </Collapse>
