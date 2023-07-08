@@ -1,13 +1,12 @@
-import React from 'react'
-import Hat from '../components/Hat'
+import React from "react";
+import HatProducts from "../components/NikesHatProducts";
 
 const CartProducts = () => {
- 
   return (
     <div>
-        <Hat />
+      <HatProducts />
     </div>
-  )
-}
+  );
+};
 
-export default CartProducts
+export default CartProducts;

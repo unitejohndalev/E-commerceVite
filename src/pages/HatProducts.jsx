@@ -1,17 +1,14 @@
-import React from 'react'
+import React from "react";
 
 //import hat products
-import Hat from '../components/Hat';
-
+import NikesHatProducts from "../components/NikesHatProducts";
 
 const HatProducts = () => {
-
-
   return (
-   <div >
-    <Hat/>
-   </div>
+    <div>
+      <NikesHatProducts />
+    </div>
   );
-}
+};
 
-export default HatProducts
+export default HatProducts;

@@ -34,7 +34,7 @@ const ShoesDescriptions = () => {
           const { id, info, img1, img2, img3 } = producinfo;
           return (
             <div key={id} className="flex flex-col h-[100vh] ">
-              <Link to={"/hatproducts"}>
+              <Link to={"/shoeproducts"}>
                 <Button className="absolute mt-5 ml-0 z-10">BACK</Button>
               </Link>
               <div

@@ -3,16 +3,18 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
 
-//import product context 
+//import product context to get hats data
 import { ProductContext } from "../contexts/ProductContext";
 
 //import cart context
 import { CartContext } from "../contexts/CartContext";
 
 
-const Hat = () => {
+const NikesHatProducts = () => {
 //get hat products from product context
 const {hatProducts} = useContext(ProductContext)
+
+//get addToCart function from cart context
 const {addToCart} = useContext(CartContext)
 
   return (
@@ -55,4 +57,4 @@ const {addToCart} = useContext(CartContext)
   );
 };
 
-export default Hat;
+export default NikesHatProducts;
