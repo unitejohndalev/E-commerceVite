@@ -56,7 +56,6 @@ const Router = () => {
       <Suspense fallback={<h1>loading ....</h1>}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/yourcart" element={<YourCartContext/>}/>
           <Route path="/hatproducts" element={<HatProducts />} />
           <Route
             path="/hatdescription/:id"
@@ -69,6 +68,7 @@ const Router = () => {
             path="/clothdescription/:id"
             element={<ClothProductDescription />}
           />
+          <Route path="/yourcart" element={<YourCartContext/>}/>
 
           {/* Clothes pages brands*/}
 

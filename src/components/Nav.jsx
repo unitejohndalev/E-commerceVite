@@ -186,14 +186,18 @@ function NavListMenu() {
           </Typography>
         </MenuHandler>
 
-        <MenuList className=" hidden lg:block mt-2 w-[100%] bg-transparent shadow-none border-none">
-          <ul className="grid grid-cols-4 gap-y-2 w-[80%] m-auto rounded-xl shadow-md bg-white p-2">
+        <MenuList className=" hidden lg:block mt-2 w-[100%] bg-transparent shadow-none border-none ">
+          <ul className="grid grid-cols-4 gap-y-2 w-[80%] m-auto rounded-xl shadow-md bg-white p-2 ">
             {renderItems}
           </ul>
         </MenuList>
       </Menu>
-      <div className="block lg:hidden overflow-auto">
-        <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
+      <div className="block lg:hidden  ">
+        <Collapse open={isMobileMenuOpen}>
+          <div className="h-[55vh] overflow-auto no-scrollbar ">
+            {renderItems}
+          </div>
+        </Collapse>
       </div>
     </React.Fragment>
   );
@@ -335,9 +339,7 @@ const Nav = () => {
                   {itemAmount}
                 </div>
               ) : (
-                <div
-                 
-                ></div>
+                <div></div>
               )}
               <Button className="bg-white-800 text-black">Cart</Button>
             </Link>
@@ -384,9 +386,25 @@ const Nav = () => {
             <Button variant="gradient" size="sm" className="w-[100%]">
               Sign Up
             </Button>
-            <Button variant="gradient" size="sm" className="w-[100%]">
-              Cart
-            </Button>
+            <Link to={"/yourcart"} className="relative">
+              {itemAmount > 0 ? (
+                <div
+                  className="bg-red-500 absolute right-0 lg:right-5  text-[12px]
+            w-[18px] h-[18px] text-white rounded-full flex justify-center
+            items-center"
+                >
+                  {itemAmount}
+                </div>
+              ) : (
+                <div></div>
+              )}
+              <Button
+                className="bg-white-800 text-black"
+                onClick={() => setOpenNav(!openNav)}
+              >
+                Cart
+              </Button>
+            </Link>
           </div>
         </Collapse>
       </Navbar>

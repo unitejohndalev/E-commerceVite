@@ -1,5 +1,9 @@
 import React, { useContext } from "react";
 
+//import useNavigate from react-dom
+//by using this hook we can navigate back programmatically
+import { useNavigate } from "react-router-dom";
+
 //import cart context
 import { CartContext } from "./CartContext";
 import { Button } from "@material-tailwind/react";
@@ -19,8 +23,20 @@ const YourCartContext = () => {
     total,
   } = useContext(CartContext);
 
+  //navigate hook
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+    
+  };
+
   return (
     <div className="h-[100vh] overflow-hidden flex flex-col justify-center items-center">
+      {/* navigate back button */}
+      <button onClick={goBack} className="absolute left-2 lg:left-5 top-[110px] bg-red-600 text-white
+       p-2 rounded-xl z-10">
+        BACK
+      </button>
       <div className="relative w-[500px]">
         <div className="h-[70vh] relative overflow-auto mt-10 no-scrollbar">
           {cart.map((hats, idx) => {
