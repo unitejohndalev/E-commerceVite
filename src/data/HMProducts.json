@@ -19,7 +19,7 @@
             "img": "https://lp2.hm.com/hmgoepprod?set=source[/d7/d5/d7d586d13aa1afb10eadc4d7ae006e67b75c4e18.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
         },
         {
-            "id":57,
+            "id": 57,
             "name": "Drawstring-waist puffer jacket",
             "price": "48.53",
             "gender": "Women's jacket",
@@ -54,6 +54,7 @@
             "id": 59,
             "name": "Denim jacket",
             "price": "30.49",
+            "offprice": "25.29",
             "gender": "Women's jacket",
             "description": [
                 {
@@ -282,6 +283,7 @@
             "id": 72,
             "name": "Water-repellent hooded jacket",
             "price": "62.97",
+            "offprice": "55.29",
             "gender": "Man's jacket",
             "description": [
                 {
@@ -349,7 +351,7 @@
             "img": "https://lp2.hm.com/hmgoepprod?set=source[/a7/fb/a7fbe332ad49afda6ca8fbd0a9107e6384253443.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
         },
         {
-            "id":76,
+            "id": 76,
             "name": "Oversized Fit Bomber jacket",
             "price": "90.03",
             "gender": "Man's jacket",
@@ -415,7 +417,7 @@
             "img": "https://lp2.hm.com/hmgoepprod?set=source[/c6/da/c6da6957a0920039a91180e1fb4f8f7bfa2b6f5b.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
         },
         {
-            "id":80,
+            "id": 80,
             "name": "Regular Fit Fleece sports jacket",
             "price": "48.53",
             "gender": "Man's jacket",
@@ -434,6 +436,7 @@
             "id": 81,
             "name": "Fringe-trimmed silk-blend dress",
             "price": "144.16",
+            "offprice": "140",
             "gender": "Women's dress",
             "bestSeller": true,
             "status": "Best Seller",
@@ -470,6 +473,7 @@
             "id": 83,
             "name": "Lyocell-blend tunic dress",
             "price": "126.12",
+            "offprice": "120.29",
             "gender": "Women's dress",
             "description": [
                 {
@@ -554,6 +558,7 @@
             "id": 88,
             "name": "Broderie anglaise dress",
             "price": "81.01",
+            "offprice": "75.29",
             "gender": "Women's dress",
             "description": [
                 {
@@ -588,6 +593,7 @@
             "id": 90,
             "name": "Embroidered tunic dress",
             "price": "62.97",
+            "offprice": "58.29",
             "gender": "Women's dress",
             "description": [
                 {
@@ -654,6 +660,7 @@
             "id": 94,
             "name": "Oversized Fit Corduroy overshirt",
             "price": "59.36",
+            "offprice": "55.29",
             "gender": "Men's shirt",
             "description": [
                 {
@@ -667,7 +674,7 @@
             "img": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F12%2F1a%2F121a44574db536ffcb2cb8dd6b2ea3642608b59e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
         },
         {
-            "id":95,
+            "id": 95,
             "name": "Water-repellent shirt with detachable sleeves",
             "price": "59.36",
             "gender": "Men's shirt",
