@@ -33,6 +33,9 @@ const CartProvider = ({ children }) => {
   }, [cart]);
 
   //add to cart function
+  //bug, when a product has the same id, first product add to cart replace following any product that has the same id
+  //tried applying random number using math.floor and math.random, but failed to resolve
+  //debug resolve, manually change all id number in json data, last number 124, iyak
   const addToCart = (product, id) => {
     const newItem = { ...product, amount: 1 };
     const cartItem = cart.find((item) => {

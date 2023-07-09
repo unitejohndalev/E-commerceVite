@@ -18,8 +18,8 @@ const HMProducts = () => {
   return (
     <div className="h-[100vh] overflow-auto no-scrollbar">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-[200px] mt-[150px] w-[90%] m-auto transition-all">
-        {clothProducts.map((products) => {
-          const { id, name, price, img, gender } = products;
+        {clothProducts.map((clothproducts) => {
+          const { id, name, price, img, gender } = clothproducts;
           return (
             <div
               key={id}
@@ -30,7 +30,7 @@ const HMProducts = () => {
                   {name}
                 </h1>
                 <div className="absolute right-5 top-5">
-                  <Button onClick={() => addToCart(products, id)}>ADD</Button>
+                  <Button onClick={() => addToCart(clothproducts, clothproducts.id)}>ADD</Button>
                 </div>
                 <Link to={`/clothdescription/${id}`}>
                   <img className="rounded-xl" src={img} alt="" />

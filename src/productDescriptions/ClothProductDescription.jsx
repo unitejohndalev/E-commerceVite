@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from "react";
 
-//import data
-import data from "../data/HMProducts.json";
+//import product context to get hats data
+import { ProductContext } from "../contexts/ProductContext";
+
+//import cart context for addtocart function
+import { CartContext } from "../contexts/CartContext";
 
 //import useParams
 import { Link, useParams } from "react-router-dom";
@@ -9,18 +12,18 @@ import { Link, useParams } from "react-router-dom";
 //import material tailwind button
 import { Button } from "@material-tailwind/react";
 
-
-
-
 const ClothProductDescription = () => {
-  //destructure data
-  const { clothes } = data;
+  //get hat products from product context
+  const { clothProducts } = useContext(ProductContext);
+
+  //get addToCart function from cart context
+  const { addToCart } = useContext(CartContext);
 
   //use useParams to get shoe id from url
   const { id } = useParams();
 
   //get single product base on id
-  const clothproduct = clothes.find((item) => {
+  const clothproduct = clothProducts.find((item) => {
     return item.id === parseInt(id);
   });
 
@@ -29,7 +32,7 @@ const ClothProductDescription = () => {
   const [show1, setShow1] = useState(false);
 
   //destructure clothproduct
-  const { description, name } = clothproduct;
+  const { description, name, price } = clothproduct;
   return (
     <div className="h-[100vh] flex justify-center items-center overflow-auto no-scrollbar">
       <div className="mt-[200px] shadow-xl w-[90%] mx-auto">
@@ -105,6 +108,17 @@ const ClothProductDescription = () => {
                       <h1 className=" text-[1rem] xl:text-[2.3rem] xxl:text-[2.5rem] font-light">
                         {name}
                       </h1>
+                      <div className="absolute right-5 top-5 z-10">
+                        {/* destructure cloth product must pass as parameter */}
+                        <Button
+                          onClick={() => addToCart(clothproduct, clothproduct.id)}
+                        >
+                          ADD
+                        </Button>
+                      </div>
+                      <p className="font-medium text-[1.5rem] absolute bottom-0 right-4">
+                        $ {price}
+                      </p>
                     </div>
                     <div className="h-[30%] absolute bottom-[100px] ">
                       <p className="font-light text-[1rem] xl:text-[1.2rem]">
@@ -120,6 +134,6 @@ const ClothProductDescription = () => {
       </div>
     </div>
   );
-}
+};
 
 export default ClothProductDescription;

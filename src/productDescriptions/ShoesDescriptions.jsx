@@ -1,39 +1,35 @@
 import React, { useContext, useState } from "react";
 
-//import data
-import data from "../data/NikeProducts.json";
 
 //import product context to get shoes data
 import { ProductContext } from "../contexts/ProductContext";
 
-//import cart context
+//import cart context for addtocart function
 import { CartContext } from "../contexts/CartContext";
 
-//import useParams
+//import useParams to get product id in url
 import { Link, useParams } from "react-router-dom";
 
 //import material tailwind button
 import { Button } from "@material-tailwind/react";
 
 // eslint-disable-next-line react/prop-types
-const ShoesDescriptions = ({product}) => {
-  //get hat products from product context
+const ShoesDescriptions = () => {
+  //get shoe products from product context
   const { shoeProducts } = useContext(ProductContext);
 
   //get addToCart function from cart context
   const { addToCart } = useContext(CartContext);
 
-  //destructure data
-  const { shoes } = data;
-
   //use useParams to get shoe id from url
   const { id } = useParams();
 
-  const shoeproduct = shoes.find((item) => {
+  //find what id when clicked img for description
+  const shoeproduct = shoeProducts.find((item) => {
     return item.id === parseInt(id);
   });
 
-  //destructure shoeproduct
+  //destructure shoeproduct varialbe
   const { description, name, price} = shoeproduct;
 
   //state for img show and hide onMouseOver/onMouseOut
@@ -43,8 +39,8 @@ const ShoesDescriptions = ({product}) => {
   return (
     <div className="h-[100vh] flex justify-center items-center overflow-auto no-scrollbar">
       <div className="mt-[200px] shadow-xl w-[90%] mx-auto">
-        {description.map((products) => {
-          const { id, info, img1, img2, img3} = products;
+        {description.map((productinfo) => {
+          const { id, info, img1, img2, img3} = productinfo;
           return (
             <div key={id} className="flex flex-col h-[100vh] ">
               <Link to={"/shoeproducts"}>
@@ -116,6 +112,7 @@ const ShoesDescriptions = ({product}) => {
                         {name}
                       </h1>
                       <div className="absolute right-5 top-5 z-10">
+                      {/* destructure shoe product must pass as parameter */}
                         <Button onClick={() => addToCart(shoeproduct, shoeproduct.id)}>
                           ADD
                         </Button>

@@ -21,9 +21,9 @@ const {addToCart} = useContext(CartContext)
     <div className="h-[100vh] overflow-auto no-scrollbar">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-[200px] mt-[150px] w-[90%] m-auto transition-all">
         {/* map first data */}
-        {hatProducts.map((products) => {
+        {hatProducts.map((hatproducts) => {
           //destructure product hats data
-          const { id, name, price, img, gender } = products;
+          const { id, name, price, img, gender } = hatproducts;
 
           return (
             <div
@@ -35,7 +35,7 @@ const {addToCart} = useContext(CartContext)
                   {name}
                 </h1>
                 <div className="absolute right-5 top-5">
-                  <Button onClick={() => addToCart(products, id)} >ADD</Button>
+                  <Button onClick={() => addToCart(hatproducts, hatproducts.id)} >ADD</Button>
                 </div>
 
                 <Link to={`/hatdescription/${id}`}>

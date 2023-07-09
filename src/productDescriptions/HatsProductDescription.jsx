@@ -1,28 +1,35 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 
-//import data
-import data from "../data/NikeProducts.json";
+//import product context to get hats data
+import { ProductContext } from "../contexts/ProductContext";
 
-//import useParams
+//import cart context for addtocart function
+import { CartContext } from "../contexts/CartContext";
+
+//import useParams to get product id in url
 import { Link, useParams } from "react-router-dom";
 
 //import material tailwind button
 import { Button } from "@material-tailwind/react";
 
 const ShoesDescriptions = () => {
-  //destructure data
-  const { hats } = data;
+  //get hat products from product context
+  const {hatProducts} = useContext(ProductContext)
+
+  //get addToCart function from cart context
+  const {addToCart} = useContext(CartContext)
+
 
   //use useParams to get shoe id from url
   const { id } = useParams();
 
   // get single product base on id
-  const shoeproduct = hats.find((item) => {
+  const hatproduct = hatProducts.find((item) => {
     return item.id === parseInt(id);
   });
 
-  //destructure shoeproduct
-  const { description, name } = shoeproduct;
+  //destructure hatproduct variable
+  const { description, name, price } = hatproduct;
 
   //state for img show and hide onMouseOver/onMouseOut
   const [show, setShow] = useState(false);
@@ -86,6 +93,17 @@ const ShoesDescriptions = () => {
                       <h1 className=" text-[1rem] xl:text-[2.3rem] xxl:text-[2.5rem] font-light">
                         {name}
                       </h1>
+                      <div className="absolute right-5 top-5 z-10">
+                        {/* destructure hat product must pass as parameter */}
+                        <Button
+                          onClick={() => addToCart(hatproduct, hatproduct.id)}
+                        >
+                          ADD
+                        </Button>
+                      </div>
+                      <p className="font-medium text-[1.5rem] absolute bottom-0 right-4">
+                        $ {price}
+                      </p>
                     </div>
                     <div className="h-[30%] absolute bottom-[100px] ">
                       <p className="font-light text-[1rem] xl:text-[1.2rem]">

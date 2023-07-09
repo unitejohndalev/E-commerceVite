@@ -22,9 +22,10 @@ const NikeProducts = () => {
     <div className="h-[100vh] overflow-auto no-scrollbar ">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-[200px] mt-[150px] w-[90%] m-auto transition-all">
         {/* map first data */}
-        {shoeProducts.map((products) => {
+        {shoeProducts.map((shoeproducts) => {
           //destructure product shoes data
-          const { id, name, price, gender, img } = products;
+          const { id, name, price, gender, img } = shoeproducts;
+        
 
           return (
             <div
@@ -37,7 +38,7 @@ const NikeProducts = () => {
                   {name}
                 </h1>
                 <div className="absolute right-5 top-5">
-                  <Button onClick={() => addToCart(products, id)}>ADD</Button>
+                  <Button onClick={() => addToCart(shoeproducts, shoeproducts.id)}>ADD</Button>
                 </div>
                 <div>
                   <Link to={`/shoedescription/${id}`}>
