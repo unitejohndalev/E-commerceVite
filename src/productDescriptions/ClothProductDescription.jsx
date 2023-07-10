@@ -1,13 +1,18 @@
 import React, { useContext, useState } from "react";
 
+
+//import useNavigate from react-dom
+//by using this hook we can navigate back programmatically
+
+//import useParams to get product id in url
+import { useNavigate, useParams } from "react-router-dom";
+
 //import product context to get hats data
 import { ProductContext } from "../contexts/ProductContext";
 
 //import cart context for addtocart function
 import { CartContext } from "../contexts/CartContext";
 
-//import useParams
-import { Link, useParams } from "react-router-dom";
 
 //import material tailwind button
 import { Button } from "@material-tailwind/react";
@@ -33,6 +38,12 @@ const ClothProductDescription = () => {
 
   //destructure clothproduct
   const { description, name, price } = clothproduct;
+
+  //navigate hook
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
   return (
     <div className="h-[100vh] flex justify-center items-center overflow-auto no-scrollbar">
       <div className="mt-[200px] shadow-xl w-[90%] mx-auto">
@@ -40,9 +51,9 @@ const ClothProductDescription = () => {
           const { id, info, img1, img2, img3 } = producinfo;
           return (
             <div key={id} className="flex flex-col h-[100vh] ">
-              <Link to={"/clothingproducts"}>
+              <div onClick={goBack}>
                 <Button className="absolute mt-5 ml-0 z-10">BACK</Button>
-              </Link>
+              </div>
               <div
                 className="relative gap-6 w-[90%] m-auto h-[90vh] flex 
                         items-center"
@@ -111,7 +122,9 @@ const ClothProductDescription = () => {
                       <div className="absolute right-5 top-5 z-10">
                         {/* destructure cloth product must pass as parameter */}
                         <Button
-                          onClick={() => addToCart(clothproduct, clothproduct.id)}
+                          onClick={() =>
+                            addToCart(clothproduct, clothproduct.id)
+                          }
                         >
                           ADD
                         </Button>

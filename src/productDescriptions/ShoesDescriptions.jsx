@@ -1,5 +1,11 @@
 import React, { useContext, useState } from "react";
 
+//import useNavigate from react-dom
+//by using this hook we can navigate back programmatically
+
+//import useParams to get product id in url
+import { useNavigate, useParams } from "react-router-dom";
+
 
 //import product context to get shoes data
 import { ProductContext } from "../contexts/ProductContext";
@@ -7,8 +13,7 @@ import { ProductContext } from "../contexts/ProductContext";
 //import cart context for addtocart function
 import { CartContext } from "../contexts/CartContext";
 
-//import useParams to get product id in url
-import { Link, useParams } from "react-router-dom";
+
 
 //import material tailwind button
 import { Button } from "@material-tailwind/react";
@@ -30,22 +35,28 @@ const ShoesDescriptions = () => {
   });
 
   //destructure shoeproduct varialbe
-  const { description, name, price} = shoeproduct;
+  const { description, name, price } = shoeproduct;
 
   //state for img show and hide onMouseOver/onMouseOut
   const [show, setShow] = useState(false);
   const [show1, setShow1] = useState(false);
 
+  //navigate hook
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
+
   return (
     <div className="h-[100vh] flex justify-center items-center overflow-auto no-scrollbar">
       <div className="mt-[200px] shadow-xl w-[90%] mx-auto">
         {description.map((productinfo) => {
-          const { id, info, img1, img2, img3} = productinfo;
+          const { id, info, img1, img2, img3 } = productinfo;
           return (
             <div key={id} className="flex flex-col h-[100vh] ">
-              <Link to={"/shoeproducts"}>
+              <div onClick={goBack}>
                 <Button className="absolute mt-5 ml-0 z-10">BACK</Button>
-              </Link>
+              </div>
               <div
                 className="relative gap-6 w-[90%] m-auto h-[90vh] flex 
                         items-center"
@@ -112,8 +123,10 @@ const ShoesDescriptions = () => {
                         {name}
                       </h1>
                       <div className="absolute right-5 top-5 z-10">
-                      {/* destructure shoe product must pass as parameter */}
-                        <Button onClick={() => addToCart(shoeproduct, shoeproduct.id)}>
+                        {/* destructure shoe product must pass as parameter */}
+                        <Button
+                          onClick={() => addToCart(shoeproduct, shoeproduct.id)}
+                        >
                           ADD
                         </Button>
                       </div>
