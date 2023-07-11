@@ -38,7 +38,9 @@ const AllOffProducts = () => {
   //set state value into conditional statement
   //use JSON.parse to convert it to JSON string
   //use localStorage.getItem to get data from localstorage
-  const [more, setMore] = useState(JSON.parse(localStorage.getItem("state") || false));
+  const [more, setMore] = useState(
+    JSON.parse(localStorage.getItem("state") || false)
+  );
 
   //to control show more... onClick
   const toggleShow = () => {
@@ -48,7 +50,6 @@ const AllOffProducts = () => {
       setMore(false);
     }
   };
-
 
   //set localstorage and name it "state"
   useEffect(() => {
@@ -64,14 +65,14 @@ const AllOffProducts = () => {
             return (
               <div
                 key={id}
-                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl"
+                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl lg:h-[390px] relative"
               >
-                <div className="w-[100%] flex flex-col justify-center items-center">
+                <div className="w-[100%] flex flex-col justify-center items-center ">
                   <div className="relative">
                     <div className="flex justify-center">
                       <button
                         onClick={() => addToCart(filteredproduct, id)}
-                        className="absolute bottom-[50px] bg-blue-400 text-white py-[5px]
+                        className="absolute bottom-2 bg-blue-400 text-white py-[5px]
                          px-[10px] rounded-md hover:bg-transparent hover:text-black"
                       >
                         <p>Add to Cart</p>
@@ -84,18 +85,19 @@ const AllOffProducts = () => {
                       <img
                         src={img}
                         alt=""
-                        className="w-[350px] h-[350px] rounded-t-xl"
+                        className="w-[350px] h-[320px] rounded-t-xl"
                       />
                     </Link>
-                    <div className="flex justify-between font-light">
-                      <p className="ml-2">$ {offprice}</p>
-                      <p className="line-through text-red-700 mr-2">{`$ ${parseFloat(
-                        price
-                      ).toFixed(2)}`}</p>
-                    </div>
-                    <div className="text-left">
-                      <p className="font-light text-[.8rem] ml-2">{gender}</p>
-                    </div>
+                  </div>
+
+                  <div className="flex w-[100%] justify-between mt-2">
+                    <p className="ml-2">$ {offprice}</p>
+                    <p className="line-through text-red-700 mr-2">{`$ ${parseFloat(
+                      price
+                    ).toFixed(2)}`}</p>
+                  </div>
+                  <div className="text-left w-[100%] absolute bottom-2">
+                    <p className="font-light text-[.8rem] ml-2">{gender}</p>
                   </div>
                 </div>
               </div>
@@ -109,14 +111,14 @@ const AllOffProducts = () => {
             return (
               <div
                 key={id}
-                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl"
+                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl lg:h-[390px] relative"
               >
                 <div className="w-[100%] flex flex-col justify-center items-center">
                   <div className="relative">
                     <div className="flex justify-center">
                       <button
                         onClick={() => addToCart(filteredproduct, id)}
-                        className="absolute bottom-[50px] bg-blue-400 text-white py-[5px]
+                        className="absolute bottom-2 bg-blue-400 text-white py-[5px]
                          px-[10px] rounded-md hover:bg-transparent hover:text-black"
                       >
                         <p>Add to Cart</p>
@@ -130,18 +132,19 @@ const AllOffProducts = () => {
                       <img
                         src={img}
                         alt=""
-                        className="w-[350px] h-[350px] rounded-t-xl"
+                        className="w-[350px] h-[320px] rounded-t-xl"
                       />
                     </Link>
-                    <div className="flex justify-between font-light">
-                      <p className="ml-2">$ {offprice}</p>
-                      <p className="line-through text-red-700 mr-2">{`$ ${parseFloat(
-                        price
-                      ).toFixed(2)}`}</p>
-                    </div>
-                    <div className="text-left">
-                      <p className="font-light text-[.8rem] ml-2">{gender}</p>
-                    </div>
+                  </div>
+
+                  <div className="flex w-[100%] justify-between mt-2">
+                    <p className="ml-2">$ {offprice}</p>
+                    <p className="line-through text-red-700 mr-2">{`$ ${parseFloat(
+                      price
+                    ).toFixed(2)}`}</p>
+                  </div>
+                  <div className="text-left w-[100%] absolute bottom-2">
+                    <p className="font-light text-[.8rem] ml-2">{gender}</p>
                   </div>
                 </div>
               </div>
@@ -157,14 +160,14 @@ const AllOffProducts = () => {
               return (
                 <div
                   key={id}
-                  className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl"
+                  className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl lg:h-[460px] relative"
                 >
                   <div className="w-[100%] flex flex-col justify-center items-center">
                     <div className="relative">
                       <div className="flex justify-center">
                         <button
                           onClick={() => addToCart(filteredproduct, id)}
-                          className="absolute bottom-[50px] bg-blue-400 text-white py-[5px]
+                          className="absolute -bottom-3 bg-blue-400 text-white py-[5px] active:bg-blue-400 active:text-white
                          px-[10px] rounded-md hover:bg-transparent hover:text-black"
                         >
                           <p>Add to Cart</p>
@@ -178,18 +181,18 @@ const AllOffProducts = () => {
                         <img
                           src={img}
                           alt=""
-                          className="w-[350px] h-[450px] rounded-t-xl"
+                          className="w-[350px] h-[390px] rounded-t-xl"
                         />
                       </Link>
-                      <div className="flex justify-between font-light">
-                        <p className="ml-2">$ {offprice}</p>
-                        <p className="line-through text-red-700 mr-2">{`$ ${parseFloat(
-                          price
-                        ).toFixed(2)}`}</p>
-                      </div>
-                      <div className="text-left">
-                        <p className="font-light text-[.8rem] ml-2">{gender}</p>
-                      </div>
+                    </div>
+                    <div className="flex w-[100%] justify-between mt-5">
+                      <p className="ml-2">$ {offprice}</p>
+                      <p className="line-through text-red-700 mr-2">{`$ ${parseFloat(
+                        price
+                      ).toFixed(2)}`}</p>
+                    </div>
+                    <div className="text-left w-[100%] absolute bottom-1">
+                      <p className="font-light text-[.8rem] ml-2">{gender}</p>
                     </div>
                   </div>
                 </div>
@@ -208,7 +211,9 @@ const AllOffProducts = () => {
           <h1
             className="font-medium mt-5 mb-5 cursor-pointer"
             onClick={toggleShow}
-          >Hide ...</h1>
+          >
+            Hide ...
+          </h1>
         )}
       </div>
     </div>
