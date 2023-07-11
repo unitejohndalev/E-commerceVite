@@ -66,4 +66,19 @@ module.exports = withMT({
 });
 ```
 
+<br/>
+Install React Icon<br/>
+
+```npm i react-icons```
+
+<br/>
+Install Embla React Carousel<br/>
+
+```npm install embla-carousel-react --save```
+
+<br/>
+Install Embla Carousel Autoplay<br/>
+
+```npm install embla-carousel-autoplay --save```
+
 
