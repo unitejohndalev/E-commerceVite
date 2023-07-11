@@ -61,7 +61,7 @@ const AllOffProducts = () => {
   }, [more]); //remember every side effect must return a parameter, here in case state more is set, since it's a variable and changing
 
   return (
-    <div className="relative w-[100%] h-[100vh] overflow-auto no-scrollbar">
+    <div className="relative w-[100%] h-[100vh]">
       <div className="mt-[130px] flex flex-col items-center">
         <div
           className="h-[80vh] md:w-[800px] lg:w-[1040px] flex justify-center md:justify-end
