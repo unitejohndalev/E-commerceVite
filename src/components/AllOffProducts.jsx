@@ -1,5 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 
+//import footer
+import Footer from "./Footer";
+
 //import icons from react
 import { BsPlus, BsEyeFill } from "react-icons/bs";
 
@@ -8,8 +11,9 @@ import { CartContext } from "../contexts/CartContext";
 
 //import product context to get all json data
 import { ProductContext } from "../contexts/ProductContext";
-import { Button } from "@material-tailwind/react";
+
 import { Link } from "react-router-dom";
+import AllOffProductsAutoplayImage from "./AllOffProductsAutoplayImage";
 
 const AllOffProducts = () => {
   //add to cart function
@@ -57,15 +61,35 @@ const AllOffProducts = () => {
   }, [more]); //remember every side effect must return a parameter, here in case state more is set, since it's a variable and changing
 
   return (
-    <div className="relative w-[100%] h-[100vh]">
+    <div className="relative w-[100%] h-[100vh] overflow-auto no-scrollbar">
       <div className="mt-[130px] flex flex-col items-center">
-        <div className="lg:flex lg:flex-wrap lg:mt-0 justify-center gap-x-5 lg:w-[1240px] ">
+        <div
+          className="h-[80vh] md:w-[800px] lg:w-[1040px] flex justify-center md:justify-end
+        relative mb-5 border-solid border-2 border-red-800"
+        >
+          <div className="absolute top-0 md:left-5 md:flex">
+            <p className="text-[1.5rem] lg:text-[3rem] font-light">
+              <span className="text-[2rem] lg:text-[5rem] font-medium">
+                OFF
+              </span>
+              for the week
+            </p>
+          </div>
+          <div className="hidden md:flex">
+
+            <div className=" absolute left-5 bottom-10 h-[50vh] md:w-[300px] lg:w-[550px] border-solid border-2 border-red-800">some text/img whatever</div>
+          </div>
+          <div>
+            <AllOffProductsAutoplayImage />
+          </div>
+        </div>
+        <div className="lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-5 lg:w-[1240px] ">
           {filterHatProducts.map((filteredproduct) => {
             const { id, name, price, offprice, img, gender } = filteredproduct;
             return (
               <div
                 key={id}
-                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl lg:h-[390px] relative"
+                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl h-[390px] relative"
               >
                 <div className="w-[100%] flex flex-col justify-center items-center ">
                   <div className="relative">
@@ -111,7 +135,7 @@ const AllOffProducts = () => {
             return (
               <div
                 key={id}
-                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl lg:h-[390px] relative"
+                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl h-[390px] relative"
               >
                 <div className="w-[100%] flex flex-col justify-center items-center">
                   <div className="relative">
@@ -160,7 +184,7 @@ const AllOffProducts = () => {
               return (
                 <div
                   key={id}
-                  className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl lg:h-[460px] relative"
+                  className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl h-[460px] relative"
                 >
                   <div className="w-[100%] flex flex-col justify-center items-center">
                     <div className="relative">
@@ -216,6 +240,7 @@ const AllOffProducts = () => {
           </h1>
         )}
       </div>
+      <Footer/>
     </div>
   );
 };
