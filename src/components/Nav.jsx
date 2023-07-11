@@ -212,6 +212,30 @@ function NavList() {
 }
 
 const Nav = () => {
+
+  //state for on scroll down hide nav and onscroll up show nav
+  const [scrollDirection, setScrollDirection] = useState(null);
+
+  //handle side effect for scroll up and down
+  useEffect(() => {
+    let lastScrollY = window.pageYOffset;
+
+    const updateScrollDirection = () => {
+      const scrollY = window.pageYOffset;
+      const direction = scrollY > lastScrollY ? "down" : "up";
+      if (
+        direction !== scrollDirection &&
+        (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)
+      ) {
+        setScrollDirection(direction);
+      }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+    };
+    window.addEventListener("scroll", updateScrollDirection); // add event listener
+    return () => {
+      window.removeEventListener("scroll", updateScrollDirection); // clean up
+    };
+  }, [scrollDirection]);
   //useContext for CartContext
   const { itemAmount } = useContext(CartContext);
 
@@ -266,7 +290,11 @@ const Nav = () => {
 
   return (
     <div className="w-[100%] flex justify-center relative">
-      <Navbar className="fixed max-w-screen-xl px-4 py-2 mt-2 z-20">
+      <Navbar
+        className={`fixed ${
+          scrollDirection === "down" ? "-top-24" : "top-0"
+        } max-w-screen-xl px-4 py-2 z-20 transition-all duration-500`}
+      >
         <div className="flex items-center justify-evenly text-blue-gray-900 ">
           <Typography
             href="#"
