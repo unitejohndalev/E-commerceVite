@@ -62,28 +62,33 @@ const AllOffProducts = () => {
 
   return (
     <div className="relative w-[100%] h-[100vh]">
-      <div className="mt-[130px] flex flex-col items-center">
+      <div className="mt-[130px] flex flex-col items-center ">
         <div
-          className="h-[80vh] md:w-[800px] lg:w-[1040px] flex justify-center md:justify-end
-        relative mb-5 border-solid border-2 border-red-800"
+          className="h-[80vh] md:w-[800px] lg:w-[1040px] flex justify-center items-center md:justify-end
+        relative mb-5"
         >
-          <div className="absolute top-0 md:left-5 md:flex">
-            <p className="text-[1.5rem] lg:text-[3rem] font-light">
-              <span className="text-[2rem] lg:text-[5rem] font-medium">
+          <div className="absolute top-0 flex justify-center items-center gap-x-2 md:gap-x-3 lg:gap-x-5 w-[100%]  ">
+              <span className="text-[3rem] md:text-[4rem] lg:text-[5rem] font-semibold">
                 OFF
               </span>
+            <p className=" text-[1.5rem] lg:text-[3rem] font-light">
               for the week
             </p>
           </div>
-          <div className="hidden md:flex">
-
-            <div className=" absolute left-5 bottom-10 h-[50vh] md:w-[300px] lg:w-[550px] border-solid border-2 border-red-800">some text/img whatever</div>
+          <div className="hidden md:flex md:justify-center md:items-center mt-10">
+            <div className=" absolute flex flex-col justify-center left-5 h-[50vh] md:w-[350px] lg:w-[550px] off-bg text-white">
+              <div className="py-10">
+                <p>New styles added!</p>
+                <h1 className="text-[2rem] font-medium">Up to 50% off</h1>
+                <p>Shop your fashion favorites today!</p>
+              </div>
+            </div>
           </div>
           <div>
             <AllOffProductsAutoplayImage />
           </div>
         </div>
-        <div className="lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-5 lg:w-[1240px] ">
+        <div className="md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-5 lg:w-[1240px]">
           {filterHatProducts.map((filteredproduct) => {
             const { id, name, price, offprice, img, gender } = filteredproduct;
             return (
@@ -129,7 +134,7 @@ const AllOffProducts = () => {
           })}
         </div>
 
-        <div className="lg:flex lg:flex-wrap lg:mt-0 justify-center gap-x-5 lg:w-[1240px] ">
+        <div className="md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-0 justify-center gap-x-5 lg:w-[1240px] ">
           {filterShoeProducts.map((filteredproduct) => {
             const { id, name, price, offprice, img, gender } = filteredproduct;
             return (
@@ -177,7 +182,7 @@ const AllOffProducts = () => {
         </div>
 
         {more && (
-          <div className="lg:flex lg:flex-wrap lg:mt-0 justify-center gap-x-5 lg:w-[1240px] ">
+          <div className="md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-0 justify-center gap-x-5 lg:w-[1240px] ">
             {filterClothProduct.map((filteredproduct) => {
               const { id, name, price, offprice, img, gender } =
                 filteredproduct;
@@ -240,7 +245,7 @@ const AllOffProducts = () => {
           </h1>
         )}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

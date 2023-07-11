@@ -27,6 +27,9 @@
   .embla__slide {
   @apply flex-[0_0_100%];
 }
+.off-bg {
+  @apply bg-[#c9002e];
+}
  
 }
 

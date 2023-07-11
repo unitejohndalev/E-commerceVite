@@ -36,22 +36,22 @@ const AllOffProductsAutoplayImage = () => {
   return (
     <div
       className="overflow-hidden
-       h-[100%] w-[400px] flex justify-center items-center
-        transition-all border-solid border-2 border-red-800"
+       h-[50vh] mt-10 w-[400px] flex justify-center items-center
+        transition-all "
       ref={emblaRef}
     >
-      <div className="flex border-solid border-2 border-yellow-800">
+      <div className="flex">
         {filterHatProducts.map((hat) => {
           const { id, img } = hat;
           return (
             <div
-              className="embla__slide min-w-0 border-solid border-2 border-yellow-800"
+              className="embla__slide min-w-0 "
               key={id}
             >
               <div className="flex justify-center items-center">
                 <img
                   src={img}
-                  className="border-solid border-2 border-red-800 w-[400px] h-[400px]"
+                  className="w-[400px] h-[400px]"
                   alt=""
                 />
               </div>
@@ -62,13 +62,13 @@ const AllOffProductsAutoplayImage = () => {
           const { id, img } = shoe;
           return (
             <div
-              className="embla__slide min-w-0 border-solid border-2 border-yellow-800"
+              className="embla__slide min-w-0 "
               key={id}
             >
               <div className="flex justify-center items-center">
                 <img
                   src={img}
-                  className="border-solid border-2 border-red-800 w-[400px] h-[400px]"
+                  className=" w-[400px] h-[400px]"
                   alt=""
                 />
               </div>
@@ -79,13 +79,13 @@ const AllOffProductsAutoplayImage = () => {
           const { id, img } = cloth;
           return (
             <div
-              className="embla__slide min-w-0 border-solid border-2 border-yellow-800"
+              className="embla__slide min-w-0 "
               key={id}
             >
               <div className="flex justify-center items-center">
                 <img
                   src={img}
-                  className="border-solid border-2 border-red-800 w-[400px] h-[490px]"
+                  className=" w-[400px] h-[490px]"
                   alt=""
                 />
               </div>
