@@ -1,54 +1,64 @@
-import React from "react";
+import React, { useContext } from "react";
 
 //import data
-import data from "../data/Herschel.json";
 import { Link } from "react-router-dom";
 
-const HerschelProducts = () => {
-  //destructure data
-  const { bags } = data;
+//import //import data of mkBag from productCOntext
+import { ProductContext } from "../contexts/ProductContext";
 
+//cartContext data and button function
+import { CartContext } from "../contexts/CartContext";
+import { Button } from "@material-tailwind/react";
+
+const HerschelProducts = () => {
+  //destructure data via useContext from ProductContext
+  const { HerschelBagProducts } = useContext(ProductContext);
+
+  //adding button to add to cart
+  const { addToCart } = useContext(CartContext);
 
   return (
-    <div className="px-[20px]">
-      <div className="relative">
- 
-        <div>
-
-            <div className="h-[100vh] overflow-auto">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-[200px] mt-[150px] transition-all">
-                {bags.map((products) => {
-                  const { id, name, price, img } = products;
-                  return (
-                    <div
-                      key={id}
-                      className="mb-10 relative flex flex-col items-center text-center shadow-1"
-                    >
-                      <div className="relative flex justify-center">
-                        <h1 className="font-medium text-[3rem] absolute left-2">
-                          {id}
-                        </h1>
-                        <h1 className="font-medium text-[1.5rem] absolute -top-5 ">
+    <div>
+      <div className=" ">
+        <div className="relative">
+          <div className="h-[100vh] overflow-auto ">
+            <div className=" space-x-4 mb-2 grid md:grid-cols-3 l:grid-cols-12 me-5 m-2 mt-[150px] transition-all">
+              {HerschelBagProducts.map((herschelbag) => {
+                const { id, name, price, img } = herschelbag;
+                return (
+                  <div
+                    key={id}
+                    className="relative flex flex-col items-center text-center"
+                  >
+                    <Link to={`/bagdescription/${id}`}>
+                      <img className="rounded-3xl w-48 h-45 " src={img}></img>
+                    </Link>
+                    <div className="relative flex justify-center">
+                      <p className=" text-black text-center w-60 font-medium text-sm m-5">
+                        <p>Herschel</p>
+                        <h1 className="font-light text-gray-800 mt-4">
                           {name}
                         </h1>
-                        <Link to={`/bagdescription/${id}`}>
 
-                        <img
-                          className="rounded-xl w-[500px] h-[600px]"
-                          src={img}
-                          alt=""
-                        />
-                        </Link>
-                        <p className="font-medium text-[1.5rem] absolute bottom-0 right-4">
+                        <p className="font-light text-gray-800 mt-4">
                           $ {price}
                         </p>
-                      </div>
+                        <div>
+                          <Button
+                            onClick={() =>
+                              addToCart(herschelbag, herschelbag.id)
+                            }
+                          >
+                            Add to Cart
+                          </Button>
+                        </div>
+                      </p>
                     </div>
-                  );
-                })}
-              </div>
+                  </div>
+                );
+              })}
             </div>
-
+          </div>
         </div>
       </div>
     </div>
