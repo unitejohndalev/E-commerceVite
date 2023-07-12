@@ -8,6 +8,9 @@ import { ProductContext } from "../contexts/ProductContext";
 import { CartContext } from "../contexts/CartContext";
 import { Button } from "@material-tailwind/react";
 
+//import footer
+import Footer from "./Footer";
+
 const HMProducts = () => {
   //get cloth products from product context
   const { clothProducts } = useContext(ProductContext);
@@ -16,36 +19,57 @@ const HMProducts = () => {
   const { addToCart } = useContext(CartContext);
 
   return (
-    <div className="h-[100vh] overflow-auto no-scrollbar">
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-[200px] mt-[150px] w-[90%] m-auto transition-all">
-        {clothProducts.map((clothproducts) => {
-          const { id, name, price, img, gender } = clothproducts;
-          return (
-            <div
-              key={id}
-              className="mb-10 relative flex flex-col items-center text-center shadow-1 rounded-xl"
-            >
-              <div className="relative flex justify-center">
-                <h1 className="font-medium text-[1.5rem] absolute -top-5 ">
-                  {name}
-                </h1>
-                <div className="absolute right-5 top-5">
-                  <Button onClick={() => addToCart(clothproducts, clothproducts.id)}>ADD</Button>
+    <div className="relative w-[100%] h-[100vh]">
+      <div className="mt-[130px] flex flex-col items-center ">
+        <div className="md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-5 lg:w-[1240px]">
+          {/* map first data */}
+          {clothProducts.map((clothproducts) => {
+            //destructure product hats data
+            const { id, name, price, img, gender } = clothproducts;
+
+            return (
+              <div
+                key={id}
+                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl h-[450px] relative"
+              >
+                <div className="w-[100%] flex flex-col justify-center items-center ">
+                  <div className="relative">
+                    <div className="flex justify-center">
+                      <button
+                        onClick={() => addToCart(clothproducts, id)}
+                        className="absolute bottom-2 bg-blue-400 text-white py-[5px]
+                         px-[10px] rounded-md hover:bg-transparent hover:text-black"
+                      >
+                        <p>Add to Cart</p>
+                      </button>
+                    </div>
+                    <div className="absolute w-[100%] text-center">
+                      <p>{name}</p>
+                    </div>
+                    <Link to={`/clothdescription/${id}`}>
+                      <img
+                        src={img}
+                        alt=""
+                        className="w-[350px] h-[390px] rounded-t-xl"
+                      />
+                    </Link>
+                  </div>
+
+                  <div className="flex w-[100%] justify-between mt-2">
+                    <p className=" ml-2">{`$ ${parseFloat(price).toFixed(
+                      2
+                    )}`}</p>
+                  </div>
+                  <div className="text-left w-[100%] absolute bottom-2">
+                    <p className="font-light text-[.8rem] ml-2">{gender}</p>
+                  </div>
                 </div>
-                <Link to={`/clothdescription/${id}`}>
-                  <img className="rounded-xl" src={img} alt="" />
-                </Link>
-                <p className="font-light text-[1rem] absolute bottom-0 left-4">
-                  {gender}
-                </p>
-                <p className="font-medium text-[1.5rem] absolute bottom-0 right-4">
-                  $ {price}
-                </p>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };
