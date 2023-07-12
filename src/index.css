@@ -30,6 +30,9 @@
 .off-bg {
   @apply bg-[#c9002e];
 }
+.btn-bg {
+  @apply bg-[#2c93eb]
+}
  
 }
 
