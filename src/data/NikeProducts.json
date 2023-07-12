@@ -2,37 +2,38 @@
     "shoes": [
         {
             "id": 1,
-            "name": "Air Jordan Mid",
-            "price": 125,
+            "name": "Nike Air Max Solo",
+            "price": 100,
             "gender": "Men's Shoes",
-            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5bf8e7f4-18c7-4826-9bab-7b9532a5e3b6/air-jordan-1-mid-mens-shoes-b3js2D.png",
+            "img": "https://static.nike.com/a/images/t_default/abf1df44-8d47-410f-b17b-0d27cbe27a43/air-max-solo-mens-shoes-4SzqpT.png",
             "bestSeller": true,
             "status": "Best Seller",
+            "video": "https://static.nike.com/a/videos/q_90/64d8aec3-1b34-4fce-8e09-45c612cbb0b7/video.mp4",
             "description": [
                 {
                     "id": 1,
-                    "info": "This iteration of the AJ1 reimagines Mike's first signature model with a fresh mix of colors. Premium materials, soft cushioning and a padded ankle collar offer total support and celebrate the shoe that started it all.",
-                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0d155329-9e17-48cb-a28a-2808721a906f/air-jordan-1-mid-big-kids-shoes-pGNQSG.png",
-                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0179791e-2416-45da-a7c9-682e385d158f/air-jordan-1-mid-big-kids-shoes-pGNQSG.png",
-                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/54769c76-c7a0-4529-9289-b1571eebda9d/air-jordan-1-mid-big-kids-shoes-pGNQSG.png"
+                    "info": "These sneakers are for the Air Max superfans. By combining elements from past Air Max models (like the AM90-inspired heel cup), we created a whole new look. The AM180 influences the textured Air unit, which delivers just the right amount of cushioning. Go ahead—Max out your look.",
+                    "img1": "https://static.nike.com/a/images/t_default/7ba38275-1738-4204-bfc4-ee17f0aedc51/air-max-solo-mens-shoes-4SzqpT.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/60b49213-cab7-491b-8c44-0d23309e9108/air-max-solo-mens-shoes-4SzqpT.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/688981f7-6978-4cc9-9ee5-88362a610219/air-max-solo-mens-shoes-4SzqpT.png"
                 }
             ]
         },
         {
             "id": 2,
-            "name": "Nike Air VaporMax 2021 FK",
+            "name": "Nike Air Max Pulse",
             "price": 129.97,
             "gender": "Men's Shoes",
-            "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dfe54c4c-1c62-4f11-b9b9-c22125d3fc6e/air-vapormax-2021-fk-mens-shoes-NpTfFz.png",
+            "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/671fc01d-5205-4a54-8349-0b9eae869dac/air-max-pulse-mens-shoes-ShS3tL.png",
             "bestSeller": false,
             "status": "Just In",
             "description": [
                 {
                     "id": 1,
-                    "info": "Made from at least 40% recycled materials by weight, the Nike Air VaporMax 2021 FK is airy and easy to wear with superstretchy, recycled Flyknit fabric (plus a soft collar that sculpts your ankle). The stitched-on Swoosh and recycled TPU heel clip add a splash of intrigue as you float down the streets on incredibly soft VaporMax cushioning.",
-                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5ee4e8c7-7911-45b2-bec8-7fe8816931dc/air-vapormax-2021-fk-mens-shoes-NpTfFz.png",
-                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4792b4f8-8e47-43bc-b597-b237d9c4aee2/air-vapormax-2021-fk-mens-shoes-NpTfFz.png",
-                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e84e01c9-fd96-4ffe-8131-d69dff671dd4/air-vapormax-2021-fk-mens-shoes-NpTfFz.png"
+                    "info": "The Air Max Pulse pulls inspiration from the London music scene, bringing an underground touch to the iconic Air Max line. Its textile-wrapped midsole and vacuum-sealed accents keep ‘em looking fresh and clean, while colors inspired by the London music scene give your look the edge. Point-loaded Air cushioning—revamped from the incredibly plush Air Max 270—delivers better bounce, helping you push past your limits.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a833a6f8-ab70-4a4a-b2ab-f142bc0462cc/air-max-pulse-mens-shoes-ShS3tL.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d30159c2-ba5c-4959-985b-80d614ff83db/air-max-pulse-mens-shoes-ShS3tL.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/02e1f509-faf7-4bf5-9dac-7025358da0d9/air-max-pulse-mens-shoes-ShS3tL.png"
                 }
             ]
         },
