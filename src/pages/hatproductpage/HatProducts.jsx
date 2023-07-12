@@ -1,7 +1,7 @@
 import React from "react";
 
 //import hat products
-import NikesHatProducts from "../components/NikesHatProducts";
+import NikesHatProducts from "./NikesHatProducts";
 
 const HatProducts = () => {
   return (

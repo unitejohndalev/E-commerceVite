@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
 
 //import product context to get hats data
-import { ProductContext } from "../contexts/ProductContext";
+import { ProductContext } from "../../contexts/ProductContext";
 
 //import cart context
-import { CartContext } from "../contexts/CartContext";
+import { CartContext } from "../../contexts/CartContext";
 
 //import footer
-import Footer from "./Footer";
+import Footer from "../../components/Footer";
 
 
 const NikesHatProducts = () => {
@@ -32,7 +32,7 @@ const {addToCart} = useContext(CartContext)
             return (
               <div
                 key={id}
-                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl h-[390px] relative"
+                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-md h-[390px] relative"
               >
                 <div className="w-[100%] flex flex-col justify-center items-center ">
                   <div className="relative">
@@ -40,7 +40,7 @@ const {addToCart} = useContext(CartContext)
                       <button
                         onClick={() => addToCart(hatproducts, id)}
                         className="absolute bottom-2 bg-blue-400 text-white py-[5px]
-                         px-[10px] rounded-md hover:bg-transparent hover:text-black"
+                         px-[10px] rounded-sm hover:bg-transparent hover:text-black"
                       >
                         <p>Add to Cart</p>
                       </button>
@@ -52,7 +52,7 @@ const {addToCart} = useContext(CartContext)
                       <img
                         src={img}
                         alt=""
-                        className="w-[350px] h-[320px] rounded-t-xl"
+                        className="w-[350px] h-[320px] rounded-t-md"
                       />
                     </Link>
                   </div>

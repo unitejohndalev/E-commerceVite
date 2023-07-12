@@ -10,7 +10,7 @@ const FilterSelectFunction = (props) => {
     <div className=" relative">
       <div className="absolute -top-5 ">
         <select
-          className="outline-none p-2 rounded-lg cursor-pointer"
+          className="outline-none p-2 rounded-sm cursor-pointer"
           name="isbestSeller"
           onChange={onstatusvaluechanged}
         >

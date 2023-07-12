@@ -21,7 +21,7 @@ const ClothFiltered = (props) => {
             return (
               <div
                 key={id}
-                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl h-[390px] relative"
+                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-md h-[390px] relative"
               >
                 <div className="w-[100%] flex flex-col justify-center items-center ">
                   <div className="relative">
@@ -29,7 +29,7 @@ const ClothFiltered = (props) => {
                       <button
                         onClick={() => addToCart(products, id)}
                         className="absolute bottom-2 btn-bg text-white py-[5px]
-                         px-[10px] rounded-md hover:bg-transparent hover:text-black"
+                         px-[10px] rounded-sm hover:bg-transparent hover:text-black"
                       >
                         <p>Add to Cart</p>
                       </button>
@@ -42,7 +42,7 @@ const ClothFiltered = (props) => {
                       <img
                         src={img}
                         alt=""
-                        className="w-[350px] h-[320px] rounded-t-xl"
+                        className="w-[350px] h-[320px] rounded-t-md"
                       />
                     </Link>
                   </div>

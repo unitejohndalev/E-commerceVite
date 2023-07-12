@@ -52,7 +52,7 @@ const HatMain = () => {
         <div className="max-w-[1240px] top-0 absolute">
           <button
             onClick={hatToggle}
-            className="absolute z-10 left-3 btn-bg px-5 py-2 rounded-md text-white"
+            className="absolute z-10 left-3 btn-bg px-5 py-2 rounded-sm text-white"
           >
             Hats
           </button>

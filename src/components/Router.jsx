@@ -13,15 +13,19 @@ import { Route, Routes } from "react-router-dom";
 
 //code splitting by using lazy and suspense from react
 const YourCartContext = lazy(() => import("../contexts/YourCartContext"));
-const HatProducts = lazy(() => import("../pages/HatProducts"));
+const HatProducts = lazy(() => import("../pages/hatproductpage/HatProducts"));
 const HatProductDescription = lazy(() =>
   import("../productDescriptions/HatsProductDescription")
 );
-const ClothingProducts = lazy(() => import("../pages/ClothingProducts"));
+const ClothingProducts = lazy(() =>
+  import("../pages/clothingproductpage/ClothingProducts")
+);
 const ClothProductDescription = lazy(() =>
   import("../productDescriptions/ClothProductDescription")
 );
-const ShoeProducts = lazy(() => import("./NikeProducts"));
+const ShoeProducts = lazy(() =>
+  import("../pages/shoeproductpage/NikeProducts")
+);
 const ShoeProductDescription = lazy(() =>
   import("../productDescriptions/ShoesDescriptions")
 );

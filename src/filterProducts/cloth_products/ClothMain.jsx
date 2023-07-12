@@ -50,7 +50,7 @@ const ClothMain = () => {
         <div className="max-w-[1240px] top-0 absolute">
           <button
             onClick={clothToggle}
-            className="absolute left-[100px] z-10 btn-bg px-5 py-2 rounded-md text-white"
+            className="absolute left-[100px] z-10 btn-bg px-5 py-2 rounded-sm text-white"
           >
             Cloths
           </button>

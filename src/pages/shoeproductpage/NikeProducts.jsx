@@ -3,15 +3,13 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 //import product context to get shoes data
-import { ProductContext } from "../contexts/ProductContext";
-
+import { ProductContext } from "../../contexts/ProductContext";
 
 //import cart context
-import { CartContext } from "../contexts/CartContext";
+import { CartContext } from "../../contexts/CartContext";
 
 //import footer
-import Footer from "./Footer";
-
+import Footer from "../../components/Footer";
 
 const NikeProducts = () => {
   //get hat products from product context
@@ -32,7 +30,7 @@ const NikeProducts = () => {
             return (
               <div
                 key={id}
-                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl h-[390px] relative"
+                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-md h-[390px] relative"
               >
                 <div className="w-[100%] flex flex-col justify-center items-center ">
                   <div className="relative">
@@ -40,7 +38,7 @@ const NikeProducts = () => {
                       <button
                         onClick={() => addToCart(shoeproducts, id)}
                         className="absolute bottom-2 bg-blue-400 text-white py-[5px]
-                         px-[10px] rounded-md hover:bg-transparent hover:text-black"
+                         px-[10px] rounded-sm hover:bg-transparent hover:text-black"
                       >
                         <p>Add to Cart</p>
                       </button>
@@ -52,7 +50,7 @@ const NikeProducts = () => {
                       <img
                         src={img}
                         alt=""
-                        className="w-[350px] h-[320px] rounded-t-xl"
+                        className="w-[350px] h-[320px] rounded-t-md"
                       />
                     </Link>
                   </div>

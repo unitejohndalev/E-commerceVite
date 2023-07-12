@@ -2,14 +2,14 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 //import product context to get cloths data
-import { ProductContext } from "../contexts/ProductContext";
+import { ProductContext } from "../../contexts/ProductContext";
 
 //import cart context
-import { CartContext } from "../contexts/CartContext";
+import { CartContext } from "../../contexts/CartContext";
 import { Button } from "@material-tailwind/react";
 
 //import footer
-import Footer from "./Footer";
+import Footer from "../../components/Footer";
 
 const HMProducts = () => {
   //get cloth products from product context
@@ -30,7 +30,7 @@ const HMProducts = () => {
             return (
               <div
                 key={id}
-                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl h-[450px] relative"
+                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-md h-[450px] relative"
               >
                 <div className="w-[100%] flex flex-col justify-center items-center ">
                   <div className="relative">
@@ -38,7 +38,7 @@ const HMProducts = () => {
                       <button
                         onClick={() => addToCart(clothproducts, id)}
                         className="absolute bottom-2 bg-blue-400 text-white py-[5px]
-                         px-[10px] rounded-md hover:bg-transparent hover:text-black"
+                         px-[10px] rounded-sm hover:bg-transparent hover:text-black"
                       >
                         <p>Add to Cart</p>
                       </button>
@@ -50,7 +50,7 @@ const HMProducts = () => {
                       <img
                         src={img}
                         alt=""
-                        className="w-[350px] h-[390px] rounded-t-xl"
+                        className="w-[350px] h-[390px] rounded-t-md"
                       />
                     </Link>
                   </div>
