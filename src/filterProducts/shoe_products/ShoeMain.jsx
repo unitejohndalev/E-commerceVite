@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 //import data
 import { shoes } from "../../data/NikeProducts.json";
@@ -29,15 +29,51 @@ const ShoeMain = () => {
   const onFilterValueSelected = (filterValue) => {
     setFilterHatProduct(filterValue);
   };
+
+  //show & hide state
+  const [shoeShow, setShoeShow] = useState();
+
+  const shoeToggle = () => {
+    setShoeShow((prevShow) => !prevShow);
+  };
+  let shoeRef = useRef();
+  React.useEffect(() => {
+    document.addEventListener("mousedown", (e) => {
+      if (!shoeRef.current.contains(e.target)) {
+        setShoeShow(false);
+      }
+    });
+  });
   return (
     <div className="relative ">
-      <div className="flex flex-col mt-10">
-        <div className="absolute top-[-20px] left-0 right-0 z-10">
-          {/* filterselectfunction reusable function component */}
-          <FilterSelectFunction filterValueSelected={onFilterValueSelected} />
+      <div ref={shoeRef} className="absolute top-0 w-[100%]">
+        <div className="max-w-[1240px] top-0 absolute">
+          <button
+            onClick={shoeToggle}
+            className="absolute left-[200px] z-10 btn-bg px-5 py-2 rounded-md text-white"
+          >
+            Shoes
+          </button>
         </div>
-        {/* clothfiltered components */}
-        <ShoeFilteredList filterProductList={filterProductList} />
+        <div className="flex flex-col mt-10 ">
+          {shoeShow && (
+            <div className="mt-10">
+              <div className="flex flex-col items-center">
+                <div
+                  className="w-[100%] ml-5 mb-5 md:w-[768px] justify-start gap-x-5 lg:w-[1240px]
+           "
+                >
+                  {/* filterselectfunction reusable function component */}
+                  <FilterSelectFunction
+                    filterValueSelected={onFilterValueSelected}
+                  />
+                </div>
+              </div>
+              {/* hatfiltered components */}
+              <ShoeFilteredList filterProductList={filterProductList} />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

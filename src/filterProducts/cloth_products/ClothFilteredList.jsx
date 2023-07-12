@@ -27,7 +27,7 @@ const ClothFiltered = (props) => {
                     <div className="flex justify-center">
                       <button
                         onClick={() => addToCart(products, id)}
-                        className="absolute bottom-2 bg-blue-400 text-white py-[5px]
+                        className="absolute bottom-2 btn-bg text-white py-[5px]
                          px-[10px] rounded-md hover:bg-transparent hover:text-black"
                       >
                         <p>Add to Cart</p>
@@ -37,7 +37,7 @@ const ClothFiltered = (props) => {
                     <div className="absolute w-[100%] text-center">
                       <p>{name}</p>
                     </div>
-                    <Link to={`/hatdescription/${id}`}>
+                    <Link to={`/clothdescription/${id}`}>
                       <img
                         src={img}
                         alt=""

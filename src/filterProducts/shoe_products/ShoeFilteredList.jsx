@@ -34,7 +34,7 @@ const ShoeFilteredList = (props) => {
                     <div className="absolute w-[100%] text-center">
                       <p>{name}</p>
                     </div>
-                    <Link to={`/hatdescription/${id}`}>
+                    <Link to={`/shoedescription/${id}`}>
                       <img
                         src={img}
                         alt=""
