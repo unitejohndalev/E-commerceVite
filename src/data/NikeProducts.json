@@ -8,7 +8,6 @@
             "img": "https://static.nike.com/a/images/t_default/abf1df44-8d47-410f-b17b-0d27cbe27a43/air-max-solo-mens-shoes-4SzqpT.png",
             "bestSeller": true,
             "status": "Best Seller",
-            "video": "https://static.nike.com/a/videos/q_90/64d8aec3-1b34-4fce-8e09-45c612cbb0b7/video.mp4",
             "description": [
                 {
                     "id": 1,
@@ -27,6 +26,7 @@
             "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/671fc01d-5205-4a54-8349-0b9eae869dac/air-max-pulse-mens-shoes-ShS3tL.png",
             "bestSeller": false,
             "status": "Just In",
+            "video": "https://static.nike.com/a/videos/q_90/de1d9c10-9eda-44a7-b1c2-4bb06ffbbccb/video.mp4",
             "description": [
                 {
                     "id": 1,
