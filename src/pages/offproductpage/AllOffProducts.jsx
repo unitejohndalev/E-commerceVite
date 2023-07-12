@@ -1,16 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
 
 //import footer
-import Footer from "./Footer";
-
-//import icons from react
-import { BsPlus, BsEyeFill } from "react-icons/bs";
+import Footer from "../../components/Footer";
 
 //import add to cart function from cart context
-import { CartContext } from "../contexts/CartContext";
+import { CartContext } from "../../contexts/CartContext";
 
 //import product context to get all json data
-import { ProductContext } from "../contexts/ProductContext";
+import { ProductContext } from "../../contexts/ProductContext";
 
 import { Link } from "react-router-dom";
 import AllOffProductsAutoplayImage from "./AllOffProductsAutoplayImage";
@@ -43,7 +40,7 @@ const AllOffProducts = () => {
   //use JSON.parse to convert it to JSON string
   //use localStorage.getItem to get data from localstorage
   const [more, setMore] = useState(
-    JSON.parse(localStorage.getItem("state") || false)
+    JSON.parse(localStorage.getItem("moreoffproducts") || false)
   );
 
   //to control show more... onClick
@@ -55,9 +52,9 @@ const AllOffProducts = () => {
     }
   };
 
-  //set localstorage and name it "state"
+  //set localstorage and name it "moreoffproducts"
   useEffect(() => {
-    localStorage.setItem("state", JSON.stringify(more));
+    localStorage.setItem("moreoffproducts", JSON.stringify(more));
   }, [more]); //remember every side effect must return a parameter, here in case state more is set, since it's a variable and changing
 
   return (
@@ -68,9 +65,9 @@ const AllOffProducts = () => {
         relative mb-5"
         >
           <div className="absolute top-0 flex justify-center items-center gap-x-2 md:gap-x-3 lg:gap-x-5 w-[100%]  ">
-              <span className="text-[3rem] md:text-[4rem] lg:text-[5rem] font-semibold">
-                OFF
-              </span>
+            <span className="text-[3rem] md:text-[4rem] lg:text-[5rem] font-semibold">
+              OFF
+            </span>
             <p className=" text-[1.5rem] lg:text-[3rem] font-light">
               for the week
             </p>

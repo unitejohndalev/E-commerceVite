@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 //import material tailwind
 import {
@@ -20,17 +20,17 @@ const FilterProductMain = () => {
     {
       label: "Hats",
       value: "hats",
-      desc: <HatMain/>
+      desc: <HatMain />,
     },
     {
       label: "Cloths",
       value: "cloths",
-      desc: <ClothMain/>
+      desc: <ClothMain />,
     },
     {
       label: "Shoes",
       value: "shoes",
-      desc:<ShoeMain/>
+      desc: <ShoeMain />,
     },
     {
       label: "Bags",
@@ -48,23 +48,25 @@ const FilterProductMain = () => {
   ];
 
   return (
-    <div className="mt-[150px]">
-      <Tabs value="html">
-        <TabsHeader>
-          {data.map(({ label, value }) => (
-            <Tab key={value} value={value}>
-              {label}
-            </Tab>
-          ))}
-        </TabsHeader>
-        <TabsBody>
-          {data.map(({ value, desc }) => (
-            <TabPanel key={value} value={value}>
-              {desc}
-            </TabPanel>
-          ))}
-        </TabsBody>
-      </Tabs>
+    <div className="mt-[150px] flex justify-center ">
+      <div className="md:w-[840px] lg:w-[1240px] ">
+        <Tabs value="html" >
+          <TabsHeader>
+            {data.map(({ label, value }) => (
+              <Tab key={value} value={value}>
+                {label}
+              </Tab>
+            ))}
+          </TabsHeader>
+          <TabsBody>
+            {data.map(({ value, desc }) => (
+              <TabPanel key={value} value={value}>
+                {desc}
+              </TabPanel>
+            ))}
+          </TabsBody>
+        </Tabs>
+      </div>
     </div>
   );
 };

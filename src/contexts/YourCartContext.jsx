@@ -23,7 +23,7 @@ const YourCartContext = () => {
     total,
   } = useContext(CartContext);
 
-  //navigate hook
+  //navigate hook, when back button is clicked it'll back 1 page
   const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);

@@ -12,7 +12,7 @@ import Nav from "./Nav";
 import { Route, Routes } from "react-router-dom";
 
 //code splitting by using lazy and suspense from react
-const YourCartContext = lazy(() => import("../contexts/YourCartContext"))
+const YourCartContext = lazy(() => import("../contexts/YourCartContext"));
 const HatProducts = lazy(() => import("../pages/HatProducts"));
 const HatProductDescription = lazy(() =>
   import("../productDescriptions/HatsProductDescription")
@@ -33,8 +33,10 @@ const AccessoriesProducts = lazy(() => import("../pages/AccessoriesProducts"));
 const SecondUnknownProducts = lazy(() =>
   import("../pages/SecondUnknownProducts")
 );
-const FeatureProducts = lazy(() => import("../pages/FeatureProducts"));
-const OffProducts = lazy(() => import("../pages/OffProducts"));
+const FeatureProducts = lazy(() =>
+  import("../pages/featureproductpage/FeatureProducts")
+);
+const OffProducts = lazy(() => import("../pages/offproductpage/OffProducts"));
 const AboutUs = lazy(() => import("../pages/AboutUs"));
 
 //Bags
@@ -68,7 +70,7 @@ const Router = () => {
             path="/clothdescription/:id"
             element={<ClothProductDescription />}
           />
-          <Route path="/yourcart" element={<YourCartContext/>}/>
+          <Route path="/yourcart" element={<YourCartContext />} />
 
           {/* Clothes pages brands*/}
 

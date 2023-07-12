@@ -5,6 +5,7 @@ import { hats } from "../../data/NikeProducts.json";
 //import FilterSelectFunction components
 import FilterSelectFunction from "../FilterSelectFunction";
 
+
 //import filterProducts
 import HatFiltered from "./HatFilteredList";
 
@@ -30,9 +31,9 @@ const HatMain = () => {
   };
 
   return (
-    <div className="relative border-solid border-2 border-yellow-800">
-      <div className="flex flex-col h-[75vh] overflow-auto">
-        <div className="absolute top-[-20px] left-0 z-10">
+    <div className="relative">
+      <div className="flex flex-col mt-10 ">
+        <div className="absolute top-[-20px] left-0 right-0 z-10">
           {/* filterselectfunction reusable function component */}
           <FilterSelectFunction filterValueSelected={onFilterValueSelected} />
         </div>

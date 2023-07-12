@@ -1,13 +1,11 @@
 import React, { useContext } from "react";
 
 //import product context
-import { ProductContext } from "../contexts/ProductContext";
+import { ProductContext } from "../../contexts/ProductContext";
 
 //import embla carousel and autoplay
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-
-
 
 const AllOffProductsAutoplayImage = () => {
   //call all state in product context
@@ -32,7 +30,6 @@ const AllOffProductsAutoplayImage = () => {
   //autoplay
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
-
   return (
     <div
       className="overflow-hidden
@@ -44,16 +41,9 @@ const AllOffProductsAutoplayImage = () => {
         {filterHatProducts.map((hat) => {
           const { id, img } = hat;
           return (
-            <div
-              className="embla__slide min-w-0 "
-              key={id}
-            >
+            <div className="embla__slide min-w-0 " key={id}>
               <div className="flex justify-center items-center">
-                <img
-                  src={img}
-                  className="w-[400px] h-[400px]"
-                  alt=""
-                />
+                <img src={img} className="w-[400px] h-[400px]" alt="" />
               </div>
             </div>
           );
@@ -61,16 +51,9 @@ const AllOffProductsAutoplayImage = () => {
         {filterShoeProducts.map((shoe) => {
           const { id, img } = shoe;
           return (
-            <div
-              className="embla__slide min-w-0 "
-              key={id}
-            >
+            <div className="embla__slide min-w-0 " key={id}>
               <div className="flex justify-center items-center">
-                <img
-                  src={img}
-                  className=" w-[400px] h-[400px]"
-                  alt=""
-                />
+                <img src={img} className=" w-[400px] h-[400px]" alt="" />
               </div>
             </div>
           );
@@ -78,16 +61,9 @@ const AllOffProductsAutoplayImage = () => {
         {filterClothProducts.map((cloth) => {
           const { id, img } = cloth;
           return (
-            <div
-              className="embla__slide min-w-0 "
-              key={id}
-            >
+            <div className="embla__slide min-w-0 " key={id}>
               <div className="flex justify-center items-center">
-                <img
-                  src={img}
-                  className=" w-[400px] h-[490px]"
-                  alt=""
-                />
+                <img src={img} className=" w-[400px] h-[490px]" alt="" />
               </div>
             </div>
           );

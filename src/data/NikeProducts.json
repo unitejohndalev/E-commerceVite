@@ -713,8 +713,8 @@
             "name": "Unstructured Futura Wash Cap",
             "price": 26,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/33c9b90d-5f23-464b-a870-7cfd9ceebe61/club-unstructured-futura-wash-cap-77d39b.png",
-            "bestSeller": null,
-            "status": "Just In",
+            "bestSeller": true,
+            "status": "Best Seller",
             "gender": "Men's Cap",
             "description": [
                 {
@@ -733,7 +733,7 @@
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/08c3c044-7882-4b26-a79b-99ac2c2895c0/club-unstructured-jdi-cap-Xr7txF.png",
             "bestSeller": true,
             "gender": "Men's Cap",
-            "status": "Just In",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -853,7 +853,7 @@
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f205124e-309a-4098-bdaa-7f5a24278ea7/dri-fit-club-kids-unstructured-metal-swoosh-cap-MfPJz0.png",
             "bestSeller": true,
             "gender": "Women's Cap",
-            "status": "Just In",
+            "status": "Best Seller",
             "description": [
                 {
                     "id": 1,
@@ -871,7 +871,7 @@
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bfd77d3a-e963-4635-875c-13703b161ee4/rise-cap-structured-trucker-cap-QVCQf7.png",
             "bestSeller": false,
             "gender": "Women's Cap",
-            "status": "Best Seller",
+            "status": "Just In",
             "description": [
                 {
                     "id": 1,
@@ -888,7 +888,7 @@
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/473aa8c6-22b4-4f96-91e3-a570f50628c4/terra-tie-dye-beanie-32WxLQ.png",
             "bestSeller": false,
             "gender": "Men's Beanie",
-            "status": "Best Seller",
+            "status": "Just In",
             "description": [
                 {
                     "id": 1,
@@ -905,7 +905,7 @@
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/48845032-6e4b-44a7-9bca-468bd259ae49/peak-standard-cuff-futura-beanie-44Jf5h.png",
             "bestSeller": false,
             "gender": "Women's Beanie",
-            "status": "Best Seller",
+            "status": "Just In",
             "description": [
                 {
                     "id": 1,
@@ -940,7 +940,7 @@
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/p7m1besl1mhfu1ylkkkh/aerobill-tailwind-running-cap-jx0vWd.png",
             "bestSeller": false,
             "gender": "Women's Cap",
-            "status": "Best Seller",
+            "status": "Just In",
             "description": [
                 {
                     "id": 1,

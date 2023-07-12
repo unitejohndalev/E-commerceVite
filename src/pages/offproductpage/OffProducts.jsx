@@ -1,7 +1,7 @@
 import React from 'react'
 
 //import AllOffProducts
-import AllOffProducts from '../components/AllOffProducts';
+import AllOffProducts from './AllOffProducts';
 
 const OffProducts = () => {
   return (
