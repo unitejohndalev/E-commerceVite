@@ -8,6 +8,11 @@ import ErrorPage from "../pages/errorpage";
 //import nav
 import Nav from "./Nav";
 
+//import fallbackloading for suspense
+import Fallbackloading from "./Fallbackloading"
+
+
+
 //import routes and route
 import { Route, Routes } from "react-router-dom";
 
@@ -59,7 +64,7 @@ const Router = () => {
   return (
     <>
       <Nav />
-      <Suspense fallback={<h1>loading ....</h1>}>
+      <Suspense fallback={<Fallbackloading/>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hatproducts" element={<HatProducts />} />
