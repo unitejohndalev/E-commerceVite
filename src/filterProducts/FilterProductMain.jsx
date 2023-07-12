@@ -14,7 +14,7 @@ const FilterProductMain = () => {
 
   return (
 
-      <div className=" h-[100vh] border-solid border-2 border-red-800">
+      <div className=" h-[100vh] ">
         <div className="cursor-pointer">
           {/* <button className="">Clothes</button>
         <button className="">Shoes</button>
