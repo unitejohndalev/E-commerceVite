@@ -5,20 +5,22 @@ import React, { useContext } from "react";
 import { CartContext } from "../../contexts/CartContext";
 import { Link } from "react-router-dom";
 
+import Footer from "../../components/Footer";
+
 const HatFiltered = (props) => {
   //add to cart function
   const { addToCart } = useContext(CartContext);
   return (
-    <div className="relative w-[100%]">
+    <div className="relative w-[100%] h-[100vh]">
       <div className="flex flex-col items-center ">
-        <div className="md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-5 justify-center gap-x-5 lg:w-[1240px]">
+        <div className="md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-5 justify-center gap-x-5 lg:w-[1240px] ">
           {props.filterProductList.map((products) => {
             //destructure products
             const { name, img, price, status, gender, id } = products;
             return (
               <div
                 key={id}
-                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl h-[390px] relative"
+                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-xl h-[390px] relative "
               >
                 <div className="w-[100%] flex flex-col justify-center items-center ">
                   <div className="relative">
@@ -58,6 +60,7 @@ const HatFiltered = (props) => {
           })}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

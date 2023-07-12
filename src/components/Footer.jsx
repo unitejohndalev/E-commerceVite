@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     // change footer background color
-    <footer className="bg-primary relative p-10 h-[60vh] border-solid border-2 border-yellow-800">
+    <footer className="bg-primary relative p-10 h-[60vh] border-solid border-2 border-yellow-800 mt-10">
       <div
         className="max-w-[1240px] h-[35vh] m-auto flex justify-center
        border-solid border-2 border-blue-800 mb-10"

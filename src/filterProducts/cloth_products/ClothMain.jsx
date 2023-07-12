@@ -55,10 +55,10 @@ const ClothMain = () => {
             Cloths
           </button>
         </div>
-        <div className="flex flex-col mt-10 ">
+        <div className="flex flex-col mt-10">
           {clothShow && (
             <div className="mt-10">
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center ">
                 <div
                   className="w-[100%] ml-5 mb-5 md:w-[768px] justify-start gap-x-5 lg:w-[1240px]
            "

@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 //import data
 import { hats } from "../../data/NikeProducts.json";
 
+
+
 //import FilterSelectFunction components
 import FilterSelectFunction from "../FilterSelectFunction";
 
@@ -75,6 +77,7 @@ const HatMain = () => {
           )}
         </div>
       </div>
+   
     </div>
   );
 };

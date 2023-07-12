@@ -7,22 +7,27 @@ import HatMain from "./hat_products/HatMain";
 import ClothMain from "./cloth_products/ClothMain";
 import ShoeMain from "./shoe_products/ShoeMain";
 
+// import Footer from "../components/Footer";
+
 const FilterProductMain = () => {
 
 
   return (
-    <div className="relative h-[100vh] border-solid border-2 border-red-800">
-      <div className="cursor-pointer">
-        {/* <button className="">Clothes</button>
+
+      <div className=" h-[100vh] border-solid border-2 border-red-800">
+        <div className="cursor-pointer">
+          {/* <button className="">Clothes</button>
         <button className="">Shoes</button>
         <button className="">Bags</button>
         <button className="">Accessories</button> */}
 
-        <HatMain />
-        <ClothMain />
-        <ShoeMain/>
+          <HatMain />
+          <ClothMain />
+          <ShoeMain />
+        </div>
       </div>
-    </div>
+
+   
   );
 };
 

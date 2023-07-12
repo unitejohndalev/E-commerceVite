@@ -7,18 +7,18 @@ import FilterProductMain from "../../filterProducts/FilterProductMain";
 import HeroFeatureProducts from "./HeroFeatureProducts";
 
 //import footer
-// import Footer from "../../components/Footer";
+import Footer from "../../components/Footer";
 
 const FeatureProducts = () => {
   return (
-    <div className="">
+    <div className="relative h-[100%]">
       <div className="w-[100%] flex justify-center mt-[100px]">
-        <HeroFeatureProducts/>
+        <HeroFeatureProducts />
       </div>
       <div className="mb-10">
         <FilterProductMain />
       </div>
-      {/* <Footer /> */}
+
     </div>
   );
 };

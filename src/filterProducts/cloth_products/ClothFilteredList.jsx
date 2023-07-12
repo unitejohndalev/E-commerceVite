@@ -5,6 +5,7 @@ import React, { useContext } from "react";
 import { CartContext } from "../../contexts/CartContext";
 import { Link } from "react-router-dom";
 
+import Footer from "../../components/Footer";
 
 const ClothFiltered = (props) => {
   //add to cart function
@@ -60,6 +61,7 @@ const ClothFiltered = (props) => {
           })}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

@@ -4,6 +4,9 @@ import React, { useContext } from "react";
 //import add to cart function from cart context
 import { CartContext } from "../../contexts/CartContext";
 import { Link } from "react-router-dom";
+
+import Footer from "../../components/Footer";
+
 const ShoeFilteredList = (props) => {
   //add to cart function
   const { addToCart } = useContext(CartContext);
@@ -57,6 +60,7 @@ const ShoeFilteredList = (props) => {
           })}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
