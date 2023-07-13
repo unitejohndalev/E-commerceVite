@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 //import data
 import { clothes } from "../../data/HMProducts.json";
 
@@ -8,7 +8,12 @@ import FilterSelectFunction from "../FilterSelectFunction";
 //import filterProducts
 import ClothFilteredList from "./ClothFilteredList";
 
+import { ProductContext } from "../../contexts/ProductContext";
+
 const ClothMain = () => {
+  const { setHatShow, setShoeShow, clothShow, setClothShow } =
+    useContext(ProductContext);
+
   //state for hat products data
   const [Product, setProduct] = useState(clothes);
 
@@ -29,24 +34,16 @@ const ClothMain = () => {
     setFilterHatProduct(filterValue);
   };
 
-  //show & hide state
-  const [clothShow, setClothShow] = useState();
-
   const clothToggle = () => {
-    setClothShow((prevShow) => !prevShow);
+    setClothShow(true);
+    setHatShow(false);
+    setShoeShow(false);
   };
-  let clothRef = useRef();
-  React.useEffect(() => {
-    document.addEventListener("mousedown", (e) => {
-      if (!clothRef.current.contains(e.target)) {
-        setClothShow(false);
-      }
-    });
-  });
+
 
   return (
     <div className="relative">
-      <div ref={clothRef} className="absolute top-0 w-[100%]">
+      <div className="absolute top-0 w-[100%]">
         <div className="max-w-[1240px] top-0 absolute">
           <button
             onClick={clothToggle}

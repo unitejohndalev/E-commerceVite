@@ -1,8 +1,7 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 //import data
 import { hats } from "../../data/NikeProducts.json";
-
-
+import { ProductContext } from "../../contexts/ProductContext";
 
 //import FilterSelectFunction components
 import FilterSelectFunction from "../FilterSelectFunction";
@@ -11,6 +10,8 @@ import FilterSelectFunction from "../FilterSelectFunction";
 import HatFiltered from "./HatFilteredList";
 
 const HatMain = () => {
+  const { hatShow, setHatShow, setClothShow, setShoeShow } =
+    useContext(ProductContext);
   //state for hat products data
   const [Product, setProduct] = useState(hats);
 
@@ -31,24 +32,16 @@ const HatMain = () => {
     setFilterHatProduct(filterValue);
   };
 
-  //show & hide state
-  const [hatShow, setHatShow] = useState(true);
-
   const hatToggle = () => {
-    setHatShow((prevShow) => !prevShow);
+    setHatShow(true);
+    setClothShow(false);
+    setShoeShow(false);
   };
-  let hatRef = useRef();
-  React.useEffect(() => {
-    document.addEventListener("mousedown", (e) => {
-      if (!hatRef.current.contains(e.target)) {
-        setHatShow(false);
-      }
-    });
-  });
+
 
   return (
     <div className="relative ">
-      <div ref={hatRef} className="absolute top-0 w-[100%]">
+      <div className="absolute top-0 w-[100%] ">
         <div className="max-w-[1240px] top-0 absolute">
           <button
             onClick={hatToggle}
@@ -77,7 +70,6 @@ const HatMain = () => {
           )}
         </div>
       </div>
-   
     </div>
   );
 };
