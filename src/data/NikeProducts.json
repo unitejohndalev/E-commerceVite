@@ -711,7 +711,7 @@
     "hats": [
         {
             "id": 41,
-            "name": "Unstructured Futura Wash Cap",
+            "name": "Futura Wash Cap",
             "price": 26,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/33c9b90d-5f23-464b-a870-7cfd9ceebe61/club-unstructured-futura-wash-cap-77d39b.png",
             "bestSeller": true,
@@ -728,7 +728,7 @@
         },
         {
             "id": 42,
-            "name": "Unstructured JDI Cap",
+            "name": "JDI Cap",
             "price": 28,
             "offprice": 26.49,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/08c3c044-7882-4b26-a79b-99ac2c2895c0/club-unstructured-jdi-cap-Xr7txF.png",
@@ -763,7 +763,7 @@
         },
         {
             "id": 44,
-            "name": "Unstructured Futura Cap",
+            "name": "Futura Cap",
             "price": 28,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8d475101-166e-4ac8-a2f4-d3d5bfd9d4f2/fly-unstructured-futura-cap-L2mRCG.png",
             "bestSeller": false,
@@ -780,7 +780,7 @@
         },
         {
             "id": 45,
-            "name": "Unstructured Swoosh Cap",
+            "name": "Swoosh Cap",
             "price": 26,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ea940986-4724-4ab6-875a-20dbf40b97e4/club-unstructured-swoosh-cap-fcrZ5f.png",
             "bestSeller": false,
@@ -832,7 +832,7 @@
         },
         {
             "id": 48,
-            "name": "Kid's Unstructured Futura Wash Cap",
+            "name": "Kid's Futura Wash Cap",
             "price": 22,
             "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/43bbea17-44c4-4e33-b9c3-8b283c5720c1/club-kids-unstructured-futura-wash-cap-pPvb8C.png",
             "bestSeller": false,
