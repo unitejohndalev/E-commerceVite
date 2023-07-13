@@ -66,6 +66,16 @@ const ProductProvider = ({ children }) => {
     setHerschelBagProducts(herschelbags);
   }, []);
 
+  //show state for hat
+  const [hatShow, setHatShow] = useState(true);
+
+  //show state for cloth
+  const [clothShow, setClothShow] = useState();
+
+  //show state for shoe
+   const [shoeShow, setShoeShow] = useState();
+
+
   //make product context the provider
   //set the value to the created DATA states
   //then pass it to children
@@ -77,6 +87,12 @@ const ProductProvider = ({ children }) => {
         clothProducts,
         MKBagProducts,
         HerschelBagProducts,
+        setHatShow,
+        hatShow,
+        setClothShow,
+        clothShow,
+        setShoeShow,
+        shoeShow
       }}
     >
       {children}
