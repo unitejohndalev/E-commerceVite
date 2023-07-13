@@ -14,9 +14,8 @@ import { ProductContext } from "../contexts/ProductContext";
 import { CartContext } from "../contexts/CartContext";
 
 
-
-//import material tailwind button
-import { Button } from "@material-tailwind/react";
+//import product description context
+import { ProductDescriptionContext } from "../contexts/ProductDescriptionContext";
 
 // eslint-disable-next-line react/prop-types
 const ShoesDescriptions = () => {
@@ -35,11 +34,9 @@ const ShoesDescriptions = () => {
   });
 
   //destructure shoeproduct varialbe
-  const { description, name, price } = shoeproduct;
+  const { description, name, price, gender } = shoeproduct;
 
-  //state for img show and hide onMouseOver/onMouseOut
-  const [show, setShow] = useState(false);
-  const [show1, setShow1] = useState(false);
+ 
 
   //navigate hook
   const navigate = useNavigate();
@@ -47,104 +44,129 @@ const ShoesDescriptions = () => {
     navigate(-1);
   };
 
-  return (
-    <div className="h-[100vh] flex justify-center items-center overflow-auto no-scrollbar">
-      <div className="mt-[200px] shadow-xl w-[90%] mx-auto">
-        {description.map((productinfo) => {
-          const { id, info, img1, img2, img3 } = productinfo;
-          return (
-            <div key={id} className="flex flex-col h-[100vh] ">
-              <div onClick={goBack}>
-                <Button className="absolute mt-5 ml-0 z-10">BACK</Button>
-              </div>
-              <div
-                className="relative gap-6 w-[90%] m-auto h-[90vh] flex 
-                        items-center"
-              >
-                <div
-                  className="w-[100%] hidden lg:flex flex-col gap-y-2 
-                 h-[100%] relative z-9 px-10 "
-                >
-                  <img className="rounded-xl " src={img1} width={150} />
-                  <div>
-                    <div className="absolute left-[16vw] top-0">
-                      <img src={img1} className="w-[400px] h-[500px]" alt="" />
-                    </div>
-                  </div>
-                  <img
-                    className="rounded-xl "
-                    src={img2}
-                    alt=""
-                    width={150}
-                    onMouseOver={() => setShow(true)}
-                    onMouseOut={() => setShow(false)}
-                  />
-                  <div>
-                    {show && (
-                      <div className="absolute left-[16vw] top-0">
-                        <img
-                          src={img2}
-                          className="w-[400px] h-[500px]"
-                          alt=""
-                        />
-                      </div>
-                    )}
-                  </div>
-                  <img
-                    className="rounded-xl w-[150px]"
-                    src={img3}
-                    alt=""
-                    width={150}
-                    onMouseOver={() => setShow1(true)}
-                    onMouseOut={() => setShow1(false)}
-                  />
-                  <div>
-                    {show1 && (
-                      <div className="absolute left-[16vw] top-0">
-                        <img
-                          src={img3}
-                          className="w-[400px] h-[500px]"
-                          alt=""
-                        />
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <div className="relative h-[100%] w-[100%] lg:w-[80%] flex justify-center gap-x-10 0">
-                  <img
-                    className="w-[400px] h-[500px] lg:hidden "
-                    src={img1}
-                    alt=""
-                  />
+  //shoe context
+    const {
+      shoeDescriptionFirstImgShow,
+      firstShoeImgToggle,
+      shoeDescriptionSecondImgShow,
+      secondShoeImgToggle,
+      shoeDescriptionThirdImgShow,
+      thirdShoeImgToggle,
+    } = useContext(ProductDescriptionContext);
 
-                  <div className="flex items-center absolute h-[100%] xl:w-[100%] w-[100%] lg:right-0">
-                    <div className="absolute w-[100%] flex justify-center text-center top-0">
-                      <h1 className=" text-[1rem] xl:text-[2.3rem] xxl:text-[2.5rem] font-light">
-                        {name}
-                      </h1>
-                      <div className="absolute right-5 top-5 z-10">
-                        {/* destructure shoe product must pass as parameter */}
-                        <Button
-                          onClick={() => addToCart(shoeproduct, shoeproduct.id)}
-                        >
-                          ADD
-                        </Button>
-                      </div>
-                      <p className="font-medium text-[1.5rem] absolute bottom-0 right-4">
-                        $ {price}
-                      </p>
+  return (
+    <div className="relative h-[100%]  ">
+      <div>
+        <button
+          className="absolute top-[100px]
+          ml-2 bg-blue-400 text-white py-[5px] px-[10px] rounded-sm"
+          onClick={goBack}
+        >
+          <p>Back</p>
+        </button>
+      </div>
+      <div className="flex justify-center">
+        <div className="h-[100%] mt-[150px] w-[90%] md:min-w-[768px] lg:max-w-[1024px] xl:max-w-[1240px] relative ">
+          {description.map((producinfo) => {
+            const { id, info, img1, img2, img3 } = producinfo;
+            return (
+              <div key={id} className="relative flex justify-center ">
+                <div className="relative md:w-[100%]">
+                  {/* name, price, gender */}
+                  <div className="md:w-[100%] ">
+                    <div className="md:absolute md:right-2 md:w-[330px] lg:w-[368px] xl:w-[568px] md:top-5">
+                      <p className="font-medium text-[1.5rem]">{name}</p>
+                      <p className="font-light">{gender}</p>
+                      <p className="mt-3 font-medium">{`$ ${parseFloat(
+                        price
+                      ).toFixed(2)}`}</p>
                     </div>
-                    <div className="h-[30%] absolute bottom-[100px] ">
-                      <p className="font-light text-[1rem] xl:text-[1.2rem]">
+                  </div>
+                  <div className="mt-5 lg:h-[80vh]">
+                    {shoeDescriptionFirstImgShow && (
+                      <div>
+                        <img
+                          className="w-[400px] h-[450px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-t-md shadow-xl"
+                          src={img1}
+                        />
+                      </div>
+                    )}
+                    {shoeDescriptionSecondImgShow && (
+                      <div>
+                        <img
+                          className="w-[400px] h-[450px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-t-md shadow-xl "
+                          src={img2}
+                        />
+                      </div>
+                    )}
+                    {shoeDescriptionThirdImgShow && (
+                      <div>
+                        <img
+                          className="w-[400px] h-[450px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-t-md shadow-xl "
+                          src={img3}
+                        />
+                      </div>
+                    )}
+                    <div className="mt-5 flex gap-x-2 lg:absolute lg:flex-col lg:top-0 lg:gap-y-2">
+                      <img
+                        className={
+                          shoeDescriptionFirstImgShow
+                            ? "w-[80px] h-[80px] md:ml-2 xl:w-[120px] xl:h-[120px] xl:ml-10 rounded-sm shadow-xl brightness-50"
+                            : "w-[80px] h-[80px] md:ml-2 xl:w-[120px] xl:h-[120px] xl:ml-10 rounded-sm shadow-xl "
+                        }
+                        src={img1}
+                        alt=""
+                        onMouseOver={firstShoeImgToggle}
+                      />
+                      <img
+                        className={
+                          shoeDescriptionSecondImgShow
+                            ? "w-[80px] h-[80px] md:ml-2 xl:w-[120px] xl:h-[120px] xl:ml-10 rounded-sm shadow-xl brightness-50"
+                            : "w-[80px] h-[80px] md:ml-2 xl:w-[120px] xl:h-[120px] xl:ml-10 rounded-sm shadow-xl "
+                        }
+                        src={img2}
+                        alt=""
+                        onMouseOver={secondShoeImgToggle}
+                      />
+                      <img
+                        className={
+                          shoeDescriptionThirdImgShow
+                            ? "w-[80px] h-[80px] md:ml-2 xl:w-[120px] xl:h-[120px] xl:ml-10 rounded-sm shadow-xl brightness-50"
+                            : "w-[80px] h-[80px] md:ml-2 xl:w-[120px] xl:h-[120px] xl:ml-10 rounded-sm shadow-xl "
+                        }
+                        src={img3}
+                        alt=""
+                        onMouseOver={thirdShoeImgToggle}
+                      />
+                    </div>
+                    <div
+                      className="flex flex-col gap-y-4 mt-5 md:w-[330px] md:absolute md:right-2
+                    md:top-[200px] lg:w-[368px] xl:w-[568px]"
+                    >
+                      <button
+                        className="w-[100%] bg-blue-400 text-white py-[10px] px-[10px] rounded-sm"
+                        onClick={() => addToCart(shoeproduct, shoeproduct.id)}
+                      >
+                        <p>Add to Cart</p>
+                      </button>
+                      <button className="w-[100%] off-bg text-white py-[10px] px-[10px] rounded-sm">
+                        <p>Add to Favorite</p>
+                      </button>
+                    </div>
+                    <div
+                      className="w-[410px] mt-10 mb-10 md:w-[330px] md:absolute md:right-2 md:top-[320px]
+                    lg:w-[368px] lg:mt-[100px] xl:w-[568px]"
+                    >
+                      <p className="font-light lg:text-[1.2rem] text-justify">
                         {info}
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

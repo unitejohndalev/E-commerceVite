@@ -39,6 +39,7 @@ const ShoesDescriptions = () => {
     navigate(-1);
   };
 
+  //hat context
   const {
     hatDescriptionFirstImgShow,
     firstImgToggle,
