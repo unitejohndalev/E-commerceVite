@@ -9,7 +9,7 @@ const HeroFeatureProducts = () => {
     return productVideo.video;
   });
   return (
-    <div className="relative w-[100%] h-[100vh] mb-10">
+    <div className="relative w-[100%] ">
       <div className="flex flex-col items-center">
         <div className=" relative md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-5 justify-end gap-x-5 lg:w-[1240px]">
           {filteredShoeProduct.map((product) => {
@@ -17,11 +17,14 @@ const HeroFeatureProducts = () => {
             return (
               <div key={id} className="">
                 <div
-                  className="h-[80vh] md:w-[800px] lg:w-[1040px] flex justify-center items-center md:justify-end
+                  className="h-[80vh] md:w-[800px] lg:w-[1240px] flex justify-center items-center md:justify-end 
         relative mb-5"
                 >
-                  <div className="hidden md:flex md:justify-center md:items-center mt-10">
-                    <div className=" absolute flex flex-col justify-center left-5 h-[50vh] md:w-[350px] lg:w-[550px] off-bg text-white">
+                  <div className="relative md:flex md:justify-center md:items-center h-[65vh] w-[400px] md:w-[800px] lg:w-[1240px] border-solid border-2 border-red-800">
+                    <div
+                      className="hidden absolute md:flex flex-col justify-center left-5 h-[65vh]
+                     md:w-[350px] lg:w-[650px] off-bg text-white"
+                    >
                       <div className="py-10 flex flex-col justify-center items-center">
                         <p>New styles just in!</p>
                         <h1 className="text-[2rem] font-medium">
@@ -30,15 +33,15 @@ const HeroFeatureProducts = () => {
                         <p>Shop your fashion favorites today!</p>
                       </div>
                     </div>
+                    <video
+                      className="flex absolute right-5"
+                      width="370"
+                      loop
+                      autoPlay={true}
+                      muted
+                      src={video}
+                    ></video>
                   </div>
-                  <video
-                    className=""
-                    width="350"
-                    loop
-                    autoPlay={true}
-                    muted
-                    src={video}
-                  ></video>
                 </div>
               </div>
             );
