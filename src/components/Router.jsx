@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 
 //import pages
-import Home from "../pages/Home";
+import Home from "../pages/homepage/Home";
 import ErrorPage from "../pages/errorpage";
 // import ProductProvider from "../contexts/ProductContext";
 
