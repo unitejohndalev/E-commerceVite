@@ -70,6 +70,30 @@ const ProductDescriptionProvider = ({ children }) => {
         setClothDescriptionFirstImgShow(false);
         setClothDescriptionSecondImgShow(false);
       };
+
+      //all merge products state
+      const [allProductsFirstImgShow, setAllProductsFirstImgShow] = useState(true)
+      const [allProductsSecondImgShow, setAllProductsSecondImgShow] = useState()
+      const [allProductsThirdImgShow, setAllProductsThirdImgShow] = useState()
+
+      const firstAllProductImgToggle = () => {
+        setAllProductsFirstImgShow(true)
+        setAllProductsSecondImgShow(false)
+        setAllProductsThirdImgShow(false)
+      }
+      
+      const secondAllProductImgToggle = () => {
+        setAllProductsSecondImgShow(true);
+        setAllProductsFirstImgShow(false);
+        setAllProductsThirdImgShow(false);
+      };
+      
+      const thirdAllProductImgToggle = () => {
+        setAllProductsThirdImgShow(true);
+        setAllProductsFirstImgShow(false);
+        setAllProductsSecondImgShow(false);
+      };
+
   return (
     <ProductDescriptionContext.Provider
       value={{
@@ -88,7 +112,14 @@ const ProductDescriptionProvider = ({ children }) => {
         clothDescriptionSecondImgShow,
         secondClothImgToggle,
         clothDescriptionThirdImgShow,
-        thirdClothImgToggle
+        thirdClothImgToggle,
+        firstAllProductImgToggle,
+        secondAllProductImgToggle,
+        thirdAllProductImgToggle,
+        allProductsFirstImgShow,
+        allProductsSecondImgShow,
+        allProductsThirdImgShow
+
       }}
     >
       {children}
