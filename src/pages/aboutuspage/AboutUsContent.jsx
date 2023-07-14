@@ -5,7 +5,7 @@ const AboutUsContent = () => {
   return (
     <div className="h-[100%] bg-blue-800 md:bg-yellow-800">
       <div className="flex justify-center">
-        <div className="mt-[120px] w-[90%] md:flex md:gap-x-5 lg:max-w-[1294px]">
+        <div className="mt-[120px] w-[90%] md:flex md:gap-x-5 lg:max-w-[1240px]">
           <div
             className="w-[100%] flex-col justify-center items-center text-center
            bg-green-800 md:items-start "
