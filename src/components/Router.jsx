@@ -17,6 +17,8 @@ import Fallbackloading from "./Fallbackloading"
 import { Route, Routes } from "react-router-dom";
 
 //code splitting by using lazy and suspense from react
+const AllProductSearch =   lazy(() => import("../components/searchpage/AllSearchProductInfos"))
+const SearchProducts = lazy(() => import("../components/SearchProduct"))
 const YourCartContext = lazy(() => import("../contexts/YourCartContext"));
 const HatProducts = lazy(() => import("../pages/hatproductpage/HatProducts"));
 const HatProductDescription = lazy(() =>
@@ -67,6 +69,8 @@ const Router = () => {
       <Suspense fallback={<Fallbackloading/>}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/allproductsearch/:id" element={<AllProductSearch/>}/>
+          <Route path="/searchproducts" element={<SearchProducts/>}/>
           <Route path="/hatproducts" element={<HatProducts />} />
           <Route
             path="/hatdescription/:id"
