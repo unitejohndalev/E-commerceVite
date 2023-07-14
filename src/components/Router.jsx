@@ -46,7 +46,7 @@ const FeatureProducts = lazy(() =>
   import("../pages/featureproductpage/FeatureProducts")
 );
 const OffProducts = lazy(() => import("../pages/offproductpage/OffProducts"));
-const AboutUs = lazy(() => import("../pages/AboutUs"));
+const AboutUs = lazy(() => import("../pages/aboutuspage/AboutUs"));
 
 //Bags
 import MKBags from "./MKProducts";
