@@ -76,6 +76,22 @@ const ProductProvider = ({ children }) => {
    const [shoeShow, setShoeShow] = useState();
 
 
+   //merge all json data into 1 single array
+    const allProductsMerge = [
+      ...hatProducts,
+      ...shoeProducts,
+      ...clothProducts,
+    ];
+
+    //state for search product
+  const [searchProduct, setSearchProduct] = useState("");
+
+  //input function for search
+  const handleChange = (event) => {
+    setSearchProduct(event.target.value)
+  }
+
+
   //make product context the provider
   //set the value to the created DATA states
   //then pass it to children
@@ -92,7 +108,11 @@ const ProductProvider = ({ children }) => {
         setClothShow,
         clothShow,
         setShoeShow,
-        shoeShow
+        shoeShow,
+        allProductsMerge,
+        searchProduct,
+        handleChange
+
       }}
     >
       {children}
