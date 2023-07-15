@@ -7,7 +7,7 @@ const HomeContent = () => {
       {/* container */}
       <div className=" flex justify-center mt-[100px] ">
         {/* wrapper container */}
-        <div className="w-[90%] md:max-w-[768px] lg:max-w-[1040px] b">
+        <div className="w-[90%] md:max-w-[768px] lg:max-w-[1040px]">
           {/* hero section */}
           <div className="flex justify-center items-center w-[100%] h-[70vh] lg:h-[80vh] bg-red-800">
             <h1 className="font-medium text-[2rem] text-center">

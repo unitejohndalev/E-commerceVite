@@ -48,7 +48,7 @@ const {addToCart} = useContext(CartContext)
                     <div className="absolute w-[100%] text-center">
                       <p>{name}</p>
                     </div>
-                    <Link to={`/hatdescription/${id}`}>
+                    <Link to={`/allproductsearch/${id}`}>
                       <img
                         src={img}
                         alt=""
@@ -58,10 +58,9 @@ const {addToCart} = useContext(CartContext)
                   </div>
 
                   <div className="flex w-[100%] justify-between mt-2">
-                   
-                    <p className=" ml-2">{`$ ${parseFloat(
-                      price
-                    ).toFixed(2)}`}</p>
+                    <p className=" ml-2">{`$ ${parseFloat(price).toFixed(
+                      2
+                    )}`}</p>
                   </div>
                   <div className="text-left w-[100%] absolute bottom-2">
                     <p className="font-light text-[.8rem] ml-2">{gender}</p>

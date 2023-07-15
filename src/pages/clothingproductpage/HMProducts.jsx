@@ -46,7 +46,7 @@ const HMProducts = () => {
                     <div className="absolute w-[100%] text-center">
                       <p>{name}</p>
                     </div>
-                    <Link to={`/clothdescription/${id}`}>
+                    <Link to={`/allproductsearch/${id}`}>
                       <img
                         src={img}
                         alt=""

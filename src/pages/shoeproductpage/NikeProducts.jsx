@@ -46,7 +46,7 @@ const NikeProducts = () => {
                     <div className="absolute w-[100%] text-center">
                       <p>{name}</p>
                     </div>
-                    <Link to={`/shoedescription/${id}`}>
+                    <Link to={`/allproductsearch/${id}`}>
                       <img
                         src={img}
                         alt=""

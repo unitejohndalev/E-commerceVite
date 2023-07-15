@@ -107,7 +107,7 @@ const AllOffProducts = () => {
                     <div className="absolute w-[100%]">
                       <p>{name}</p>
                     </div>
-                    <Link to={`/hatdescription/${id}`}>
+                    <Link to={`/allproductsearch/${id}`}>
                       <img
                         src={img}
                         alt=""
@@ -154,7 +154,7 @@ const AllOffProducts = () => {
                       <p>{name}</p>
                     </div>
 
-                    <Link to={`/shoedescription/${id}`}>
+                    <Link to={`/allproductsearch/${id}`}>
                       <img
                         src={img}
                         alt=""
@@ -203,7 +203,7 @@ const AllOffProducts = () => {
                         <p>{name}</p>
                       </div>
 
-                      <Link to={`/clothdescription/${id}`}>
+                      <Link to={`/allproductsearch/${id}`}>
                         <img
                           src={img}
                           alt=""
