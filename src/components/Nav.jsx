@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 
 //import react icons
-import {BiShoppingBag} from 'react-icons/bi'
+import { BiShoppingBag } from "react-icons/bi";
 
 //import components
-import SignIn from "./SignIn";
+import Login from "./Login";
 
 //import link
 import { Link } from "react-router-dom";
@@ -14,8 +14,6 @@ import Logo from "./img/logo.png";
 
 //import cart context to get itemAmount function for cart button
 import { CartContext } from "../contexts/CartContext";
-
-
 
 // import material-tailwind components
 import {
@@ -217,7 +215,6 @@ function NavList() {
 }
 
 const Nav = () => {
-
   //state for on scroll down hide nav and onscroll up show nav
   const [scrollDirection, setScrollDirection] = useState(null);
 
@@ -300,7 +297,6 @@ const Nav = () => {
           scrollDirection === "down" ? "-top-24" : "top-0"
         }  px-4 py-2 z-20 transition-all duration-500 !max-w-[100%]
         !rounded-none`}
-        
       >
         <div className="flex items-center text-blue-gray-900 relative w-[100%] ">
           <Typography
@@ -321,15 +317,15 @@ const Nav = () => {
             <NavList />
           </div>
           <div className="cursor-pointer absolute right-[150px] md:right-[300px] lg:right-[350px] xl:right-[500px]">
-          <Link to={"/searchproducts"}>
-
-            <div>
-              Search
-            </div>
-          </Link>
+            <Link to={"/searchproducts"}>
+              <div>Search</div>
+            </Link>
           </div>
           <div className="hidden gap-2 lg:flex justify-center items-center ">
-            <div ref={LogInRef} className="absolute lg:right-[200px] xl:right-[350px]">
+            <div
+              ref={LogInRef}
+              className="absolute lg:right-[200px] xl:right-[350px]"
+            >
               <Button
                 variant="text"
                 size="sm"
@@ -337,24 +333,31 @@ const Nav = () => {
                 onClick={toggle}
                 className="!rounded-sm"
               >
-                Sign In
+                Log in
               </Button>
               <div className="relative">
                 {logInShow && (
-                  <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid border-2 border-red-800 bg-white/70">
-                    <div className="border-solid border-2 border-red-800 w-[50%] max-w-[500px] h-[80%] flex justify-center items-center bg-pink-400">
-                      <SignIn />
+                  <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid border-2  bg-transparent">
+                    <div className="text-black border-solid border-2  w-[50%] max-w-[500px] h-[80%] flex justify-center items-center bg-light-green-700 m-4 padding">
+                      <Login />
                     </div>
                   </div>
                 )}
               </div>
             </div>
 
-            <Button variant="gradient" size="sm" className="absolute lg:right-[100px] xl:right-[250px] !rounded-sm">
+            <Button
+              variant="gradient"
+              size="sm"
+              className="absolute lg:right-[100px] xl:right-[250px] !rounded-sm"
+            >
               Sign Up
             </Button>
 
-            <Link to={"/yourcart"} className="absolute lg:right-[20px] xl:right-[100px] flex justify-center ">
+            <Link
+              to={"/yourcart"}
+              className="absolute lg:right-[20px] xl:right-[100px] flex justify-center "
+            >
               {itemAmount > 0 ? (
                 <div
                   className="bg-red-500 absolute -right-2 top-0 text-[12px]
@@ -367,8 +370,7 @@ const Nav = () => {
                 <div></div>
               )}
               <div className="text-[2rem]">
-                
-              <BiShoppingBag/>
+                <BiShoppingBag />
               </div>
             </Link>
           </div>
@@ -397,13 +399,13 @@ const Nav = () => {
                   color="blue-gray"
                   className="w-[100%]"
                 >
-                  Sign In
+                  Login
                 </Button>
                 <div className="relative">
                   {logInMobileShow && (
                     <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid border-2 border-red-800 bg-white/70">
                       <div className="border-solid border-2 border-red-800 w-[50%] max-w-[500px] h-[80%] flex justify-center items-center bg-pink-400">
-                        <SignIn />
+                        <Login />
                       </div>
                     </div>
                   )}
