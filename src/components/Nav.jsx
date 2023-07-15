@@ -1,5 +1,8 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 
+//import react icons
+import {BiShoppingBag} from 'react-icons/bi'
+
 //import components
 import SignIn from "./SignIn";
 
@@ -129,8 +132,8 @@ function NavListMenu() {
   const renderItems = navListMenuItems.map(
     ({ icon, title, description, color, link }, key) => (
       <Link to={link} key={key} className="">
-        <MenuItem className="flex gap-3 rounded-lg">
-          <div className={`rounded-lg p-5 ${colors[color]}`}>
+        <MenuItem className="flex gap-3 rounded-sm ">
+          <div className={`rounded-sm p-5 ${colors[color]}`}>
             {React.createElement(icon, {
               strokeWidth: 2,
               className: "h-6 w-6",
@@ -163,10 +166,10 @@ function NavListMenu() {
         allowHover={true}
         className=""
       >
-        <MenuHandler className="">
-          <Typography as="div" variant="small" className="font-normal">
+        <MenuHandler className="xl:ml-20 ">
+          <Typography as="div" variant="small" className="font-normal ">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4"
+              className="flex items-center gap-2 py-2 pr-4 !rounded-sm"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -188,8 +191,8 @@ function NavListMenu() {
           </Typography>
         </MenuHandler>
 
-        <MenuList className=" hidden lg:block mt-2 w-[100%] bg-transparent shadow-none border-none ">
-          <ul className="grid grid-cols-4 gap-y-2 w-[80%] m-auto rounded-xl shadow-md bg-white p-2 ">
+        <MenuList className=" hidden lg:block mt-2 w-[100%] bg-transparent  shadow-none border-none  ">
+          <ul className="grid grid-cols-4 gap-y-2 w-[80%] m-auto rounded-sm shadow-md bg-white p-2 ">
             {renderItems}
           </ul>
         </MenuList>
@@ -291,17 +294,19 @@ const Nav = () => {
   });
 
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center">
       <Navbar
         className={`fixed ${
           scrollDirection === "down" ? "-top-24" : "top-0"
-        } max-w-screen-xl px-4 py-2 z-20 transition-all duration-500`}
+        }  px-4 py-2 z-20 transition-all duration-500 !max-w-[100%]
+        !rounded-none relative`}
+        
       >
-        <div className="flex items-center justify-evenly text-blue-gray-900 ">
+        <div className="flex items-center text-blue-gray-900 relative w-[100%] ">
           <Typography
             href="#"
             variant="h6"
-            className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+            className="mr-4 cursor-pointer py-1.5 lg:ml-10 xl:ml-20"
           >
             <Link to={"/"}>
               <div className=" grid-cols-3 flex items-center justify-between ">
@@ -315,7 +320,7 @@ const Nav = () => {
           <div className="hidden lg:block">
             <NavList />
           </div>
-          <div className="cursor-pointer">
+          <div className="cursor-pointer absolute right-[150px] md:right-[300px] lg:right-[350px] xl:right-[700px]">
           <Link to={"/searchproducts"}>
 
             <div>
@@ -323,13 +328,14 @@ const Nav = () => {
             </div>
           </Link>
           </div>
-          <div className="hidden gap-2 lg:flex">
-            <div ref={LogInRef}>
+          <div className="hidden gap-2 lg:flex justify-center items-center ">
+            <div ref={LogInRef} className="absolute lg:right-[200px] xl:right-[350px]">
               <Button
                 variant="text"
                 size="sm"
                 color="blue-gray"
                 onClick={toggle}
+                className="!rounded-sm"
               >
                 Sign In
               </Button>
@@ -344,14 +350,14 @@ const Nav = () => {
               </div>
             </div>
 
-            <Button variant="gradient" size="sm">
+            <Button variant="gradient" size="sm" className="absolute lg:right-[100px] xl:right-[250px] !rounded-sm">
               Sign Up
             </Button>
 
-            <Link to={"/yourcart"}>
+            <Link to={"/yourcart"} className="absolute lg:right-[20px] xl:right-[100px] flex justify-center ">
               {itemAmount > 0 ? (
                 <div
-                  className="bg-red-500 absolute right-5 text-[12px]
+                  className="bg-red-500 absolute -right-2 top-0 text-[12px]
             w-[18px] h-[18px] text-white rounded-full flex justify-center
             items-center"
                 >
@@ -360,13 +366,16 @@ const Nav = () => {
               ) : (
                 <div></div>
               )}
-              <Button className="bg-white-800 text-black">Cart</Button>
+              <div className="text-[2rem]">
+                
+              <BiShoppingBag/>
+              </div>
             </Link>
           </div>
           <IconButton
             variant="text"
             color="blue-gray"
-            className="lg:hidden"
+            className="lg:hidden !bg-white !absolute right-10"
             onClick={() => setOpenNav(!openNav)}
           >
             {openNav ? (
