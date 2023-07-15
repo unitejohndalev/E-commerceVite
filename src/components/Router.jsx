@@ -9,33 +9,27 @@ import ErrorPage from "../pages/errorpage";
 import Nav from "./Nav";
 
 //import fallbackloading for suspense
-import Fallbackloading from "./Fallbackloading"
-
-
+import Fallbackloading from "./Fallbackloading";
 
 //import routes and route
 import { Route, Routes } from "react-router-dom";
 
 //code splitting by using lazy and suspense from react
-const AllProductSearch =   lazy(() => import("../components/searchpage/AllSearchProductInfos"))
-const SearchProducts = lazy(() => import("../components/SearchProduct"))
+const AllProductSearch = lazy(() =>
+  import("../components/searchpage/AllSearchProductInfos")
+);
+const SearchProducts = lazy(() => import("../components/SearchProduct"));
 const YourCartContext = lazy(() => import("../contexts/YourCartContext"));
 const HatProducts = lazy(() => import("../pages/hatproductpage/HatProducts"));
-const HatProductDescription = lazy(() =>
-  import("../productDescriptions/HatsProductDescription")
-);
+
 const ClothingProducts = lazy(() =>
   import("../pages/clothingproductpage/ClothingProducts")
 );
-const ClothProductDescription = lazy(() =>
-  import("../productDescriptions/ClothProductDescription")
-);
+
 const ShoeProducts = lazy(() =>
   import("../pages/shoeproductpage/NikeProducts")
 );
-const ShoeProductDescription = lazy(() =>
-  import("../productDescriptions/ShoesDescriptions")
-);
+
 const BagProducts = lazy(() => import("../pages/BagProducts"));
 const BagProductDescription = lazy(() =>
   import("../productDescriptions/BagProductDescription")
@@ -66,32 +60,23 @@ const Router = () => {
   return (
     <>
       <Nav />
-      <Suspense fallback={<Fallbackloading/>}>
+      <Suspense fallback={<Fallbackloading />}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/allproductsearch/:id" element={<AllProductSearch/>}/>
-          <Route path="/searchproducts" element={<SearchProducts/>}/>
+          <Route path="/allproductsearch/:id" element={<AllProductSearch />} />
+          <Route path="/searchproducts" element={<SearchProducts />} />
           <Route path="/hatproducts" element={<HatProducts />} />
-          <Route
-            path="/hatdescription/:id"
-            element={<HatProductDescription />}
-          />
+
           {/* Hats pages brands*/}
 
           <Route path="/clothingproducts" element={<ClothingProducts />} />
-          <Route
-            path="/clothdescription/:id"
-            element={<ClothProductDescription />}
-          />
+
           <Route path="/yourcart" element={<YourCartContext />} />
 
           {/* Clothes pages brands*/}
 
           <Route path="/shoeproducts" element={<ShoeProducts />} />
-          <Route
-            path="/shoedescription/:id"
-            element={<ShoeProductDescription />}
-          />
+
           {/* Shoes pages brands*/}
 
           <Route path="/bagproducts" element={<BagProducts />} />
