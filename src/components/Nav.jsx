@@ -320,7 +320,7 @@ const Nav = () => {
           <div className="hidden lg:block">
             <NavList />
           </div>
-          <div className="cursor-pointer absolute right-[150px] md:right-[300px] lg:right-[350px] xl:right-[700px]">
+          <div className="cursor-pointer absolute right-[150px] md:right-[300px] lg:right-[350px] xl:right-[500px]">
           <Link to={"/searchproducts"}>
 
             <div>
