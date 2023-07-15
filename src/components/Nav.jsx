@@ -294,12 +294,12 @@ const Nav = () => {
   });
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center relative">
       <Navbar
         className={`fixed ${
           scrollDirection === "down" ? "-top-24" : "top-0"
         }  px-4 py-2 z-20 transition-all duration-500 !max-w-[100%]
-        !rounded-none relative`}
+        !rounded-none`}
         
       >
         <div className="flex items-center text-blue-gray-900 relative w-[100%] ">
