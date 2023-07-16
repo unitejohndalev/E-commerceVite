@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 @layer base {
   body {
     @apply font-primary bg-gray-200;
@@ -25,15 +22,81 @@
     @apply px-6 py-8 text-[15px] space-y-6 shadow-md bg-white absolute w-full z-10 list-none rounded-b-lg;
   }
   .embla__slide {
-  @apply flex-[0_0_100%];
-}
-.off-bg {
-  @apply bg-[#c9002e];
-}
-.btn-bg {
-  @apply bg-[#2c93eb]
+    @apply flex-[0_0_100%];
+  }
+  .off-bg {
+    @apply bg-[#c9002e];
+  }
+  .btn-bg {
+    @apply bg-[#2c93eb];
+  }
 }
 
+@layer components {
+.border-red {
+    @apply border-solid border-2 border-red-800;
+  }
+
+  /* product page hat/shoes/clothing/filtered components styles */
+  .btn-primary {
+    @apply absolute bottom-2 bg-blue-400 text-white py-[5px] px-[10px] rounded-sm hover:bg-transparent hover:border-solid hover:border-2 hover:border-blue-400 active:bg-blue-400 active:text-white hover:text-black;
+  }
+  .parent-container {
+    @apply relative w-[100%] h-[100vh];
+  }
+  .product-container {
+    @apply mt-[130px] flex flex-col items-center;
+  }
+  .mapParent-container {
+    @apply md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-5 lg:w-[1240px];
+  }
+  .mapProduct-container {
+    @apply mt-2 mb-2 lg:w-[285px] shadow-xl rounded-md h-[390px] relative;
+  }
+  .AddToCartBtn-container {
+    @apply flex justify-center;
+  }
+  .name-container {
+    @apply absolute w-[100%] text-center;
+  }
+  .img-style {
+    @apply w-[350px] h-[320px] rounded-t-md;
+  }
+
+  .price-container {
+    @apply flex w-[100%] justify-between mt-2;
+  }
+  .gender-container {
+    @apply text-left w-[100%] absolute bottom-2;
+  }
+
+  .p-style {
+    @apply font-light text-[.8rem] ml-2;
+  }
+
+  /* featured/offproducts hero styles */
+  .heroParent-container {
+    @apply relative w-[100%];
+  }
+  .secondHeroParent-container {
+    @apply flex flex-col items-center;
+  }
+  .mapHeroParent-container {
+    @apply h-[80vh] md:w-[800px] lg:w-[1240px] flex justify-center items-center md:justify-end 
+        relative mb-5;
+  }
+  .secondMapHeroParent-container {
+    @apply relative md:flex md:justify-center md:items-center h-[65vh] w-[400px] md:w-[800px] lg:w-[1240px];
+  }
+  .textHero-container {
+    @apply hidden absolute md:flex flex-col justify-center left-5 h-[65vh] md:w-[350px] lg:w-[650px] off-bg text-white;
+  }
+  .secondTextHero-container {
+    @apply py-10 flex flex-col justify-center items-center;
+  }
+  .video-style {
+    @apply flex absolute right-5;
+  }
 }
 
 /* 
@@ -48,11 +111,11 @@
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

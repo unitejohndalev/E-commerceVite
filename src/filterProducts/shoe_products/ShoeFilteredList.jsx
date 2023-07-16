@@ -11,56 +11,44 @@ const ShoeFilteredList = (props) => {
   //add to cart function
   const { addToCart } = useContext(CartContext);
   return (
-    <div className="relative w-[100%]">
-      <div className="flex flex-col items-center ">
-        <div className="md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-5 justify-center gap-x-5 lg:w-[1240px]">
+    <div className="parent-container ">
+      <div className="product-container mt-0">
+        <div className="mapParent-container lg:mt-5 ">
           {props.filterProductList.map((products) => {
             //destructure products
             const { name, img, price, status, gender, id } = products;
             return (
-              <div
-                key={id}
-                className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-md h-[390px] relative"
-              >
-                <div className="w-[100%] flex flex-col justify-center items-center ">
-                  <div className="relative">
-                    <div className="flex justify-center">
-                      <button
-                        onClick={() => addToCart(products, id)}
-                        className="absolute bottom-2 bg-blue-400 text-white py-[5px]
-                         px-[10px] rounded-sm hover:bg-transparent hover:text-black"
-                      >
-                        <p>Add to Cart</p>
-                      </button>
-                    </div>
+              <div key={id} className="mapProduct-container">
+                <div className="relative">
+                  <div className="AddToCartBtn-container ">
+                    <button
+                      onClick={() => addToCart(products, id)}
+                      className="btn-primary"
+                    >
+                      <p>Add to Cart</p>
+                    </button>
+                  </div>
 
-                    <div className="absolute w-[100%] text-center">
-                      <p>{name}</p>
-                    </div>
-                    <Link to={`/shoedescription/${id}`}>
-                      <img
-                        src={img}
-                        alt=""
-                        className="w-[350px] h-[320px] rounded-t-md"
-                      />
-                    </Link>
+                  <div className="name-container ">
+                    <p>{name}</p>
                   </div>
-                  <div className="flex w-[100%] justify-between mt-2">
-                    <p className="ml-2">{status}</p>
-                    <p className="mr-2">{`$ ${parseFloat(price).toFixed(
-                      2
-                    )}`}</p>
-                  </div>
-                  <div className="text-left w-[100%] absolute bottom-2">
-                    <p className="font-light text-[.8rem] ml-2">{gender}</p>
-                  </div>
+                  <Link to={`/allproductsearch/${id}`}>
+                    <img src={img} alt="" className="img-style" />
+                  </Link>
+                </div>
+                <div className="price-container">
+                  <p className="ml-2">{status}</p>
+                  <p className="mr-2">{`$ ${parseFloat(price).toFixed(2)}`}</p>
+                </div>
+                <div className="gender-container">
+                  <p className="p-style">{gender}</p>
                 </div>
               </div>
             );
           })}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import React, { createContext, useEffect, useState } from "react";
 
+
+
 //create context
 export const CartContext = createContext();
 
@@ -32,6 +34,8 @@ const CartProvider = ({ children }) => {
     }
   }, [cart]);
 
+
+
   //add to cart function
   //bug, when a product has the same id, first product add to cart replace following any product that has the same id
   //tried applying random number using math.floor and math.random, but failed to resolve
@@ -39,7 +43,7 @@ const CartProvider = ({ children }) => {
   const addToCart = (product, id) => {
     const newItem = { ...product, amount: 1 };
     const cartItem = cart.find((item) => {
-      return item.id === id;
+      return item.id === id
     });
 
     if (cartItem) {
@@ -54,6 +58,7 @@ const CartProvider = ({ children }) => {
     } else {
       setCart([...cart, newItem]);
     }
+    
   };
 
   //remove from cart
