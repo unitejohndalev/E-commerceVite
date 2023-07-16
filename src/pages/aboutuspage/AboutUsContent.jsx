@@ -32,9 +32,9 @@ const AboutUsContent = () => {
               <p>IMG about us</p>
             </div>
           </div>
-          <div className="w-[100%] flex justify-center gap-x-5 mt-10  md:flex-col md:mt-0 lg:relative ">
-            <div className="w-[100%] flex flex-col items-center lg:flex-col lg:w-[49%] lg:absolute lg:left-0 lg:bottom-0">
-              <div className="w-[90%] mb-2 h-[40vh] flex justify-center items-center  md:w-[100%] bg-blue-800">
+          <div className="w-[100%] flex justify-center gap-x-5  md:flex-col md:mt-0 lg:relative ">
+            <div className="w-[100%] flex flex-col items-center lg:flex-col lg:w-[48%] lg:absolute lg:left-0 lg:bottom-0 ">
+              <div className="w-[90%] h-[40vh] flex justify-center items-center  md:w-[100%] bg-blue-800">
                 <p>Product IMG</p>
               </div>
               <div className="w-[90%] h-[18vh] flex justify-center items-center md:w-[100%] ">
@@ -48,10 +48,10 @@ const AboutUsContent = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden lg:flex w-[45%] lg:flex-col absolute right-0 top-0">
-              <div className=" w-[100%]  h-[18vh] mb-2 flex justify-center items-center">
-                <div className="w-[100%] h-[25vh] flex items-center justify-cente">
-                  <p className="text-justify text-[.8rem]">
+            <div className="hidden lg:flex w-[48%] lg:flex-col absolute right-0 bottom-0 ">
+              <div className="w-[90%] h-[18vh] flex justify-center items-center md:w-[100%] ">
+                <div className="w-[100%] h-[25vh] flex items-center justify-center ">
+                  <p className="text-justify md:text-[.8rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Omnis, vel nostrum quisquam eveniet facilis vitae atque
                     rerum. Sunt molestiae optio natus nemo exercitationem vel,
