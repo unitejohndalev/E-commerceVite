@@ -5,7 +5,7 @@ import AllOffProducts from './AllOffProducts';
 
 const OffProducts = () => {
   return (
-    <div className="h-[100vh] flex justify-center items-center text-center">
+    <div className="">
       <AllOffProducts/>
     </div>
   );

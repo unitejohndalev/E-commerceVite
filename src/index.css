@@ -97,6 +97,10 @@
   .video-style {
     @apply flex absolute right-5;
   }
+
+  .offThirdParent-container {
+    @apply h-[80vh] md:w-[800px] lg:w-[1240px] flex justify-center items-center md:justify-end relative
+  }
 }
 
 /* 
