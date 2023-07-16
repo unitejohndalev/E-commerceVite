@@ -12,6 +12,15 @@ import { Link } from "react-router-dom";
 //logo
 import Logo from "./img/logo.png";
 
+//offproducts
+import offproduct from "./img/offproduct.svg"
+
+//bestproducts
+import bestproduct from "./img/bestseller.svg"
+
+//aboutus
+import aboutus from "./img/aboutus.svg"
+
 //import cart context to get itemAmount function for cart button
 import { CartContext } from "../contexts/CartContext";
 
@@ -62,21 +71,21 @@ const colors = {
 const navListMenuItems = [
   {
     color: "teal",
-    icon: FaceSmileIcon,
+    icon: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f205124e-309a-4098-bdaa-7f5a24278ea7/dri-fit-club-kids-unstructured-metal-swoosh-cap-MfPJz0.png",
     title: "Hats",
     link: "/hatproducts",
     description: "Your favorite hats, with brand new products every week.",
   },
   {
     color: "purple",
-    icon: RocketLaunchIcon,
+    icon: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/60b49213-cab7-491b-8c44-0d23309e9108/air-max-solo-mens-shoes-4SzqpT.png",
     title: "Shoes",
     link: "/shoeproducts",
     description: "Your favorite shoes, with brand new products every week.",
   },
   {
     color: "orange",
-    icon: ChatBubbleOvalLeftIcon,
+    icon: "https://lp2.hm.com/hmgoepprod?set=source[/9a/ca/9acaa9b9b2d7b542777171f23c7733ee1dba1b28.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
     title: "Clothing",
     link: "/clothingproducts",
     description: "Your favorite clothes, with brand new products every week.",
@@ -98,21 +107,21 @@ const navListMenuItems = [
   },
   {
     color: "cyan",
-    icon: PuzzlePieceIcon,
+    icon: bestproduct,
     title: "Feature Products",
     link: "/featureproducts",
     description: "Discover our most popular products.",
   },
   {
     color: "pink",
-    icon: GiftIcon,
-    title: "Off Products",
+    icon: offproduct,
+    title:"Off Products" ,
     link: "/offproducts",
     description: "Check out our discounted products.",
   },
   {
     color: "blue",
-    icon: FlagIcon,
+    icon: aboutus,
     title: "About us",
     link: "/aboutus",
     description: "Learn about our story and our mission statement.",
@@ -131,11 +140,8 @@ function NavListMenu() {
     ({ icon, title, description, color, link }, key) => (
       <Link to={link} key={key} className="">
         <MenuItem className="flex gap-3 rounded-sm ">
-          <div className={`rounded-sm p-5 ${colors[color]}`}>
-            {React.createElement(icon, {
-              strokeWidth: 2,
-              className: "h-6 w-6",
-            })}
+          <div className={`rounded-sm  ${colors[color]}`}>
+           <img src={icon} className="h-[90px] w-[120px]" alt="" />
           </div>
           <div>
             <Typography

@@ -40,7 +40,7 @@ const NikesHatProducts = () => {
                     </button>
                   </div>
                   <div className="name-container">
-                    <p>{name}</p>
+                    <p >{name}</p>
                   </div>
                   <Link to={`/allproductsearch/${id}`}>
                     <img src={img} alt="" className="img-style" />

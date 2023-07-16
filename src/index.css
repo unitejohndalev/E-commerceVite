@@ -38,9 +38,6 @@
   }
 
   /* product page hat/shoes/clothing/filtered components styles */
-  .btn-primary {
-    @apply absolute bottom-2 bg-blue-400 text-white py-[5px] px-[10px] rounded-sm hover:bg-transparent hover:border-solid hover:border-2 hover:border-blue-400 active:bg-blue-400 active:text-white hover:text-black;
-  }
   .parent-container {
     @apply relative w-[100%] h-[100vh];
   }
@@ -55,6 +52,9 @@
   }
   .AddToCartBtn-container {
     @apply flex justify-center;
+  }
+  .btn-primary {
+    @apply absolute bottom-2 bg-blue-400 text-white py-[5px] px-[10px] rounded-sm hover:bg-transparent hover:border-solid hover:border-2 hover:border-blue-400 active:bg-blue-400 active:text-white hover:text-black;
   }
   .name-container {
     @apply absolute w-[100%] text-center;
