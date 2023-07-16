@@ -14,8 +14,6 @@ import {
 import Logo from "./img/logo.png";
 import { Link } from "react-router-dom";
 
-
-
 const Footer = () => {
   const [showShop, setShowShop] = useState(false);
   const showToggle = () => {
@@ -26,13 +24,13 @@ const Footer = () => {
     <footer className="bg-primary relative p-10 h-[60vh] mt-10">
       <div className="lg:w-[1240px] h-[25vh] m-auto flex justify-center -mt-8 ">
         <div
-          className="w-[100%] flex flex-col justify-center lg:w-[1240px] lg:flex-row relative
+          className="w-[100%] flex flex-col justify-center lg:w-[1240px] lg:flex-row relative lg:justify-between
        "
         >
-          <div className="relative h-[100%] flex items-center cursor-pointer lg:absolute lg:left-0">
+          <div className="relative h-[100%] flex items-center cursor-pointer">
             <div
               className="w-[100%] flex justify-between items-center px-2 py-1 rounded-sm bg-white
-              lg:w-[300px] lg:absolute lg:top-0 z-10"
+              lg:hidden"
               onClick={showToggle}
             >
               <p className="">Shop</p>
@@ -46,9 +44,70 @@ const Footer = () => {
                 </div>
               )}
             </div>
+            <div className="hidden lg:flex  ">
+              <div className=" text-white w-[1240px] flex justify-between absolute top-0">
+                <p className="text-[1.3rem] font-light">Shop</p>
+                <div className="flex flex-col gap-y-1 mt-2 absolute left-0 top-[30px]">
+                  <div className="w-[50px]">
+                    <p className="font-thin">Hats</p>
+                  </div>
+                  <div className="w-[50px]  ">
+                    <p className="font-thin ">Cloths</p>
+                  </div>
+                  <div className="w-[50px] ">
+                    <p className="font-thin ">Shoes</p>
+                  </div>
+                  <div className="w-[50px]  ">
+                    <p className="font-thin ">Bags</p>
+                  </div>
+                  <div className="w-[50px]">
+                    <p className="font-thin ">Accessories</p>
+                  </div>
+                </div>
+                <div className="hidden lg:flex w-[300px]">
+                  <p className="text-[1.3rem] font-light">About Us</p>
+                  <div className="flex flex-col gap-y-1 mt-2 absolute top-[30px]">
+                    <div className="w-[50px]">
+                      <p className="font-thin">text</p>
+                    </div>
+                    <div className="w-[50px]  ">
+                      <p className="font-thin ">text</p>
+                    </div>
+                    <div className="w-[50px] ">
+                      <p className="font-thin ">text</p>
+                    </div>
+                    <div className="w-[50px]  ">
+                      <p className="font-thin ">text</p>
+                    </div>
+                    <div className="w-[50px]">
+                      <p className="font-thin ">text</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="hidden lg:flex w-[400px]">
+                  <p>Contact Us</p>
+                  <div className="flex flex-col gap-y-1 mt-2 absolute top-[30px]">
+                    <div className="w-[50px]">
+                      <input type="text" />
+                    </div>
+                    <div className="w-[50px]  ">
+                    <input type="text" />
+                    </div>
+                    <div className="w-[50px] ">
+                  <textarea name="" id="" ></textarea>
+                    </div>
+                    <div className="w-[50px]  ">
+                    <button className="btn-bg px-5">Send</button>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {showShop && (
-              <div className="w-[100%] absolute top-[55px] flex flex-col gap-y-2 z-20 bg-primary mt-2 lg:w-[300px] lg:top-[40px]">
+              <div className="w-[100%] absolute top-[55px] flex flex-col gap-y-2 z-20 bg-primary mt-2 lg:hidden">
                 <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                   Hats
                 </div>
@@ -67,12 +126,12 @@ const Footer = () => {
               </div>
             )}
           </div>
-          <div className="h-[100%] flex items-center cursor-pointer relative w-[100%]">
+          <div className="h-[100%] flex items-center cursor-pointer relative w-[100%] lg:hidden">
             <div className="w-[100%] px-2 py-2 rounded-sm bg-white hover:bg-white/80 active:bg-white lg:w-[300px] lg:absolute lg:top-0 lg:-right-[150px]">
               <p className="">About Us</p>
             </div>
           </div>
-          <div className="h-[100%] flex items-center cursor-pointer relative w-[100%]">
+          <div className="h-[100%] flex items-center cursor-pointer relative w-[100%] lg:hidden">
             <div className="w-[100%] px-2 py-2 rounded-sm bg-white hover:bg-white/80 active:bg-white lg:w-[300px] lg:absolute lg:top-0 lg:right-0">
               <p className="">Contact Us</p>
             </div>
@@ -91,7 +150,7 @@ const Footer = () => {
               <FaYoutube className="hover:text-black " />
               <FaPinterest className="hover:text-black " />
             </div>
-            <div className="w-[90%]">
+            <div className="w-[90%] lg:w-[500px]">
               <p className="text-[.7rem] text-center font-light">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Necessitatibus error optio nihil et doloribus eveniet rerum sed
