@@ -29,13 +29,12 @@ const YourCartContext = () => {
   const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);
-    
   };
 
   return (
     <div className="h-[100%] ">
       <div className="flex mt-[100px] justify-center items-center">
-        <div className="w-[100%] md:max-w-[768px] lg:max-w-[1040px] flex items-center justify-center">
+        <div className="w-[100%] md:max-w-[768px] lg:max-w-[1240px] flex items-center justify-center">
           {/* navigate back button */}
           <button
             onClick={goBack}
@@ -50,31 +49,36 @@ const YourCartContext = () => {
                 <p className="text-[2rem] font-medium">Your Cart is empty!</p>
               </div>
             ) : (
-              <div className="h-[80%] relative overflow-auto no-scrollbar mt-10 flex flex-col shadow-xl ">
+              <div className="h-[80%] relative mt-10 flex flex-col">
                 {cart.map((products, idx) => {
                   //destructure hats data
                   const { id, name, price, img, amount } = products;
                   return (
-                    <div key={idx} className="">
+                    <div
+                      key={idx}
+                      className="w-[100%] lg:w-[50%]  shadow-sm rounded-sm"
+                    >
                       <div
                         className="relative flex w-[100%] 
-            mt-5 shadow-lg rounded-sm"
+            mt-5 shadow-sm rounded-sm  lg:h-[22%]"
                       >
-                        <div className="relative">
+                        <div className="relative lg:h-[100%] lg:flex lg:justify-center lg:items-center">
                           <Link to={`/allproductsearch/${id}`}>
                             <img
                               src={img}
                               alt="imgProduct"
-                              className="w-[100px] p-1 rounded-sm"
+                              className="w-[100px] p-1 rounded-sm lg:w-[200px] lg:h-[150px]"
                             />
                           </Link>
                         </div>
                         <div className=" w-[100%] p-2 relative">
-                          <div className="flex absolute top-0 ">
-                            <h1 className="">{name}</h1>
+                          <div className="flex absolute top-0 lg:w-[80%]">
+                            <h1 className="lg:text-[1.3rem] lg:font-light">
+                              {name}
+                            </h1>
                           </div>
                           <div
-                            className="absolute right-1 top-0"
+                            className="absolute right-1 top-0 lg:text-[1.2rem] lg:top-2 lg:right-2 cursor-pointer"
                             onClick={() => removeFromCart(id)}
                           >
                             <IoMdClose />
@@ -82,13 +86,13 @@ const YourCartContext = () => {
                           <div className="flex flex-row ">
                             <div
                               className="flex justify-center items-center gap-x-2 absolute
-                  bottom-1"
+                  bottom-1 lg:bottom-2 lg:text-[1.2rem]"
                             >
                               <Button
                                 className="bg-white text-black !rounded-sm"
                                 onClick={() => decreaseAmount(id)}
                               >
-                                <IoMdRemove />
+                                <IoMdRemove className="lg:text-[1rem]" />
                               </Button>
                               <div className="w-[20px] text-center">
                                 <p className="">{amount}</p>
@@ -97,13 +101,13 @@ const YourCartContext = () => {
                                 className="bg-white text-black !rounded-sm"
                                 onClick={() => increaseAmount(id)}
                               >
-                                <IoMdAdd />
+                                <IoMdAdd className="lg:text-[1rem]" />
                               </Button>
                             </div>
                           </div>
                           <div
                             className=" w-[55%] absolute right-0
-                  flex justify-between bottom-1"
+                  flex justify-between bottom-1 md:w-[70%] lg:w-[47%] lg:font-light"
                           >
                             <p className="ml-2">$ {price}</p>
 
@@ -122,17 +126,22 @@ const YourCartContext = () => {
             {cart.length === 0 ? (
               <></>
             ) : (
-              <div className="mt-[100px]">
+              <div className="mt-[100px] lg:w-[40%] lg:h-[50vh] lg:mt-[150px] lg:absolute lg:top-0 lg:right-0 lg:shadow-md rounded-sm ">
+                <div className="hidden lg:flex  text-white  items-center justify-center rounded-sm w-[100%] absolute bottom-2">
+                  <button className="bg-primary/80 py-2 w-[96%]">
+                    Continue to checkout
+                  </button>
+                </div>
                 <div
                   className="cursor-pointer py-4 bg-red-500
            text-white w-12 h-12 flex justify-center text-sm rounded-sm mt-5 
-          absolute bottom-0  right-0"
+          absolute bottom-0  right-0 lg:right-2 lg:bottom-[100px]"
                   onClick={clearCart}
                 >
                   <FiTrash2 />
                 </div>
                 {/* products cart total */}
-                <div className="uppercase font-semibold absolute bottom-0 left-0">
+                <div className="uppercase font-semibold absolute bottom-0 left-0 lg:left-2 lg:bottom-[100px]">
                   <span className="mr-2">Total:</span>${" "}
                   {parseFloat(total).toFixed(2)}
                 </div>

@@ -380,7 +380,7 @@ const Nav = () => {
           <IconButton
             variant="text"
             color="blue-gray"
-            className="lg:hidden !bg-white !absolute right-2"
+            className="lg:hidden !bg-white !absolute right-0"
             onClick={() => setOpenNav(!openNav)}
           >
             {openNav ? (
