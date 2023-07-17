@@ -14,11 +14,11 @@ const HomeContent = () => {
         <div className=" w-[90%] md:max-w-[768px] lg:max-w-[1040px] xl:max-w-[1240px] ">
           {/* HERO SECTION */}
           <div className="flex justify-between w-[100%] h-[100vh] mt-[50px] ">
-          {/* TEXT POSITION */}
+            {/* TEXT POSITION */}
             <div className="w-[550px] h-[70vh] ">
               <div className=" mt-[150px]">
                 <h1 className=" text-[2rem] border-red border-4 font-bold">
-                  DISPLAY SOMETHING TO CATCH USER ATTENTION
+                  A TEXT TO LET USER KNOW WHAT TYPE OF WEBSITE THIS IS
                 </h1>
                 <button className="bg-red-800 text-white px-4 py-2 mt-5">
                   Shop now
@@ -44,50 +44,69 @@ const HomeContent = () => {
           </div>
           {/* PRODUCT SECTION, CAN EDIT ORDER*/}
           {/* first product section*/}
-          <div className="flex justify-center items-center w-[100%] h-[60vh] lg:h-[70vh] bg-red-800 lg:gap-x-10">
-            <div className=" flex justify-center items-center h-[100%] w-[100%] font-medium text-[2rem] lg:w-[49%] bg-yellow-800">
-              <div>PRODUCT IMG</div>
+          <div className="flex justify-center items-center w-[100%] h-[60vh] lg:h-[80vh]  lg:gap-x-5 relative mb-10">
+            <div className=" flex flex-col justify-center items-center h-[100%] w-[100%] font-medium text-[2rem] lg:w-[40%] bg-yellow-800">
+              <div className="absolute bottom-5 flex flex-col items-center">
+                <h1 className="text-[2rem] mb-5">Title</h1>
+                <p className="text-[.9rem] mb-5">some text</p>
+                <button className="bg-red-800 text-white px-1 text-[1.3rem] ">
+                  Shop now
+                </button>
+              </div>
             </div>
-            <div className="hidden h-[100%] w-[100%] font-medium text-[2rem] text-center lg:flex lg:w-[49%] lg:justify-center lg:items-center bg-yellow-800">
-              <div>PRODUCT IMG</div>
+            <div className="hidden h-[100%] w-[100%] font-medium text-[2rem] text-center lg:flex lg:w-[40%] lg:justify-center lg:items-center bg-yellow-800">
+              <div className="absolute bottom-5 flex flex-col items-center">
+                <h1 className="text-[2rem] mb-5">Title</h1>
+                <p className="text-[.9rem] mb-5">some text</p>
+                <button className="bg-red-800 text-white px-1 text-[1.3rem] ">
+                  Shop now
+                </button>
+              </div>
             </div>
           </div>
           {/* second product seciton*/}
-          <div className="flex justify-center items-center w-[100%] h-[60vh] lg:h-[70vh] mt-10 bg-red-800 lg:gap-x-10">
-            <div className=" flex justify-center items-center h-[100%] w-[100%] font-medium text-[2rem] lg:w-[49%] bg-yellow-800">
-              <div>PRODUCT IMG</div>
+          <div className="flex justify-center items-center w-[100%] h-[60vh] lg:h-[80vh]  lg:gap-x-5 relative mb-10">
+            <div className=" flex flex-col justify-center items-center h-[100%] w-[100%] font-medium text-[2rem] lg:w-[40%] bg-yellow-800">
+              <div className="absolute bottom-5 flex flex-col items-center">
+                <h1 className="text-[2rem] mb-5">Title</h1>
+                <p className="text-[.9rem] mb-5">some text</p>
+                <button className="bg-red-800 text-white px-1 text-[1.3rem] ">
+                  Shop now
+                </button>
+              </div>
             </div>
-            <div className="hidden h-[100%] w-[100%] font-medium text-[2rem] text-center lg:flex lg:w-[49%] lg:justify-center lg:items-center bg-yellow-800">
-              <div>PRODUCT IMG</div>
+            <div className="hidden h-[100%] w-[100%] font-medium text-[2rem] text-center lg:flex lg:w-[40%] lg:justify-center lg:items-center bg-yellow-800">
+              <div className="absolute bottom-5 flex flex-col items-center">
+                <h1 className="text-[2rem] mb-5">Title</h1>
+                <p className="text-[.9rem] mb-5">some text</p>
+                <button className="bg-red-800 text-white px-1 text-[1.3rem] ">
+                  Shop now
+                </button>
+              </div>
             </div>
           </div>
           {/* third product section*/}
-          <div className="flex justify-center items-center w-[100%] h-[60vh] lg:h-[70vh] mt-10 bg-red-800 lg:gap-x-10">
-            <div className=" flex justify-center items-center h-[100%] w-[100%] font-medium text-[2rem] lg:w-[49%] bg-yellow-800">
-              <div>PRODUCT IMG</div>
+          <div className="flex justify-center items-center w-[100%] h-[60vh] lg:h-[80vh]  lg:gap-x-5 relative mb-10">
+            <div className=" flex flex-col justify-center items-center h-[100%] w-[100%] font-medium text-[2rem] lg:w-[40%] bg-yellow-800">
+              <div className="absolute bottom-5 flex flex-col items-center">
+                <h1 className="text-[2rem] mb-5">Title</h1>
+                <p className="text-[.9rem] mb-5">some text</p>
+                <button className="bg-red-800 text-white px-1 text-[1.3rem] ">
+                  Shop now
+                </button>
+              </div>
             </div>
-            <div className="hidden h-[100%] w-[100%] font-medium text-[2rem] text-center lg:flex lg:w-[49%] lg:justify-center lg:items-center bg-yellow-800">
-              <div>PRODUCT IMG</div>
-            </div>
-          </div>
-          {/* fourth product section*/}
-          <div className="flex justify-center items-center w-[100%] h-[60vh] lg:h-[70vh] mt-10 bg-red-800 lg:gap-x-10">
-            <div className=" flex justify-center items-center h-[100%] w-[100%] font-medium text-[2rem] lg:w-[49%] bg-yellow-800">
-              <div>PRODUCT IMG</div>
-            </div>
-            <div className="hidden h-[100%] w-[100%] font-medium text-[2rem] text-center lg:flex lg:w-[49%] lg:justify-center lg:items-center bg-yellow-800">
-              <div>PRODUCT IMG</div>
-            </div>
-          </div>
-          {/* fifth product section*/}
-          <div className="flex justify-center items-center w-[100%] h-[60vh] lg:h-[70vh] mt-10 bg-red-800 lg:gap-x-10">
-            <div className=" flex justify-center items-center h-[100%] w-[100%] font-medium text-[2rem] lg:w-[49%] bg-yellow-800">
-              <div>PRODUCT IMG</div>
-            </div>
-            <div className="hidden h-[100%] w-[100%] font-medium text-[2rem] text-center lg:flex lg:w-[49%] lg:justify-center lg:items-center bg-yellow-800">
-              <div>PRODUCT IMG</div>
+            <div className="hidden h-[100%] w-[100%] font-medium text-[2rem] text-center lg:flex lg:w-[40%] lg:justify-center lg:items-center bg-yellow-800">
+              <div className="absolute bottom-5 flex flex-col items-center">
+                <h1 className="text-[2rem] mb-5">Title</h1>
+                <p className="text-[.9rem] mb-5">some text</p>
+                <button className="bg-red-800 text-white px-1 text-[1.3rem] ">
+                  Shop now
+                </button>
+              </div>
             </div>
           </div>
+     
         </div>
       </div>
       <Footer />
