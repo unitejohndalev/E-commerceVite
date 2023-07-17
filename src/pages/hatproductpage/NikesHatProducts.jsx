@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "@material-tailwind/react";
+
 
 //import product context to get hats data
 import { ProductContext } from "../../contexts/ProductContext";
