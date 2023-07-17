@@ -141,7 +141,7 @@ function NavListMenu() {
       <Link to={link} key={key} className="">
         <MenuItem className="flex gap-3 rounded-sm ">
           <div className={`rounded-sm  ${colors[color]}`}>
-           <img src={icon} className="h-[90px] w-[120px]" alt="" />
+           <img src={icon} className="h-[90px] w-[120px] border-red" alt="" />
           </div>
           <div>
             <Typography
