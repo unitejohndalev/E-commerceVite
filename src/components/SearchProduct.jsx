@@ -10,7 +10,7 @@ const SearchProduct = () => {
   return (
     <div className="relative">
       <div
-        className="flex flex-col items-center absolute bg-white"
+        className="flex flex-col items-center absolute bg-white w-[100%]"
         ref={searchRef}
       >
         <div className="absolute right-[50px] top-5">
