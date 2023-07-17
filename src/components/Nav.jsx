@@ -24,6 +24,9 @@ import aboutus from "./img/aboutus.svg"
 //import cart context to get itemAmount function for cart button
 import { CartContext } from "../contexts/CartContext";
 
+//import allsearchproductinfosmain lol ang haba
+import AllSearchProductInfosMain from "./searchpage/AllSearchProductInfosMain";
+
 // import material-tailwind components
 import {
   Navbar,
@@ -45,15 +48,10 @@ import {
   ChevronDownIcon,
   Bars3Icon,
   XMarkIcon,
-  FlagIcon,
-  ChatBubbleOvalLeftIcon,
   UsersIcon,
   FolderIcon,
   Square3Stack3DIcon,
-  RocketLaunchIcon,
-  FaceSmileIcon,
-  PuzzlePieceIcon,
-  GiftIcon,
+
 } from "@heroicons/react/24/outline";
 
 //custom color
@@ -322,10 +320,9 @@ const Nav = () => {
           <div className="hidden lg:block">
             <NavList />
           </div>
-          <div className="cursor-pointer absolute right-[150px] md:right-[300px] lg:right-[350px] xl:right-[500px]">
-            <Link to={"/searchproducts"}>
-              <div>Search</div>
-            </Link>
+          <div className="cursor-pointer  w-[50%] md:ml-[50px] lg:ml-0 lg:w-[20%] xl:ml-[30px]">
+           {/* search bar */}
+           <AllSearchProductInfosMain/>
           </div>
           <div className="hidden gap-2 lg:flex justify-center items-center ">
             <div
@@ -383,7 +380,7 @@ const Nav = () => {
           <IconButton
             variant="text"
             color="blue-gray"
-            className="lg:hidden !bg-white !absolute right-10"
+            className="lg:hidden !bg-white !absolute right-2"
             onClick={() => setOpenNav(!openNav)}
           >
             {openNav ? (

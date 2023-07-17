@@ -1,34 +1,27 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 
 import { ProductContext } from "../contexts/ProductContext";
 import { Link } from "react-router-dom";
 
-//import cart context
-import { CartContext } from "../contexts/CartContext";
-
 const SearchProduct = () => {
-  const { allProductsMerge, searchProduct, handleChange} =
+  const { allProductsMerge, searchProduct, setShowBody, searchRef } =
     useContext(ProductContext);
- 
-
-
-
-  //get addToCart function from cart context
-  const { addToCart } = useContext(CartContext);
 
   return (
-    <div className="relative w-[100%] h-[100vh]">
-      <div className="flex flex-col items-center ">
-        <div className=" ">
-      <div className="bg-blue-800 mt-[150px]">
-        <input
-          className="border-solid border-2 border-red-800 w-[100%] h-[5vh] text-center"
-          placeholder="Search..."
-          type="text"
-          onChange={handleChange}
-        />
-      </div>
-          <div className="md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-5 justify-center gap-x-5 lg:w-[1240px] ">
+    <div className="relative">
+      <div
+        className="flex flex-col items-center absolute bg-white"
+        ref={searchRef}
+      >
+        <div className="absolute right-[50px] top-5">
+          <button onClick={() => setShowBody(false)}>close</button>
+        </div>
+        <div className="mt-[50px]  ">
+          <div
+            className=" flex flex-wrap  mt-2 justify-center gap-x-[20px] w-[100%] h-[60vh] lg:h-[50vh]
+             overflow-auto
+        "
+          >
             {allProductsMerge
               .filter((item) => {
                 if (searchProduct == "") {
@@ -48,36 +41,30 @@ const SearchProduct = () => {
                     {searchProduct === "" ? (
                       <></>
                     ) : (
-                      <div className="mt-2 mb-2 lg:w-[285px] shadow-xl rounded-md h-[390px] relative">
+                      <div className="mt-2 lg:w-[200px] shadow-xl rounded-md h-[250px] mb-[50px] relative">
                         <div className="w-[100%] flex flex-col justify-center items-center ">
                           <div className="relative">
-                            <div className="flex justify-center">
-                              <button
-                                onClick={() => addToCart(item, id)}
-                                className="absolute bottom-2 bg-blue-400 text-white py-[5px]
-                         px-[10px] rounded-sm hover:bg-transparent hover:text-black"
-                              >
-                                <p>Add to Cart</p>
-                              </button>
-                            </div>
-                            <div className="absolute w-[100%] text-center">
+                            <div className="absolute w-[100%] text-center text-[.9rem]">
                               <p>{name}</p>
                             </div>
-                            <Link to={`/allproductsearch/${id}`}>
+                            <Link
+                              to={`/allproductsearch/${id}`}
+                              onClick={() => setShowBody(false)}
+                            >
                               <img
                                 src={img}
                                 alt=""
-                                className="w-[350px] h-[320px] rounded-t-md"
+                                className="w-[200px] h-[250px] rounded-t-md"
                               />
                             </Link>
                           </div>
 
-                          <div className="flex w-[100%] justify-between mt-2">
-                            <p className=" ml-2">{`$ ${parseFloat(
+                          <div className="flex w-[100%] absolute bottom-2">
+                            <p className=" ml-2 text-[.9rem]">{`$ ${parseFloat(
                               price
                             ).toFixed(2)}`}</p>
                           </div>
-                          <div className="text-left w-[100%] absolute bottom-2">
+                          <div className="text-right w-[100%] absolute bottom-2">
                             <p className="font-light text-[.8rem] ml-2">
                               {gender}
                             </p>

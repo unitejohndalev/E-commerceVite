@@ -18,7 +18,7 @@ import { Route, Routes } from "react-router-dom";
 const AllProductSearch = lazy(() =>
   import("../components/searchpage/AllSearchProductInfos")
 );
-const SearchProducts = lazy(() => import("../components/SearchProduct"));
+
 const YourCartContext = lazy(() => import("../contexts/YourCartContext"));
 const HatProducts = lazy(() => import("../pages/hatproductpage/HatProducts"));
 
@@ -64,7 +64,6 @@ const Router = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/allproductsearch/:id" element={<AllProductSearch />} />
-          <Route path="/searchproducts" element={<SearchProducts />} />
           <Route path="/hatproducts" element={<HatProducts />} />
 
           {/* Hats pages brands*/}

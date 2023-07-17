@@ -60,7 +60,7 @@ const Footer = () => {
               )}
             </div>
 
-            <div className="hidden lg:flex bg-yellow-800 ">
+            <div className="hidden lg:flex ">
               <div className=" text-white w-[1240px] flex justify-between absolute top-0 ">
                 <p className="text-[1.3rem] font-medium">Shop</p>
                 <div className="flex flex-col gap-y-1 mt-2 absolute left-0 top-[30px]">
@@ -151,7 +151,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex justify-evenly text-[1.5rem] w-[320px] cursor-pointer">
+                <div className="flex lg:flex-col lg:gap-y-2 xl:flex-row xl:justify-evenly text-[1.5rem] w-[320px] cursor-pointer">
                   <FaFacebookF className="hover:text-white/50 " />
                   <FaTwitter className="hover:text-white/50 " />
                   <FaInstagram className="hover:text-white/50 " />
