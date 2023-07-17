@@ -13,13 +13,13 @@ import { Link } from "react-router-dom";
 import Logo from "./img/logo.png";
 
 //offproducts
-import offproduct from "./img/offproduct.svg"
+import offproduct from "./img/offproduct.svg";
 
 //bestproducts
-import bestproduct from "./img/bestseller.svg"
+import bestproduct from "./img/bestseller.svg";
 
 //aboutus
-import aboutus from "./img/aboutus.svg"
+import aboutus from "./img/aboutus.svg";
 
 //import cart context to get itemAmount function for cart button
 import { CartContext } from "../contexts/CartContext";
@@ -51,7 +51,6 @@ import {
   UsersIcon,
   FolderIcon,
   Square3Stack3DIcon,
-
 } from "@heroicons/react/24/outline";
 
 //custom color
@@ -113,7 +112,7 @@ const navListMenuItems = [
   {
     color: "pink",
     icon: offproduct,
-    title:"Off Products" ,
+    title: "Off Products",
     link: "/offproducts",
     description: "Check out our discounted products.",
   },
@@ -139,7 +138,7 @@ function NavListMenu() {
       <Link to={link} key={key} className="">
         <MenuItem className="flex gap-3 rounded-sm ">
           <div className={`rounded-sm  ${colors[color]}`}>
-           <img src={icon} className="h-[90px] w-[120px] border-red" alt="" />
+            <img src={icon} className="h-[90px] w-[120px] border-red" alt="" />
           </div>
           <div>
             <Typography
@@ -321,8 +320,8 @@ const Nav = () => {
             <NavList />
           </div>
           <div className="cursor-pointer  w-[50%] md:ml-[50px] lg:ml-0 lg:w-[20%] xl:ml-[30px]">
-           {/* search bar */}
-           <AllSearchProductInfosMain/>
+            {/* search bar */}
+            <AllSearchProductInfosMain />
           </div>
           <div className="hidden gap-2 lg:flex justify-center items-center ">
             <div
@@ -340,10 +339,11 @@ const Nav = () => {
               </Button>
               <div className="relative">
                 {logInShow && (
-                  <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid border-2  bg-transparent">
-                    <div className="text-black border-solid border-2  w-[50%] max-w-[500px] h-[80%] flex justify-center items-center bg-light-green-700 m-4 padding">
+                  <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid border-2 mt-14 bg-transparent">
+                    <div className="text-black border-solid border-2  w-[100%] max-w-[75%] h-[100%] flex justify-center items-center bg-light-green-700 m-4 padding">
                       <Login />
                     </div>
+                    //{" "}
                   </div>
                 )}
               </div>
