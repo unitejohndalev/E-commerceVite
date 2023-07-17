@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { createContext, useEffect, useState } from "react";
+import React, { createContext, useEffect, useRef, useState } from "react";
 
 //import shoe and hat data
 import shoeshatsData from "../data/NikeProducts.json";
@@ -86,11 +86,24 @@ const ProductProvider = ({ children }) => {
     //state for search product
   const [searchProduct, setSearchProduct] = useState("");
 
+  //state to hide search products body when not using search bar
+  const [showBody, setShowBody] = useState(false)
+
   //input function for search
   const handleChange = (event) => {
     setSearchProduct(event.target.value)
+    setShowBody(true)
   }
 
+  //use useRef for search body, when click outside it'll close
+    let searchRef = useRef();
+    React.useEffect(() => {
+      document.addEventListener("mousedown", (e) => {
+        if (!searchRef.current.contains(e.target)) {
+          setShowBody(false);
+        }
+      });
+    });
 
   //make product context the provider
   //set the value to the created DATA states
@@ -111,8 +124,10 @@ const ProductProvider = ({ children }) => {
         shoeShow,
         allProductsMerge,
         searchProduct,
-        handleChange
-
+        handleChange,
+        showBody,
+        setShowBody,
+        searchRef,
       }}
     >
       {children}
