@@ -73,37 +73,53 @@ const ProductProvider = ({ children }) => {
   const [clothShow, setClothShow] = useState();
 
   //show state for shoe
-   const [shoeShow, setShoeShow] = useState();
+  const [shoeShow, setShoeShow] = useState();
 
+  //merge all json data into 1 single array
+  const allProductsMerge = [...hatProducts, ...shoeProducts, ...clothProducts];
 
-   //merge all json data into 1 single array
-    const allProductsMerge = [
-      ...hatProducts,
-      ...shoeProducts,
-      ...clothProducts,
-    ];
-
-    //state for search product
+  //state for search product
   const [searchProduct, setSearchProduct] = useState("");
 
   //state to hide search products body when not using search bar
-  const [showBody, setShowBody] = useState(false)
+  const [showBody, setShowBody] = useState(false);
 
   //input function for search
   const handleChange = (event) => {
-    setSearchProduct(event.target.value)
-    setShowBody(true)
-  }
+    setSearchProduct(event.target.value);
+    setShowBody(true);
+  };
 
   //use useRef for search body, when click outside it'll close
-    let searchRef = useRef();
-    React.useEffect(() => {
-      document.addEventListener("mousedown", (e) => {
-        if (!searchRef.current.contains(e.target)) {
-          setShowBody(false);
-        }
-      });
+  let searchRef = useRef();
+  React.useEffect(() => {
+    document.addEventListener("mousedown", (e) => {
+      if (!searchRef.current.contains(e.target)) {
+        setShowBody(false);
+      }
     });
+  });
+
+  //img function for home hero
+  const [homeFirstImg, setHomeFirstImg] = useState(true);
+  const [homeSecondImg, setHomeSecondImg] = useState();
+  const [homeThirdImg, setHomeThirdImg] = useState();
+
+  const homeFirstImgToggle = () => {
+    setHomeFirstImg((prev) => !prev);
+    setHomeSecondImg(false)
+  };
+  const homeSecondImgToggle = () => {
+    setHomeSecondImg((prev) => !prev);
+    setHomeFirstImg(false)
+    setHomeThirdImg(false)
+  };
+  const homeThirdImgToggle = () => {
+    setHomeThirdImg((prev) => !prev);
+    setHomeFirstImg(false);
+    setHomeSecondImg(false)
+
+  };
 
   //make product context the provider
   //set the value to the created DATA states
@@ -128,6 +144,12 @@ const ProductProvider = ({ children }) => {
         showBody,
         setShowBody,
         searchRef,
+        homeFirstImg,
+        homeSecondImg,
+        homeThirdImg,
+        homeFirstImgToggle,
+        homeSecondImgToggle,
+        homeThirdImgToggle
       }}
     >
       {children}
