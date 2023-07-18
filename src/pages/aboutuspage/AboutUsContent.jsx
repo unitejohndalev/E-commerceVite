@@ -5,7 +5,7 @@ const AboutUsContent = () => {
   return (
     <div className="h-[100%] ">
       <div className="flex justify-center ">
-        <div className="mt-[120px] w-[90%] h-[100%] md:flex md:gap-x-5 lg:max-w-[1240px] bg-yellow-800">
+        <div className="mt-[120px] w-[90%] h-[100%] md:flex md:gap-x-5 lg:max-w-[1240px]">
           <div
             className="w-[100%] h-[100%] flex-col justify-center items-center text-center
  md:items-start "
@@ -15,7 +15,7 @@ const AboutUsContent = () => {
             </div>
             <div
               className="w-[90%] mt-10 m-auto flex justify-center items-center
-         md:w-[90%] md:m-0 md:mt-2 border-red"
+         md:w-[90%] md:m-0 md:mt-2"
             >
               <p className="text-justify md:text-[.8rem]">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
@@ -49,7 +49,7 @@ const AboutUsContent = () => {
               </div>
             </div>
             <div className="hidden lg:flex w-[48%] lg:flex-col absolute right-0 bottom-0 ">
-              <div className="w-[90%] flex justify-center items-center md:w-[100%] border-red">
+              <div className="w-[90%] flex justify-center items-center md:w-[100%]">
                 <div className="w-[100%] h-[100%] flex items-center justify-center">
                   <p className="text-justify md:text-[.8rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
