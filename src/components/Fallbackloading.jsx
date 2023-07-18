@@ -7,7 +7,7 @@ const Fallbackloading = () => {
   return (
     <div className="h-[100vh] w-[100%] flex justify-center items-center">
     <div>
-      <Spinner />;
+      <Spinner />
     </div>
     </div>
   );
