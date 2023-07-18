@@ -129,7 +129,7 @@ function NavListMenu() {
       <Link to={link} key={key} className="">
         <MenuItem className="flex gap-3 rounded-sm ">
           <div className={`rounded-sm  ${colors[color]}`}>
-            <img src={icon} className="max-h-[90px] max-w-[120px]" alt="" />
+            <img src={icon} className="h-[10vh] w-[15vw] md:h-[15vh] md:w-[10vw] lg:max-h-[70px] lg:max-w-[90px]" alt="" />
           </div>
           <div>
             <Typography
@@ -191,7 +191,7 @@ function NavListMenu() {
       </Menu>
       <div className="block lg:hidden  ">
         <Collapse open={isMobileMenuOpen}>
-          <div className="h-[55vh] overflow-auto no-scrollbar border-solid border-2 border-red-800 ">
+          <div className="h-[55vh] overflow-auto no-scrollbar ">
             {renderItems}
           </div>
         </Collapse>
@@ -334,7 +334,7 @@ const Nav = () => {
                     <div className="text-black border-solid border-2  w-[100%] max-w-[75%] h-[100%] flex justify-center items-center bg-light-green-700 m-4 padding">
                       <Login />
                     </div>
-                    //{" "}
+        
                   </div>
                 )}
               </div>
