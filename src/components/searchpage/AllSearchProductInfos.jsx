@@ -77,10 +77,12 @@ const AllSearchProductInfos = () => {
                     </div>
                   </div>
                   <div className="mt-5 lg:h-[80vh]">
+                  <div className="w-[100%] flex justify-center">
+
                     {allProductsFirstImgShow && (
                       <div>
                         <img
-                          className="w-[400px] h-[550px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-sm shadow-xl"
+                          className="w-[250px]  md:w-[400px] md:h-[550px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-sm shadow-xl"
                           src={img1}
                         />
                       </div>
@@ -88,7 +90,7 @@ const AllSearchProductInfos = () => {
                     {allProductsSecondImgShow && (
                       <div>
                         <img
-                          className="w-[400px] h-[550px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-sm shadow-xl "
+                          className="w-[250px]  md:w-[400px] md:h-[550px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-sm shadow-xl "
                           src={img2}
                         />
                       </div>
@@ -96,11 +98,12 @@ const AllSearchProductInfos = () => {
                     {allProductsThirdImgShow && (
                       <div>
                         <img
-                          className="w-[400px] h-[550px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-sm shadow-xl "
+                          className="w-[250px]  md:w-[400px] md:h-[550px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-sm shadow-xl "
                           src={img3}
                         />
                       </div>
                     )}
+                  </div>
                     <div className="mt-5 flex gap-x-2 lg:absolute lg:flex-col lg:top-0 lg:gap-y-2">
                       <img
                         className={
@@ -153,7 +156,7 @@ const AllSearchProductInfos = () => {
                         </button>
                       </div>
                       <div
-                        className="w-[410px] mt-10 mb-10 md:w-[330px] md:absolute md:right-2 md:top-[320px]
+                        className="w-[100%] mt-10 mb-10 md:w-[330px] md:absolute md:right-2 md:top-[320px]
                     lg:w-[368px] lg:mt-[100px] xl:w-[468px]"
                       >
                         <p className="font-light lg:text-[1.2rem] text-justify">
