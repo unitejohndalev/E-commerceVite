@@ -12,14 +12,7 @@ import { Link } from "react-router-dom";
 //logo
 import Logo from "./img/logo.png";
 
-//offproducts
-import offproduct from "./img/offproduct.svg";
 
-//bestproducts
-import bestproduct from "./img/bestseller.svg";
-
-//aboutus
-import aboutus from "./img/aboutus.svg";
 
 //import cart context to get itemAmount function for cart button
 import { CartContext } from "../contexts/CartContext";
@@ -40,7 +33,6 @@ import {
   MenuHandler,
   MenuList,
   MenuItem,
-  Chip,
 } from "@material-tailwind/react";
 
 //import hero icons
@@ -48,8 +40,7 @@ import {
   ChevronDownIcon,
   Bars3Icon,
   XMarkIcon,
-  UsersIcon,
-  FolderIcon,
+
   Square3Stack3DIcon,
 } from "@heroicons/react/24/outline";
 
@@ -90,35 +81,35 @@ const navListMenuItems = [
 
   {
     color: "blue-gray",
-    icon: FolderIcon,
+    icon: "https://michaelkors.scene7.com/is/image/MichaelKors/30S0GEZB2V-2618_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
     title: "Bags",
     link: "/bagproducts",
     description: "Your favorite bags, with brand new products every week.",
   },
   {
     color: "green",
-    icon: UsersIcon,
+    icon: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a2112797-fcec-477c-8d09-e2b214aed47f/victory-sunglasses-PP0tbC.png",
     title: "Accessories",
     link: "/accessoriesproducts",
     description: "put any description here.",
   },
   {
     color: "cyan",
-    icon: bestproduct,
+    icon: "https://michaelkors.scene7.com/is/image/MichaelKors/32S3G7PC8J-1251_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
     title: "Feature Products",
     link: "/featureproducts",
     description: "Discover our most popular products.",
   },
   {
     color: "pink",
-    icon: offproduct,
+    icon: "https://lp2.hm.com/hmgoepprod?set=source[/c2/4a/c24a1071f460ace040df4209a01d57925c544b90.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
     title: "Off Products",
     link: "/offproducts",
     description: "Check out our discounted products.",
   },
   {
     color: "blue",
-    icon: aboutus,
+    icon: "https://clipart-library.com/images/kcKorp5xi.jpg",
     title: "About us",
     link: "/aboutus",
     description: "Learn about our story and our mission statement.",
@@ -138,7 +129,7 @@ function NavListMenu() {
       <Link to={link} key={key} className="">
         <MenuItem className="flex gap-3 rounded-sm ">
           <div className={`rounded-sm  ${colors[color]}`}>
-            <img src={icon} className="h-[90px] w-[120px] border-red" alt="" />
+            <img src={icon} className="max-h-[90px] max-w-[120px]" alt="" />
           </div>
           <div>
             <Typography

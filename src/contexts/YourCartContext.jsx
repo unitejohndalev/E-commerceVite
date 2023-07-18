@@ -49,84 +49,95 @@ const YourCartContext = () => {
                 <p className="text-[2rem] font-medium">Your Cart is empty!</p>
               </div>
             ) : (
-              <div className="h-[80%] relative mt-10 flex flex-col">
-                {cart.map((products, idx) => {
-                  //destructure hats data
-                  const { id, name, price, img, amount } = products;
-                  return (
-                    <div
-                      key={idx}
-                      className="w-[100%] lg:w-[50%]  shadow-sm rounded-sm"
-                    >
+              <div className="lg:h-[80vh] lg:w-[58%] lg:overflow-x-hidden lg:over">
+                <div className="h-[80%] relative mt-10 flex flex-col">
+                  {cart.map((products, idx) => {
+                    //destructure hats data
+                    const { id, name, price, img, amount } = products;
+                    return (
                       <div
-                        className="relative flex w-[100%] 
-            mt-5 shadow-sm rounded-sm  lg:h-[22%]"
+                        key={idx}
+                        className="w-[100%] shadow-sm lg:shadow-none rounded-sm "
                       >
-                        <div className="relative lg:h-[100%] lg:flex lg:justify-center lg:items-center">
-                          <Link to={`/allproductsearch/${id}`}>
-                            <img
-                              src={img}
-                              alt="imgProduct"
-                              className="w-[100px] p-1 rounded-sm lg:w-[200px] lg:h-[150px]"
-                            />
-                          </Link>
-                        </div>
-                        <div className=" w-[100%] p-2 relative">
-                          <div className="flex absolute top-0 lg:w-[80%]">
-                            <h1 className="lg:text-[1.3rem] lg:font-light">
-                              {name}
-                            </h1>
+                        <div
+                          className="relative flex w-[95%] 
+            mt-5 shadow-sm rounded-sm  lg:h-[22%] lg:shadow-none lg:ml-2"
+                        >
+                          <div className="relative lg:h-[100%] lg:hidden">
+                            <Link to={`/allproductsearch/${id}`}>
+                              <img
+                                src={img}
+                                alt="imgProduct"
+                                className="w-[100px] p-1 rounded-sm lg:w-[200px] lg:h-[150px]"
+                              />
+                            </Link>
                           </div>
-                          <div
-                            className="absolute right-1 top-0 lg:text-[1.2rem] lg:top-2 lg:right-2 cursor-pointer"
-                            onClick={() => removeFromCart(id)}
-                          >
-                            <IoMdClose />
-                          </div>
-                          <div className="flex flex-row ">
-                            <div
-                              className="flex justify-center items-center gap-x-2 absolute
-                  bottom-1 lg:bottom-2 lg:text-[1.2rem]"
-                            >
-                              <Button
-                                className="bg-white text-black !rounded-sm"
-                                onClick={() => decreaseAmount(id)}
-                              >
-                                <IoMdRemove className="lg:text-[1rem]" />
-                              </Button>
-                              <div className="w-[20px] text-center">
-                                <p className="">{amount}</p>
-                              </div>
-                              <Button
-                                className="bg-white text-black !rounded-sm"
-                                onClick={() => increaseAmount(id)}
-                              >
-                                <IoMdAdd className="lg:text-[1rem]" />
-                              </Button>
+                          <div className=" w-[100%] p-2 relative  lg:h-[150px] lg:flex lg:items-center lg:justify-start lg:shadow-xl">
+                            <div className="hidden lg:h-[100%] lg:flex lg:justify-center lg:items-center  ">
+                              <Link to={`/allproductsearch/${id}`}>
+                                <img
+                                  src={img}
+                                  alt="imgProduct"
+                                  className="w-[150px] p-1 rounded-sm  lg:h-[150px]"
+                                />
+                              </Link>
                             </div>
-                          </div>
-                          <div
-                            className=" w-[55%] absolute right-0
-                  flex justify-between bottom-1 md:w-[70%] lg:w-[47%] lg:font-light"
-                          >
-                            <p className="ml-2">$ {price}</p>
+                            <div className="flex absolute top-0 lg:w-[80%] lg:left-[180px]">
+                              <h1 className="lg:text-[1.3rem] lg:font-light">
+                                {name}
+                              </h1>
+                            </div>
+                            <div
+                              className="absolute right-1 top-0 lg:text-[1.2rem] lg:top-2 lg:right-2 cursor-pointer"
+                              onClick={() => removeFromCart(id)}
+                            >
+                              <IoMdClose />
+                            </div>
+                            <div className="flex flex-row ">
+                              <div
+                                className="flex justify-center items-center gap-x-2 absolute
+                  bottom-1 lg:bottom-2 lg:left-[180px] lg:text-[1.2rem]"
+                              >
+                                <Button
+                                  className="bg-white text-black !rounded-sm"
+                                  onClick={() => decreaseAmount(id)}
+                                >
+                                  <IoMdRemove className="lg:text-[1rem]" />
+                                </Button>
+                                <div className="w-[20px] text-center">
+                                  <p className="">{amount}</p>
+                                </div>
+                                <Button
+                                  className="bg-white text-black !rounded-sm"
+                                  onClick={() => increaseAmount(id)}
+                                >
+                                  <IoMdAdd className="lg:text-[1rem]" />
+                                </Button>
+                              </div>
+                            </div>
+                            <div
+                              className=" w-[55%] absolute right-0
+                  flex justify-between bottom-1 md:w-[70%] lg:w-[40%] lg:font-light"
+                            >
+                              <p className="ml-2">$ {price}</p>
 
-                            <p className=" absolute right-1">{`$ ${parseFloat(
-                              price * amount
-                            ).toFixed(2)}`}</p>
+                              <p className=" absolute right-1">{`$ ${parseFloat(
+                                price * amount
+                              ).toFixed(2)}`}</p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
             )}
             {/* clear all products in cart */}
             {cart.length === 0 ? (
               <></>
             ) : (
-              <div className="mt-[100px] lg:w-[40%] lg:h-[50vh] lg:mt-[150px] lg:absolute lg:top-0 lg:right-0 lg:shadow-md rounded-sm ">
+              <div className="mt-[100px] lg:w-[40%] lg:h-[40vh] lg:mt-[150px] lg:absolute lg:top-0 lg:right-0 lg:shadow-md rounded-sm ">
                 <div className="hidden lg:flex  text-white  items-center justify-center rounded-sm w-[100%] absolute bottom-2">
                   <button className="bg-primary/80 py-2 w-[96%]">
                     Continue to checkout

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../assets/styles/form.css";
+
 import { TextField } from "@mui/material";
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";

@@ -11,6 +11,9 @@ import clothData from "../data/HMProducts.json";
 import MKBagData from "../data/MKBags.json";
 import HerschelBag from "../data/Herschel.json";
 
+//import accs daa
+import AccessoriesData from "../data/Accessories.json"
+
 //for passing data anywhere
 //make sure this component wrap everything in main.jsx in order for it to work -- imagine you talk like indian
 export const ProductContext = createContext();
@@ -26,13 +29,16 @@ const ProductProvider = ({ children }) => {
   const { bags } = MKBagData;
   const { herschelbags } = HerschelBag;
 
+  //destructure acc data
+  const {accessory} = AccessoriesData
+
   //state for hats
   const [hatProducts, setHatProducts] = useState([]);
 
   //handle hats side effect
   useEffect(() => {
     setHatProducts(hats);
-  }, []);
+  }, [hats]);
 
   //state for shoes
   const [shoeProducts, setShoeProducts] = useState([]);
@@ -40,7 +46,7 @@ const ProductProvider = ({ children }) => {
   //handle shoes side effects
   useEffect(() => {
     setShoeProducts(shoes);
-  }, []);
+  }, [shoes]);
 
   //state for cloths
   const [clothProducts, setClothProducts] = useState([]);
@@ -48,7 +54,7 @@ const ProductProvider = ({ children }) => {
   //handle shoes side effects
   useEffect(() => {
     setClothProducts(clothes);
-  }, []);
+  }, [clothes]);
 
   //state for mkbag
   const [MKBagProducts, setMKBagProducts] = useState([]);
@@ -56,7 +62,7 @@ const ProductProvider = ({ children }) => {
   //handle mkbag side effect
   useEffect(() => {
     setMKBagProducts(bags);
-  }, []);
+  }, [bags]);
 
   //state for herschelbag
   const [HerschelBagProducts, setHerschelBagProducts] = useState([]);
@@ -64,7 +70,15 @@ const ProductProvider = ({ children }) => {
   //handle herschelbag side effect
   useEffect(() => {
     setHerschelBagProducts(herschelbags);
-  }, []);
+  }, [herschelbags]);
+
+  //state for accessories
+  const [AccessoriesProducts, setAccessoriesProducts] = useState([])
+
+  //handle acc side effect
+  useEffect(() => {
+    setAccessoriesProducts(accessory);
+  }, [accessory]);
 
   //show state for hat
   const [hatShow, setHatShow] = useState(true);
@@ -76,7 +90,7 @@ const ProductProvider = ({ children }) => {
   const [shoeShow, setShoeShow] = useState();
 
   //merge all json data into 1 single array
-  const allProductsMerge = [...hatProducts, ...shoeProducts, ...clothProducts];
+  const allProductsMerge = [...hatProducts, ...shoeProducts, ...clothProducts, ...MKBagProducts,...HerschelBagProducts,...AccessoriesProducts];
 
   //state for search product
   const [searchProduct, setSearchProduct] = useState("");
@@ -132,6 +146,7 @@ const ProductProvider = ({ children }) => {
         clothProducts,
         MKBagProducts,
         HerschelBagProducts,
+        AccessoriesProducts,
         setHatShow,
         hatShow,
         setClothShow,
