@@ -34,7 +34,7 @@ const BagProducts = lazy(() => import("../pages/BagProducts"));
 const BagProductDescription = lazy(() =>
   import("../productDescriptions/BagProductDescription")
 );
-const AccessoriesProducts = lazy(() => import("../pages/AccessoriesProducts"));
+const AccessoriesProducts = lazy(() => import("../pages/accessories/AccessoriesProductsMain"));
 const SecondUnknownProducts = lazy(() =>
   import("../pages/SecondUnknownProducts")
 );
