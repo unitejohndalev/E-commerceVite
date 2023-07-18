@@ -37,9 +37,9 @@ const Footer = () => {
   return (
     // change footer background color
     <footer className="bg-primary relative p-10 h-[60vh] lg:h-[50vh] mt-10">
-      <div className=" lg:w-[1024px] xl:w-[1240px] h-[25vh] m-auto flex justify-center -mt-8 ">
+      <div className=" lg:w-[1024px] xl:w-[1234px] h-[25vh] m-auto flex justify-center -mt-8 ">
         <div
-          className="w-[100%] flex flex-col justify-center lg:w-[1024px] xl:w-[1240px] lg:flex-row relative lg:justify-between
+          className="w-[100%] flex flex-col justify-center lg:w-[1024px] xl:w-[1234px] lg:flex-row relative lg:justify-between
        "
         >
           <div className="relative h-[100%] flex items-center cursor-pointer">

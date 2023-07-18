@@ -45,7 +45,7 @@
     @apply mt-[130px] flex flex-col items-center;
   }
   .mapParent-container {
-    @apply md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-5 lg:w-[1024px] xl:w-[1240px];
+    @apply md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-5 lg:w-[1024px] xl:w-[1234px];
   }
   .mapProduct-container {
     @apply mt-2 mb-2 lg:w-[285px] shadow-xl rounded-md h-[390px] relative;
