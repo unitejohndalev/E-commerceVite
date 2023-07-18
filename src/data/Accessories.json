@@ -1,0 +1,148 @@
+{
+    "accessory" : [
+        {
+            "id": 134,
+            "name": "Jordan",
+            "price": 24,
+            "gender": "Men's Socks",
+            "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a4504221-9723-448d-9c40-1675853b053d/jordan-everyday-ankle-socks-3-pairs-WkQM4k.png",
+            "bestSeller": true,
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "These ankle socks will keep you dry and cool with sweat-wicking fabric and breathable ankle panels. They're snug around the arch to give you that extra-supportive feel.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/afb80c69-17e4-4310-9c49-e9a1fe876897/jordan-everyday-ankle-socks-3-pairs-WkQM4k.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/58a5154b-9ce4-4e9b-8d08-474b8dcbc806/jordan-everyday-ankle-socks-3-pairs-WkQM4k.png",
+                    "img3": null
+                }
+            ]
+        },
+        {
+            "id": 135,
+            "name": "Nike Everyday Lightweight",
+            "price": 14,
+            "gender": "Women's Sock",
+            "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c0143104-ec2f-4fb8-9a84-04b52987953e/everyday-lightweight-womens-training-footie-socks-3-pairs-dobxBP.png",
+            "bestSeller": true,
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The Nike Everyday Lightweight Footie Socks are made with mesh and a stretchy cotton blend for breathability and a snug, soft feel.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c0143104-ec2f-4fb8-9a84-04b52987953e/everyday-lightweight-womens-training-footie-socks-3-pairs-dobxBP.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ec71ec76-f335-438e-aac2-3169b4bd8fb5/everyday-lightweight-womens-training-footie-socks-3-pairs-dobxBP.png",
+                    "img3": null
+                }
+            ]
+        },
+        {
+            "id": 136,
+            "name": "Premier League Academy",
+            "price": 37,
+            "gender": "Soccer Ball",
+            "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/48a07106-0db9-440c-94b6-0b10ea1e78ef/premier-league-academy-soccer-ball-NJR7L1.png",
+            "bestSeller": true,
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The Premier League Academy Soccer Ball features innovative grooves designed for consistent spin when the ball is in the air. High-contrast graphics help you easily track the ball so you can focus on your footwork.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/48a07106-0db9-440c-94b6-0b10ea1e78ef/premier-league-academy-soccer-ball-NJR7L1.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aca043c4-646f-4f83-ba20-ff8dd905389c/premier-league-academy-soccer-ball-NJR7L1.png",
+                    "img3": null
+                }
+            ]
+        },
+        {
+            "id": 137,
+            "name": "Soccer Shin Guards",
+            "price": 12,
+            "gender": "Shin Guards",
+            "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e204a166-b005-4aeb-a53a-a81edf6d05f1/soccer-shin-guards-lnHfW9.png",
+            "bestSeller": true,
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The Nike Soccer Shin Guards feature a unique sock design with a built-in hard shell and foam padding for impact cushioning where you need it most. Extra foam on either side of your ankle creates a comfortable fit.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e204a166-b005-4aeb-a53a-a81edf6d05f1/soccer-shin-guards-lnHfW9.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8381bfac-01f9-4992-b5db-291c8307f1d2/soccer-shin-guards-lnHfW9.png",
+                    "img3": null
+                }
+            ]
+        },
+        {
+            "id": 138,
+            "name": "Jordan Tour",
+            "price": 35,
+            "gender": "Golf Glove",
+            "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ce2f1be8-8495-4298-9034-3fada2fb08f8/jordan-tour-regular-golf-glove-right-cbTpsB.png",
+            "bestSeller": true,
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Hit the green in comfort and style. Premium leather is soft while still being durable, and the perforations allow your skin to breathe. The stretch fabric on the back allows your hands to move naturally while you shoot for that hole-in-1.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ce2f1be8-8495-4298-9034-3fada2fb08f8/jordan-tour-regular-golf-glove-right-cbTpsB.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/57de09e7-9964-46c7-afdf-f4cf585770f3/jordan-tour-regular-golf-glove-right-cbTpsB.png",
+                    "img3": null
+                }
+            ]
+        },
+        {
+            "id": 139,
+            "name": "Nike Mastery",
+            "price": 54.97,
+            "gender": "Yoga Mat",
+            "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a2462d31-b525-489c-a891-66fe4592e990/mastery-yoga-mat-2pLbvv.png",
+            "bestSeller": true,
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "The Nike Mastery Yoga Mat is made with natural rubber that has a stone look. It creates a grippy surface that's designed to feel cool to the touch so you can work on your poses with minimal distractions. Anti-odor construction helps keep it fresh, while a lightweight design makes it easy to carry so you can find your inner sanctuary wherever you go. Even better, it's made with at least 20% recycled materials.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a2462d31-b525-489c-a891-66fe4592e990/mastery-yoga-mat-2pLbvv.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbbb6026-0a37-4697-8268-e774cd469bb3/mastery-yoga-mat-2pLbvv.png",
+                    "img3": null
+                }
+            ]
+        },
+        {
+            "id": 140,
+            "name": "Nike Victory",
+            "price": 159,
+            "gender": "Sunglasses",
+            "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a2112797-fcec-477c-8d09-e2b214aed47f/victory-sunglasses-PP0tbC.png",
+            "bestSeller": true,
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Designed using insights from competitive runners, the Nike Victory Elite sunglasses have a wrap-around, 1-piece contoured lens that provides zero distraction and deeper coverage. Plus, they’re adjustable where you need it—in the nose pad and temples for a comfortable custom fit.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a2112797-fcec-477c-8d09-e2b214aed47f/victory-sunglasses-PP0tbC.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/07a80053-0f98-43ad-8a05-b9ec5bd21fa9/victory-sunglasses-PP0tbC.png",
+                    "img3":"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/245013f3-96ba-4771-99c1-2c556c4b47a1/victory-sunglasses-PP0tbC.png"
+                }
+            ]
+        },
+        {
+            "id": 141,
+            "name": "Nike Belt",
+            "price": 159,
+            "gender": "Golf Belt",
+            "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6a08601a-b59d-4f63-b3bb-8fc3af2a27fd/wide-stretch-web-golf-belt-WXR59F.png",
+            "bestSeller": true,
+            "status": "Best Seller",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "This golf belt lets you move smoothly through every swing. Playing again tomorrow? It's reversible, so you can switch up your look from one day to the next. It even has a bottle opener on the buckle so you can celebrate with a cool refreshment after a successful round.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6a08601a-b59d-4f63-b3bb-8fc3af2a27fd/wide-stretch-web-golf-belt-WXR59F.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6a08601a-b59d-4f63-b3bb-8fc3af2a27fd/wide-stretch-web-golf-belt-WXR59F.png",
+                    "img3": null
+                }
+            ]
+        }
+    ]
+}
