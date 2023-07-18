@@ -12,8 +12,6 @@ import { Link } from "react-router-dom";
 //logo
 import Logo from "./img/logo.png";
 
-
-
 //import cart context to get itemAmount function for cart button
 import { CartContext } from "../contexts/CartContext";
 
@@ -40,7 +38,6 @@ import {
   ChevronDownIcon,
   Bars3Icon,
   XMarkIcon,
-
   Square3Stack3DIcon,
 } from "@heroicons/react/24/outline";
 
@@ -129,7 +126,11 @@ function NavListMenu() {
       <Link to={link} key={key} className="">
         <MenuItem className="flex gap-3 rounded-sm ">
           <div className={`rounded-sm  ${colors[color]}`}>
-            <img src={icon} className="h-[10vh] w-[15vw] md:h-[15vh] md:w-[10vw] lg:max-h-[70px] lg:max-w-[90px]" alt="" />
+            <img
+              src={icon}
+              className="h-[10vh] w-[15vw] md:h-[15vh] md:w-[10vw] lg:max-h-[70px] lg:max-w-[90px]"
+              alt=""
+            />
           </div>
           <div>
             <Typography
@@ -301,8 +302,8 @@ const Nav = () => {
             <Link to={"/"}>
               <div className=" grid-cols-3 flex items-center justify-between ">
                 <img className="w-auto h-14 " src={Logo} alt="Logo" />
-                <span className="hidden md:flex font-primary py-4 text-lg text-gray-900 dark:text-white justify">
-                  ExpressShop
+                <span className="font-primary py-4 text-lg text-gray-900 dark:text-white justify">
+                  Shoppy
                 </span>
               </div>
             </Link>
@@ -334,7 +335,7 @@ const Nav = () => {
                     <div className="text-black border-solid border-2  w-[100%] max-w-[75%] h-[100%] flex justify-center items-center bg-light-green-700 m-4 padding">
                       <Login />
                     </div>
-        
+                    //{" "}
                   </div>
                 )}
               </div>
