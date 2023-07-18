@@ -332,10 +332,7 @@ const Nav = () => {
               <div className="relative">
                 {logInShow && (
                   <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid border-2 mt-14 bg-transparent">
-                    <div className="text-black border-solid border-2  w-[100%] max-w-[75%] h-[100%] flex justify-center items-center bg-light-green-700 m-4 padding">
-                      <Login />
-                    </div>
-                    //{" "}
+                    <Login />
                   </div>
                 )}
               </div>

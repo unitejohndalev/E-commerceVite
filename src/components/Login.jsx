@@ -34,7 +34,7 @@ const Login = () => {
   };
   return (
     <React.Fragment>
-      <div className="container mx-auto py-40">
+      <div className="container mt-10 mx-auto py-40 ">
         <div className="flex bg-deep-orange-50 rounded-lg mx-auto shadow-xl overflow-hidden w-[100%] max-w-[100%] h-[550px] ">
           {/* <!-- Left column container with background--> */}
           <div className="w-1/2 mb-12 md:mb-0 max-w-2xl flex flex-col justify-center bg-image">
