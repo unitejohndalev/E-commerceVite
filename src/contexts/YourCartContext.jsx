@@ -60,8 +60,8 @@ const YourCartContext = () => {
                         className="w-[100%] shadow-sm lg:shadow-none rounded-sm "
                       >
                         <div
-                          className="relative flex w-[95%] 
-            mt-5 shadow-sm rounded-sm  lg:h-[22%] lg:shadow-none lg:ml-2"
+                          className="relative flex md:w-[95%] 
+            mt-5 shadow-sm rounded-sm  lg:h-[22%] lg:shadow-none lg:ml-2 bg-red-800"
                         >
                           <div className="relative lg:h-[100%] lg:hidden">
                             <Link to={`/allproductsearch/${id}`}>
@@ -116,12 +116,14 @@ const YourCartContext = () => {
                               </div>
                             </div>
                             <div
-                              className=" w-[55%] absolute right-0
-                  flex justify-between bottom-1 md:w-[70%] lg:w-[40%] lg:font-light"
+                              className=" w-[30%]
+                  flex justify-between h-[55%] absolute right-0 bottom-0  lg:font-light bg-yellow-800"
                             >
-                              <p className="ml-2">$ {price}</p>
+                              <p className="absolute right-1 bottom-5">{`$ ${parseFloat(
+                                price
+                              ).toFixed(2)}`}</p>
 
-                              <p className=" absolute right-1">{`$ ${parseFloat(
+                              <p className=" absolute right-1 bottom-0">{`$ ${parseFloat(
                                 price * amount
                               ).toFixed(2)}`}</p>
                             </div>

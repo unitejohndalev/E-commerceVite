@@ -37,9 +37,9 @@ const Footer = () => {
   return (
     // change footer background color
     <footer className="bg-primary relative p-10 h-[60vh] lg:h-[50vh] mt-10">
-      <div className="lg:w-[1240px] h-[25vh] m-auto flex justify-center -mt-8 ">
+      <div className=" lg:w-[1024px] xl:w-[1240px] h-[25vh] m-auto flex justify-center -mt-8 ">
         <div
-          className="w-[100%] flex flex-col justify-center lg:w-[1240px] lg:flex-row relative lg:justify-between
+          className="w-[100%] flex flex-col justify-center lg:w-[1024px] xl:w-[1240px] lg:flex-row relative lg:justify-between
        "
         >
           <div className="relative h-[100%] flex items-center cursor-pointer">
@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
 
             <div className="hidden lg:flex ">
-              <div className=" text-white w-[1240px] flex justify-between absolute top-0 ">
+              <div className=" text-white lg:w-[1024px] flex justify-between absolute top-0 ">
                 <p className="text-[1.3rem] font-medium">Shop</p>
                 <div className="flex flex-col gap-y-1 mt-2 absolute left-0 top-[30px]">
                   <div className="w-[50px]">
@@ -151,7 +151,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex lg:flex-col lg:gap-y-2 xl:flex-row xl:justify-evenly text-[1.5rem] w-[320px] cursor-pointer">
+                <div className="flex lg:flex-col lg:gap-y-2 xl:flex-row xl:justify-evenly text-[1.5rem] lg:w-[120px] xl:w-[200px] cursor-pointer">
                   <FaFacebookF className="hover:text-white/50 " />
                   <FaTwitter className="hover:text-white/50 " />
                   <FaInstagram className="hover:text-white/50 " />

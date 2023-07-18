@@ -45,7 +45,7 @@
     @apply mt-[130px] flex flex-col items-center;
   }
   .mapParent-container {
-    @apply md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-5 lg:w-[1240px];
+    @apply md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-5 lg:w-[1024px] xl:w-[1240px];
   }
   .mapProduct-container {
     @apply mt-2 mb-2 lg:w-[285px] shadow-xl rounded-md h-[390px] relative;
@@ -60,7 +60,7 @@
     @apply absolute w-[100%] text-center;
   }
   .img-style {
-    @apply w-[100%] h-[330px]  md:w-[400px] md:h-[550px] rounded-t-md;
+    @apply w-[100%] h-[330px] md:w-[350px] md:h-[320px] lg:w-[350px] lg:h-[320px] rounded-t-md;
   }
 
   .price-container {
