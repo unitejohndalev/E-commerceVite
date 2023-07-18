@@ -301,7 +301,7 @@ const Nav = () => {
             <Link to={"/"}>
               <div className=" grid-cols-3 flex items-center justify-between ">
                 <img className="w-auto h-14 " src={Logo} alt="Logo" />
-                <span className="font-primary py-4 text-lg text-gray-900 dark:text-white justify">
+                <span className="hidden md:flex font-primary py-4 text-lg text-gray-900 dark:text-white justify">
                   ExpressShop
                 </span>
               </div>
