@@ -49,8 +49,8 @@ const AboutUsContent = () => {
               </div>
             </div>
             <div className="hidden lg:flex w-[48%] lg:flex-col absolute right-0 bottom-0 ">
-              <div className="w-[90%] flex justify-center items-center md:w-[100%]">
-                <div className="w-[100%] h-[25vh] flex items-center justify-center ">
+              <div className="w-[90%] flex justify-center items-center md:w-[100%] border-red">
+                <div className="w-[100%] h-[100%] flex items-center justify-center">
                   <p className="text-justify md:text-[.8rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Omnis, vel nostrum quisquam eveniet facilis vitae atque

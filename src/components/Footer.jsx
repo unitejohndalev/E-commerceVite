@@ -151,7 +151,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex lg:flex-col lg:absolute lg:left-[900px] lg:gap-y-2 xl:flex-row xl:justify-evenly text-[1.5rem] lg:w-[100%] xl:w-[200px] cursor-pointer">
+                <div className="flex lg:flex-col lg:absolute lg:left-[900px] lg:gap-y-2 xl:flex-row xl:justify-evenly text-[1.5rem] lg:w-[100%] xl:w-[380px] cursor-pointer">
                   <FaFacebookF className="hover:text-white/50 " />
                   <FaTwitter className="hover:text-white/50 " />
                   <FaInstagram className="hover:text-white/50 " />
