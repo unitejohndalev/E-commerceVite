@@ -77,7 +77,7 @@ const AllSearchProductInfos = () => {
                     </div>
                   </div>
                   <div className="mt-5 lg:h-[80vh]">
-                  <div className="w-[100%] flex justify-center">
+                  <div className="w-[100%] flex items-center justify-center md:justify-normal">
 
                     {allProductsFirstImgShow && (
                       <div>
