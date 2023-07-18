@@ -264,7 +264,7 @@ const Footer = () => {
         >
           <div className="h-[100%] flex flex-col items-center justify-between">
             {/* change icon color */}
-            <div className="flex justify-evenly text-[1.2rem] md:text-[1rem] w-[420px] cursor-pointer lg:hidden">
+            <div className="flex justify-evenly text-[1.2rem] md:text-[1rem] w-[100%] cursor-pointer lg:hidden">
               <FaFacebookF className="hover:text-black " />
               <FaTwitter className="hover:text-black " />
               <FaInstagram className="hover:text-black " />
