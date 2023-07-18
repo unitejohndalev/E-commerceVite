@@ -37,9 +37,9 @@ const Footer = () => {
   return (
     // change footer background color
     <footer className="bg-primary relative p-10 h-[60vh] lg:h-[50vh] mt-10">
-      <div className=" lg:w-[1024px] xl:w-[1234px] h-[25vh] m-auto flex justify-center -mt-8 ">
+      <div className=" lg:w-[100%] xl:w-[1234px] h-[25vh] m-auto flex justify-center -mt-8 ">
         <div
-          className="w-[100%] flex flex-col justify-center lg:w-[1024px] xl:w-[1234px] lg:flex-row relative lg:justify-between
+          className="w-[100%] flex flex-col justify-center lg:w-[100%] xl:w-[1234px] lg:flex-row relative lg:justify-between
        "
         >
           <div className="relative h-[100%] flex items-center cursor-pointer">
@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
 
             <div className="hidden lg:flex ">
-              <div className=" text-white lg:w-[1024px] flex justify-between absolute top-0 ">
+              <div className=" text-white lg:w-[100%] flex justify-between absolute top-0 ">
                 <p className="text-[1.3rem] font-medium">Shop</p>
                 <div className="flex flex-col gap-y-1 mt-2 absolute left-0 top-[30px]">
                   <div className="w-[50px]">
@@ -151,7 +151,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex lg:flex-col lg:gap-y-2 xl:flex-row xl:justify-evenly text-[1.5rem] lg:w-[120px] xl:w-[200px] cursor-pointer">
+                <div className="flex lg:flex-col lg:absolute lg:left-[900px] lg:gap-y-2 xl:flex-row xl:justify-evenly text-[1.5rem] lg:w-[100%] xl:w-[200px] cursor-pointer">
                   <FaFacebookF className="hover:text-white/50 " />
                   <FaTwitter className="hover:text-white/50 " />
                   <FaInstagram className="hover:text-white/50 " />
@@ -162,7 +162,7 @@ const Footer = () => {
             </div>
 
             {showShop && (
-              <div className="w-[100%] absolute top-[55px] flex flex-col gap-y-2 z-20 bg-primary mt-5 lg:hidden">
+              <div className="w-[100%] absolute top-[32px] flex flex-col gap-y-1 z-20 bg-primary mt-5 lg:hidden">
                 <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                   Hats
                 </div>
@@ -181,9 +181,7 @@ const Footer = () => {
               </div>
             )}
           </div>
-          {showShop === true ? (
-            <div className="h-[13vh]"></div>
-          ) : (
+     
             <div
               className="w-[100%] cursor-pointer flex justify-between items-center px-2 py-1 rounded-sm bg-white
               lg:hidden"
@@ -200,27 +198,19 @@ const Footer = () => {
                 </div>
               )}
             </div>
-          )}
+     
           {aboutUs && (
-            <div className="w-[100%] absolute top-[125px] flex flex-col gap-y-2 z-20 bg-primary mt-2 cursor-pointer lg:hidden">
+            <div className="w-[100%] absolute top-[90px] flex flex-col gap-y-1 z-20 bg-primary mt-2 cursor-pointer lg:hidden">
               <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                 News
               </div>
               <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                 Careers
               </div>
-              <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
-                Investors
-              </div>
-              <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
-                Purpose
-              </div>
-              <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
-                Sustainability
-              </div>
+       
             </div>
           )}
-        {aboutUs === true ? (<div className="h-[25vh]"></div>) : (<div className="h-[100%] flex items-center cursor-pointer relative w-[100%] lg:hidden">
+       <div className="h-[100%] flex items-center cursor-pointer relative w-[100%] lg:hidden">
             <div
               className="w-[100%] flex justify-between items-center px-2 py-1 rounded-sm bg-white
               lg:hidden"
@@ -237,21 +227,16 @@ const Footer = () => {
                 </div>
               )}
             </div>
-          </div>)  }
+          </div>
           {showHelp && (
-            <div className="w-[100%] absolute top-[185px] flex flex-col gap-y-2 z-20 bg-primary mt-2 cursor-pointer lg:hidden">
+            <div className="w-[100%] absolute top-[133px] flex flex-col gap-y-1 z-20 bg-primary mt-2 cursor-pointer lg:hidden">
               <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                 Order Status
               </div>
               <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                 Shipping and Delivery
               </div>
-              <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
-                Returns
-              </div>
-              <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
-                Order Cancellation
-              </div>
+          
               <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                 Contact Us
               </div>
@@ -262,7 +247,7 @@ const Footer = () => {
           className="text-white flex flex-col justify-center items-center absolute bottom-2 w-[90%] m-auto
         h-[25vh]"
         >
-          <div className="h-[100%] flex flex-col items-center justify-between">
+          <div className="h-[100%] flex flex-col items-center justify-between mb-[80px] lg:mb-0">
             {/* change icon color */}
             <div className="flex justify-evenly text-[1.2rem] md:text-[1rem] w-[100%] cursor-pointer lg:hidden">
               <FaFacebookF className="hover:text-black " />
@@ -271,7 +256,7 @@ const Footer = () => {
               <FaYoutube className="hover:text-black " />
               <FaPinterest className="hover:text-black " />
             </div>
-            <div className="w-[90%] lg:w-[500px] lg:mt-10">
+            <div className="w-[90%] mt-2 lg:w-[500px] lg:mt-10">
               <p className="text-[.7rem] text-center font-light">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Necessitatibus error optio nihil et doloribus eveniet rerum sed

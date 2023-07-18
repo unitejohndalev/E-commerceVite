@@ -5,7 +5,7 @@ const AboutUsContent = () => {
   return (
     <div className="h-[100%] ">
       <div className="flex justify-center ">
-        <div className="mt-[120px] w-[90%] h-[100%] md:flex md:gap-x-5 lg:max-w-[1240px]">
+        <div className="mt-[120px] w-[90%] h-[100%] md:flex md:gap-x-5 lg:max-w-[1240px] bg-yellow-800">
           <div
             className="w-[100%] h-[100%] flex-col justify-center items-center text-center
  md:items-start "
@@ -14,8 +14,8 @@ const AboutUsContent = () => {
               <h1 className="text-[2rem] md:text-left">About Us</h1>
             </div>
             <div
-              className="w-[90%] mt-10 m-auto h-[15vh] flex justify-center items-center
-         md:w-[90%] md:h-[15vh] md:m-0 md:mt-2"
+              className="w-[90%] mt-10 m-auto flex justify-center items-center
+         md:w-[90%] md:m-0 md:mt-2 border-red"
             >
               <p className="text-justify md:text-[.8rem]">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
@@ -26,7 +26,7 @@ const AboutUsContent = () => {
               </p>
             </div>
             <div
-              className="w-[90%] h-[50vh] mt-10 flex justify-center items-center m-auto 
+              className="w-[90%] h-[50vh] mt-10 mb-10 flex justify-center items-center m-auto 
           bg-blue-800 md:m-0 md:mt-5 md:w-[90%] md:h-[40vh]"
             >
               <p>IMG about us</p>
@@ -37,8 +37,8 @@ const AboutUsContent = () => {
               <div className="w-[90%] h-[40vh] flex justify-center items-center  md:w-[100%] bg-blue-800">
                 <p>Product IMG</p>
               </div>
-              <div className="w-[90%] h-[18vh] flex justify-center items-center md:w-[100%] ">
-                <div className="w-[100%] h-[25vh] flex items-center justify-center ">
+              <div className="w-[90%] flex justify-center items-center md:w-[100%] mt-5">
+                <div className="w-[100%] flex items-center justify-center ">
                   <p className="text-justify md:text-[.8rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Omnis, vel nostrum quisquam eveniet facilis vitae atque
@@ -49,7 +49,7 @@ const AboutUsContent = () => {
               </div>
             </div>
             <div className="hidden lg:flex w-[48%] lg:flex-col absolute right-0 bottom-0 ">
-              <div className="w-[90%] h-[18vh] flex justify-center items-center md:w-[100%] ">
+              <div className="w-[90%] flex justify-center items-center md:w-[100%]">
                 <div className="w-[100%] h-[25vh] flex items-center justify-center ">
                   <p className="text-justify md:text-[.8rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -59,7 +59,7 @@ const AboutUsContent = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-[100%] h-[40vh] flex justify-center items-center bg-blue-800 ">
+              <div className="w-[100%] h-[40vh] flex justify-center items-center bg-blue-800 mt-5">
                 <p>Product IMG</p>
               </div>
             </div>
