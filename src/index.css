@@ -37,7 +37,7 @@
     @apply border-solid border-2 border-red-800;
   }
 
-  /* product page hat/shoes/clothing/filtered components styles */
+  /* PRODUC PAGE HAT/SHOES/CLOTHING/FILTERED COMPONENTS STYLES */
   .parent-container {
     @apply relative w-[100%] h-[100vh];
   }
@@ -45,7 +45,7 @@
     @apply mt-[130px] flex flex-col items-center;
   }
   .mapParent-container {
-    @apply md:flex md:flex-wrap md:w-[840px] lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-5 lg:w-[1024px] xl:w-[1234px];
+    @apply md:flex md:flex-wrap md:w-[100%] lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-5 lg:w-[100%] xl:w-[1234px];
   }
   .mapProduct-container {
     @apply mt-2 mb-2 lg:w-[285px] shadow-xl rounded-md h-[390px] relative;
@@ -74,22 +74,23 @@
     @apply font-light text-[.8rem] ml-2;
   }
 
-  /* featured/offproducts hero styles */
+
+  /* FEATURED/OFFPRODUCTS HERO STYLES */
   .heroParent-container {
-    @apply relative w-[100%];
+    @apply relative w-[100%] mb-10;
   }
   .secondHeroParent-container {
     @apply flex flex-col items-center;
   }
   .mapHeroParent-container {
-    @apply h-[80vh] md:w-[800px] lg:w-[1240px] flex justify-center items-center md:justify-end 
-        relative mb-5;
+    @apply h-[80vh] md:w-[768px] lg:w-[1024px] flex justify-center items-center md:justify-end 
+        relative;
   }
   .secondMapHeroParent-container {
-    @apply relative md:flex md:justify-center md:items-center h-[65vh] w-[400px] md:w-[800px] lg:w-[1240px];
+    @apply relative md:flex md:justify-center md:items-center h-[65vh] w-[400px] md:w-[800px] lg:w-[1024px];
   }
   .textHero-container {
-    @apply hidden absolute md:flex flex-col justify-center left-5 h-[65vh] md:w-[350px] lg:w-[650px] off-bg text-white;
+    @apply hidden absolute md:flex flex-col justify-center left-5 h-[65vh] md:w-[350px] lg:w-[500px] off-bg text-white;
   }
   .secondTextHero-container {
     @apply py-10 flex flex-col justify-center items-center;
@@ -99,7 +100,7 @@
   }
 
   .offThirdParent-container {
-    @apply h-[80vh] md:w-[800px] lg:w-[1240px] flex justify-center items-center md:justify-end relative
+    @apply h-[80vh]  md:w-[768px] lg:w-[1024px] xl:w-[1234px] flex justify-center items-center md:justify-end relative
   }
 }
 

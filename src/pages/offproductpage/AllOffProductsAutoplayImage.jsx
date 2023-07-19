@@ -24,7 +24,7 @@ const AllOffProductsAutoplayImage = () => {
   return (
     <div
       className="overflow-hidden
-       h-[100%] mt-0 w-[400px] flex justify-center items-center
+       h-[100%] mt-0 w-[350px] md:w-[400px] flex justify-center items-center
         transition-all "
       ref={emblaRef}
     >
@@ -34,7 +34,7 @@ const AllOffProductsAutoplayImage = () => {
           return (
             <div className="embla__slide min-w-0  " key={id}>
               <div className="flex justify-center items-center">
-                <img src={img} className="w-[370px] h-[100%]" alt="" />
+                <img src={img} className="w-[370px] h-[100%] md:h-[90vh] md:w-[40vw] lg:h-[70vh] lg:w-[100%]" alt="" />
               </div>
             </div>
           );

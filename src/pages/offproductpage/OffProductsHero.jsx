@@ -7,7 +7,6 @@ const OffProductsHero = () => {
     <div className="heroParent-container ">
       <div className="secondHeroParent-container">
         <div className="offThirdParent-container ">
-    
             <div className="textHero-container mt-5">
               <div className="secondTextHero-container ">
                 <p>New styles added!</p>
