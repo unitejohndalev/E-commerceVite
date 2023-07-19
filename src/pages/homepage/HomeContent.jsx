@@ -1,20 +1,27 @@
 import React from "react";
 import Footer from "../../components/Footer";
-
-
-
+import VideoSection from "../../assets/shoppy.mp4";
 
 const HomeContent = () => {
-
   return (
     <div className="h-[100%] ">
-      {/* container */}
+      <div className=" flex flex-col bg-cover  ">
+        <video
+          autostart
+          autoPlay
+          loop
+          muted
+          src={VideoSection}
+          type="video/mp4"
+        />
+      </div>
+
       <div className=" flex justify-center mt-[100px] ">
         {/* wrapper container */}
         <div className=" w-[90%] md:max-w-[768px] lg:max-w-[1040px] xl:max-w-[1240px] ">
           {/* HERO SECTION */}
           <div className="flex justify-between w-[100%] h-[100vh] mt-[50px] ">
-            {/* TEXT POSITION */}
+            TEXT POSITION
             <div className="w-[550px] h-[70vh] ">
               <div className=" mt-[150px]">
                 <h1 className=" text-[2rem] border-red border-4 font-bold">
@@ -106,7 +113,6 @@ const HomeContent = () => {
               </div>
             </div>
           </div>
-     
         </div>
       </div>
       <Footer />
