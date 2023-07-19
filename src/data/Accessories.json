@@ -42,8 +42,8 @@
             "price": 37,
             "gender": "Soccer Ball",
             "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/48a07106-0db9-440c-94b6-0b10ea1e78ef/premier-league-academy-soccer-ball-NJR7L1.png",
-            "bestSeller": true,
-            "status": "Best Seller",
+            "bestSeller": false,
+            "status": "Just In",
             "description": [
                 {
                     "id": 1,
@@ -78,8 +78,8 @@
             "price": 35,
             "gender": "Golf Glove",
             "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ce2f1be8-8495-4298-9034-3fada2fb08f8/jordan-tour-regular-golf-glove-right-cbTpsB.png",
-            "bestSeller": true,
-            "status": "Best Seller",
+            "bestSeller": false,
+            "status": "Just In",
             "description": [
                 {
                     "id": 1,
@@ -114,8 +114,8 @@
             "price": 159,
             "gender": "Sunglasses",
             "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a2112797-fcec-477c-8d09-e2b214aed47f/victory-sunglasses-PP0tbC.png",
-            "bestSeller": true,
-            "status": "Best Seller",
+        "bestSeller": false,
+        "status": "Just In",
             "description": [
                 {
                     "id": 1,

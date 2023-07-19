@@ -12,7 +12,7 @@ const HatFiltered = (props) => {
   const { addToCart } = useContext(CartContext);
   return (
     <div className="parent-container ">
-      <div className="product-container mt-0">
+      <div className="product-container mt-0 md:mt-10">
         <div className="mapParent-container lg:mt-5 ">
           {props.filterProductList.map((products) => {
             //destructure products

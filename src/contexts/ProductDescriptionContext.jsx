@@ -6,8 +6,8 @@ const ProductDescriptionProvider = ({ children }) => {
  
       //all merge products state
       const [allProductsFirstImgShow, setAllProductsFirstImgShow] = useState(true)
-      const [allProductsSecondImgShow, setAllProductsSecondImgShow] = useState()
-      const [allProductsThirdImgShow, setAllProductsThirdImgShow] = useState()
+      const [allProductsSecondImgShow, setAllProductsSecondImgShow] = useState(false)
+      const [allProductsThirdImgShow, setAllProductsThirdImgShow] = useState(false)
 
       const firstAllProductImgToggle = () => {
         setAllProductsFirstImgShow(true)

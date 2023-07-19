@@ -37,7 +37,7 @@
     @apply border-solid border-2 border-red-800;
   }
 
-  /* PRODUC PAGE HAT/SHOES/CLOTHING/FILTERED COMPONENTS STYLES */
+  /* PRODUC PAGE HAT/SHOES/CLOTHING STYLES */
   .parent-container {
     @apply relative w-[100%] h-[100vh];
   }
@@ -83,11 +83,11 @@
     @apply flex flex-col items-center;
   }
   .mapHeroParent-container {
-    @apply h-[80vh] md:w-[768px] lg:w-[1024px] flex justify-center items-center md:justify-end 
+    @apply h-[80vh] w-[100%] md:w-[768px] lg:w-[1024px] flex justify-center items-center md:justify-end 
         relative;
   }
   .secondMapHeroParent-container {
-    @apply relative md:flex md:justify-center md:items-center h-[65vh] w-[400px] md:w-[800px] lg:w-[1024px];
+    @apply relative flex justify-center md:flex md:justify-center md:items-center h-[65vh] w-[350px] md:w-[768px] lg:w-[1024px];
   }
   .textHero-container {
     @apply hidden absolute md:flex flex-col justify-center left-5 h-[65vh] md:w-[350px] lg:w-[500px] off-bg text-white;
@@ -96,11 +96,36 @@
     @apply py-10 flex flex-col justify-center items-center;
   }
   .video-style {
-    @apply flex absolute right-5;
+    @apply flex md:absolute md:right-5;
   }
 
   .offThirdParent-container {
     @apply h-[80vh]  md:w-[768px] lg:w-[1024px] xl:w-[1234px] flex justify-center items-center md:justify-end relative
+  }
+
+  /* FILTEREDMAIN STYLES */
+  .filtermain-container {
+    @apply absolute top-0 w-[100%] 
+  }
+
+    .filtermainBtn-container {
+    @apply w-[100%] top-0 absolute
+  }
+
+     .filterBtn-container {
+    @apply hidden md:flex absolute z-10 left-3 btn-bg px-5 py-2 rounded-sm text-white
+  }
+
+  .pFilteredBtn {
+    @apply absolute z-[11] left-2 md:hidden
+  }
+
+  .filterFunctionProduct-container {
+    @apply flex flex-col mt-10 justify-center
+  }
+
+  .filterFunction-container {
+    @apply w-[100%] absolute top-[65px] mb-5 md:w-[768px] justify-start gap-x-5 lg:w-[1024px]
   }
 }
 

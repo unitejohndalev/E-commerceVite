@@ -7,6 +7,7 @@
       "color": "Black",
       "img": "https://michaelkors.scene7.com/is/image/MichaelKors/30H0GTVT4C-0001_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
       "status": "Best Seller",
+      "bestSeller": true,
       "description": [
         {
           "id": 1,
@@ -23,6 +24,7 @@
       "color": "Brown and Beige",
       "img": "https://michaelkors.scene7.com/is/image/MichaelKors/30S0GEZB2V-2618_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
       "status": "Best Seller",
+      "bestSeller": true,
       "description": [
         {
           "id": 11,
@@ -39,6 +41,7 @@
       "color": "Black",
       "img": "https://michaelkors.scene7.com/is/image/MichaelKors/32R3SJ6C8C-0001_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
       "status": "Best Seller",
+      "bestSeller": true,
       "description": [
         {
           "id": 128,
@@ -55,6 +58,7 @@
       "color": "Black",
       "img": "https://michaelkors.scene7.com/is/image/MichaelKors/32S3GJ6C2L-0001_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
       "status": "Best Seller",
+      "bestSeller": true,
       "description": [
         {
           "id": 13,
@@ -71,6 +75,7 @@
       "color": "Camel",
       "img": "https://michaelkors.scene7.com/is/image/MichaelKors/30S3GR0M2O-0220_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
       "status": "Best Seller",
+      "bestSeller": true,
       "description": [
         {
           "id": 14,
@@ -86,7 +91,8 @@
       "price": "298.00",
       "color": "Natural Luggage",
       "img": "https://michaelkors.scene7.com/is/image/MichaelKors/32S3G7PC8J-1251_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
-      "status": "Best Seller",
+      "bestSeller": false,
+      "status": "Just In",
       "description": [
         {
           "id": 15,
@@ -102,7 +108,8 @@
       "price": "228.00",
       "color": "Van Cream",
       "img": "https://michaelkors.scene7.com/is/image/MichaelKors/32F3G6WC0V-2543_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
-      "status": "Best Seller",
+      "bestSeller": false,
+      "status": "Just In",
       "description": [
         {
           "id": 16,
@@ -118,7 +125,8 @@
       "price": "198.00",
       "color": "Pink",
       "img": "https://michaelkors.scene7.com/is/image/MichaelKors/32F7SGNM8L-0650_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
-      "status": "Best Seller",
+      "bestSeller": false,
+      "status": "Just In",
       "description": [
         {
           "id": 17,

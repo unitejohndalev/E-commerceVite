@@ -6,8 +6,8 @@ import React from "react";
 import HatMain from "./hat_products/HatMain";
 import ClothMain from "./cloth_products/ClothMain";
 import ShoeMain from "./shoe_products/ShoeMain";
-// import BagMain from "./bag_products/BagMain";
-// import AccMain from "./acc_products/AccMain";
+import BagMain from "./bag_products/BagMain";
+import AccMain from "./acc_products/AccMain";
 
 // import Footer from "../components/Footer";
 
@@ -16,7 +16,7 @@ const FilterProductMain = () => {
 
   return (
 
-      <div className=" h-[100vh] ">
+      <div className=" h-[100vh] w-[100%]">
         <div className="cursor-pointer">
           {/* <button className="">Clothes</button>
         <button className="">Shoes</button>
@@ -26,8 +26,8 @@ const FilterProductMain = () => {
           <HatMain />
           <ClothMain />
           <ShoeMain />
-          {/* <BagMain/>
-          <AccMain/> */}
+          <BagMain/>
+          <AccMain/>
         </div>
       </div>
 

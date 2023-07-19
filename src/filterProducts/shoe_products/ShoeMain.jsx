@@ -1,7 +1,6 @@
-import React, { useRef, useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 
-//import data
-import { shoes } from "../../data/NikeProducts.json";
+
 
 //import FilterSelectFunction components
 import FilterSelectFunction from "../FilterSelectFunction";
@@ -12,18 +11,25 @@ import ShoeFilteredList from "./ShoeFilteredList";
 import { ProductContext } from "../../contexts/ProductContext";
 
 const ShoeMain = () => {
-  const { setHatShow, setClothShow, shoeShow, setShoeShow } =
-    useContext(ProductContext);
+  const {
+    setHatShow,
+    setClothShow,
+    shoeShow,
+    setBagShow,
+    setShoeShow,
+    shoeProducts,
+    setAccShow,
+  } = useContext(ProductContext);
 
   //state for hat products data
-  const [Product, setProduct] = useState(shoes);
+  const [Product, setProduct] = useState(shoeProducts);
 
   //state for filtered data
-  const [filterHatProduct, setFilterHatProduct] = useState("Best Seller");
+  const [filterShoeProduct, setFilterShoeProduct] = useState("Best Seller");
 
   //filter products
   const filterProductList = Product.filter((product) => {
-    if (filterHatProduct === "Best Seller") {
+    if (filterShoeProduct === "Best Seller") {
       return product.bestSeller === true;
     } else {
       return product.bestSeller === false;
@@ -32,40 +38,41 @@ const ShoeMain = () => {
 
   //function for filter value
   const onFilterValueSelected = (filterValue) => {
-    setFilterHatProduct(filterValue);
+    setFilterShoeProduct(filterValue);
   };
 
   const shoeToggle = () => {
     setShoeShow(true);
     setHatShow(false);
     setClothShow(false);
+    setBagShow(false)
+        setAccShow(false)
   };
 
   return (
     <div className="relative ">
-      <div  className="absolute top-0 w-[100%]">
-        <div className="max-w-[1240px] top-0 absolute">
+      <div className="filtermain-container">
+        <div className="filtermainBtn-container">
           <button
             onClick={shoeToggle}
-            className="absolute left-[205px] z-10 btn-bg px-5 py-2 rounded-sm text-white"
+            className="filterBtn-container  md:left-[245px] lg:left-[335px]"
           >
             Shoes
           </button>
+          <p onClick={shoeToggle} className="pFilteredBtn left-[135px]">
+            Shoes
+          </p>
         </div>
-        <div className="flex flex-col mt-10 ">
+        <div className="filterFunctionProduct-container">
           {shoeShow && (
             <div className="mt-10">
-              <div className="flex flex-col items-center">
-                <div
-                  className="w-[100%] ml-5 mb-5 md:w-[768px] justify-start gap-x-5 lg:w-[1240px]
-           "
-                >
-                  {/* filterselectfunction reusable function component */}
-                  <FilterSelectFunction
-                    filterValueSelected={onFilterValueSelected}
-                  />
-                </div>
+              <div className="filterFunction-container">
+                {/* filterselectfunction reusable function component */}
+                <FilterSelectFunction
+                  filterValueSelected={onFilterValueSelected}
+                />
               </div>
+
               {/* hatfiltered components */}
               <ShoeFilteredList filterProductList={filterProductList} />
             </div>

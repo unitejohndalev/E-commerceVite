@@ -30,7 +30,7 @@ const ProductProvider = ({ children }) => {
   const { herschelbags } = HerschelBag;
 
   //destructure acc data
-  const {accessory} = AccessoriesData
+  const { accessory } = AccessoriesData;
 
   //state for hats
   const [hatProducts, setHatProducts] = useState([]);
@@ -73,7 +73,7 @@ const ProductProvider = ({ children }) => {
   }, [herschelbags]);
 
   //state for accessories
-  const [AccessoriesProducts, setAccessoriesProducts] = useState([])
+  const [AccessoriesProducts, setAccessoriesProducts] = useState([]);
 
   //handle acc side effect
   useEffect(() => {
@@ -89,8 +89,29 @@ const ProductProvider = ({ children }) => {
   //show state for shoe
   const [shoeShow, setShoeShow] = useState();
 
+  //show state for bags
+  const [bagShow, setBagShow] = useState();
+
+  //show state for accessories
+  const [accShow, setAccShow] = useState();
+
+  //merge bags data into one
+  const allBagsMerge = [...MKBagProducts, ...HerschelBagProducts];
+
+
+
+
+ 
+
   //merge all json data into 1 single array
-  const allProductsMerge = [...hatProducts, ...shoeProducts, ...clothProducts, ...MKBagProducts,...HerschelBagProducts,...AccessoriesProducts];
+  const allProductsMerge = [
+    ...hatProducts,
+    ...shoeProducts,
+    ...clothProducts,
+    ...MKBagProducts,
+    ...HerschelBagProducts,
+    ...AccessoriesProducts,
+  ];
 
   //state for search product
   const [searchProduct, setSearchProduct] = useState("");
@@ -105,7 +126,7 @@ const ProductProvider = ({ children }) => {
   };
 
   //use useRef for search body, when click outside it'll close
-//NOTE THIS IS REMOVE SINCE, ITS CAUSING THE APP TO HAVE SOME ERRORS
+  //NOTE THIS IS REMOVE SINCE, ITS CAUSING THE APP TO HAVE SOME ERRORS
   // let searchRef = useRef();
   // React.useEffect(() => {
   //   document.addEventListener("mousedown", (e) => {
@@ -122,18 +143,17 @@ const ProductProvider = ({ children }) => {
 
   const homeFirstImgToggle = () => {
     setHomeFirstImg((prev) => !prev);
-    setHomeSecondImg(false)
+    setHomeSecondImg(false);
   };
   const homeSecondImgToggle = () => {
     setHomeSecondImg((prev) => !prev);
-    setHomeFirstImg(false)
-    setHomeThirdImg(false)
+    setHomeFirstImg(false);
+    setHomeThirdImg(false);
   };
   const homeThirdImgToggle = () => {
     setHomeThirdImg((prev) => !prev);
     setHomeFirstImg(false);
-    setHomeSecondImg(false)
-
+    setHomeSecondImg(false);
   };
 
   //make product context the provider
@@ -154,6 +174,11 @@ const ProductProvider = ({ children }) => {
         clothShow,
         setShoeShow,
         shoeShow,
+        setBagShow,
+        bagShow,
+        setAccShow,
+        accShow,
+        allBagsMerge,
         allProductsMerge,
         searchProduct,
         handleChange,
@@ -164,7 +189,7 @@ const ProductProvider = ({ children }) => {
         homeThirdImg,
         homeFirstImgToggle,
         homeSecondImgToggle,
-        homeThirdImgToggle
+        homeThirdImgToggle,
       }}
     >
       {children}

@@ -1,6 +1,5 @@
-import React, { useContext, useRef, useState } from "react";
-//import data
-import { hats } from "../../data/NikeProducts.json";
+import React, { useContext, useState } from "react";
+
 import { ProductContext } from "../../contexts/ProductContext";
 
 //import FilterSelectFunction components
@@ -10,10 +9,17 @@ import FilterSelectFunction from "../FilterSelectFunction";
 import HatFiltered from "./HatFilteredList";
 
 const HatMain = () => {
-  const { hatShow, setHatShow, setClothShow, setShoeShow } =
-    useContext(ProductContext);
+  const {
+    hatShow,
+    setHatShow,
+    setClothShow,
+    setBagShow,
+    setShoeShow,
+    hatProducts,
+    setAccShow,
+  } = useContext(ProductContext);
   //state for hat products data
-  const [Product, setProduct] = useState(hats);
+  const [Product, setProduct] = useState(hatProducts);
 
   //state for filtered data
   const [filterHatProduct, setFilterHatProduct] = useState("Best Seller");
@@ -36,34 +42,32 @@ const HatMain = () => {
     setHatShow(true);
     setClothShow(false);
     setShoeShow(false);
+    setBagShow(false)
+        setAccShow(false)
   };
 
 
   return (
     <div className="relative ">
-      <div className="absolute top-0 w-[100%] ">
-        <div className="max-w-[1240px] top-0 absolute">
-          <button
-            onClick={hatToggle}
-            className="absolute z-10 left-3 btn-bg px-5 py-2 rounded-sm text-white"
-          >
+      <div className="filtermain-container">
+        <div className="filtermainBtn-container">
+          <button onClick={hatToggle} className=" filterBtn-container md:left-[50px] lg:left-[140px]">
             Hats
           </button>
+          <p onClick={hatToggle} className="pFilteredBtn">
+            Hats
+          </p>
         </div>
-        <div className="flex flex-col mt-10 justify-center">
+        <div className="filterFunctionProduct-container">
           {hatShow && (
             <div className="mt-10">
-              <div className="flex flex-col items-center">
-                <div
-                  className="w-[100%] ml-5 mb-5 md:w-[768px] justify-start gap-x-5 lg:w-[1240px]
-           "
-                >
-                  {/* filterselectfunction reusable function component */}
-                  <FilterSelectFunction
-                    filterValueSelected={onFilterValueSelected}
-                  />
-                </div>
+              <div className="filterFunction-container">
+                {/* filterselectfunction reusable function component */}
+                <FilterSelectFunction
+                  filterValueSelected={onFilterValueSelected}
+                />
               </div>
+
               {/* hatfiltered components */}
               <HatFiltered filterProductList={filterProductList} />
             </div>
