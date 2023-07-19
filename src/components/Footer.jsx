@@ -162,7 +162,7 @@ const Footer = () => {
             </div>
 
             {showShop && (
-              <div className="w-[100%] absolute top-[32px] flex flex-col gap-y-1 z-20 bg-primary mt-5 lg:hidden">
+              <div className="w-[100%] absolute top-[36px] md:top-[30px] flex flex-col gap-y-1 z-20 bg-primary mt-5 lg:hidden">
                 <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                   Hats
                 </div>
@@ -181,36 +181,44 @@ const Footer = () => {
               </div>
             )}
           </div>
-     
-            <div
-              className="w-[100%] cursor-pointer flex justify-between items-center px-2 py-1 rounded-sm bg-white
+
+          <div
+            className="w-[100%] cursor-pointer flex justify-between items-center px-2 py-1 rounded-sm bg-white
               lg:hidden"
-              onClick={aboutToggle}
-            >
-              <p className="">About Us</p>
-              {aboutUs === false ? (
-                <div className=" text-[2rem] ">
-                  <VscChevronDown />
-                </div>
-              ) : (
-                <div className=" text-[2rem] ">
-                  <VscChevronUp />
-                </div>
-              )}
-            </div>
-     
+            onClick={aboutToggle}
+          >
+            <p className="">About Us</p>
+            {aboutUs === false ? (
+              <div className=" text-[2rem] ">
+                <VscChevronDown />
+              </div>
+            ) : (
+              <div className=" text-[2rem] ">
+                <VscChevronUp />
+              </div>
+            )}
+          </div>
+
           {aboutUs && (
-            <div className="w-[100%] absolute top-[90px] flex flex-col gap-y-1 z-20 bg-primary mt-2 cursor-pointer lg:hidden">
+            <div className="w-[100%] absolute top-[100px] md:top-[89px] flex flex-col gap-y-1 z-20 bg-primary mt-2 cursor-pointer lg:hidden">
               <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                 News
               </div>
               <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                 Careers
               </div>
-       
+              <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
+                Investors
+              </div>
+              <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
+                Purpose
+              </div>
+              <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
+                Sustainability
+              </div>
             </div>
           )}
-       <div className="h-[100%] flex items-center cursor-pointer relative w-[100%] lg:hidden">
+          <div className="h-[100%] flex items-center cursor-pointer relative w-[100%] lg:hidden">
             <div
               className="w-[100%] flex justify-between items-center px-2 py-1 rounded-sm bg-white
               lg:hidden"
@@ -229,14 +237,19 @@ const Footer = () => {
             </div>
           </div>
           {showHelp && (
-            <div className="w-[100%] absolute top-[133px] flex flex-col gap-y-1 z-20 bg-primary mt-2 cursor-pointer lg:hidden">
+            <div className="w-[100%] absolute top-[151px] md:top-[135px] flex flex-col gap-y-1 z-20 bg-primary mt-2 cursor-pointer lg:hidden">
               <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                 Order Status
               </div>
               <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                 Shipping and Delivery
               </div>
-          
+              <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
+                Returns
+              </div>
+              <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
+                Order Cancelation
+              </div>
               <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                 Contact Us
               </div>
