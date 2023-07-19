@@ -105,14 +105,15 @@ const ProductProvider = ({ children }) => {
   };
 
   //use useRef for search body, when click outside it'll close
-  let searchRef = useRef();
-  React.useEffect(() => {
-    document.addEventListener("mousedown", (e) => {
-      if (!searchRef.current.contains(e.target)) {
-        setShowBody(false);
-      }
-    });
-  });
+//NOTE THIS IS REMOVE SINCE, ITS CAUSING THE APP TO HAVE SOME ERRORS
+  // let searchRef = useRef();
+  // React.useEffect(() => {
+  //   document.addEventListener("mousedown", (e) => {
+  //     if (!searchRef.current.contains(e.target)) {
+  //       setShowBody(false);
+  //     }
+  //   });
+  // });
 
   //img function for home hero
   const [homeFirstImg, setHomeFirstImg] = useState(true);
@@ -158,7 +159,6 @@ const ProductProvider = ({ children }) => {
         handleChange,
         showBody,
         setShowBody,
-        searchRef,
         homeFirstImg,
         homeSecondImg,
         homeThirdImg,

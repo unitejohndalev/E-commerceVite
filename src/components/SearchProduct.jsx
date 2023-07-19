@@ -4,14 +4,14 @@ import { ProductContext } from "../contexts/ProductContext";
 import { Link } from "react-router-dom";
 
 const SearchProduct = () => {
-  const { allProductsMerge, searchProduct, setShowBody, searchRef } =
+  const { allProductsMerge, searchProduct, setShowBody} =
     useContext(ProductContext);
 
   return (
     <div className="relative">
       <div
         className="flex flex-col items-center absolute bg-white w-[100%]"
-        ref={searchRef}
+ 
       >
         <div className="absolute right-[50px] top-5">
           <button onClick={() => setShowBody(false)}>close</button>
