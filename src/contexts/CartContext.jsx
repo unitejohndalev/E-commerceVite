@@ -6,12 +6,14 @@ export const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
   //cart state
-  const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cartOrderProducts")));
+  const [cart, setCart] = useState(
+[]
+  );
 
   //set localstorage for cart and name it cartOrderProducts
-  useEffect(() => {
-    localStorage.setItem("cartOrderProducts", JSON.stringify(cart));
-  }, [cart]);
+  // useEffect(() => {
+  //   localStorage.setItem("cartOrderProducts", JSON.stringify(cart));
+  // }, [cart]);
 
   //item amount state
   const [itemAmount, setItemAmount] = useState(0);
