@@ -13,7 +13,7 @@ const FeatureProducts = () => {
   return (
     <div className="relative h-[100%]">
       <div className="w-[100%] flex justify-center mt-[100px]">
-  
+        <HeroFeatureProducts />
       </div>
       <div className="mb-10">
         <FilterProductMain />
