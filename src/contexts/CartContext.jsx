@@ -1,14 +1,19 @@
 /* eslint-disable react/prop-types */
 import React, { createContext, useEffect, useState } from "react";
 
-
-
 //create context
 export const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
   //cart state
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(
+    JSON.parse(localStorage.getItem("cartOrderProducts"))
+  );
+
+  //set localstorage for cart and name it cartOrderProducts
+  useEffect(() => {
+    localStorage.setItem("cartOrderProducts", JSON.stringify(cart));
+  }, [cart]);
 
   //item amount state
   const [itemAmount, setItemAmount] = useState(0);
@@ -22,7 +27,7 @@ const CartProvider = ({ children }) => {
       return accumulator + currentItem.price * currentItem.amount;
     }, 0);
     setTotal(total);
-  },[cart]);
+  }, [cart]);
 
   //update item amount
   useEffect(() => {
@@ -34,8 +39,6 @@ const CartProvider = ({ children }) => {
     }
   }, [cart]);
 
-
-
   //add to cart function
   //bug, when a product has the same id, first product add to cart replace following any product that has the same id
   //tried applying random number using math.floor and math.random, but failed to resolve
@@ -43,7 +46,7 @@ const CartProvider = ({ children }) => {
   const addToCart = (product, id) => {
     const newItem = { ...product, amount: 1 };
     const cartItem = cart.find((item) => {
-      return item.id === id
+      return item.id === id;
     });
 
     if (cartItem) {
@@ -58,7 +61,6 @@ const CartProvider = ({ children }) => {
     } else {
       setCart([...cart, newItem]);
     }
-    
   };
 
   //remove from cart

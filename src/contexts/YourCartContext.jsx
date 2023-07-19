@@ -61,7 +61,7 @@ const YourCartContext = () => {
                       >
                         <div
                           className="relative flex md:w-[95%] 
-            mt-5 shadow-sm rounded-sm  lg:h-[22%] lg:shadow-none lg:ml-2 bg-red-800"
+            mt-5 shadow-sm rounded-sm  lg:h-[22%] lg:shadow-none lg:ml-2"
                         >
                           <div className="relative lg:h-[100%] lg:hidden">
                             <Link to={`/allproductsearch/${id}`}>
@@ -117,7 +117,7 @@ const YourCartContext = () => {
                             </div>
                             <div
                               className=" w-[30%]
-                  flex justify-between h-[55%] absolute right-0 bottom-0  lg:font-light bg-yellow-800"
+                  flex justify-between h-[55%] absolute right-0 bottom-0  lg:font-light "
                             >
                               <p className="absolute right-1 bottom-5">{`$ ${parseFloat(
                                 price
