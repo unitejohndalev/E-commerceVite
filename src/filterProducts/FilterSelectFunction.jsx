@@ -8,7 +8,7 @@ const FilterSelectFunction = (props) => {
   }
   return (
     <div className=" relative">
-      <div className="absolute -top-5 md:top-0 md:left-[25px] lg:left-[120px]">
+      <div className="absolute -top-5 md:top-0 md:left-[25px] lg:left-[160px]">
         <select
           className="outline-none p-0 md:p-2 rounded-sm cursor-pointer"
           name="isbestSeller"

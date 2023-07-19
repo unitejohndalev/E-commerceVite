@@ -51,7 +51,7 @@ const HatMain = () => {
     <div className="relative ">
       <div className="filtermain-container">
         <div className="filtermainBtn-container">
-          <button onClick={hatToggle} className=" filterBtn-container md:left-[50px] lg:left-[140px]">
+          <button onClick={hatToggle} className=" filterBtn-container md:left-[25px] lg:left-[140px]">
             Hats
           </button>
           <p onClick={hatToggle} className="pFilteredBtn">

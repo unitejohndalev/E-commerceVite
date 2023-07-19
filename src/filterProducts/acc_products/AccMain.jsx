@@ -51,11 +51,11 @@ const AccMain = () => {
         <div className=" filtermainBtn-container">
           <button
             onClick={AccToggle}
-            className="filterBtn-container left-[100px] md:left-[440px] lg:left-[530px]"
+            className="filterBtn-container md:left-[435px] lg:left-[530px]"
           >
             Accessories
           </button>
-          <p onClick={AccToggle} className="pFilteredBtn left-[270px]">
+          <p onClick={AccToggle} className="pFilteredBtn left-[235px]">
             Accessories
           </p>
         </div>

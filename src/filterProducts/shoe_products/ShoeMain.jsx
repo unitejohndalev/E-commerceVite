@@ -55,11 +55,11 @@ const ShoeMain = () => {
         <div className="filtermainBtn-container">
           <button
             onClick={shoeToggle}
-            className="filterBtn-container  md:left-[245px] lg:left-[335px]"
+            className="filterBtn-container  md:left-[230px] lg:left-[335px]"
           >
             Shoes
           </button>
-          <p onClick={shoeToggle} className="pFilteredBtn left-[135px]">
+          <p onClick={shoeToggle} className="pFilteredBtn left-[119px]">
             Shoes
           </p>
         </div>
