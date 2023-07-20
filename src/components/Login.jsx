@@ -34,95 +34,113 @@ const Login = () => {
   };
   return (
     <React.Fragment>
-      <div className="container mt-10 mx-auto py-40 ">
-        <div className="flex bg-deep-orange-50 rounded-lg mx-auto shadow-xl overflow-hidden w-[100%] max-w-[100%] h-[550px] ">
-          {/* <!-- Left column container with background--> */}
-          <div className="w-1/2 mb-12 md:mb-0 max-w-2xl flex flex-col justify-center bg-image">
-            <h1 className=" text-black text-center text-4xl font-medium">
-              Welcome to Shoppy!
-            </h1>
-            <p className="text-black text-center">
-              Shop anywhere, buy everywhere.
-            </p>
-          </div>
-
-          {/* <!-- Right column container with form --> */}
-
-          <div className="w-1/2 p-2 ">
-            <form autoComplete="off" onSubmit={handleSubmit}>
-              <h1 className="text-center text-2xl mt-6 mb-5 p-5 ">
-                Login Form
+      <div className="">
+        <div className="container mt-15 lg:mt-10 mx-auto py-40 ">
+          <div className="flex flex-col lg:flex-row bg-deep-orange-50 rounded-lg mx-auto shadow-xl overflow-hidden   lg:h-[550px] ">
+            {/* <!-- Left column container with background--> */}
+            <div className="w-full lg:w-[1/2] lg:mb-12 md:mb-0 max-w-3xl flex flex-col justify-center bg-image bg-no-repeat bg-cover bg-center h-[250px] lg:h-[550px] ">
+              <h1 className=" text-black text-center  text-2xl lg:text-4xl font-medium">
+                Welcome to Shoppy!
               </h1>
+              <p className="text-black text-center">
+                Shop anywhere, buy everywhere.
+              </p>
+            </div>
 
-              <div className=" justify-center flex gap-3 mb-10">
-                {/*Google Button */}
-                <Button
-                  size="sm"
-                  className=" rounded-full flex items-center gap-3"
-                >
-                  <GoogleIcon />
-                </Button>
+            {/* <!-- Right column container with form --> */}
 
-                {/*Facebook Button */}
-                <Button
-                  size="sm"
-                  className=" rounded-full flex items-center gap-3"
-                >
-                  <FacebookIcon />
-                </Button>
+            <div className="w-[350px] lg:w-1/2 lg:p-2 h-[400px] ml-[-1rem] ">
+              <form autoComplete="off" onSubmit={handleSubmit}>
+                <h1 className="font-semibold text-center text-black text-md lg:text-2xl mt-7 mb-5 lg:mt-6 lg:mb-5 lg:p-5 ">
+                  Login Form
+                </h1>
 
-                {/*Apple Button */}
-                <Button
-                  size="sm"
-                  className=" rounded-full flex items-center gap-3"
-                >
-                  <AppleIcon />
-                </Button>
-              </div>
+                <div className=" justify-center flex gap-3 lg:mb-10 mb-5">
+                  {/*Google Button */}
+                  <Link to="/">
+                    <div className=" rounded-full flex items-center gap-3">
+                      <GoogleIcon
+                        style={{
+                          fontSize: "2rem",
+                          padding: "none",
 
-              <TextField
-                label="Enter your email"
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                variant="outlined"
-                color="secondary"
-                type="email"
-                size="small"
-                sx={{ width: "80%", ml: 8, mb: 3 }}
-                value={email}
-                onError={errorEmail}
-              />
-              <TextField
-                label="Enter your password"
-                onChange={(e) => setPassword(e.target.value)}
-                required
-                variant="outlined"
-                color="secondary"
-                type="password"
-                size="small"
-                value={password}
-                error={errorPassword}
-                sx={{ width: "80%", ml: 8, mb: 3 }}
-              />
+                          color: "red",
+                        }}
+                      />
+                    </div>
+                  </Link>
 
-              {/*Login Button */}
-              <div className="flex-col flex items-center justify-center gap-2 py-4">
-                <Button className="rounded-full md" type="submit">
-                  Login
-                </Button>
-              </div>
-            </form>
-            <p className="text-center text-xs gap-3 mt-3">
-              Need an account?
-              <span className="underline">
-                <Link to="/"> Register here.</Link>
-              </span>
-            </p>
+                  {/*Facebook Button */}
+                  <Link to="/">
+                    <div className=" rounded-full flex items-center gap-3">
+                      <FacebookIcon
+                        style={{
+                          fontSize: "2rem",
+                          padding: "none",
+
+                          color: "blue",
+                        }}
+                      />
+                    </div>
+                  </Link>
+
+                  {/*Apple Button */}
+                  <Link to="/">
+                    <div className=" rounded-full flex items-center gap-3">
+                      <AppleIcon
+                        style={{
+                          fontSize: "2rem",
+                          padding: "none",
+
+                          color: "black",
+                        }}
+                      />
+                    </div>
+                  </Link>
+                </div>
+
+                <TextField
+                  label="Enter your email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  variant="outlined"
+                  color="secondary"
+                  type="email"
+                  size="small"
+                  sx={{ ml: 8, mb: 3 }}
+                  value={email}
+                  onError={errorEmail}
+                />
+                <TextField
+                  label="Enter your password"
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                  variant="outlined"
+                  color="secondary"
+                  type="password"
+                  size="small"
+                  value={password}
+                  error={errorPassword}
+                  sx={{ minWidth: "20%", maxWidth: "80%", ml: 8, mb: 3 }}
+                />
+
+                {/*Login Button */}
+                <div className="flex-col flex items-center justify-center  lg:gap-2 py-4">
+                  <Button className="rounded-full md" type="submit">
+                    Login
+                  </Button>
+                </div>
+              </form>
+              <p className=" text-black text-center text-xs gap-3 lg:mt-6 mt-1">
+                Need an account?
+                <span className="underline">
+                  <Link to="/register"> Register here.</Link>
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* </div> */}
     </React.Fragment>
   );
 };

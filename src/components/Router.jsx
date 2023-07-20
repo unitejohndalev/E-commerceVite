@@ -34,7 +34,9 @@ const BagProducts = lazy(() => import("../pages/BagProducts"));
 const BagProductDescription = lazy(() =>
   import("../productDescriptions/BagProductDescription")
 );
-const AccessoriesProducts = lazy(() => import("../pages/accessories/AccessoriesProductsMain"));
+const AccessoriesProducts = lazy(() =>
+  import("../pages/accessories/AccessoriesProductsMain")
+);
 const SecondUnknownProducts = lazy(() =>
   import("../pages/SecondUnknownProducts")
 );
@@ -48,13 +50,9 @@ const AboutUs = lazy(() => import("../pages/aboutuspage/AboutUs"));
 import MKBags from "./MKProducts";
 import HerschelBags from "./HerschelProducts";
 
-//Clothes
-
-//Shoes
-
-//Hats
-
-//Accessories
+//Access
+import Login from "./Login";
+import Register from "./Register";
 
 const Router = () => {
   return (
@@ -103,6 +101,9 @@ const Router = () => {
           <Route path="/offproducts" element={<OffProducts />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="*" element={<ErrorPage />} />
+
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </Suspense>
     </>

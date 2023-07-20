@@ -5,6 +5,7 @@ import { BiShoppingBag } from "react-icons/bi";
 
 //import components
 import Login from "./Login";
+import Register from "./Register";
 
 //import link
 import { Link } from "react-router-dom";
@@ -121,19 +122,18 @@ function NavListMenu() {
   //mobile nav state
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
- const { hideToggle, } = useContext(ProductContext);
+  const { hideToggle } = useContext(ProductContext);
 
   //map navListMenuItems
   const renderItems = navListMenuItems.map(
     ({ icon, title, description, color, link }, key) => (
-      <Link to={link} key={key} className="" onClick={hideToggle} >
+      <Link to={link} key={key} className="" onClick={hideToggle}>
         <MenuItem className="flex gap-3 rounded-sm ">
           <div className={`rounded-sm  ${colors[color]}`}>
             <img
               src={icon}
               className="min-h-[10vh] max-w-[25vw] md:max-h-[25vh] md:max-w-[10vw] lg:max-h-[100px] lg:max-w-[90px]"
               alt=""
-
             />
           </div>
           <div>
@@ -214,8 +214,6 @@ function NavList() {
 }
 
 const Nav = () => {
-
- 
   //state for on scroll down hide nav and onscroll up show nav
   const [scrollDirection, setScrollDirection] = useState(null);
 
@@ -242,8 +240,7 @@ const Nav = () => {
   //useContext for CartContext
   const { itemAmount } = useContext(CartContext);
 
-
-  const {openNav, setOpenNav} = useContext(ProductContext)
+  const { openNav, setOpenNav } = useContext(ProductContext);
 
   React.useEffect(() => {
     window.addEventListener(
@@ -292,6 +289,50 @@ const Nav = () => {
     });
   });
 
+  {
+    /*Register Toggle */
+  }
+
+  //reg state for desktop
+  const [regShow, setRegShow] = useState();
+
+  //button function for desktop
+  const toggleReg = () => {
+    setRegShow((prevRegShow) => !prevRegShow);
+  };
+
+  //Reg ref for desktop
+  let registerRef = useRef();
+
+  //Reg handle side effects for desktop
+  useEffect(() => {
+    document.addEventListener("mousedown", (e) => {
+      if (!registerRef.current.contains(e.target)) {
+        setRegShow(false);
+      }
+    });
+  });
+
+  //Reg state for desktop
+  const [regMobileShow, setRegMobileShow] = useState();
+
+  //button function for desktop
+  const toggleMobileReg = () => {
+    setRegMobileShow((prevRegShow) => !prevRegShow);
+  };
+
+  //Reg ref for mobile
+  let RegMobileRef = useRef();
+
+  //Reg handle side effects for mobile
+  useEffect(() => {
+    document.addEventListener("mousedown", (e) => {
+      if (!RegMobileRef.current.contains(e.target)) {
+        setRegMobileShow(false);
+      }
+    });
+  });
+
   return (
     <div className="flex justify-center relative">
       <Navbar
@@ -315,32 +356,36 @@ const Nav = () => {
               </div>
             </Link>
           </Typography>
+
           <div className="hidden lg:block">
             <NavList />
           </div>
+
           <div className="cursor-pointer w-[40%] md:w-[50%] md:ml-[50px] lg:ml-0 lg:w-[20%] xl:ml-[30px]">
             {/* search bar */}
             <AllSearchProductInfosMain />
           </div>
-              <Link
-              to={"/yourcart"}
-              className="absolute right-[60px] lg:hidden flex justify-center "
-            >
-              {itemAmount > 0 ? (
-                <div
-                  className="bg-red-500 absolute -right-2 top-0 text-[12px]
+          <Link
+            to={"/yourcart"}
+            className="absolute right-[60px] lg:hidden flex justify-center "
+          >
+            {itemAmount > 0 ? (
+              <div
+                className="bg-red-500 absolute -right-2 top-0 text-[12px]
             w-[18px] h-[18px] text-white rounded-full flex justify-center
             items-center"
-                >
-                  {itemAmount}
-                </div>
-              ) : (
-                <div></div>
-              )}
-              <div className="text-[2rem]">
-                <BiShoppingBag />
+              >
+                {itemAmount}
               </div>
-              </Link>
+            ) : (
+              <div></div>
+            )}
+            <div className="text-[2rem]">
+              <BiShoppingBag />
+            </div>
+          </Link>
+          {/*Log in Toggle Button */}
+
           <div className="hidden gap-2 lg:flex justify-center items-center ">
             <div
               ref={LogInRef}
@@ -357,88 +402,104 @@ const Nav = () => {
               </Button>
               <div className="relative">
                 {logInShow && (
-                  <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid border-2 mt-14 bg-transparent">
+                  <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center  mt-14 bg-transparent">
                     <Login />
                   </div>
                 )}
               </div>
             </div>
 
-            <Button
-              variant="gradient"
-              size="sm"
-              className="absolute lg:right-[100px] xl:right-[250px] !rounded-sm"
-            >
-              Sign Up
-            </Button>
+            {/*Register Toggle Button */}
 
-            <Link
-              to={"/yourcart"}
-              className="absolute lg:right-[20px] xl:right-[100px] flex justify-center "
-            >
-              {itemAmount > 0 ? (
-                <div
-                  className="bg-red-500 absolute -right-2 top-0 text-[12px]
+            <div className="hidden gap-2 lg:flex justify-center items-center ">
+              <div
+                ref={registerRef}
+                className="absolute lg:right-[200px] xl:right-[250px] !rounded-sm"
+              >
+                <Button
+                  variant="text"
+                  size="sm"
+                  color="blue-gray"
+                  onClick={toggleReg}
+                  className="!rounded-sm"
+                >
+                  Register
+                </Button>
+                <div className="relative">
+                  {regShow && (
+                    <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center  mt-14 bg-transparent">
+                      <Register />
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              <Link
+                to={"/yourcart"}
+                className="absolute lg:right-[20px] xl:right-[100px] flex justify-center "
+              >
+                {itemAmount > 0 ? (
+                  <div
+                    className="bg-red-500 absolute -right-2 top-0 text-[12px]
             w-[18px] h-[18px] text-white rounded-full flex justify-center
             items-center"
-                >
-                  {itemAmount}
-                </div>
-              ) : (
-                <div></div>
-              )}
-              <div className="text-[2rem]">
-                <BiShoppingBag />
-              </div>
-            </Link>
-          </div>
-          <IconButton
-            variant="text"
-            color="blue-gray"
-            className="lg:hidden !bg-transparent !absolute right-0 !rounded-sm"
-            onClick={() => setOpenNav(!openNav)}
-          >
-            {openNav ? (
-              <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-            ) : (
-              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-            )}
-          </IconButton>
-        </div>
- 
-          <Collapse open={openNav} className="">
-            <NavList />
-            <div className=" flex w-full flex-nowrap items-center gap-2 lg:hidden ">
-              <div className=" w-[100%]">
-                <div ref={LogInMobileRef}>
-                  <Button
-                    onClick={toggleMobile}
-                    variant="outlined"
-                    size="sm"
-                    color="blue-gray"
-                    className="w-[100%]"
                   >
-                    Login
-                  </Button>
-                  <div className="relative">
-                    {logInMobileShow && (
-                      <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid border-2 border-red-800 bg-white/70">
-                        <div className="border-solid border-2 border-red-800 w-[50%] max-w-[500px] h-[80%] flex justify-center items-center bg-pink-400">
-                          <Login />
-                        </div>
-                      </div>
-                    )}
+                    {itemAmount}
                   </div>
+                ) : (
+                  <div></div>
+                )}
+                <div className="text-[2rem]">
+                  <BiShoppingBag />
+                </div>
+              </Link>
+            </div>
+            <IconButton
+              variant="text"
+              color="blue-gray"
+              className="lg:hidden !bg-transparent !absolute right-0 !rounded-sm"
+              onClick={() => setOpenNav(!openNav)}
+            >
+              {openNav ? (
+                <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+              ) : (
+                <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+              )}
+            </IconButton>
+          </div>
+        </div>
+
+        <Collapse open={openNav} className="">
+          <NavList />
+          <div className=" flex w-full flex-nowrap items-center gap-2 lg:hidden ">
+            <div className=" w-[100%]">
+              <div ref={LogInMobileRef}>
+                <Button
+                  onClick={toggleMobile}
+                  variant="outlined"
+                  size="sm"
+                  color="blue-gray"
+                  className="w-[100%]"
+                >
+                  Login
+                </Button>
+                <div className="relative">
+                  {logInMobileShow && (
+                    <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid ">
+                      <div className="  w-[50%] max-w-[500px] h-[80%] flex justify-center items-center">
+                        <Login />
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
-
-              <Button variant="gradient" size="sm" className="w-[100%]">
-                Sign Up
-              </Button>
-            
             </div>
-          </Collapse>
-  
+
+            <Button variant="gradient" size="sm" className="w-[100%]">
+              Register
+            </Button>
+          </div>
+        </Collapse>
       </Navbar>
     </div>
   );
