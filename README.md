@@ -87,3 +87,25 @@ Install Embla Carousel Autoplay<br/>
 Install Material UI Icons<br/>
 
 `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
+
+<br/>
+View localhost on mobile phone<br/>
+
+`ipconfig`
+-- on cmd to check ip address
+-- find IPv4
+
+<br/>
+On package.json change "dev" to<br/>
+
+`"vite --host"`
+
+<br/>
+Run the app<br/>
+
+`npm run dev -- --host`
+
+<br/>
+use Network address and type it on your mobile phone<br/>
+
+`192.***.*.*:5173`
