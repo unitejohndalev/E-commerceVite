@@ -122,7 +122,7 @@ const AllOffProducts = () => {
               const { id, name, price, offprice, img, gender } =
                 filteredproduct;
               return (
-                <div key={id} className="mapProduct-container h-[290px] lg:h-[450px]">
+                <div key={id} className="mapProduct-container h-[350px] lg:h-[450px]">
                   <div className="relative">
               
                     <div className="name-container">
