@@ -7,7 +7,7 @@ const HomeContent = () => {
     <div className="h-[100%] ">
       <div className=" flex flex-col bg-cover  ">
         <video
-          autostart
+          autostart="true"
           autoPlay
           loop
           muted
