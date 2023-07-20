@@ -1,15 +1,13 @@
 /* eslint-disable react/prop-types */
-import React, { useContext } from "react";
+import React from "react";
 
-//import add to cart function from cart context
-import { CartContext } from "../../contexts/CartContext";
+
 import { Link } from "react-router-dom";
 
 import Footer from "../../components/Footer";
 
 const ClothFiltered = (props) => {
-  //add to cart function
-  const { addToCart } = useContext(CartContext);
+
 
   return (
    <div className="parent-container ">
@@ -19,22 +17,14 @@ const ClothFiltered = (props) => {
             //destructure products
             const { name, img, price, status, gender, id } = products;
             return (
-              <div key={id} className="mapProduct-container h-[350px]">
+              <div key={id} className="mapProduct-container h-[350px] lg:h-[450px]">
                 <div className="relative">
-                  <div className="AddToCartBtn-container ">
-                    <button
-                      onClick={() => addToCart(products, id)}
-                      className="btn-primary"
-                    >
-                      <p>Add to Cart</p>
-                    </button>
-                  </div>
-
+              
                   <div className="name-container ">
                     <p>{name}</p>
                   </div>
                   <Link to={`/allproductsearch/${id}`}>
-                    <img src={img} alt="" className="img-style h-[290px]" />
+                    <img src={img} alt="" className="img-style h-[290px] lg:h-[390px]" />
                   </Link>
                 </div>
                 <div className="price-container">

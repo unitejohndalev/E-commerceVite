@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 //import product context to get shoes data
 import { ProductContext } from "../../contexts/ProductContext";
 
-//import cart context
-import { CartContext } from "../../contexts/CartContext";
 
 //import footer
 import Footer from "../../components/Footer";
@@ -18,8 +16,6 @@ const NikeProducts = () => {
   //get hat products from product context
   const { shoeProducts } = useContext(ProductContext);
 
-  //get addToCart function from cart context
-  const { addToCart } = useContext(CartContext);
 
   return (
     <div className="parent-container">
@@ -33,14 +29,6 @@ const NikeProducts = () => {
             return (
               <div key={id} className="mapProduct-container">
                 <div className="relative">
-                  <div className="AddToCartBtn-container">
-                    <button
-                      onClick={() => addToCart(shoeproducts, id)}
-                      className="btn-primary"
-                    >
-                      <p>Add to Cart</p>
-                    </button>
-                  </div>
                   <div className="name-container">
                     <p>{name}</p>
                   </div>

@@ -14,6 +14,8 @@ import { ProductDescriptionContext } from "../../contexts/ProductDescriptionCont
 
 import Footer from "../Footer";
 
+import {HiOutlineArrowLeft} from "react-icons/hi"
+
 const AllSearchProductInfos = () => {
   //get hat products from product context
   const { allProductsMerge } = useContext(ProductContext);
@@ -52,12 +54,19 @@ const AllSearchProductInfos = () => {
     <div className="relative h-[100%]  ">
       <div>
         <button
-          className="absolute top-[100px]
-          ml-2 bg-blue-400 text-white py-[5px] px-[10px] rounded-sm"
+          className="hidden md:flex absolute top-[100px]
+          ml-2 text-[1.5rem] px-[10px] cursor-pointer"
           onClick={goBack}
         >
-          <p>Back</p>
+          <HiOutlineArrowLeft />
         </button>
+        <div
+          onClick={goBack}
+          className="absolute top-[100px] ml-2 text-[1.5rem] md:hidden
+          "
+        >
+          <HiOutlineArrowLeft />
+        </div>
       </div>
       <div className="flex justify-center mb-[150px] lg:mb-[300px]">
         <div className="h-[100%] mt-[150px] w-[90%] md:min-w-[768px] lg:max-w-[1024px] xl:max-w-[1240px] relative ">
@@ -77,33 +86,32 @@ const AllSearchProductInfos = () => {
                     </div>
                   </div>
                   <div className="mt-5 lg:h-[80vh]">
-                  <div className="w-[100%] flex items-center justify-center md:justify-normal">
-
-                    {allProductsFirstImgShow && (
-                      <div>
-                        <img
-                          className="w-[250px]  md:w-[400px] md:h-[550px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-sm shadow-xl"
-                          src={img1}
-                        />
-                      </div>
-                    )}
-                    {allProductsSecondImgShow && (
-                      <div>
-                        <img
-                          className="w-[250px]  md:w-[400px] md:h-[550px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-sm shadow-xl "
-                          src={img2}
-                        />
-                      </div>
-                    )}
-                    {allProductsThirdImgShow && (
-                      <div>
-                        <img
-                          className="w-[250px]  md:w-[400px] md:h-[550px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-sm shadow-xl "
-                          src={img3}
-                        />
-                      </div>
-                    )}
-                  </div>
+                    <div className="w-[100%] flex items-center justify-center md:justify-normal">
+                      {allProductsFirstImgShow && (
+                        <div>
+                          <img
+                            className="w-[250px]  md:w-[400px] md:h-[550px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-sm shadow-xl"
+                            src={img1}
+                          />
+                        </div>
+                      )}
+                      {allProductsSecondImgShow && (
+                        <div>
+                          <img
+                            className="w-[250px]  md:w-[400px] md:h-[550px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-sm shadow-xl "
+                            src={img2}
+                          />
+                        </div>
+                      )}
+                      {allProductsThirdImgShow && (
+                        <div>
+                          <img
+                            className="w-[250px]  md:w-[400px] md:h-[550px] md:ml-2 lg:ml-[100px] xl:ml-[200px] rounded-sm shadow-xl "
+                            src={img3}
+                          />
+                        </div>
+                      )}
+                    </div>
                     <div className="mt-5 flex gap-x-2 lg:absolute lg:flex-col lg:top-0 lg:gap-y-2">
                       <img
                         className={

@@ -471,20 +471,21 @@
         },
         {
             "id": 83,
-            "name": "Lyocell-blend tunic dress",
-            "price": "126.12",
-            "offprice": "120.29",
-            "gender": "Women's dress",
+            "name": "Nike Sportswear",
+            "price": "70",
+            "offprice":"65.29",
+            "gender": "Women's Sweatshirt",
+            "video": "https://static.nike.com/a/videos/q_90/2f064379-c778-49c9-9fab-ac6b8f778ba9/video.mov",
             "description": [
                 {
                     "id": 1,
-                    "info": "Long tunic dress in woven fabric made from a lyocell blend with stripes in contrasting colours containing some glittery threads. Loose fit with a slight A-line shape, a deep, round neckline and long, wide sleeves. Seams with delicate piping at the cuffs and hem. Unlined.",
-                    "img1": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F40%2F2f%2F402f506477faab576f9f47e4b21fe82106a1ebe6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
-                    "img2": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F71%2F8d%2F718d48c6ebf93d1c876cc4db114b9b3f24a42854.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
-                    "img3": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fd5%2Fa2%2Fd5a241b80d3c348952a107ebb96721212b67c1e1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
+                    "info": "Rise up and transform your fleece wardrobe with strong cozy vibes. With a voluminous fit and exaggerated ribbing, this Phoenix Fleece sweatshirt gives you a look that's anything but basic.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/244adf63-ca63-4f3d-b1ad-499b0ab99a73/sportswear-phoenix-fleece-womens-over-oversized-crewneck-sweatshirt-Wj2Rd6.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7c4b25d5-1d06-49b8-ae03-b6f7150f8de2/sportswear-phoenix-fleece-womens-over-oversized-crewneck-sweatshirt-Wj2Rd6.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f4c07615-ab4c-495d-bd33-eeb73c8a9121/sportswear-phoenix-fleece-womens-over-oversized-crewneck-sweatshirt-Wj2Rd6.png"
                 }
             ],
-            "img": "https://lp2.hm.com/hmgoepprod?set=source[/a6/52/a6528b21abdb24dba8d8ca9e6ac58477a2ff6911.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+            "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f4c07615-ab4c-495d-bd33-eeb73c8a9121/sportswear-phoenix-fleece-womens-over-oversized-crewneck-sweatshirt-Wj2Rd6.png"
         },
         {
             "id": 84,

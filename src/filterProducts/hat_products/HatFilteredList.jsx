@@ -1,15 +1,12 @@
 /* eslint-disable react/prop-types */
 import React, { useContext } from "react";
 
-//import add to cart function from cart context
-import { CartContext } from "../../contexts/CartContext";
 import { Link } from "react-router-dom";
 
 import Footer from "../../components/Footer";
 
 const HatFiltered = (props) => {
-  //add to cart function
-  const { addToCart } = useContext(CartContext);
+
   return (
     <div className="parent-container ">
       <div className="product-container mt-0 md:mt-10">
@@ -21,12 +18,7 @@ const HatFiltered = (props) => {
               <div key={id} className="mapProduct-container">
                 <div className="relative">
                   <div className="AddToCartBtn-container ">
-                    <button
-                      onClick={() => addToCart(products, id)}
-                      className="btn-primary"
-                    >
-                      <p>Add to Cart</p>
-                    </button>
+             
                   </div>
 
                   <div className="name-container ">

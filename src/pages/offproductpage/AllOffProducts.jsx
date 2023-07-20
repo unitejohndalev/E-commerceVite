@@ -3,8 +3,6 @@ import React, { useContext, useEffect, useState } from "react";
 //import footer
 import Footer from "../../components/Footer";
 
-//import add to cart function from cart context
-import { CartContext } from "../../contexts/CartContext";
 
 //import product context to get all json data
 import { ProductContext } from "../../contexts/ProductContext";
@@ -13,8 +11,7 @@ import { Link } from "react-router-dom";
 import OffProductsHero from "./OffProductsHero";
 
 const AllOffProducts = () => {
-  //add to cart function
-  const { addToCart } = useContext(CartContext);
+
 
   //call all state in product context
   const { hatProducts, shoeProducts, clothProducts } =
@@ -67,14 +64,7 @@ const AllOffProducts = () => {
             return (
               <div key={id} className="mapProduct-container">
                 <div className="relative">
-                  <div className="AddToCartBtn-container">
-                    <button
-                      onClick={() => addToCart(filteredproduct, id)}
-                      className="btn-primary"
-                    >
-                      <p>Add to Cart</p>
-                    </button>
-                  </div>
+             
                   <div className="name-container">
                     <p>{name}</p>
                   </div>
@@ -103,14 +93,7 @@ const AllOffProducts = () => {
             return (
               <div key={id} className="mapProduct-container">
                 <div className="relative">
-                  <div className="AddToCartBtn-container">
-                    <button
-                      onClick={() => addToCart(filteredproduct, id)}
-                      className="btn-primary"
-                    >
-                      <p>Add to Cart</p>
-                    </button>
-                  </div>
+             
                   <div className="name-container">
                     <p>{name}</p>
                   </div>
@@ -139,21 +122,14 @@ const AllOffProducts = () => {
               const { id, name, price, offprice, img, gender } =
                 filteredproduct;
               return (
-                <div key={id} className="mapProduct-container h-[450px]">
+                <div key={id} className="mapProduct-container h-[290px] lg:h-[450px]">
                   <div className="relative">
-                    <div className="AddToCartBtn-container">
-                      <button
-                        onClick={() => addToCart(filteredproduct, id)}
-                        className="btn-primary"
-                      >
-                        <p>Add to Cart</p>
-                      </button>
-                    </div>
+              
                     <div className="name-container">
                       <p>{name}</p>
                     </div>
                     <Link to={`/allproductsearch/${id}`}>
-                      <img src={img} alt="" className="img-style h-[390px]" />
+                      <img src={img} alt="" className="img-style h-[290px] lg:h-[390px]" />
                     </Link>
                   </div>
 

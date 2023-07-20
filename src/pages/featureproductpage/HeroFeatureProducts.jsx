@@ -11,7 +11,7 @@ const HeroFeatureProducts = () => {
   return (
     <div className="heroParent-container ">
       <div className="secondHeroParent-container">
-        <div className="mapParent-container">
+        <div className="mapParent-container mt-0">
           {filteredShoeProduct.map((product) => {
             const { id, video } = product;
             return (

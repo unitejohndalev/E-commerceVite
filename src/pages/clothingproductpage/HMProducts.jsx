@@ -28,21 +28,13 @@ const HMProducts = () => {
             const { id, name, price, img, gender } = clothproducts;
 
             return (
-              <div key={id} className="mapProduct-container h-[350px]">
+              <div key={id} className="mapProduct-container h-[350px] lg:h-[450px]">
                 <div className="relative">
-                  <div className="AddToCartBtn-container">
-                    <button
-                      onClick={() => addToCart(clothproducts, id)}
-                      className="btn-primary"
-                    >
-                      <p>Add to Cart</p>
-                    </button>
-                  </div>
                   <div className="name-container">
                     <p>{name}</p>
                   </div>
                   <Link to={`/allproductsearch/${id}`}>
-                    <img src={img} alt="" className="img-style h-[290px]" />
+                    <img src={img} alt="" className="img-style h-[290px] lg:h-[390px]" />
                   </Link>
                 </div>
                 <div className="price-container">
