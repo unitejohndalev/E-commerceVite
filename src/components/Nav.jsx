@@ -454,6 +454,7 @@ const Nav = () => {
                 </div>
               </Link>
             </div>
+          </div>
             <IconButton
               variant="text"
               color="blue-gray"
@@ -466,7 +467,6 @@ const Nav = () => {
                 <Bars3Icon className="h-6 w-6" strokeWidth={2} />
               )}
             </IconButton>
-          </div>
         </div>
 
         <Collapse open={openNav} className="">
