@@ -96,7 +96,7 @@
     @apply py-10 flex flex-col justify-center items-center;
   }
   .video-style {
-    @apply flex md:absolute md:right-5;
+    @apply flex mt-10 md:mt-0 md:absolute md:right-5;
   }
 
   .offThirdParent-container {
