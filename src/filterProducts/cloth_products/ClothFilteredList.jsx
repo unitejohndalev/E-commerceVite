@@ -17,14 +17,14 @@ const ClothFiltered = (props) => {
             //destructure products
             const { name, img, price, status, gender, id } = products;
             return (
-              <div key={id} className="mapProduct-container h-[350px] lg:h-[450px]">
+              <div key={id} className="mapProduct-container h-[350px] md:h-[450px]">
                 <div className="relative">
               
                   <div className="name-container ">
                     <p>{name}</p>
                   </div>
                   <Link to={`/allproductsearch/${id}`}>
-                    <img src={img} alt="" className="img-style h-[290px] lg:h-[390px]" />
+                    <img src={img} alt="" className="img-style h-[290px] md:h-[390px]" />
                   </Link>
                 </div>
                 <div className="price-container">

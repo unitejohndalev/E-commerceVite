@@ -51,7 +51,7 @@ const AllSearchProductInfos = () => {
   } = useContext(ProductDescriptionContext);
 
   return (
-    <div className="relative h-[100%]  ">
+    <div className="relative h-[100vh]">
       <div>
         <button
           className="hidden md:flex absolute top-[100px]
