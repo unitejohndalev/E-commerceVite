@@ -64,7 +64,7 @@ const Login = () => {
                           fontSize: "2rem",
                           padding: "none",
 
-                          color: "red",
+                          color: "black",
                         }}
                       />
                     </div>
@@ -78,7 +78,7 @@ const Login = () => {
                           fontSize: "2rem",
                           padding: "none",
 
-                          color: "blue",
+                          color: "black",
                         }}
                       />
                     </div>
