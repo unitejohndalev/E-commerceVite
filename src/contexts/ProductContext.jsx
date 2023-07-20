@@ -98,11 +98,6 @@ const ProductProvider = ({ children }) => {
   //merge bags data into one
   const allBagsMerge = [...MKBagProducts, ...HerschelBagProducts];
 
-
-
-
- 
-
   //merge all json data into 1 single array
   const allProductsMerge = [
     ...hatProducts,
@@ -156,6 +151,16 @@ const ProductProvider = ({ children }) => {
     setHomeSecondImg(false);
   };
 
+  // NAV SECTION FUNCTIONS/STATES
+
+  //mobile nav open and close state
+  const [openNav, setOpenNav] = React.useState(false);
+  
+  //toggle btn function for navlist
+  const hideToggle = () => {
+   setOpenNav(false);
+  };
+
   //make product context the provider
   //set the value to the created DATA states
   //then pass it to children
@@ -190,6 +195,9 @@ const ProductProvider = ({ children }) => {
         homeFirstImgToggle,
         homeSecondImgToggle,
         homeThirdImgToggle,
+        hideToggle,
+        openNav,
+        setOpenNav,
       }}
     >
       {children}
