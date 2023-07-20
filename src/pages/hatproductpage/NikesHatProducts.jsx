@@ -2,7 +2,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
-
 //import product context to get hats data
 import { ProductContext } from "../../contexts/ProductContext";
 
@@ -11,6 +10,9 @@ import { CartContext } from "../../contexts/CartContext";
 
 //import footer
 import Footer from "../../components/Footer";
+
+//import arrow up component
+import ArrowUp from "../../components/arrowup/ArrowUp";
 
 const NikesHatProducts = () => {
   //get hat products from product context
@@ -40,7 +42,7 @@ const NikesHatProducts = () => {
                     </button>
                   </div>
                   <div className="name-container">
-                    <p >{name}</p>
+                    <p>{name}</p>
                   </div>
                   <Link to={`/allproductsearch/${id}`}>
                     <img src={img} alt="" className="img-style" />
@@ -57,6 +59,9 @@ const NikesHatProducts = () => {
           })}
         </div>
       </div>
+
+      <ArrowUp />
+
       <Footer />
     </div>
   );

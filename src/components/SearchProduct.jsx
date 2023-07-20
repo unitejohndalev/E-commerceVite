@@ -8,17 +8,14 @@ const SearchProduct = () => {
     useContext(ProductContext);
 
   return (
-    <div className="relative">
-      <div
-        className="flex flex-col items-center absolute bg-white w-[100%]"
- 
-      >
-        <div className="absolute right-[50px] top-5">
+    <div className="relative ">
+      <div className="flex flex-col items-center absolute top-[45px] bg-white w-[100%]">
+        <div className="absolute right-[50px] top-5 ">
           <button onClick={() => setShowBody(false)}>close</button>
         </div>
         <div className="mt-[50px]  ">
           <div
-            className=" flex flex-wrap  mt-2 justify-center gap-x-[20px] w-[100%] h-[60vh] lg:h-[50vh]
+            className=" flex flex-wrap mt-2 justify-center gap-x-[20px] w-[100%] h-[60vh] lg:h-[50vh]
              overflow-auto
         "
           >

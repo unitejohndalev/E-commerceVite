@@ -131,7 +131,7 @@ function NavListMenu() {
           <div className={`rounded-sm  ${colors[color]}`}>
             <img
               src={icon}
-              className="h-[10vh] w-[15vw] md:h-[15vh] md:w-[10vw] lg:max-h-[70px] lg:max-w-[90px]"
+              className="min-h-[10vh] max-w-[25vw] md:max-h-[25vh] md:max-w-[10vw] lg:max-h-[100px] lg:max-w-[90px]"
               alt=""
 
             />
@@ -309,7 +309,7 @@ const Nav = () => {
             <Link to={"/"}>
               <div className=" grid-cols-3 flex items-center justify-between ">
                 <img className="w-auto h-14 " src={Logo} alt="Logo" />
-                <span className="font-primary py-4 text-lg text-gray-900 dark:text-white justify">
+                <span className="hidden md:flex font-primary py-4 text-lg text-gray-900 dark:text-white justify">
                   Shoppy
                 </span>
               </div>
@@ -322,6 +322,25 @@ const Nav = () => {
             {/* search bar */}
             <AllSearchProductInfosMain />
           </div>
+              <Link
+              to={"/yourcart"}
+              className="absolute right-[60px] lg:hidden flex justify-center "
+            >
+              {itemAmount > 0 ? (
+                <div
+                  className="bg-red-500 absolute -right-2 top-0 text-[12px]
+            w-[18px] h-[18px] text-white rounded-full flex justify-center
+            items-center"
+                >
+                  {itemAmount}
+                </div>
+              ) : (
+                <div></div>
+              )}
+              <div className="text-[2rem]">
+                <BiShoppingBag />
+              </div>
+              </Link>
           <div className="hidden gap-2 lg:flex justify-center items-center ">
             <div
               ref={LogInRef}
@@ -376,7 +395,7 @@ const Nav = () => {
           <IconButton
             variant="text"
             color="blue-gray"
-            className="lg:hidden !bg-white !absolute right-0"
+            className="lg:hidden !bg-transparent !absolute right-0 !rounded-sm"
             onClick={() => setOpenNav(!openNav)}
           >
             {openNav ? (
@@ -416,25 +435,7 @@ const Nav = () => {
               <Button variant="gradient" size="sm" className="w-[100%]">
                 Sign Up
               </Button>
-              <Link to={"/yourcart"} className="relative">
-                {itemAmount > 0 ? (
-                  <div
-                    className="bg-red-500 absolute right-0 lg:right-5  text-[12px]
-            w-[18px] h-[18px] text-white rounded-full flex justify-center
-            items-center"
-                  >
-                    {itemAmount}
-                  </div>
-                ) : (
-                  <div></div>
-                )}
-                <Button
-                  className="bg-white-800 text-black"
-                  onClick={() => setOpenNav(!openNav)}
-                >
-                  Cart
-                </Button>
-              </Link>
+            
             </div>
           </Collapse>
   

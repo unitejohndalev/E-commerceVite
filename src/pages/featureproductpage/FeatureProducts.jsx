@@ -6,8 +6,8 @@ import FilterProductMain from "../../filterProducts/FilterProductMain";
 //import hero for feature page
 import HeroFeatureProducts from "./HeroFeatureProducts";
 
-//import footer
-import Footer from "../../components/Footer";
+//import arrow up component
+import ArrowUp from "../../components/arrowup/ArrowUp";
 
 const FeatureProducts = () => {
   return (
@@ -18,7 +18,7 @@ const FeatureProducts = () => {
       <div className="mb-10">
         <FilterProductMain />
       </div>
-
+      <ArrowUp />
     </div>
   );
 };

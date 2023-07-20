@@ -19,7 +19,7 @@ const ClothFiltered = (props) => {
             //destructure products
             const { name, img, price, status, gender, id } = products;
             return (
-              <div key={id} className="mapProduct-container h-[450px]">
+              <div key={id} className="mapProduct-container h-[350px]">
                 <div className="relative">
                   <div className="AddToCartBtn-container ">
                     <button
@@ -34,7 +34,7 @@ const ClothFiltered = (props) => {
                     <p>{name}</p>
                   </div>
                   <Link to={`/allproductsearch/${id}`}>
-                    <img src={img} alt="" className="img-style h-[390px]" />
+                    <img src={img} alt="" className="img-style h-[290px]" />
                   </Link>
                 </div>
                 <div className="price-container">

@@ -11,6 +11,9 @@ import { CartContext } from "../../contexts/CartContext";
 //import footer
 import Footer from "../../components/Footer";
 
+//import arrow up component
+import ArrowUp from "../../components/arrowup/ArrowUp";
+
 const NikeProducts = () => {
   //get hat products from product context
   const { shoeProducts } = useContext(ProductContext);
@@ -56,6 +59,7 @@ const NikeProducts = () => {
           })}
         </div>
       </div>
+      <ArrowUp />
       <Footer />
     </div>
   );

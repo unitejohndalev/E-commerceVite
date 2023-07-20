@@ -45,26 +45,26 @@
     @apply mt-[130px] flex flex-col items-center;
   }
   .mapParent-container {
-    @apply md:flex md:flex-wrap md:w-[100%] lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-5 lg:w-[100%] xl:w-[1234px];
+    @apply flex flex-wrap w-[100%] md:flex md:flex-wrap md:w-[100%] lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-2 md:gap-x-5 lg:w-[100%] xl:w-[1234px];
   }
   .mapProduct-container {
-    @apply mt-2 mb-2 lg:w-[285px] shadow-xl rounded-md h-[390px] relative;
+    @apply mt-1 mb-1 w-[170px] h-[260px] md:w-[285px] lg:w-[285px] shadow-xl rounded-md md:h-[390px] relative;
   }
   .AddToCartBtn-container {
-    @apply flex justify-center;
+    @apply  hidden md:flex justify-center;
   }
   .btn-primary {
     @apply absolute bottom-2 bg-blue-400 text-white py-[5px] px-[10px] rounded-sm hover:bg-transparent hover:border-solid hover:border-2 hover:border-blue-400 active:bg-blue-400 active:text-white hover:text-black;
   }
   .name-container {
-    @apply absolute w-[100%] text-center;
+    @apply text-[.9rem] md:text-[1.2rem] absolute w-[100%] text-center;
   }
   .img-style {
-    @apply w-[100%] h-[330px] md:w-[350px] md:h-[320px] lg:w-[350px] lg:h-[320px] rounded-t-md;
+    @apply w-[100%] h-[200px] md:w-[350px] md:h-[320px] lg:w-[350px] lg:h-[320px] rounded-t-md;
   }
 
   .price-container {
-    @apply flex w-[100%] justify-between mt-2;
+    @apply flex text-[.9rem] md:text-[1.2rem] w-[100%] justify-between mt-2;
   }
   .gender-container {
     @apply text-left w-[100%] absolute bottom-2;
