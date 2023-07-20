@@ -90,7 +90,7 @@
     @apply relative flex justify-center md:flex md:justify-center md:items-center h-[65vh] w-[350px] md:w-[768px] lg:w-[1024px];
   }
   .textHero-container {
-    @apply hidden absolute md:flex flex-col justify-center left-5 h-[65vh] md:w-[350px] lg:w-[500px] off-bg text-white;
+    @apply  text-red-800 absolute top-[-100px] md:top-0 md:flex flex-col justify-center md:left-5 md:h-[65vh] md:w-[350px] lg:w-[500px] md:off-bg md:text-white;
   }
   .secondTextHero-container {
     @apply py-10 flex flex-col justify-center items-center;
@@ -100,7 +100,7 @@
   }
 
   .offThirdParent-container {
-    @apply h-[80vh]  md:w-[768px] lg:w-[1024px] xl:w-[1234px] flex justify-center items-center md:justify-end relative
+    @apply  h-[80vh]  md:w-[768px] lg:w-[1024px] xl:w-[1234px] flex justify-center items-center md:justify-end relative
   }
 
   /* FILTEREDMAIN STYLES */

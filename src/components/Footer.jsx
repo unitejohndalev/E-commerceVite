@@ -15,20 +15,20 @@ import Logo from "./img/logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const [showShop, setShowShop] = useState();
+  const [showShop, setShowShop] = useState(false);
   const showToggle = () => {
     setShowShop(prev => ! prev);
     setShowHelp(false)
     setAboutUs(false)
   };
-  const [aboutUs, setAboutUs] = useState()
+  const [aboutUs, setAboutUs] = useState(false)
   const aboutToggle = () => {
     setAboutUs(prev => !prev)
     setShowShop(false)
     setShowHelp(false)
   }
 
-  const [showHelp, setShowHelp] = useState()
+  const [showHelp, setShowHelp] = useState(false)
   const helpToggle = () => {
     setShowHelp(prev => !prev)
     setShowShop(false)
@@ -162,7 +162,7 @@ const Footer = () => {
             </div>
 
             {showShop && (
-              <div className="w-[100%] absolute top-[36px] md:top-[30px] flex flex-col gap-y-1 z-20 bg-primary mt-5 lg:hidden">
+              <div className="w-[100%] absolute top-[40px] md:top-[30px] flex flex-col gap-y-1 z-20 bg-white rounded-sm mt-5 lg:hidden">
                 <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                   Hats
                 </div>
@@ -200,7 +200,7 @@ const Footer = () => {
           </div>
 
           {aboutUs && (
-            <div className="w-[100%] absolute top-[100px] md:top-[89px] flex flex-col gap-y-1 z-20 bg-primary mt-2 cursor-pointer lg:hidden">
+            <div className="w-[100%] absolute top-[110px] md:top-[89px] flex flex-col gap-y-1 z-20 bg-white rounded-sm  mt-2 cursor-pointer lg:hidden">
               <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                 News
               </div>
@@ -237,7 +237,7 @@ const Footer = () => {
             </div>
           </div>
           {showHelp && (
-            <div className="w-[100%] absolute top-[151px] md:top-[135px] flex flex-col gap-y-1 z-20 bg-primary mt-2 cursor-pointer lg:hidden">
+            <div className="w-[100%] absolute top-[167px] md:top-[135px] flex flex-col gap-y-1 z-20 bg-white rounded-sm mt-2 cursor-pointer lg:hidden">
               <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                 Order Status
               </div>
