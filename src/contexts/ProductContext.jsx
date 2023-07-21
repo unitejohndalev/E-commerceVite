@@ -120,6 +120,11 @@ const ProductProvider = ({ children }) => {
     setShowBody(true);
   };
 
+  //clear input field when click img product
+  const clearInputField = () => {
+    searchProduct("")
+  }
+
   //use useRef for search body, when click outside it'll close
   //NOTE THIS IS REMOVE SINCE, ITS CAUSING THE APP TO HAVE SOME ERRORS
   // let searchRef = useRef();
@@ -186,9 +191,11 @@ const ProductProvider = ({ children }) => {
         allBagsMerge,
         allProductsMerge,
         searchProduct,
+        setSearchProduct,
         handleChange,
         showBody,
         setShowBody,
+        clearInputField,
         homeFirstImg,
         homeSecondImg,
         homeThirdImg,

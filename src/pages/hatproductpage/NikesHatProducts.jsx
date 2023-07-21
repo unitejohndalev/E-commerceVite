@@ -13,11 +13,19 @@ import Footer from "../../components/Footer";
 //import arrow up component
 import ArrowUp from "../../components/arrowup/ArrowUp";
 
+//import react icons
+import {MdAddShoppingCart} from "react-icons/md"
+import { FaHeart } from "react-icons/fa";
+
+//import cart context for addtocart function
+import { CartContext } from "../../contexts/CartContext";
+
 const NikesHatProducts = () => {
   //get hat products from product context
   const { hatProducts } = useContext(ProductContext);
 
-
+  //get addToCart function from cart context
+  const { addToCart } = useContext(CartContext);
 
   return (
     <div className="parent-container">
@@ -33,6 +41,16 @@ const NikesHatProducts = () => {
                 <div className="relative">
                   <div className="name-container">
                     <p>{name}</p>
+                  </div>
+                  <div
+                    className="absolute bottom-2 right-2 text-[1.5rem]
+                   md:text-[2rem]"
+                    onClick={() => addToCart(hatproducts, hatproducts.id)}
+                  >
+                    <MdAddShoppingCart />
+                  </div>
+                  <div className="absolute top-8 left-2 text-red-800  text-[1.1rem] md:text-[1.5rem]">
+                    <FaHeart />
                   </div>
                   <Link to={`/allproductsearch/${id}`}>
                     <img src={img} alt="" className="img-style" />

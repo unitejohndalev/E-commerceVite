@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -16,6 +16,16 @@ const NikeProducts = () => {
   //get hat products from product context
   const { shoeProducts } = useContext(ProductContext);
 
+  //FOR PAGINATION
+
+    //  const [currentPage, setCurrentPage] = useState(1);
+    //  const productPerPage = 3;
+
+    //     const indexOfLastProduct = currentPage * productPerPage;
+    //     const indexOfFirstProduct = indexOfLastProduct - productPerPage;
+    //     const currentProducts = shoeProducts.slice(indexOfFirstProduct, indexOfLastProduct);
+    //     const npage = Math.ceil(shoeProducts.leght / productPerPage)
+    //     const numbers = [...Array(npage + 1).keys().slice(1)]
 
   return (
     <div className="parent-container">

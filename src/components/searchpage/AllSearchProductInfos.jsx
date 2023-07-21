@@ -17,7 +17,7 @@ import Footer from "../Footer";
 import {HiOutlineArrowLeft} from "react-icons/hi"
 
 const AllSearchProductInfos = () => {
-  //get hat products from product context
+  //get all product merge from product context
   const { allProductsMerge } = useContext(ProductContext);
 
   //get addToCart function from cart context
@@ -31,7 +31,7 @@ const AllSearchProductInfos = () => {
     return item.id === parseInt(id);
   });
 
-  //destructure hatproduct variable
+  //destructure allproducts variable
   const { description, name, price, gender } = allproducts;
 
   //navigate hook
