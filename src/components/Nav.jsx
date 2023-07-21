@@ -269,10 +269,10 @@ const Nav = () => {
     });
   });
 
-  //login state for desktop
+  //login state for mobile
   const [logInMobileShow, setLogInMobileShow] = useState();
 
-  //button function for desktop
+  //button function for mobile
   const toggleMobile = () => {
     setLogInMobileShow((prevLogInShow) => !prevLogInShow);
   };
@@ -313,13 +313,25 @@ const Nav = () => {
     });
   });
 
-  //Reg state for desktop
+  //Reg state for mobile
   const [regMobileShow, setRegMobileShow] = useState();
 
-  //button function for desktop
+  //button function for mobile
   const toggleMobileReg = () => {
     setRegMobileShow((prevRegShow) => !prevRegShow);
   };
+
+  //LogIn ref for mobile
+  let regMobileRef = useRef();
+
+  //login handle side effects for mobile
+  useEffect(() => {
+    document.addEventListener("mousedown", (e) => {
+      if (!regMobileRef.current.contains(e.target)) {
+        setRegMobileShoww(false);
+      }
+    });
+  });
 
   return (
     <div className="flex justify-center relative">
@@ -484,7 +496,7 @@ const Nav = () => {
             </div>
 
             <div className=" w-[100%]">
-              <div ref={registerRef}>
+              <div ref={regMobileRef}>
                 <Button
                   onClick={toggleMobileReg}
                   variant="outlined"
