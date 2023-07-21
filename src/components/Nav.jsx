@@ -328,7 +328,7 @@ const Nav = () => {
   useEffect(() => {
     document.addEventListener("mousedown", (e) => {
       if (!regMobileRef.current.contains(e.target)) {
-        setRegMobileShoww(false);
+        setRegMobileShow(false);
       }
     });
   });
