@@ -85,6 +85,7 @@ const Register = () => {
                   onChange={(e) => setDateBirth(e.target.value)}
                   value={dateBirth}
                   size="small"
+                  focused
                   required
                   sx={{ minWidth: "20%", maxWidth: "80%" }}
                 />
