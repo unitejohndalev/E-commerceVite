@@ -321,21 +321,6 @@ const Nav = () => {
     setRegMobileShow((prevRegShow) => !prevRegShow);
   };
 
-  //ERROR on console, keeps accumulating so for now removed it
-  //COMMENTED THIS OUT, MAKE SURE TO ASIGN ref that wraps the whole setRegMobileShow
-
-  // //Reg ref for mobile
-  // let RegMobileRef = useRef();
-
-  // //Reg handle side effects for mobile
-  // useEffect(() => {
-  //   document.addEventListener("mousedown", (e) => {
-  //     if (!RegMobileRef.current.contains(e?.target)) {
-  //       setRegMobileShow(false);
-  //     }
-  //   });
-  // });
-
   return (
     <div className="flex justify-center relative">
       <Navbar
