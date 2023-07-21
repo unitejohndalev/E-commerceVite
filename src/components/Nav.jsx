@@ -323,7 +323,7 @@ const Nav = () => {
 
   //ERROR on console, keeps accumulating so for now removed it
   //COMMENTED THIS OUT, MAKE SURE TO ASIGN ref that wraps the whole setRegMobileShow
-  
+
   // //Reg ref for mobile
   // let RegMobileRef = useRef();
 
@@ -458,18 +458,18 @@ const Nav = () => {
               </Link>
             </div>
           </div>
-            <IconButton
-              variant="text"
-              color="blue-gray"
-              className="lg:hidden !bg-transparent !absolute right-0 !rounded-sm"
-              onClick={() => setOpenNav(!openNav)}
-            >
-              {openNav ? (
-                <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-              ) : (
-                <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-              )}
-            </IconButton>
+          <IconButton
+            variant="text"
+            color="blue-gray"
+            className="lg:hidden !bg-transparent !absolute right-0 !rounded-sm"
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+            ) : (
+              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+            )}
+          </IconButton>
         </div>
 
         <Collapse open={openNav} className="">
@@ -498,9 +498,28 @@ const Nav = () => {
               </div>
             </div>
 
-            <Button variant="gradient" size="sm" className="w-[100%]">
-              Register
-            </Button>
+            <div className=" w-[100%]">
+              <div ref={registerRef}>
+                <Button
+                  onClick={toggleMobileReg}
+                  variant="outlined"
+                  size="sm"
+                  color="blue-gray"
+                  className="w-[100%]"
+                >
+                  Register
+                </Button>
+                <div className="relative">
+                  {regMobileShow && (
+                    <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid ">
+                      <div className="  w-[50%] max-w-[500px] h-[80%] flex justify-center items-center">
+                        <Register />
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
           </div>
         </Collapse>
       </Navbar>

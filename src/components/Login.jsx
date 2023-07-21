@@ -48,7 +48,7 @@ const Login = () => {
 
           {/* <!-- Right column container with form --> */}
 
-          <div className="w-[350px] lg:w-1/2 lg:p-2 h-[400px] ml-[-1rem] ">
+          <div className="w-[500px] lg:w-1/2 lg:p-2 h-[400px] ml-[-1rem] ">
             <form autoComplete="off" onSubmit={handleSubmit}>
               <h1 className="font-semibold text-center text-black text-md lg:text-2xl mt-7 mb-5 lg:mt-6 lg:mb-5 lg:p-5 ">
                 Login Form
@@ -111,7 +111,7 @@ const Login = () => {
                   color="secondary"
                   type="email"
                   size="small"
-                  sx={{ minWidth: "20%", maxWidth: "80%" }}
+                  sx={{ minWidth: "50%", maxWidth: "80%" }}
                   value={email}
                   onError={errorEmail}
                 />
