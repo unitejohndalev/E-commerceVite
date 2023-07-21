@@ -165,16 +165,16 @@ const AllSearchProductInfos = () => {
                         >
                           <p>Add to Cart</p>
                         </button>
-                        <Link to={"/allfavorite"}>
+                   
                           <button
-                            className="w-[100%] off-bg text-white py-[10px] px-[10px] rounded-sm"
+                            className="outli w-[100%] off-bg text-white py-[10px] px-[10px] rounded-sm"
                             onClick={() =>
                               addToFavorite(allproducts, allproducts.id)
                             }
                           >
                             <p>Add to Favorite</p>
                           </button>
-                        </Link>
+                    
                       </div>
                       <div
                         className="w-[100%] mt-10 mb-10 md:w-[330px] md:absolute md:right-2 md:top-[320px]

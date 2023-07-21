@@ -24,6 +24,7 @@ const FavoriteProvider = ({children}) => {
         }
       });
       setFavorite(newFavorite);
+
     } else {
       setFavorite([...favorite, newItem]);
     }
@@ -43,6 +44,7 @@ const FavoriteProvider = ({children}) => {
         favorite,
         addToFavorite,
         removeFromFavorite,
+ 
       }}
     >
       {children}

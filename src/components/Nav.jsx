@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 
 //import react icons
-import { BiShoppingBag } from "react-icons/bi";
+import { BsBagPlus, BsBagHeart } from "react-icons/bs";
+
 
 //import components
 import Login from "./Login";
@@ -15,6 +16,8 @@ import Logo from "./img/logo.png";
 
 //import cart context to get itemAmount function for cart button
 import { CartContext } from "../contexts/CartContext";
+
+import { FavoriteContext } from "../contexts/FavoriteContext";
 
 //import allsearchproductinfosmain lol ang haba
 import AllSearchProductInfosMain from "./searchpage/AllSearchProductInfosMain";
@@ -333,6 +336,8 @@ const Nav = () => {
     });
   });
 
+  const {favorite} = useContext(FavoriteContext)
+
   return (
     <div className="flex justify-center relative">
       <Navbar
@@ -381,9 +386,28 @@ const Nav = () => {
               <div></div>
             )}
             <div className="text-[2rem]">
-              <BiShoppingBag />
+              <BsBagPlus />
             </div>
           </Link>
+          {/* fav icon */}
+          <Link
+            to={"/allfavorite"}
+            className="absolute lg:right-[30px] hidden lg:flex justify-center "
+          >
+            {favorite.length > 0 ? (
+              <div
+                className="bg-green-500 absolute right-0 top-1 text-[12px]
+            w-[10px] h-[10px] text-white rounded-full flex justify-center
+            items-center"
+              ></div>
+            ) : (
+              <div></div>
+            )}
+            <div className="text-[2rem]">
+              <BsBagHeart />
+            </div>
+          </Link>
+
           {/*Log in Toggle Button */}
 
           <div className="hidden gap-2 lg:flex justify-center items-center ">
@@ -450,7 +474,7 @@ const Nav = () => {
                   <div></div>
                 )}
                 <div className="text-[2rem]">
-                  <BiShoppingBag />
+                  <BsBagPlus />
                 </div>
               </Link>
             </div>
@@ -506,6 +530,7 @@ const Nav = () => {
                 >
                   Register
                 </Button>
+
                 <div className="relative">
                   {regMobileShow && (
                     <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid ">

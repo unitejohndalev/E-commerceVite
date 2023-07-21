@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 //import product context to get hats data
 import { ProductContext } from "../../contexts/ProductContext";
 
-
-
 //import footer
 import Footer from "../../components/Footer";
 
@@ -14,8 +12,8 @@ import Footer from "../../components/Footer";
 import ArrowUp from "../../components/arrowup/ArrowUp";
 
 //import react icons
-import {MdAddShoppingCart} from "react-icons/md"
-import { FaHeart } from "react-icons/fa";
+import { PiShoppingCartSimpleLight } from "react-icons/pi";
+
 
 //import cart context for addtocart function
 import { CartContext } from "../../contexts/CartContext";
@@ -42,16 +40,6 @@ const NikesHatProducts = () => {
                   <div className="name-container">
                     <p>{name}</p>
                   </div>
-                  <div
-                    className="absolute bottom-2 right-2 text-[1.5rem]
-                   md:text-[2rem]"
-                    onClick={() => addToCart(hatproducts, hatproducts.id)}
-                  >
-                    <MdAddShoppingCart />
-                  </div>
-                  <div className="absolute top-8 left-2 text-red-800  text-[1.1rem] md:text-[1.5rem]">
-                    <FaHeart />
-                  </div>
                   <Link to={`/allproductsearch/${id}`}>
                     <img src={img} alt="" className="img-style" />
                   </Link>
@@ -61,6 +49,13 @@ const NikesHatProducts = () => {
                 </div>
                 <div className="gender-container">
                   <p className="p-style">{gender}</p>
+                </div>
+                <div
+                  className="hidden md:flex absolute bottom-2 right-2 text-[1.5rem]
+                   md:text-[2rem] cursor-pointer"
+                  onClick={() => addToCart(hatproducts, hatproducts.id)}
+                >
+                  <PiShoppingCartSimpleLight />
                 </div>
               </div>
             );
