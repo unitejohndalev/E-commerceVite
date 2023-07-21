@@ -1,35 +1,53 @@
+/* eslint-disable react/prop-types */
 import React, { createContext, useState } from 'react'
 
 //create context
 export const FavoriteContext = createContext()
 
 const FavoriteProvider = ({children}) => {
-    //favorite state
-    const [favorite, setFavorite] = useState([])
+  //favorite state
+  const [favorite, setFavorite] = useState([]);
 
-      const addToFavorite = (product, id) => {
-        const newItem = { ...product, amount: 1 };
-        const favoriteItem = favoriteItem.find((item) => {
-          return item.id === id;
-        });
+  //add to favorite function
+  const addToFavorite = (product, id) => {
+    const newItem = { ...product, amount: 1 };
+    const favoriteItem = favorite.find((item) => {
+      return item.id === id;
+    });
 
-        if (favoriteItem) {
-          const newCart = [...favoriteItem].map((item) => {
-            if (item.id === id) {
-              return { ...item, amount: favoriteItem.amount + 1 };
-            } else {
-              return item;
-            }
-          });
-          setFavorite(newCart);
+    if (favoriteItem) {
+      const newFavorite = [...favorite].map((item) => {
+        if (item.id === id) {
+          return { ...item, amount: favoriteItem.amount + 1 };
         } else {
-          setFavorite([...favorite, newItem]);
+          return item;
         }
-      };
+      });
+      setFavorite(newFavorite);
+    } else {
+      setFavorite([...favorite, newItem]);
+    }
+  };
+
+  //remove from favorites
+  const removeFromFavorite = (id) => {
+    const newFavorite = favorite.filter((item) => {
+      return item.id !== id;
+    });
+    setFavorite(newFavorite);
+  };
 
   return (
-    <FavoriteContext.Provider>{children}</FavoriteContext.Provider>
-  )
+    <FavoriteContext.Provider
+      value={{
+        favorite,
+        addToFavorite,
+        removeFromFavorite,
+      }}
+    >
+      {children}
+    </FavoriteContext.Provider>
+  );
 }
 
 export default FavoriteProvider;

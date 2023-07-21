@@ -1,10 +1,13 @@
 import React, { useContext } from "react";
 
 //import useParams to get product id in url
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
-//import product context to get hats data
+//import product context to get allmerge data
 import { ProductContext } from "../../contexts/ProductContext";
+
+//import favorite context to get addToFavorite function
+import { FavoriteContext } from "../../contexts/FavoriteContext";
 
 //import cart context for addtocart function
 import { CartContext } from "../../contexts/CartContext";
@@ -19,6 +22,9 @@ import {HiOutlineArrowLeft} from "react-icons/hi"
 const AllSearchProductInfos = () => {
   //get all product merge from product context
   const { allProductsMerge } = useContext(ProductContext);
+  
+  //get addToFavorite dunction from favorite context
+  const {addToFavorite} = useContext(FavoriteContext)
 
   //get addToCart function from cart context
   const { addToCart } = useContext(CartContext);
@@ -159,9 +165,16 @@ const AllSearchProductInfos = () => {
                         >
                           <p>Add to Cart</p>
                         </button>
-                        <button className="w-[100%] off-bg text-white py-[10px] px-[10px] rounded-sm">
-                          <p>Add to Favorite</p>
-                        </button>
+                        <Link to={"/allfavorite"}>
+                          <button
+                            className="w-[100%] off-bg text-white py-[10px] px-[10px] rounded-sm"
+                            onClick={() =>
+                              addToFavorite(allproducts, allproducts.id)
+                            }
+                          >
+                            <p>Add to Favorite</p>
+                          </button>
+                        </Link>
                       </div>
                       <div
                         className="w-[100%] mt-10 mb-10 md:w-[330px] md:absolute md:right-2 md:top-[320px]

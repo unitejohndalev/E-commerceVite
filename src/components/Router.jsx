@@ -18,6 +18,7 @@ import { Route, Routes } from "react-router-dom";
 const AllProductSearch = lazy(() =>
   import("../components/searchpage/AllSearchProductInfos")
 );
+const AllFavorite = lazy(() => import("../pages/favoritepage/FavoriteMain"))
 
 const YourCartContext = lazy(() => import("../contexts/YourCartContext"));
 const HatProducts = lazy(() => import("../pages/hatproductpage/HatProducts"));
@@ -62,6 +63,7 @@ const Router = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/allproductsearch/:id" element={<AllProductSearch />} />
+          <Route path="/allfavorite" element={<AllFavorite/>}/>
           <Route path="/hatproducts" element={<HatProducts />} />
 
           {/* Hats pages brands*/}
