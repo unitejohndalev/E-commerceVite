@@ -1,8 +1,12 @@
 /* eslint-disable react/prop-types */
 import React, { createContext, useEffect, useState } from "react";
 
+
+
 //create context
 export const CartContext = createContext();
+
+
 
 const CartProvider = ({ children }) => {
   //cart state

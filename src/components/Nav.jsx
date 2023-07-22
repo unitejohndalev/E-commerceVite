@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 
 //import react icons
-import { BsBagPlus, BsBagHeart } from "react-icons/bs";
+import { PiBagThin, PiHeartThin } from "react-icons/pi";
 
 //import components
 import Login from "./Login";
@@ -376,7 +376,7 @@ const Nav = () => {
               <div></div>
             )}
             <div className="text-[2rem]">
-              <BsBagPlus />
+              <PiBagThin />
             </div>
           </Link>
           {/* fav icon */}
@@ -386,7 +386,7 @@ const Nav = () => {
           >
             {favorite.length > 0 ? (
               <div
-                className="bg-green-500 absolute right-0 top-1 text-[12px]
+                className="bg-red-800 absolute right-0 top-1 text-[12px]
             w-[10px] h-[10px] text-white rounded-full flex justify-center
             items-center"
               ></div>
@@ -394,7 +394,7 @@ const Nav = () => {
               <div></div>
             )}
             <div className="text-[2rem]">
-              <BsBagHeart />
+              <PiHeartThin />
             </div>
           </Link>
 

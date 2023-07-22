@@ -7,10 +7,22 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
 
 //import react icons
-import { PiShoppingCartSimpleLight } from "react-icons/pi";
+import { PiShoppingCartSimpleLight, PiBagThin } from "react-icons/pi";
 
 //import cart context for addtocart function
 import { CartContext } from "../../contexts/CartContext";
+
+//import toastify react
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+//import css for toastify
+import "../../styles/arrowUp.css";
+
+//remove close button
+const CloseButton = ({ closeToast }) => (
+  <i className="material-icons" onClick={closeToast}></i>
+);
 
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
@@ -35,6 +47,22 @@ const ClothFiltered = (props) => {
   const handleChange = (event, value) => {
     setCurrentPage(value);
     pageTopRef.current.scrollIntoView();
+  };
+
+  //toast
+  const addToCartNotify = () => {
+    toast.success("Added to cart! Shop for more!", {
+      position: "top-center",
+      autoClose: 500,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      closeButton: CloseButton,
+      icon: <PiBagThin />,
+    });
   };
 
   return (
@@ -63,7 +91,10 @@ const ClothFiltered = (props) => {
                   <div
                     className="hidden md:flex absolute bottom-2 right-2 text-[1.5rem]
                    md:text-[2rem] cursor-pointer"
-                    onClick={() => addToCart(products, products.id)}
+                    onClick={() => {
+                      addToCartNotify();
+                      addToCart(products, products.id);
+                    }}
                   >
                     <PiShoppingCartSimpleLight />
                   </div>
@@ -87,6 +118,8 @@ const ClothFiltered = (props) => {
           />
         </Stack>
       </div>
+      <ToastContainer className="tcenter" closeButton={CloseButton} />
+
       <Footer />
     </div>
   );
