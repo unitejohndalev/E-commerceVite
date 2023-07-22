@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useContext } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 //import product context to get hats data
@@ -18,6 +18,10 @@ import { PiShoppingCartSimpleLight } from "react-icons/pi";
 //import cart context for addtocart function
 import { CartContext } from "../../contexts/CartContext";
 
+
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
+
 const NikesHatProducts = () => {
   //get hat products from product context
   const { hatProducts } = useContext(ProductContext);
@@ -25,17 +29,36 @@ const NikesHatProducts = () => {
   //get addToCart function from cart context
   const { addToCart } = useContext(CartContext);
 
+   //FOR PAGINATION
+  const [currentPage, setCurrentPage] = useState(1);
+  const productPerPage = 8;
+
+  const indexOfLastProduct = currentPage * productPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productPerPage;
+  const currentProducts = hatProducts.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
+  const npage = Math.ceil(hatProducts.length / productPerPage)
+
+  const pageTopRef = useRef(null);
+  const handleChange = (event, value) => {
+    setCurrentPage(value);
+    pageTopRef.current.scrollIntoView();
+  };
+
+
   return (
-    <div className="parent-container">
+    <div className="parent-container" ref={pageTopRef}>
       <div className="product-container">
         <div className="mapParent-container">
           {/* map first data */}
-          {hatProducts.map((hatproducts) => {
+          {currentProducts.map((hatproducts) => {
             //destructure product hats data
             const { id, name, price, img, gender } = hatproducts;
 
             return (
-              <div key={id} className="mapProduct-container md:h-[50vh]">
+              <div key={id} className="mapProduct-container md:h-[51vh]">
                 <div className="relative">
                   <div className="name-container">
                     <p>{name}</p>
@@ -61,6 +84,9 @@ const NikesHatProducts = () => {
             );
           })}
         </div>
+           <Stack spacing={2} className="mt-[50px]">
+          <Pagination count={npage} page={currentPage} onChange={handleChange} />
+        </Stack>
       </div>
 
       <ArrowUp />

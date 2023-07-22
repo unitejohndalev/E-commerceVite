@@ -1,10 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 
 import { Link } from "react-router-dom";
 
 //import product context to get shoes data
 import { ProductContext } from "../../contexts/ProductContext";
-
 
 //import footer
 import Footer from "../../components/Footer";
@@ -19,6 +18,9 @@ import { PiShoppingCartSimpleLight } from "react-icons/pi";
 import { CartContext } from "../../contexts/CartContext";
 
 
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
+
 const NikeProducts = () => {
   //get addToCart function from cart context
   const { addToCart } = useContext(CartContext);
@@ -27,27 +29,36 @@ const NikeProducts = () => {
   const { shoeProducts } = useContext(ProductContext);
 
   //FOR PAGINATION
+  const [currentPage, setCurrentPage] = useState(1);
+  const productPerPage = 12;
 
-  //  const [currentPage, setCurrentPage] = useState(1);
-  //  const productPerPage = 3;
+  const indexOfLastProduct = currentPage * productPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productPerPage;
+  const currentProducts = shoeProducts.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
+    const npage = Math.ceil(shoeProducts.length / productPerPage);
 
-  //     const indexOfLastProduct = currentPage * productPerPage;
-  //     const indexOfFirstProduct = indexOfLastProduct - productPerPage;
-  //     const currentProducts = shoeProducts.slice(indexOfFirstProduct, indexOfLastProduct);
-  //     const npage = Math.ceil(shoeProducts.leght / productPerPage)
-  //     const numbers = [...Array(npage + 1).keys().slice(1)]
+  const pageTopRef = useRef(null);
+  const handleChange = (event, value) => {
+    setCurrentPage(value);
+    pageTopRef.current.scrollIntoView();
+  };
+
+
 
   return (
-    <div className="parent-container">
+    <div className="parent-container" ref={pageTopRef}>
       <div className="product-container">
         <div className="mapParent-container">
           {/* map first data */}
-          {shoeProducts.map((shoeproducts) => {
+          {currentProducts.map((shoeproducts) => {
             //destructure product hats data
             const { id, name, price, img, gender } = shoeproducts;
 
             return (
-              <div key={id} className="mapProduct-container md:h-[50vh]">
+              <div key={id} className="mapProduct-container md:h-[51vh]">
                 <div className="relative">
                   <div className="name-container">
                     <p>{name}</p>
@@ -58,7 +69,7 @@ const NikeProducts = () => {
                   <div
                     className="hidden md:flex absolute bottom-2 right-2 text-[1.5rem]
                    md:text-[2rem] cursor-pointer"
-                    onClick={() => addToCart(hatproducts, hatproducts.id)}
+                    onClick={() => addToCart(shoeproducts, shoeproducts.id)}
                   >
                     <PiShoppingCartSimpleLight />
                   </div>
@@ -73,6 +84,14 @@ const NikeProducts = () => {
             );
           })}
         </div>
+
+        <Stack spacing={2} className="mt-[50px]">
+          <Pagination
+            count={npage}
+            page={currentPage}
+            onChange={handleChange}
+          />
+        </Stack>
       </div>
       <ArrowUp />
       <Footer />

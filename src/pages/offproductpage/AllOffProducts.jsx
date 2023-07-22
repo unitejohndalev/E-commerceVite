@@ -10,158 +10,65 @@ import { ProductContext } from "../../contexts/ProductContext";
 import { Link } from "react-router-dom";
 import OffProductsHero from "./OffProductsHero";
 
+//import react icons
+import { PiShoppingCartSimpleLight } from "react-icons/pi";
+
+
+//import cart context for addtocart function
+import { CartContext } from "../../contexts/CartContext";
+
 const AllOffProducts = () => {
-
-
   //call all state in product context
-  const { hatProducts, shoeProducts, clothProducts } =
-    useContext(ProductContext);
+  const { allProductsMerge } = useContext(ProductContext);
 
-  //filter hat function
-  const filterHatProducts = hatProducts.filter((hat) => {
-    return hat.offprice;
+  //filter all products off price
+  const filterAllProductOffPrice = allProductsMerge.filter((product) => {
+    return product.offprice;
   });
 
-  //filter shoe function
-  const filterShoeProducts = shoeProducts.filter((shoe) => {
-    return shoe.offprice;
-  });
-
-  //filter cloth function
-  const filterClothProduct = clothProducts.filter((cloth) => {
-    return cloth.offprice;
-  });
-
-  //state for more
-  //set state value into conditional statement
-  //use JSON.parse to convert it to JSON string
-  //use localStorage.getItem to get data from localstorage
-  const [more, setMore] = useState(
-    JSON.parse(localStorage.getItem("moreoffproducts") || false)
-  );
-
-  //to control show more... onClick
-  const toggleShow = () => {
-    if (more === false) {
-      setMore(true);
-    } else {
-      setMore(false);
-    }
-  };
-
-  //set localstorage and name it "moreoffproducts"
-  useEffect(() => {
-    localStorage.setItem("moreoffproducts", JSON.stringify(more));
-  }, [more]); //remember every side effect must return a parameter, here in case state more is set, since it's a variable and changing
+  //get addToCart function from cart context
+  const { addToCart } = useContext(CartContext);
 
   return (
     <div className="parent-container ">
       <div className="product-container">
-     <OffProductsHero/>
+        <OffProductsHero />
         <div className="mapParent-container ">
-          {filterHatProducts.map((filteredproduct) => {
+          {filterAllProductOffPrice.map((filteredproduct) => {
             const { id, name, price, offprice, img, gender } = filteredproduct;
             return (
-              <div key={id} className="mapProduct-container">
+              <div key={id} className="mapProduct-container md:h-[51vh]">
                 <div className="relative">
-             
                   <div className="name-container">
                     <p>{name}</p>
                   </div>
                   <Link to={`/allproductsearch/${id}`}>
                     <img src={img} alt="" className="img-style " />
                   </Link>
+                  <div
+                    className="hidden md:flex absolute bottom-2 right-2 text-[1.5rem]
+                   md:text-[2rem] cursor-pointer"
+                    onClick={() =>
+                      addToCart(filteredproduct, filteredproduct.id)
+                    }
+                  >
+                    <PiShoppingCartSimpleLight />
+                  </div>
                 </div>
 
-                <div className="price-container">
-                  <p className="ml-2">$ {offprice}</p>
-                  <p className="line-through text-red-700 mr-2">{`$ ${parseFloat(
+                <div className="gender-container bottom-2">
+                  <p className="absolute ml-2 bottom-4 text-[.9rem] md:text-[1rem]">{`$ ${parseFloat(
                     price
                   ).toFixed(2)}`}</p>
-                </div>
-                <div className="gender-container ">
+                  <p className="absolute right-2 bottom-4 line-through text-[.9rem] md:text-[1rem] text-red-800">{`$ ${parseFloat(
+                    offprice
+                  ).toFixed(2)}`}</p>
                   <p className="p-style">{gender}</p>
                 </div>
               </div>
             );
           })}
         </div>
-
-        <div className="mapParent-container lg:mt-0">
-          {filterShoeProducts.map((filteredproduct) => {
-            const { id, name, price, offprice, img, gender } = filteredproduct;
-            return (
-              <div key={id} className="mapProduct-container">
-                <div className="relative">
-             
-                  <div className="name-container">
-                    <p>{name}</p>
-                  </div>
-                  <Link to={`/allproductsearch/${id}`}>
-                    <img src={img} alt="" className="img-style " />
-                  </Link>
-                </div>
-
-                <div className="price-container">
-                  <p className="ml-2">$ {offprice}</p>
-                  <p className="line-through text-red-700 mr-2">{`$ ${parseFloat(
-                    price
-                  ).toFixed(2)}`}</p>
-                </div>
-                <div className="gender-container ">
-                  <p className="p-style">{gender}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {more && (
-          <div className="mapParent-container lg:mt-0">
-            {filterClothProduct.map((filteredproduct) => {
-              const { id, name, price, offprice, img, gender } =
-                filteredproduct;
-              return (
-                <div key={id} className="mapProduct-container h-[300px] md:h-[450px]">
-                  <div className="relative">
-              
-                    <div className="name-container">
-                      <p>{name}</p>
-                    </div>
-                    <Link to={`/allproductsearch/${id}`}>
-                      <img src={img} alt="" className="img-style h-[250px] md:h-[390px]" />
-                    </Link>
-                  </div>
-
-                  <div className="price-container">
-                    <p className="ml-2">$ {offprice}</p>
-                    <p className="line-through text-red-700 mr-2">{`$ ${parseFloat(
-                      price
-                    ).toFixed(2)}`}</p>
-                  </div>
-                  <div className="gender-container ">
-                    <p className="p-style">{gender}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
-        {more === false ? (
-          <h1
-            className="font-medium mt-5 mb-5 cursor-pointer"
-            onClick={toggleShow}
-          >
-            More ....
-          </h1>
-        ) : (
-          <h1
-            className="font-medium mt-5 mb-5 cursor-pointer"
-            onClick={toggleShow}
-          >
-            Hide ...
-          </h1>
-        )}
       </div>
       <Footer />
     </div>

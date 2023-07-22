@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 //import product context to get cloths data
@@ -14,6 +14,10 @@ import { PiShoppingCartSimpleLight } from "react-icons/pi";
 //import footer
 import Footer from "../../components/Footer";
 
+
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
+
 const HMProducts = () => {
   //get cloth products from product context
   const { clothProducts } = useContext(ProductContext);
@@ -21,12 +25,30 @@ const HMProducts = () => {
   //get addToCart function from cart context
   const { addToCart } = useContext(CartContext);
 
+  //FOR PAGINATION
+  const [currentPage, setCurrentPage] = useState(1);
+  const productPerPage = 12;
+
+  const indexOfLastProduct = currentPage * productPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productPerPage;
+  const currentProducts = clothProducts.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
+  const npage = Math.ceil(clothProducts.length / productPerPage);
+
+  const pageTopRef = useRef(null);
+  const handleChange = (event, value) => {
+    setCurrentPage(value);
+    pageTopRef.current.scrollIntoView();
+  };
+
   return (
-    <div className="parent-container">
+    <div className="parent-container" ref={pageTopRef}>
       <div className="product-container">
         <div className="mapParent-container">
           {/* map first data */}
-          {clothProducts.map((clothproducts) => {
+          {currentProducts.map((clothproducts) => {
             //destructure product hats data
             const { id, name, price, img, gender } = clothproducts;
 
@@ -49,7 +71,7 @@ const HMProducts = () => {
                   <div
                     className="hidden md:flex absolute bottom-2 right-2 text-[1.5rem]
                    md:text-[2rem] cursor-pointer"
-                    onClick={() => addToCart(products, products.id)}
+                    onClick={() => addToCart(clothproducts, clothproducts.id)}
                   >
                     <PiShoppingCartSimpleLight />
                   </div>
@@ -64,6 +86,13 @@ const HMProducts = () => {
             );
           })}
         </div>
+        <Stack spacing={2} className="mt-[50px]">
+          <Pagination
+            count={npage}
+            page={currentPage}
+            onChange={handleChange}
+          />
+        </Stack>
       </div>
       <Footer />
     </div>

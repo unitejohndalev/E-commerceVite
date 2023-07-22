@@ -12,7 +12,7 @@ import MKBagData from "../data/MKBags.json";
 import HerschelBag from "../data/Herschel.json";
 
 //import accs daa
-import AccessoriesData from "../data/Accessories.json"
+import AccessoriesData from "../data/Accessories.json";
 
 //for passing data anywhere
 //make sure this component wrap everything in main.jsx in order for it to work -- imagine you talk like indian
@@ -111,19 +111,29 @@ const ProductProvider = ({ children }) => {
   //state for search product
   const [searchProduct, setSearchProduct] = useState("");
 
+
+
   //state to hide search products body when not using search bar
   const [showBody, setShowBody] = useState(false);
 
   //input function for search
   const handleChange = (event) => {
     setSearchProduct(event.target.value);
-    setShowBody(true);
   };
 
   //clear input field when click img product
-  const clearInputField = () => {
-    searchProduct("")
-  }
+  const clearInputField = (event) => {
+    event.preventDefault();
+    setShowBody(true);
+
+  };
+
+    const handleKeypress = (e) => {
+      //it triggers by pressing the enter key
+      if (e.keyCode === 13) {
+        clearInputField();
+      }
+    };
 
   //use useRef for search body, when click outside it'll close
   //NOTE THIS IS REMOVE SINCE, ITS CAUSING THE APP TO HAVE SOME ERRORS
@@ -160,10 +170,10 @@ const ProductProvider = ({ children }) => {
 
   //mobile nav open and close state
   const [openNav, setOpenNav] = React.useState(false);
-  
+
   //toggle btn function for navlist
   const hideToggle = () => {
-   setOpenNav(false);
+    setOpenNav(false);
   };
 
   //make product context the provider
@@ -193,6 +203,7 @@ const ProductProvider = ({ children }) => {
         searchProduct,
         setSearchProduct,
         handleChange,
+        handleKeypress,
         showBody,
         setShowBody,
         clearInputField,

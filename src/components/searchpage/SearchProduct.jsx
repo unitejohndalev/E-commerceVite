@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 import {  IoMdClose } from "react-icons/io";
 
 const SearchProduct = () => {
-  const { allProductsMerge, searchProduct,clearInputField, setShowBody} =
+  const { allProductsMerge, searchProduct, setShowBody, setSearchProduct } =
     useContext(ProductContext);
 
     const clearInputShowBodyToggle = () => {
-      clearInputField()
       setShowBody(false);
+      setSearchProduct("")
       
     }
 

@@ -34,7 +34,7 @@ const AccessoriesChild = () => {
             const { id, name, price, img, gender } = accproducts;
 
             return (
-              <div key={id} className="mapProduct-container md:h-[50vh]">
+              <div key={id} className="mapProduct-container md:h-[51vh]">
                 <div className="relative">
                   <div className="name-container">
                     <p>{name}</p>
@@ -45,7 +45,7 @@ const AccessoriesChild = () => {
                   <div
                     className="hidden md:flex absolute bottom-2 right-2 text-[1.5rem]
                    md:text-[2rem] cursor-pointer"
-                    onClick={() => addToCart(hatproducts, hatproducts.id)}
+                    onClick={() => addToCart(accproducts, accproducts.id)}
                   >
                     <PiShoppingCartSimpleLight />
                   </div>
