@@ -43,7 +43,7 @@ const ShoeFilteredList = (props) => {
             //destructure products
             const { name, img, price, status, gender, id } = products;
             return (
-              <div key={id} className="mapProduct-container md:h-[51vh]">
+              <div key={id} className="mapProduct-container ">
                 <div className="relative">
                   <div className="name-container ">
                     <p>{name}</p>

@@ -58,7 +58,7 @@ const NikesHatProducts = () => {
             const { id, name, price, img, gender } = hatproducts;
 
             return (
-              <div key={id} className="mapProduct-container md:h-[51vh]">
+              <div key={id} className="mapProduct-container">
                 <div className="relative">
                   <div className="name-container">
                     <p>{name}</p>

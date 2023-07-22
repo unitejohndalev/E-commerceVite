@@ -34,7 +34,7 @@ const AccessoriesChild = () => {
             const { id, name, price, img, gender } = accproducts;
 
             return (
-              <div key={id} className="mapProduct-container md:h-[51vh]">
+              <div key={id} className="mapProduct-container">
                 <div className="relative">
                   <div className="name-container">
                     <p>{name}</p>
