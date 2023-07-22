@@ -48,24 +48,25 @@ const YourCartContext = () => {
   }
   return (
     <div className="h-[100%] ">
+      {/* navigate back button */}
+      <div>
+        <button
+          className="hidden md:flex absolute top-[100px]
+          ml-2 text-[1.5rem] px-[10px] cursor-pointer"
+          onClick={goBack}
+        >
+          <HiOutlineArrowLeft />
+        </button>
+        <div
+          onClick={goBack}
+          className="absolute top-[100px] ml-2 text-[1.5rem] md:hidden
+          "
+        >
+          <HiOutlineArrowLeft />
+        </div>
+      </div>
       <div className="flex mt-[100px] justify-center items-center">
         <div className="w-[100%] md:max-w-[768px] lg:max-w-[1240px] flex items-center justify-center">
-          {/* navigate back button */}
-          <div>
-            <button
-              className="hidden md:flex absolute left-2 lg:left-5 top-[110px] text-[1.5rem] px-[10px] cursor-pointer"
-              onClick={goBack}
-            >
-              <HiOutlineArrowLeft />
-            </button>
-            <div
-              onClick={goBack}
-              className="absolute top-[100px] left-2 text-[1.5rem] md:hidden
-          "
-            >
-              <HiOutlineArrowLeft />
-            </div>
-          </div>
           <div className="relative w-[90%] mt-[60px] h-[100%] ">
             {cart.length === 0 ? (
               <div className=" flex justify-center items-center h-[50vh]">
@@ -193,9 +194,11 @@ const YourCartContext = () => {
                   <FiTrash2 />
                 </div>
                 {removeAll && (
-                  <div className="h-[50vh] w-[100%] fixed z-[100] top-1/2 left-1/2 -translate-y-1/2 
+                  <div
+                    className="h-[50vh] w-[100%] fixed z-[100] top-1/2 left-1/2 -translate-y-1/2 
                   -translate-x-1/2 text-center lg:w-[1024px]  bg-primary/90 rounded-sm flex 
-                  flex-col items-center justify-center text-white">
+                  flex-col items-center justify-center text-white"
+                  >
                     <p className="text-[2rem]">Remove all ordered products?</p>
                     <div className="flex gap-x-10 mt-5">
                       <button

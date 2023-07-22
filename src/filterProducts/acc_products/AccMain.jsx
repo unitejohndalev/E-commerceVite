@@ -51,7 +51,7 @@ const AccMain = () => {
         <div className=" filtermainBtn-container">
           <button
             onClick={AccToggle}
-            className="filterBtn-container md:left-[435px] lg:left-[530px]"
+            className="filterBtn-container md:left-[435px] lg:left-[460px] xl:left-[510px]"
           >
             Accessories
           </button>

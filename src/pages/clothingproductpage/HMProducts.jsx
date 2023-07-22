@@ -6,7 +6,10 @@ import { ProductContext } from "../../contexts/ProductContext";
 
 //import cart context
 import { CartContext } from "../../contexts/CartContext";
-import { Button } from "@material-tailwind/react";
+
+
+//import react icons
+import { PiShoppingCartSimpleLight } from "react-icons/pi";
 
 //import footer
 import Footer from "../../components/Footer";
@@ -28,19 +31,33 @@ const HMProducts = () => {
             const { id, name, price, img, gender } = clothproducts;
 
             return (
-              <div key={id} className="mapProduct-container h-[300px] md:h-[450px]">
+              <div
+                key={id}
+                className="mapProduct-container h-[310px] md:h-[450px]"
+              >
                 <div className="relative">
                   <div className="name-container">
                     <p>{name}</p>
                   </div>
                   <Link to={`/allproductsearch/${id}`}>
-                    <img src={img} alt="" className="img-style h-[250px] md:h-[390px]" />
+                    <img
+                      src={img}
+                      alt=""
+                      className="img-style h-[250px] md:h-[390px]"
+                    />
                   </Link>
+                  <div
+                    className="hidden md:flex absolute bottom-2 right-2 text-[1.5rem]
+                   md:text-[2rem] cursor-pointer"
+                    onClick={() => addToCart(products, products.id)}
+                  >
+                    <PiShoppingCartSimpleLight />
+                  </div>
                 </div>
-                <div className="price-container">
-                  <p className=" ml-2">{`$ ${parseFloat(price).toFixed(2)}`}</p>
-                </div>
-                <div className="gender-container">
+                <div className="gender-container bottom-2">
+                  <p className="absolute ml-2 bottom-4">{`$ ${parseFloat(
+                    price
+                  ).toFixed(2)}`}</p>
                   <p className="p-style">{gender}</p>
                 </div>
               </div>

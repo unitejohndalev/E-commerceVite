@@ -6,6 +6,7 @@
       "price": "110",
       "bestSeller": false,
       "status": "Just In",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -24,6 +25,7 @@
       "price": "80",
       "bestSeller": false,
       "status": "Just In",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -42,6 +44,7 @@
       "price": "80",
       "bestSeller": false,
       "status": "Just In",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -60,6 +63,7 @@
       "price": "130.",
       "bestSeller": false,
       "status": "Just In",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -78,6 +82,7 @@
       "price": "150",
       "offprice": "145.29",
       "bestSeller": false,
+      "gender": "Unisex",
       "status": "Just In",
       "description": [
         {
@@ -97,6 +102,7 @@
       "price": "95",
       "bestSeller": false,
       "status": "Just In",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -115,6 +121,7 @@
       "price": "65",
       "bestSeller": false,
       "status": "Just In",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -133,6 +140,7 @@
       "price": "100",
       "bestSeller": false,
       "status": "Just In",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -151,6 +159,7 @@
       "price": "90",
       "bestSeller": true,
       "status": "Best Seller",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -169,6 +178,7 @@
       "price": "130",
       "bestSeller": true,
       "status": "Best Seller",
+      "gender": "Unisex",
       "offprice": "125.29",
       "description": [
         {
@@ -188,6 +198,7 @@
       "price": "80",
       "bestSeller": true,
       "status": "Best Seller",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -206,6 +217,7 @@
       "price": "45",
       "bestSeller": true,
       "status": "Best Seller",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -224,6 +236,7 @@
       "price": "45",
       "bestSeller": true,
       "status": "Best Seller",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -242,6 +255,7 @@
       "price": "55",
       "bestSeller": true,
       "status": "Best Seller",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -260,6 +274,7 @@
       "price": "60",
       "bestSeller": true,
       "status": "Best Seller",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -278,6 +293,7 @@
       "price": "110",
       "bestSeller": true,
       "status": "Best Seller",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -296,6 +312,7 @@
       "price": "115",
       "bestSeller": true,
       "status": "Best Seller",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -311,6 +328,7 @@
     {
       "id": 118,
       "name": "City Backpack",
+      "gender": "Unisex",
       "price": "75",
       "description": [
         {
@@ -331,6 +349,7 @@
       "offprice": "185.29",
       "bestSeller": true,
       "status": "Best Seller",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -350,6 +369,7 @@
       "offprice": "125.29",
       "bestSeller": true,
       "status": "Best Seller",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -368,6 +388,7 @@
       "price": "100",
       "bestSeller": true,
       "status": "Best Seller",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -386,6 +407,7 @@
       "price": "50",
       "bestSeller": true,
       "status": "Best Seller",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -404,6 +426,7 @@
       "price": "50",
       "bestSeller": false,
       "status": "Just In",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,
@@ -423,6 +446,7 @@
       "bestSeller": false,
       "status": "Just In",
       "offprice": "125.29",
+      "gender": "Unisex",
       "description": [
         {
           "id": 1,

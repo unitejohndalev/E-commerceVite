@@ -10,10 +10,19 @@ import { ProductContext } from "../../contexts/ProductContext";
 //import footer
 import Footer from "../../components/Footer";
 
+//import react icons
+import { PiShoppingCartSimpleLight } from "react-icons/pi";
+
+
+//import cart context for addtocart function
+import { CartContext } from "../../contexts/CartContext";
+
 const AccessoriesChild = () => {
+  //get addToCart function from cart context
+  const { addToCart } = useContext(CartContext);
+
   //get acc products from product context
   const { AccessoriesProducts } = useContext(ProductContext);
-
 
   return (
     <div className="parent-container">
@@ -25,7 +34,7 @@ const AccessoriesChild = () => {
             const { id, name, price, img, gender } = accproducts;
 
             return (
-              <div key={id} className="mapProduct-container">
+              <div key={id} className="mapProduct-container md:h-[50vh]">
                 <div className="relative">
                   <div className="name-container">
                     <p>{name}</p>
@@ -33,11 +42,18 @@ const AccessoriesChild = () => {
                   <Link to={`/allproductsearch/${id}`}>
                     <img src={img} alt="" className="img-style" />
                   </Link>
+                  <div
+                    className="hidden md:flex absolute bottom-2 right-2 text-[1.5rem]
+                   md:text-[2rem] cursor-pointer"
+                    onClick={() => addToCart(hatproducts, hatproducts.id)}
+                  >
+                    <PiShoppingCartSimpleLight />
+                  </div>
                 </div>
-                <div className="price-container">
-                  <p className=" ml-2">{`$ ${parseFloat(price).toFixed(2)}`}</p>
-                </div>
-                <div className="gender-container">
+                <div className="gender-container bottom-2">
+                  <p className="absolute ml-2 bottom-4">{`$ ${parseFloat(
+                    price
+                  ).toFixed(2)}`}</p>
                   <p className="p-style">{gender}</p>
                 </div>
               </div>

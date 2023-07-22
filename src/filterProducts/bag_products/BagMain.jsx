@@ -55,7 +55,7 @@ const BagMain = () => {
         <div className="filtermainBtn-container">
           <button
             onClick={bagsToggle}
-            className="filterBtn-container  md:left-[336px] lg:left-[437px]"
+            className="filterBtn-container  md:left-[336px] lg:left-[363px] xl:left-[417px]"
           >
             Bags
           </button>

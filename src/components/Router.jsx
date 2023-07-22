@@ -31,25 +31,19 @@ const ShoeProducts = lazy(() =>
   import("../pages/shoeproductpage/NikeProducts")
 );
 
-const BagProducts = lazy(() => import("../pages/BagProducts"));
-const BagProductDescription = lazy(() =>
-  import("../productDescriptions/BagProductDescription")
-);
+const BagProducts = lazy(() => import("../pages/bagproductpage/BagProducts"));
+
 const AccessoriesProducts = lazy(() =>
   import("../pages/accessories/AccessoriesProductsMain")
 );
-const SecondUnknownProducts = lazy(() =>
-  import("../pages/SecondUnknownProducts")
-);
+
 const FeatureProducts = lazy(() =>
   import("../pages/featureproductpage/FeatureProducts")
 );
 const OffProducts = lazy(() => import("../pages/offproductpage/OffProducts"));
 const AboutUs = lazy(() => import("../pages/aboutuspage/AboutUs"));
 
-//Bags
-import MKBags from "./MKProducts";
-import HerschelBags from "./HerschelProducts";
+
 
 //Access
 import Login from "./Login";
@@ -80,14 +74,7 @@ const Router = () => {
 
           <Route path="/bagproducts" element={<BagProducts />} />
 
-          {/* Bags pages brands*/}
 
-          <Route path="/mkbags" element={<MKBags />} />
-          <Route path="/herschelbags/" element={<HerschelBags />} />
-          <Route
-            path="/bagdescription/:id"
-            element={<BagProductDescription />}
-          />
 
           <Route
             path="/accessoriesproducts"
@@ -95,10 +82,7 @@ const Router = () => {
           />
           {/* Accessories pages brands*/}
 
-          <Route
-            path="/secondunknownproducts"
-            element={<SecondUnknownProducts />}
-          />
+        
           <Route path="/featureproducts" element={<FeatureProducts />} />
           <Route path="/offproducts" element={<OffProducts />} />
           <Route path="/aboutus" element={<AboutUs />} />

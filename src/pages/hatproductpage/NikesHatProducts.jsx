@@ -35,7 +35,7 @@ const NikesHatProducts = () => {
             const { id, name, price, img, gender } = hatproducts;
 
             return (
-              <div key={id} className="mapProduct-container">
+              <div key={id} className="mapProduct-container md:h-[50vh]">
                 <div className="relative">
                   <div className="name-container">
                     <p>{name}</p>
@@ -43,19 +43,19 @@ const NikesHatProducts = () => {
                   <Link to={`/allproductsearch/${id}`}>
                     <img src={img} alt="" className="img-style" />
                   </Link>
-                </div>
-                <div className="price-container">
-                  <p className=" ml-2">{`$ ${parseFloat(price).toFixed(2)}`}</p>
-                </div>
-                <div className="gender-container">
-                  <p className="p-style">{gender}</p>
-                </div>
-                <div
-                  className="hidden md:flex absolute bottom-2 right-2 text-[1.5rem]
+                  <div
+                    className="hidden md:flex absolute bottom-2 right-2 text-[1.5rem]
                    md:text-[2rem] cursor-pointer"
-                  onClick={() => addToCart(hatproducts, hatproducts.id)}
-                >
-                  <PiShoppingCartSimpleLight />
+                    onClick={() => addToCart(hatproducts, hatproducts.id)}
+                  >
+                    <PiShoppingCartSimpleLight />
+                  </div>
+                </div>
+                <div className="gender-container bottom-2">
+                  <p className="absolute ml-2 bottom-4">{`$ ${parseFloat(
+                    price
+                  ).toFixed(2)}`}</p>
+                  <p className="p-style">{gender}</p>
                 </div>
               </div>
             );

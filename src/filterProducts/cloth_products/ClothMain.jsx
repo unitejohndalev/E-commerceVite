@@ -54,7 +54,7 @@ const ClothMain = () => {
         <div className=" filtermainBtn-container">
           <button
             onClick={clothToggle}
-            className="filterBtn-container  md:left-[120px] lg:left-[230px]"
+            className="filterBtn-container  md:left-[120px] lg:left-[155px] xl:left-[210px]"
           >
             Cloths
           </button>
