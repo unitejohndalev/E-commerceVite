@@ -15,27 +15,27 @@ const FavoriteChild = () => {
     navigate(-1);
   };
   return (
-    <div className="parent-container h-[100%]">
+    <div className="parent-container relative h-[100vh] ">
    
         <button
           className="hidden md:flex absolute 
-          ml-2 text-[1.5rem] px-[10px] cursor-pointer"
+          ml-2 text-[1.5rem] z-[100] px-[10px] cursor-pointer"
           onClick={goBack}
         >
           <HiOutlineArrowLeft />
         </button>
         <div
           onClick={goBack}
-          className="absolute  ml-2 text-[1.5rem] md:hidden
+          className="absolute z-[100] ml-2 text-[1.5rem] md:hidden
           "
         >
           <HiOutlineArrowLeft />
         </div>
 
       {favorite.length === 0 ? (
-        <div className=" mt-[150px] flex justify-center items-center h-[50vh] relative">
+        <div className=" mt-[100px] flex justify-center items-center h-[50vh] relative ">
      
-          <p className="text-[2rem] font-medium">Add favorite products now!</p>
+          <p className="text-[2rem] font-medium">Add your favorite products now!</p>
         </div>
       ) : (
         <div className="product-container">
