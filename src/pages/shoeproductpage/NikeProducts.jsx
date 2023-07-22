@@ -58,7 +58,7 @@ const NikeProducts = () => {
             const { id, name, price, img, gender } = shoeproducts;
 
             return (
-              <div key={id} className="mapProduct-container">
+              <div key={id} className="mapProduct-container ">
                 <div className="relative">
                   <div className="name-container">
                     <p>{name}</p>

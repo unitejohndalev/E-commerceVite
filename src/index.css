@@ -45,10 +45,10 @@
     @apply mt-[100px] flex flex-col items-center;
   }
   .mapParent-container {
-    @apply flex flex-wrap w-[100%] md:flex md:flex-wrap md:w-[100%] lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-2 md:gap-x-5 lg:w-[100%] xl:w-[1234px];
+    @apply flex flex-wrap w-[100%] md:flex md:flex-wrap md:w-[100%] lg:flex lg:flex-wrap lg:mt-10 justify-center gap-x-2  lg:w-[100%] xl:w-[1234px];
   }
   .mapProduct-container {
-    @apply mt-1 mb-1 w-[170px] h-[260px] md:w-[285px] lg:w-[285px] shadow-xl rounded-md md:h-[390px] relative;
+    @apply mt-1 mb-1 w-[170px] h-[250px] md:w-[285px] lg:w-[285px] shadow-xl rounded-md md:h-[370px] relative;
   }
   
   .name-container {

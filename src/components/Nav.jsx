@@ -362,7 +362,7 @@ const Nav = () => {
           </div>
           <Link
             to={"/yourcart"}
-            className="absolute right-[60px] md:right-[100px] flex justify-center "
+            className="absolute right-[60px] md:right-[100px] xl:right-[80px] flex justify-center "
           >
             {itemAmount > 0 ? (
               <div

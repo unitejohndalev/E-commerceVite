@@ -15,7 +15,7 @@ const FavoriteChild = () => {
     navigate(-1);
   };
   return (
-    <div className="parent-container relative h-[100vh] ">
+    <div className="parent-container relative h-[100%] ">
    
         <button
           className="hidden md:flex absolute 

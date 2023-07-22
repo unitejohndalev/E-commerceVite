@@ -48,7 +48,7 @@ const BagFilteredList = (props) => {
             const { name, img, price, status, gender, id } = products;
 
             return (
-              <div key={id} className="mapProduct-container">
+              <div key={id} className="mapProduct-container ">
                 <div className="relative">
                   <div className="name-container ">
                     <p>{name}</p>
