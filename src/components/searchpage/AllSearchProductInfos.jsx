@@ -31,6 +31,9 @@ import "react-toastify/dist/ReactToastify.css";
 //import react icons
 import { PiBagThin, PiHeartThin } from "react-icons/pi";
 
+//import all search product comment component
+import AllSearchProductComments from "./AllSearchProductComments";
+
 //remove close button
 const CloseButton = ({ closeToast }) => (
   <i className="material-icons" onClick={closeToast}></i>
@@ -130,7 +133,7 @@ const AllSearchProductInfos = () => {
           <HiOutlineArrowLeft />
         </div>
       </div>
-      <div className="flex justify-center mb-[150px] lg:mb-[300px]">
+      <div className="flex justify-center lg:mb-[150px] ">
         <div className="h-[100%] mt-[150px] w-[90%] md:min-w-[768px] lg:max-w-[1024px] xl:max-w-[1240px] relative ">
           {description.map((producinfo) => {
             const { id, info, img1, img2, img3 } = producinfo;
@@ -245,6 +248,7 @@ const AllSearchProductInfos = () => {
           })}
         </div>
       </div>
+      <AllSearchProductComments/>
       <ToastContainer className="tcenter" closeButton={CloseButton} />
       <Footer />
     </div>
