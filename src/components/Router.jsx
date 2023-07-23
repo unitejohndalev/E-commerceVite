@@ -42,6 +42,7 @@ const FeatureProducts = lazy(() =>
 );
 const OffProducts = lazy(() => import("../pages/offproductpage/OffProducts"));
 const AboutUs = lazy(() => import("../pages/aboutuspage/AboutUs"));
+const ContactUs = lazy(() => import("../pages/contactuspage/ContactUsMain"))
 
 
 
@@ -86,6 +87,7 @@ const Router = () => {
           <Route path="/featureproducts" element={<FeatureProducts />} />
           <Route path="/offproducts" element={<OffProducts />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/contactus" element={<ContactUs/>}/>
           <Route path="*" element={<ErrorPage />} />
 
           <Route path="/login" element={<Login />} />
