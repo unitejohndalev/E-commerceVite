@@ -78,6 +78,7 @@ const Register = () => {
                 />
 
                 <TextField
+                  focused
                   type="date"
                   variant="outlined"
                   color="secondary"

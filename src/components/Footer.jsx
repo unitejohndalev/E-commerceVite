@@ -17,26 +17,26 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const [showShop, setShowShop] = useState(false);
   const showToggle = () => {
-    setShowShop(prev => ! prev);
-    setShowHelp(false)
-    setAboutUs(false)
+    setShowShop((prev) => !prev);
+    setShowHelp(false);
+    setAboutUs(false);
   };
-  const [aboutUs, setAboutUs] = useState(false)
+  const [aboutUs, setAboutUs] = useState(false);
   const aboutToggle = () => {
-    setAboutUs(prev => !prev)
-    setShowShop(false)
-    setShowHelp(false)
-  }
+    setAboutUs((prev) => !prev);
+    setShowShop(false);
+    setShowHelp(false);
+  };
 
-  const [showHelp, setShowHelp] = useState(false)
+  const [showHelp, setShowHelp] = useState(false);
   const helpToggle = () => {
-    setShowHelp(prev => !prev)
-    setShowShop(false)
-    setAboutUs(false)
-  }
+    setShowHelp((prev) => !prev);
+    setShowShop(false);
+    setAboutUs(false);
+  };
   return (
     // change footer background color
-    <footer className="bg-primary relative p-10 h-[60vh] lg:h-[50vh] mt-10">
+    <footer className="bg-primary relative p-10 h-[60vh] lg:h-[50vh] mt-10 font-montserrat">
       <div className=" lg:w-[100%] xl:w-[1234px] h-[25vh] m-auto flex justify-center -mt-8 ">
         <div
           className="w-[100%] flex flex-col justify-center lg:w-[100%] xl:w-[1234px] lg:flex-row relative lg:justify-between
@@ -65,29 +65,39 @@ const Footer = () => {
                 <p className="text-[1.3rem] font-medium">Shop</p>
                 <div className="flex flex-col gap-y-1 mt-2 absolute left-0 top-[30px]">
                   <div className="w-[50px]">
-                    <p className="font-medium text-[.8rem] text-white/60 hover:text-white">
-                      Hats
-                    </p>
+                    <Link to={"/hatproducts"}>
+                      <p className="font-medium text-[.8rem] text-white/60 hover:text-white">
+                        Hats
+                      </p>
+                    </Link>
                   </div>
                   <div className="w-[50px]  ">
-                    <p className="font-medium text-[.8rem] text-white/60 hover:text-white">
-                      Cloths
-                    </p>
+                    <Link to={"/clothingproducts"}>
+                      <p className="font-medium text-[.8rem] text-white/60 hover:text-white">
+                        Cloths
+                      </p>
+                    </Link>
                   </div>
                   <div className="w-[50px] ">
-                    <p className="font-medium text-[.8rem] text-white/60 hover:text-white">
-                      Shoes
-                    </p>
+                    <Link to={"/shoeproducts"}>
+                      <p className="font-medium text-[.8rem] text-white/60 hover:text-white">
+                        Shoes
+                      </p>
+                    </Link>
                   </div>
                   <div className="w-[50px]  ">
-                    <p className="font-medium text-[.8rem] text-white/60 hover:text-white">
-                      Bags
-                    </p>
+                    <Link to={"/bagproducts"}>
+                      <p className="font-medium text-[.8rem] text-white/60 hover:text-white">
+                        Bags
+                      </p>
+                    </Link>
                   </div>
                   <div className="w-[50px]">
-                    <p className="font-medium text-[.8rem] text-white/60 hover:text-white">
-                      Accessories
-                    </p>
+                    <Link to={"/accessoriesproducts"}>
+                      <p className="font-medium text-[.8rem] text-white/60 hover:text-white">
+                        Accessories
+                      </p>
+                    </Link>
                   </div>
                 </div>
                 <div className="hidden lg:flex absolute left-[270px] w-[300px]">
@@ -145,9 +155,11 @@ const Footer = () => {
                       </p>
                     </div>
                     <div className="w-[150px]">
-                      <p className="font-medium text-[.8rem] text-white/60 hover:text-white">
-                        Contact Us
-                      </p>
+                      <Link to={"/contactus"}>
+                        <p className="font-medium text-[.8rem] text-white/60 hover:text-white">
+                          Contact Us
+                        </p>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -163,21 +175,31 @@ const Footer = () => {
 
             {showShop && (
               <div className="w-[100%] absolute top-[40px] md:top-[30px] flex flex-col gap-y-1 z-20 bg-white rounded-sm mt-5 lg:hidden">
-                <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
-                  Hats
-                </div>
-                <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
-                  Cloths
-                </div>
-                <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
-                  Shoes
-                </div>
-                <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
-                  Bags
-                </div>
-                <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
-                  Accessories
-                </div>
+                <Link to={"/hatproducts"}>
+                  <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
+                    Hats
+                  </div>
+                </Link>
+                <Link to={"/clothingproducts"}>
+                  <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
+                    Cloths
+                  </div>
+                </Link>
+                <Link to={"/shoeproducts"}>
+                  <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
+                    Shoes
+                  </div>
+                </Link>
+                <Link to={"/bagproducts"}>
+                  <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
+                    Bags
+                  </div>
+                </Link>
+                <Link to={"/accessoriesproducts"}>
+                  <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
+                    Accessories
+                  </div>
+                </Link>
               </div>
             )}
           </div>
@@ -250,9 +272,11 @@ const Footer = () => {
               <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
                 Order Cancelation
               </div>
-              <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
-                Contact Us
-              </div>
+              <Link to={"/contactus"}>
+                <div className=" p-2 bg-white rounded-sm hover:ml-2 hover:bg-white/80 active:bg-white">
+                  Contact Us
+                </div>
+              </Link>
             </div>
           )}
         </div>
@@ -285,7 +309,7 @@ const Footer = () => {
               </div>
               <div className="">
                 <p className="font-extralight text-[.8rem] mt-9">
-                  PH &copy; 2023 ExpressShop. All rights reserved.
+                  PH &copy; 2023 Shoppy. All rights reserved.
                 </p>
               </div>
             </div>

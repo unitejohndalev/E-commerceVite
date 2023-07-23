@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaArrowCircleUp } from "react-icons/fa";
+import { PiArrowUp } from "react-icons/pi";
 
 import "../../styles/arrowUp.css"
 
@@ -46,11 +46,13 @@ const ArrowUp = () => {
     };
   }, [scrollDirection]);
   return (
-    <div className={`fixed w-[100%] h-[10vh] ${
-          scrollDirection === "down" ? "-bottom-24" : "bottom-0"
-        }   z-20 transition-all duration-500 !max-w-[100%]
-        !rounded-none`}>
-      <FaArrowCircleUp
+    <div
+      className={`fixed w-[100%] h-[10vh] ${
+        scrollDirection === "down" ? "-bottom-24" : "bottom-0"
+      }   z-20 transition-all duration-500 !max-w-[100%]
+        !rounded-none`}
+    >
+      <PiArrowUp
         className="scrollTop absolute right-5  "
         onClick={scrollTop}
         style={{ height: 40, display: showScroll ? "flex" : "none" }}

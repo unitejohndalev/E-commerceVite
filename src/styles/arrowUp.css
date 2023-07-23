@@ -20,3 +20,8 @@
     opacity: 0.5;
   }
 }
+
+/* style for toastify */
+.tcenter {
+      text-align: center;
+}

@@ -12,7 +12,7 @@ import MKBagData from "../data/MKBags.json";
 import HerschelBag from "../data/Herschel.json";
 
 //import accs daa
-import AccessoriesData from "../data/Accessories.json"
+import AccessoriesData from "../data/Accessories.json";
 
 //for passing data anywhere
 //make sure this component wrap everything in main.jsx in order for it to work -- imagine you talk like indian
@@ -117,13 +117,29 @@ const ProductProvider = ({ children }) => {
   //input function for search
   const handleChange = (event) => {
     setSearchProduct(event.target.value);
-    setShowBody(true);
+    setAdjustWidth(true)
+     setOpenNav(false);
+   
   };
 
   //clear input field when click img product
-  const clearInputField = () => {
-    searchProduct("")
-  }
+  const clearInputField = (event) => {
+    event.preventDefault();
+    setShowBody(true);
+    hideToggle();
+    
+  };
+
+  
+
+  
+
+  const handleKeypress = (e) => {
+    //it triggers by pressing the enter key
+    if (e.keyCode === 13) {
+      clearInputField();
+    }
+  };
 
   //use useRef for search body, when click outside it'll close
   //NOTE THIS IS REMOVE SINCE, ITS CAUSING THE APP TO HAVE SOME ERRORS
@@ -160,10 +176,18 @@ const ProductProvider = ({ children }) => {
 
   //mobile nav open and close state
   const [openNav, setOpenNav] = React.useState(false);
-  
+
   //toggle btn function for navlist
   const hideToggle = () => {
-   setOpenNav(false);
+    setOpenNav(false);
+  };
+
+  //adjust searchbar width when click state
+  const [adjustWidth, setAdjustWidth] = useState(false);
+
+  //toggle for adjust width
+  const adjustWidthToggle = () => {
+    setAdjustWidth((prev) => !prev);
   };
 
   //make product context the provider
@@ -193,6 +217,7 @@ const ProductProvider = ({ children }) => {
         searchProduct,
         setSearchProduct,
         handleChange,
+        handleKeypress,
         showBody,
         setShowBody,
         clearInputField,
@@ -205,6 +230,8 @@ const ProductProvider = ({ children }) => {
         hideToggle,
         openNav,
         setOpenNav,
+        adjustWidthToggle,
+        adjustWidth,
       }}
     >
       {children}

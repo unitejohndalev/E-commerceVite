@@ -1,10 +1,17 @@
+/* eslint-disable react/prop-types */
 import React, { useContext } from "react";
+
+//import css for toastify
+import "../../styles/arrowUp.css";
 
 //import useParams to get product id in url
 import { useNavigate, useParams } from "react-router-dom";
 
-//import product context to get hats data
+//import product context to get allmerge data
 import { ProductContext } from "../../contexts/ProductContext";
+
+//import favorite context to get addToFavorite function
+import { FavoriteContext } from "../../contexts/FavoriteContext";
 
 //import cart context for addtocart function
 import { CartContext } from "../../contexts/CartContext";
@@ -14,11 +21,27 @@ import { ProductDescriptionContext } from "../../contexts/ProductDescriptionCont
 
 import Footer from "../Footer";
 
-import {HiOutlineArrowLeft} from "react-icons/hi"
+import { HiOutlineArrowLeft } from "react-icons/hi";
+
+//import toastify react
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+//import react icons
+//import react icons
+import { PiBagThin, PiHeartThin } from "react-icons/pi";
+
+//remove close button
+const CloseButton = ({ closeToast }) => (
+  <i className="material-icons" onClick={closeToast}></i>
+);
 
 const AllSearchProductInfos = () => {
   //get all product merge from product context
   const { allProductsMerge } = useContext(ProductContext);
+
+  //get addToFavorite dunction from favorite context
+  const { addToFavorite } = useContext(FavoriteContext);
 
   //get addToCart function from cart context
   const { addToCart } = useContext(CartContext);
@@ -49,6 +72,45 @@ const AllSearchProductInfos = () => {
     allProductsSecondImgShow,
     allProductsThirdImgShow,
   } = useContext(ProductDescriptionContext);
+
+  //toast
+  const addToCartNotify = () => {
+    toast.success("Added to cart! Shop for more!", {
+      position: "top-center",
+      autoClose: 500,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      closeButton: CloseButton,
+      icon: <PiBagThin />,
+    });
+  };
+  const addedToCartAndNotify = () => {
+    addToCartNotify();
+    addToCart(allproducts, allproducts.id);
+  };
+
+  const addToFavoriteNotify = () => {
+    toast.success("Added to favorite! Shop for more!", {
+      position: "top-center",
+      autoClose: 500,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      closeButton: CloseButton,
+      icon: <PiHeartThin />,
+    });
+  };
+  const addeToFavoriteAndNotify = () => {
+    addToFavoriteNotify();
+    addToFavorite(allproducts, allproducts.id);
+  };
 
   return (
     <div className="relative h-[100vh]">
@@ -155,11 +217,15 @@ const AllSearchProductInfos = () => {
                       >
                         <button
                           className="w-[100%] bg-blue-400 text-white py-[10px] px-[10px] rounded-sm"
-                          onClick={() => addToCart(allproducts, allproducts.id)}
+                          onClick={() => addedToCartAndNotify()}
                         >
                           <p>Add to Cart</p>
                         </button>
-                        <button className="w-[100%] off-bg text-white py-[10px] px-[10px] rounded-sm">
+
+                        <button
+                          className="outli w-[100%] off-bg text-white py-[10px] px-[10px] rounded-sm"
+                          onClick={() => addeToFavoriteAndNotify()}
+                        >
                           <p>Add to Favorite</p>
                         </button>
                       </div>
@@ -167,7 +233,7 @@ const AllSearchProductInfos = () => {
                         className="w-[100%] mt-10 mb-10 md:w-[330px] md:absolute md:right-2 md:top-[320px]
                     lg:w-[368px] lg:mt-[100px] xl:w-[468px]"
                       >
-                        <p className="font-light lg:text-[1.2rem] text-justify">
+                        <p className="font-light lg:text-[1.2rem] text-justify ">
                           {info}
                         </p>
                       </div>
@@ -179,6 +245,7 @@ const AllSearchProductInfos = () => {
           })}
         </div>
       </div>
+      <ToastContainer className="tcenter" closeButton={CloseButton} />
       <Footer />
     </div>
   );

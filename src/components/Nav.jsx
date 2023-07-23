@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 
 //import react icons
-import { BiShoppingBag } from "react-icons/bi";
+import { PiBagThin, PiHeartThin } from "react-icons/pi";
 
 //import components
 import Login from "./Login";
@@ -15,6 +15,18 @@ import Logo from "./img/logo.png";
 
 //import cart context to get itemAmount function for cart button
 import { CartContext } from "../contexts/CartContext";
+
+import { FavoriteContext } from "../contexts/FavoriteContext";
+
+//import img for icons
+import hatsIcon from "./img/nobg_icons/hats.svg";
+import clothsIcon from "./img/nobg_icons/cloths.svg";
+import shoesIcon from "./img/nobg_icons/shoes.svg";
+import bagsIcon from "./img/nobg_icons/bags.svg";
+import accesIcon from "./img/nobg_icons/acces.svg";
+import featureIcon from "./img/nobg_icons/feature.svg";
+import offIcon from "./img/nobg_icons/off.svg";
+import aboutIcon from "./img/nobg_icons/about.svg";
 
 //import allsearchproductinfosmain lol ang haba
 import AllSearchProductInfosMain from "./searchpage/AllSearchProductInfosMain";
@@ -43,72 +55,57 @@ import {
 } from "@heroicons/react/24/outline";
 import { ProductContext } from "../contexts/ProductContext";
 
-//custom color
-const colors = {
-  blue: "bg-blue-50 text-blue-500",
-  orange: "bg-orange-50 text-orange-500",
-  green: "bg-green-50 text-green-500",
-  "blue-gray": "bg-blue-gray-50 text-blue-gray-500",
-  purple: "bg-purple-50 text-purple-500",
-  teal: "bg-teal-50 text-teal-500",
-  cyan: "bg-cyan-50 text-cyan-500",
-  pink: "bg-pink-50 text-pink-500",
-};
+//import react icons
+import { CiSearch } from "react-icons/ci";
 
 const navListMenuItems = [
   {
-    color: "teal",
-    icon: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f205124e-309a-4098-bdaa-7f5a24278ea7/dri-fit-club-kids-unstructured-metal-swoosh-cap-MfPJz0.png",
+    icon: hatsIcon,
     title: "Hats",
     link: "/hatproducts",
     description: "Your favorite hats, with brand new products every week.",
   },
   {
-    color: "purple",
-    icon: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/60b49213-cab7-491b-8c44-0d23309e9108/air-max-solo-mens-shoes-4SzqpT.png",
+    icon: shoesIcon,
+
     title: "Shoes",
     link: "/shoeproducts",
     description: "Your favorite shoes, with brand new products every week.",
   },
   {
-    color: "orange",
-    icon: "https://lp2.hm.com/hmgoepprod?set=source[/9a/ca/9acaa9b9b2d7b542777171f23c7733ee1dba1b28.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+    icon: clothsIcon,
     title: "Clothing",
     link: "/clothingproducts",
     description: "Your favorite clothes, with brand new products every week.",
   },
 
   {
-    color: "blue-gray",
-    icon: "https://michaelkors.scene7.com/is/image/MichaelKors/30S0GEZB2V-2618_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+    icon: bagsIcon,
     title: "Bags",
     link: "/bagproducts",
     description: "Your favorite bags, with brand new products every week.",
   },
   {
-    color: "green",
-    icon: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a2112797-fcec-477c-8d09-e2b214aed47f/victory-sunglasses-PP0tbC.png",
+    icon: accesIcon,
     title: "Accessories",
     link: "/accessoriesproducts",
-    description: "put any description here.",
+    description:
+      "Your favorite accessories, with brand new products every week.",
   },
   {
-    color: "cyan",
-    icon: "https://michaelkors.scene7.com/is/image/MichaelKors/32S3G7PC8J-1251_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
+    icon: featureIcon,
     title: "Feature Products",
     link: "/featureproducts",
     description: "Discover our most popular products.",
   },
   {
-    color: "pink",
-    icon: "https://lp2.hm.com/hmgoepprod?set=source[/c2/4a/c24a1071f460ace040df4209a01d57925c544b90.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+    icon: offIcon,
     title: "Off Products",
     link: "/offproducts",
     description: "Check out our discounted products.",
   },
   {
-    color: "blue",
-    icon: "https://clipart-library.com/images/kcKorp5xi.jpg",
+    icon: aboutIcon,
     title: "About us",
     link: "/aboutus",
     description: "Learn about our story and our mission statement.",
@@ -126,10 +123,10 @@ function NavListMenu() {
 
   //map navListMenuItems
   const renderItems = navListMenuItems.map(
-    ({ icon, title, description, color, link }, key) => (
+    ({ icon, title, description, link }, key) => (
       <Link to={link} key={key} className="" onClick={hideToggle}>
-        <MenuItem className="flex gap-3 rounded-sm ">
-          <div className={`rounded-sm  ${colors[color]}`}>
+        <MenuItem className="flex gap-3 rounded-sm relative shadow-sm">
+          <div className="rounded-sm hidden md:flex">
             <img
               src={icon}
               className="min-h-[10vh] max-w-[25vw] md:max-h-[25vh] md:max-w-[10vw] lg:max-h-[100px] lg:max-w-[90px]"
@@ -140,12 +137,18 @@ function NavListMenu() {
             <Typography
               variant="h6"
               color="blue-gray"
-              className="flex items-center text-sm"
+              className="flex items-center text-sm "
             >
-              {title}
+              <span className="font-bold md:font-semibold font-montserrat">
+                {title}
+              </span>
             </Typography>
-            <Typography variant="small" color="gray" className="font-normal">
-              {description}
+            <Typography
+              variant="small"
+              color="gray"
+              className="font-normal mt-1"
+            >
+              <span className="font-montserrat"> {description}</span>
             </Typography>
           </div>
         </MenuItem>
@@ -163,15 +166,14 @@ function NavListMenu() {
         allowHover={true}
         className=""
       >
-        <MenuHandler className="xl:ml-20 ">
+        <MenuHandler className="ml-5">
           <Typography as="div" variant="small" className="font-normal ">
             <ListItem
               className="flex items-center gap-2 py-2 pr-4 !rounded-sm"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              <Square3Stack3DIcon className="h-[18px] w-[18px]" />
-              Choices
+             <p className="font-montserrat font-medium">Shop now</p>
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -333,6 +335,11 @@ const Nav = () => {
     });
   });
 
+  const { favorite } = useContext(FavoriteContext);
+
+const { adjustWidthToggle, adjustWidth } =
+  useContext(ProductContext);
+
   return (
     <div className="flex justify-center relative">
       <Navbar
@@ -345,29 +352,40 @@ const Nav = () => {
           <Typography
             href="#"
             variant="h6"
-            className="mr-4 cursor-pointer py-1.5 lg:ml-10 xl:ml-20"
+            className="mr-4 cursor-pointer py-1.5 lg:mr-10 xl:mr-15"
           >
             <Link to={"/"}>
               <div className=" grid-cols-3 flex items-center justify-between ">
                 <img className="w-auto h-14 " src={Logo} alt="Logo" />
                 <span className="hidden md:flex font-primary py-4 text-lg text-gray-900 dark:text-white justify">
-                  Shoppy
+                  <p className="text-[2rem] font-montserrat font-light">
+                    Shoppy
+                  </p>
                 </span>
               </div>
             </Link>
           </Typography>
 
-          <div className="hidden lg:block">
-            <NavList />
-          </div>
+          <>
+            <div
+              className={
+                adjustWidth === true
+                  ? "absolute cursor-pointer w-[45%] md:w-[50%] right-[110px]  md:right-[160px] lg:w-[40%] lg:right-[370px] xl:right-[580px] transition-all"
+                  : "absolute cursor-pointer w-[45%] md:w-[20%] right-[110px] md:right-[160px] lg:right-[370px] xl:right-[580px] transition-all"
+              }
+            >
+              {/* search bar */}
 
-          <div className="cursor-pointer w-[40%] md:w-[50%] md:ml-[50px] lg:ml-0 lg:w-[20%] xl:ml-[30px]">
-            {/* search bar */}
-            <AllSearchProductInfosMain />
-          </div>
+              <AllSearchProductInfosMain />
+            </div>
+            <div className="hidden lg:block absolute lg:right-[130px] xl:right-[320px]">
+              <NavList />
+            </div>
+          </>
+
           <Link
             to={"/yourcart"}
-            className="absolute right-[60px] lg:hidden flex justify-center "
+            className="absolute right-[60px] md:right-[100px] xl:right-[80px] flex justify-center "
           >
             {itemAmount > 0 ? (
               <div
@@ -381,16 +399,32 @@ const Nav = () => {
               <div></div>
             )}
             <div className="text-[2rem]">
-              <BiShoppingBag />
+              <PiBagThin />
             </div>
           </Link>
+          {/* fav icon */}
+          <Link
+            to={"/allfavorite"}
+            className="absolute right-[50px] xl:right-[30px] hidden md:flex justify-center "
+          >
+            {favorite.length > 0 ? (
+              <div
+                className="bg-red-800 absolute right-0 top-1 text-[12px]
+            w-[10px] h-[10px] text-white rounded-full flex justify-center
+            items-center"
+              ></div>
+            ) : (
+              <div></div>
+            )}
+            <div className="text-[2rem]">
+              <PiHeartThin />
+            </div>
+          </Link>
+
           {/*Log in Toggle Button */}
 
           <div className="hidden gap-2 lg:flex justify-center items-center ">
-            <div
-              ref={LogInRef}
-              className="absolute lg:right-[200px] xl:right-[350px]"
-            >
+            <div ref={LogInRef} className="absolute lg:right-[150px]">
               <Button
                 variant="text"
                 size="sm"
@@ -411,7 +445,7 @@ const Nav = () => {
 
             {/*Register Toggle Button */}
 
-            <div className="hidden gap-2 lg:flex justify-center items-center ">
+            {/* <div className="hidden gap-2 lg:flex justify-center items-center ">
               <div
                 ref={registerRef}
                 className="absolute lg:right-[200px] xl:right-[250px] !rounded-sm"
@@ -433,27 +467,7 @@ const Nav = () => {
                   )}
                 </div>
               </div>
-
-              <Link
-                to={"/yourcart"}
-                className="absolute lg:right-[20px] xl:right-[100px] flex justify-center "
-              >
-                {itemAmount > 0 ? (
-                  <div
-                    className="bg-red-500 absolute -right-2 top-0 text-[12px]
-            w-[18px] h-[18px] text-white rounded-full flex justify-center
-            items-center"
-                  >
-                    {itemAmount}
-                  </div>
-                ) : (
-                  <div></div>
-                )}
-                <div className="text-[2rem]">
-                  <BiShoppingBag />
-                </div>
-              </Link>
-            </div>
+            </div> */}
           </div>
           <IconButton
             variant="text"
@@ -495,7 +509,7 @@ const Nav = () => {
               </div>
             </div>
 
-            <div className=" w-[100%]">
+            {/* <div className=" w-[100%]">
               <div ref={regMobileRef}>
                 <Button
                   onClick={toggleMobileReg}
@@ -506,6 +520,7 @@ const Nav = () => {
                 >
                   Register
                 </Button>
+
                 <div className="relative">
                   {regMobileShow && (
                     <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid ">
@@ -516,7 +531,7 @@ const Nav = () => {
                   )}
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </Collapse>
       </Navbar>
