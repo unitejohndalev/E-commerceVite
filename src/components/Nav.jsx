@@ -139,16 +139,16 @@ function NavListMenu() {
               color="blue-gray"
               className="flex items-center text-sm "
             >
-              <p className="font-bold md:font-semibold font-montserrat">
+              <span className="font-bold md:font-semibold font-montserrat">
                 {title}
-              </p>
+              </span>
             </Typography>
             <Typography
               variant="small"
               color="gray"
               className="font-normal mt-1"
             >
-              <p className="font-montserrat"> {description}</p>
+              <span className="font-montserrat"> {description}</span>
             </Typography>
           </div>
         </MenuItem>
