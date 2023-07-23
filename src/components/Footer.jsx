@@ -36,7 +36,7 @@ const Footer = () => {
   }
   return (
     // change footer background color
-    <footer className="bg-primary relative p-10 h-[60vh] lg:h-[50vh] mt-10">
+    <footer className="bg-primary relative p-10 h-[60vh] lg:h-[50vh] mt-10 font-montserrat">
       <div className=" lg:w-[100%] xl:w-[1234px] h-[25vh] m-auto flex justify-center -mt-8 ">
         <div
           className="w-[100%] flex flex-col justify-center lg:w-[100%] xl:w-[1234px] lg:flex-row relative lg:justify-between

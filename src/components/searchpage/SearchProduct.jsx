@@ -4,30 +4,34 @@ import { ProductContext } from "../../contexts/ProductContext";
 import { Link } from "react-router-dom";
 
 //import react icons
-import {  IoMdClose } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 
 const SearchProduct = () => {
-  const { allProductsMerge, searchProduct, setShowBody, setSearchProduct } =
-    useContext(ProductContext);
+  const {
+    allProductsMerge,
+    searchProduct,
+    setShowBody,
+    setSearchProduct,
+    adjustWidthToggle,
+  } = useContext(ProductContext);
 
-    const clearInputShowBodyToggle = () => {
-      setShowBody(false);
-      setSearchProduct("")
-      
-    }
+  const clearInputShowBodyToggle = () => {
+    setShowBody(false);
+    setSearchProduct("");
+    adjustWidthToggle();
+  };
 
   return (
     <div className="relative ">
-      <div className="flex flex-col items-center absolute top-[45px] bg-white w-[100%]">
-        <div className="absolute text-[1.5rem] right-2 md:right-[50px] top-5 ">
+      <div className="flex flex-col items-center absolute top-[45px] bg-white w-[100%] h-[100vh]">
+        <div className="absolute text-[1.5rem] right-2 md:right-[50px] top-2 ">
           <button onClick={() => setShowBody(false)}>
-     
             <IoMdClose />
           </button>
         </div>
-        <div className="mt-[50px]  ">
+        <div className="mt-[30px]  ">
           <div
-            className=" flex flex-wrap mt-2 justify-center gap-x-2 md:gap-x-[20px] w-[100%] h-[60vh] lg:h-[50vh]
+            className=" flex flex-wrap mt-2 justify-center gap-x-2 md:gap-x-[20px] w-[100%] h-[90vh] pb-[100px]
              overflow-auto
         "
           >

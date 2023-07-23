@@ -35,7 +35,7 @@ const FavoriteChild = () => {
       {favorite.length === 0 ? (
         <div className=" mt-[100px] flex justify-center items-center h-[50vh] relative ">
      
-          <p className="text-[2rem] font-medium">Add your favorite products now!</p>
+          <p className="text-[2rem] font-medium font-montserrat">Add your favorite products now!</p>
         </div>
       ) : (
         <div className="product-container">
@@ -49,24 +49,24 @@ const FavoriteChild = () => {
                       <p>{name}</p>
                     </div>
 
-                    <div
-                      className="absolute top-8 left-2 text-red-800  text-[1.1rem] md:text-[1.5rem] cursor-pointer"
-                      onClick={() => removeFromFavorite(id)}
-                    >
-                      <FaHeart />
-                    </div>
                     <Link to={`/allproductsearch/${id}`}>
                       <img src={img} alt="" className="img-style" />
                     </Link>
                   </div>
                   <div className="price-container">
-                    <p className=" ml-2">{`$ ${parseFloat(price).toFixed(
-                      2
-                    )}`}</p>
+                    <p className=" ml-2 font-light absolute bottom-5">{`$ ${parseFloat(
+                      price
+                    ).toFixed(2)}`}</p>
                   </div>
-                  <div className="gender-container">
+                  <div className="gender-container absolute bottom-1">
                     <p className="p-style">{gender}</p>
                   </div>
+                    <div
+                      className="absolute bottom-3 right-2 text-red-800  text-[1.1rem] md:text-[1.5rem] cursor-pointer"
+                      onClick={() => removeFromFavorite(id)}
+                    >
+                      <FaHeart />
+                    </div>
                 </div>
               );
             })}

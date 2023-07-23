@@ -111,29 +111,35 @@ const ProductProvider = ({ children }) => {
   //state for search product
   const [searchProduct, setSearchProduct] = useState("");
 
-
-
   //state to hide search products body when not using search bar
   const [showBody, setShowBody] = useState(false);
 
   //input function for search
   const handleChange = (event) => {
     setSearchProduct(event.target.value);
+    setAdjustWidth(true)
+     setOpenNav(false);
+   
   };
 
   //clear input field when click img product
   const clearInputField = (event) => {
     event.preventDefault();
     setShowBody(true);
-
+    hideToggle();
+    
   };
 
-    const handleKeypress = (e) => {
-      //it triggers by pressing the enter key
-      if (e.keyCode === 13) {
-        clearInputField();
-      }
-    };
+  
+
+  
+
+  const handleKeypress = (e) => {
+    //it triggers by pressing the enter key
+    if (e.keyCode === 13) {
+      clearInputField();
+    }
+  };
 
   //use useRef for search body, when click outside it'll close
   //NOTE THIS IS REMOVE SINCE, ITS CAUSING THE APP TO HAVE SOME ERRORS
@@ -176,6 +182,14 @@ const ProductProvider = ({ children }) => {
     setOpenNav(false);
   };
 
+  //adjust searchbar width when click state
+  const [adjustWidth, setAdjustWidth] = useState(false);
+
+  //toggle for adjust width
+  const adjustWidthToggle = () => {
+    setAdjustWidth((prev) => !prev);
+  };
+
   //make product context the provider
   //set the value to the created DATA states
   //then pass it to children
@@ -216,6 +230,8 @@ const ProductProvider = ({ children }) => {
         hideToggle,
         openNav,
         setOpenNav,
+        adjustWidthToggle,
+        adjustWidth,
       }}
     >
       {children}

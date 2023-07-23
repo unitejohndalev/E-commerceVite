@@ -233,7 +233,7 @@ const AllSearchProductInfos = () => {
                         className="w-[100%] mt-10 mb-10 md:w-[330px] md:absolute md:right-2 md:top-[320px]
                     lg:w-[368px] lg:mt-[100px] xl:w-[468px]"
                       >
-                        <p className="font-light lg:text-[1.2rem] text-justify">
+                        <p className="font-light lg:text-[1.2rem] text-justify ">
                           {info}
                         </p>
                       </div>

@@ -47,7 +47,7 @@ const YourCartContext = () => {
     removeAllToggleBtn()
   }
   return (
-    <div className="h-[100%] ">
+    <div className="h-[100%] font-montserrat">
       {/* navigate back button */}
       <div>
         <button

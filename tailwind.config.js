@@ -6,6 +6,8 @@ module.exports = withMT({
   theme: {
     fontFamily: {
       primary: "Poppins",
+      montserrat: ["Montserrat"],
+     
     },
     container: {
       padding: {

@@ -55,6 +55,9 @@ import {
 } from "@heroicons/react/24/outline";
 import { ProductContext } from "../contexts/ProductContext";
 
+//import react icons
+import { CiSearch } from "react-icons/ci";
+
 const navListMenuItems = [
   {
     icon: hatsIcon,
@@ -86,7 +89,8 @@ const navListMenuItems = [
     icon: accesIcon,
     title: "Accessories",
     link: "/accessoriesproducts",
-    description: "Your favorite accessories, with brand new products every week.",
+    description:
+      "Your favorite accessories, with brand new products every week.",
   },
   {
     icon: featureIcon,
@@ -121,8 +125,8 @@ function NavListMenu() {
   const renderItems = navListMenuItems.map(
     ({ icon, title, description, link }, key) => (
       <Link to={link} key={key} className="" onClick={hideToggle}>
-        <MenuItem className="flex gap-3 rounded-sm relative">
-          <div className="rounded-sm">
+        <MenuItem className="flex gap-3 rounded-sm relative shadow-sm">
+          <div className="rounded-sm hidden md:flex">
             <img
               src={icon}
               className="min-h-[10vh] max-w-[25vw] md:max-h-[25vh] md:max-w-[10vw] lg:max-h-[100px] lg:max-w-[90px]"
@@ -135,10 +139,16 @@ function NavListMenu() {
               color="blue-gray"
               className="flex items-center text-sm "
             >
-              {title}
+              <p className="font-bold md:font-semibold font-montserrat">
+                {title}
+              </p>
             </Typography>
-            <Typography variant="small" color="gray" className="font-normal ">
-              {description}
+            <Typography
+              variant="small"
+              color="gray"
+              className="font-normal mt-1"
+            >
+              <p className="font-montserrat"> {description}</p>
             </Typography>
           </div>
         </MenuItem>
@@ -156,15 +166,14 @@ function NavListMenu() {
         allowHover={true}
         className=""
       >
-        <MenuHandler className="xl:ml-20 ">
+        <MenuHandler className="ml-5">
           <Typography as="div" variant="small" className="font-normal ">
             <ListItem
               className="flex items-center gap-2 py-2 pr-4 !rounded-sm"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              <Square3Stack3DIcon className="h-[18px] w-[18px]" />
-              Shop now
+             <p className="font-montserrat font-medium">Shop now</p>
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -328,6 +337,9 @@ const Nav = () => {
 
   const { favorite } = useContext(FavoriteContext);
 
+const { adjustWidthToggle, adjustWidth } =
+  useContext(ProductContext);
+
   return (
     <div className="flex justify-center relative">
       <Navbar
@@ -340,26 +352,37 @@ const Nav = () => {
           <Typography
             href="#"
             variant="h6"
-            className="mr-4 cursor-pointer py-1.5 lg:ml-10 xl:ml-20"
+            className="mr-4 cursor-pointer py-1.5 lg:mr-10 xl:mr-15"
           >
             <Link to={"/"}>
               <div className=" grid-cols-3 flex items-center justify-between ">
                 <img className="w-auto h-14 " src={Logo} alt="Logo" />
                 <span className="hidden md:flex font-primary py-4 text-lg text-gray-900 dark:text-white justify">
-                  Shoppy
+                  <p className="text-[2rem] font-montserrat font-light">
+                    Shoppy
+                  </p>
                 </span>
               </div>
             </Link>
           </Typography>
 
-          <div className="hidden lg:block">
-            <NavList />
-          </div>
+          <>
+            <div
+              className={
+                adjustWidth === true
+                  ? "absolute cursor-pointer w-[45%] md:w-[50%] right-[110px]  md:right-[160px] lg:w-[40%] lg:right-[370px] xl:right-[580px] transition-all"
+                  : "absolute cursor-pointer w-[45%] md:w-[20%] right-[110px] md:right-[160px] lg:right-[370px] xl:right-[580px] transition-all"
+              }
+            >
+              {/* search bar */}
 
-          <div className="cursor-pointer w-[40%] md:w-[50%] md:ml-[50px] lg:ml-0 lg:w-[20%] xl:ml-[30px]">
-            {/* search bar */}
-            <AllSearchProductInfosMain />
-          </div>
+              <AllSearchProductInfosMain />
+            </div>
+            <div className="hidden lg:block absolute lg:right-[130px] xl:right-[320px]">
+              <NavList />
+            </div>
+          </>
+
           <Link
             to={"/yourcart"}
             className="absolute right-[60px] md:right-[100px] xl:right-[80px] flex justify-center "
@@ -401,10 +424,7 @@ const Nav = () => {
           {/*Log in Toggle Button */}
 
           <div className="hidden gap-2 lg:flex justify-center items-center ">
-            <div
-              ref={LogInRef}
-              className="absolute lg:right-[200px] xl:right-[350px]"
-            >
+            <div ref={LogInRef} className="absolute lg:right-[150px]">
               <Button
                 variant="text"
                 size="sm"
@@ -425,7 +445,7 @@ const Nav = () => {
 
             {/*Register Toggle Button */}
 
-            <div className="hidden gap-2 lg:flex justify-center items-center ">
+            {/* <div className="hidden gap-2 lg:flex justify-center items-center ">
               <div
                 ref={registerRef}
                 className="absolute lg:right-[200px] xl:right-[250px] !rounded-sm"
@@ -447,7 +467,7 @@ const Nav = () => {
                   )}
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <IconButton
             variant="text"
@@ -489,7 +509,7 @@ const Nav = () => {
               </div>
             </div>
 
-            <div className=" w-[100%]">
+            {/* <div className=" w-[100%]">
               <div ref={regMobileRef}>
                 <Button
                   onClick={toggleMobileReg}
@@ -511,7 +531,7 @@ const Nav = () => {
                   )}
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </Collapse>
       </Navbar>
