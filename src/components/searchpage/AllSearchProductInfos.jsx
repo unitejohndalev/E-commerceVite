@@ -19,7 +19,7 @@ import { CartContext } from "../../contexts/CartContext";
 //import product description context
 import { ProductDescriptionContext } from "../../contexts/ProductDescriptionContext";
 
-import Footer from "../Footer";
+
 
 import { HiOutlineArrowLeft } from "react-icons/hi";
 
@@ -250,7 +250,7 @@ const AllSearchProductInfos = () => {
       </div>
       <AllSearchProductComments/>
       <ToastContainer className="tcenter" closeButton={CloseButton} />
-      <Footer />
+ 
     </div>
   );
 };
