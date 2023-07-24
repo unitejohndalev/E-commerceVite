@@ -83,7 +83,7 @@ const AllSearchProductComments = () => {
                 label="Message"
                 className="!rounded-sm w-[100%] h-[100px] mb-2
                 placeholder:text-[1.2rem]  pl-5 outline-none text-[1.2rem]
-                resize-none lg:w-[600px] lg:h-[200px]
+                resize-none lg:w-[600px] lg:h-[200px] pt-2
                 "
                 name="comment"
                 placeholder="comment"
