@@ -6,9 +6,9 @@ import Footer from "../Footer";
 const AllSearchProductSumbitComment = ({ items }) => {
   return (
     <div className="h-[100%] w-[100%] mt-10 ">
-      <div className="flex justify-center w-[100%]">
+      <div className="flex justify-center w-[100%] h-[50vh]">
         <div className="w-[100%] lg:w-[1024px] xl:w-[1234px] flex justify-center border-t-2 border-black/60">
-          <div className="w-[95%]  lg:flex lg:flex-wrap lg:justify-evenly xl:w-[100%] xl:justify-between lg:gap-x-5 ">
+          <div className="w-[95%] lg:flex lg:flex-wrap lg:justify-evenly xl:w-[100%] xl:justify-between lg:gap-x-5 ">
             <div className="w-[100%] mt-2 ml-2 lg:ml-0 mb-5 xl:ml-0">
               <p className=" text-[1.2rem] font-semibold lg:text-[1.5rem]">
                 Reviews
