@@ -17,8 +17,6 @@ import { CartContext } from "../../contexts/CartContext";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-//import css for toastify
-import "../../styles/arrowUp.css";
 
 //remove close button
 const CloseButton = ({ closeToast }) => (
