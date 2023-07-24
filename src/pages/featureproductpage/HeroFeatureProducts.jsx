@@ -20,7 +20,7 @@ const HeroFeatureProducts = () => {
                   <div className="textHero-container">
                     <div className="secondTextHero-container ">
                       <p>New styles just in!</p>
-                      <h1 className="text-[2rem] font-medium">
+                      <h1 className="text-[1.5rem] md:text-[2rem] font-medium">
                         ADD your best sellers!
                       </h1>
                       <p className="hidden md:flex">Shop your fashion favorites today!</p>

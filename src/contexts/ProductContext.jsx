@@ -110,13 +110,15 @@ const ProductProvider = ({ children }) => {
 
   //state for search product
   const [searchProduct, setSearchProduct] = useState("");
+    const ref = useRef(null);
 
   //state to hide search products body when not using search bar
   const [showBody, setShowBody] = useState(false);
 
   //input function for search
   const handleChange = (event) => {
-    setSearchProduct(event.target.value);
+        event.preventDefault();
+    setSearchProduct(ref.current.value);
     setAdjustWidth(true)
      setOpenNav(false);
    
@@ -232,6 +234,7 @@ const ProductProvider = ({ children }) => {
         setOpenNav,
         adjustWidthToggle,
         adjustWidth,
+        ref
       }}
     >
       {children}
