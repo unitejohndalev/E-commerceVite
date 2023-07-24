@@ -5,8 +5,8 @@ import Footer from "../Footer";
 // eslint-disable-next-line no-unused-vars
 const AllSearchProductSumbitComment = ({ items }) => {
   return (
-    <div className="h-[100%] w-[100%] mt-10 ">
-      <div className="flex justify-center w-[100%] h-[50vh]">
+    <div className="w-[100%] mt-10 ">
+      <div className="flex justify-center w-[100%] ">
         <div className="w-[100%] lg:w-[1024px] xl:w-[1234px] flex justify-center border-t-2 border-black/60">
           <div className="w-[95%] lg:flex lg:flex-wrap lg:justify-evenly xl:w-[100%] xl:justify-between lg:gap-x-5 ">
             <div className="w-[100%] mt-2 ml-2 lg:ml-0 mb-5 xl:ml-0">
@@ -20,7 +20,7 @@ const AllSearchProductSumbitComment = ({ items }) => {
               return (
                 <div
                   key={id}
-                  className="rounded-sm mb-5 shadow-md w-[100%] lg:w-[400px] xl:w-[390px]"
+                  className="rounded-sm mb-5 shadow-md w-[100%] lg:w-[400px] xl:w-[390px] relative"
                 >
                   <div className="ml-1">
                     {[...Array(5)].map((star, index) => {
@@ -43,7 +43,7 @@ const AllSearchProductSumbitComment = ({ items }) => {
                   <div className="">
                     <p className="text-black/50 mb-3 ml-3">@ {userName}</p>
                   </div>
-                  <div className="w-[100%] text-[.9rem] ml-3 pb-2">
+                  <div className="w-[100%] h-[100%] text-[.9rem] pl-3 pb-2 ">
                     <p>{userComment}</p>
                   </div>
                 </div>
