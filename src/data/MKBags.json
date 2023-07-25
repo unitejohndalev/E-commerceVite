@@ -24,6 +24,7 @@
       "price": "153.43",
       "color": "Brown and Beige",
       "gender": "Women's Bag",
+      "video3": "https://static.nike.com/a/videos/q_90/18a61723-d95e-401d-aa44-c28e7c0e15a7/video.mov",
       "img": "https://michaelkors.scene7.com/is/image/MichaelKors/30S0GEZB2V-2618_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
       "status": "Best Seller",
       "bestSeller": true,
@@ -143,24 +144,6 @@
           "img2": "hhttps://michaelkors.scene7.com/is/image/MichaelKors/32F7SGNM8L-0650_4?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90"
         }
       ]
-    },
-        {
-          "id": 143,
-          "name": "Jet Set Medium Logo Crossbody Bag",
-          "price": "198.00",
-          "color": "Pink",
-          "gender": "Women's Bag",
-          "img": "https://michaelkors.scene7.com/is/image/MichaelKors/32F7SGNM8L-0650_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
-          "bestSeller": false,
-          "status": "Just In",
-          "description": [
-            {
-              "id": 17,
-              "info": "The Jet Set crossbody bag is the perfect balance between understated and luxe, with a lightly structured yet compact design that’s rendered in pebbled leather. Finished with chain-link accents and an oversized tassel, this everyday favorite is an easy way to elevate any outfit.",
-              "img1": "https://michaelkors.scene7.com/is/image/MichaelKors/32F7SGNM8L-0650_2?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
-              "img2": "hhttps://michaelkors.scene7.com/is/image/MichaelKors/32F7SGNM8L-0650_4?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90"
-            }
-          ]
-        }
+    }
   ]
 }

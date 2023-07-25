@@ -458,28 +458,7 @@
         }
       ],
       "img": "https://herschel.com/content/dam/herschel/products/10796/10796-00001-OS_01.jpg.sthumbnails.2000.2500.webp"
-    },
-        {
-          "id": 143,
-          "name": "Rhea Medium Color-Block Logo Backpack",
-          "price": "513.23",
-          "bestSeller": false,
-          "status": "Just In",
-          "offprice": "505.29",
-          "gender": "Unisex",
-       
-          "description": [
-            {
-              "id": 1,
-              "info": "Laid-back yet luxe, our Rhea backpack redefines big-city accessorizing. We love the combination of color-blocked logo print twill and polished hardware. With its multiple zipper pockets and delicate shoulder straps, it’s a stylish update to the enduring design.",
-              "img1": "https://michaelkors.scene7.com/is/image/MichaelKors/30S0GEZB2V-0230_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
-              "img2": "https://michaelkors.scene7.com/is/image/MichaelKors/30S0GEZB2V-0230_2?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
-              "img3": "https://michaelkors.scene7.com/is/image/MichaelKors/30S0GEZB2V-0230_3?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90"
-             
-            }
-          ],
-          "img": "https://michaelkors.scene7.com/is/image/MichaelKors/30S0GEZB2V-0230_1?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90"
-        }
+    }
   
   ]
 }
