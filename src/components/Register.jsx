@@ -111,7 +111,6 @@ const Register = () => {
               />
             </Stack>
 
-<<<<<<< HEAD
               <div className="flex-col flex items-center justify-center  lg:gap-2 py-4">
                 <Button variant="outlined" color="pink" type="submit">
                   Register
@@ -119,18 +118,17 @@ const Register = () => {
               </div>
             </form>
             <p className=" text-black text-center text-xs lg:text-sm gap-3 lg:mt-6 mt-1">
-              {" "}
+       
               Already have an account?
               <span className="underline">
                 <Link to="/login"> Login here.</Link>
               </span>
             </p>
           </div>
-=======
             <div className="flex-col flex items-center justify-center  lg:gap-2 py-4">
               <Button type="submit">Register</Button>
             </div>
-          </form>
+      
           <p className=" text-black text-center text-xs lg:text-sm gap-3 lg:mt-6 mt-1">
             Already have an account?
             <span className="underline">
@@ -138,8 +136,6 @@ const Register = () => {
             </span>
           </p>
         </div>
->>>>>>> f948b75e0e200d5d405d81b8bc30f37959ce0fce
-
         <div className="w-full lg:w-[1/2] lg:mb-12 md:mb-0 max-w-3xl flex flex-col justify-center bg-imageReg bg-no-repeat bg-cover bg-center h-[250px] lg:h-[550px] ">
           <h1 className=" text-black text-center  text-2xl lg:text-4xl font-medium">
             Welcome to Shoppy!
@@ -148,7 +144,7 @@ const Register = () => {
             Be a member and receive rewards!
           </p>
         </div>
-      </div>
+
     </React.Fragment>
   );
 };

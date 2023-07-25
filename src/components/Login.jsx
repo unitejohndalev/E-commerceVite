@@ -128,60 +128,6 @@ const Login = () => {
               />
             </Stack>
 
-<<<<<<< HEAD
-                        color: "black",
-                      }}
-                    />
-                  </div>
-                </Link>
-              </div>
-
-              <Stack
-                spacing={1}
-                direction="column"
-                sx={{ marginBottom: 4, ml: 8 }}
-              >
-                <TextField
-                  label="Enter your email"
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  variant="outlined"
-                  color="secondary"
-                  type="email"
-                  size="small"
-                  sx={{ minWidth: "50%", maxWidth: "80%" }}
-                  value={email}
-                  // onError={errorEmail}
-                />
-                <TextField
-                  label="Enter your password"
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                  variant="outlined"
-                  color="secondary"
-                  type="password"
-                  size="small"
-                  value={password}
-                  error={errorPassword}
-                  sx={{ minWidth: "20%", maxWidth: "80%" }}
-                />
-              </Stack>
-
-              {/*Login Button */}
-              <div className="flex-col flex items-center justify-center  lg:gap-2 py-4">
-                <Button className="rounded-full md" type="submit">
-                  Login
-                </Button>
-              </div>
-            </form>
-            <p className=" text-black text-center text-xs gap-3 lg:mt-6 mt-1">
-              Need an account?
-              <span className="underline">
-                <Link to="/register"> Register here.</Link>
-              </span>
-            </p>
-          </div>
-=======
             {/*Login Button */}
             <div className="flex-col flex items-center justify-center  lg:gap-2 py-4">
               <Button className="rounded-full md" type="submit">
@@ -195,7 +141,6 @@ const Login = () => {
               <Link to="/register"> Register here.</Link>
             </span>
           </p>
->>>>>>> f948b75e0e200d5d405d81b8bc30f37959ce0fce
         </div>
       </div>
     </React.Fragment>

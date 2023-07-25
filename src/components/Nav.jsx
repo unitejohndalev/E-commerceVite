@@ -260,23 +260,11 @@ const Nav = () => {
 
   //login handle side effects for desktop
   useEffect(() => {
-<<<<<<< HEAD
-    document.addEventListener(
-      "mousedown",
-      (e) => {
-        if (!LogInRef.current.contains(e.target)) {
-          setLogInShow(false);
-        }
-      },
-      []
-    );
-=======
     document.removeEventListener("mousedown", (e) => {
       if (!LogInRef.current.contains(e.target)) {
         setLogInShow(false);
       }
     });
->>>>>>> f948b75e0e200d5d405d81b8bc30f37959ce0fce
   });
 
   //login state for mobile
@@ -299,61 +287,6 @@ const Nav = () => {
     });
   });
 
-<<<<<<< HEAD
-  {
-    /*Register Toggle */
-  }
-
-  //reg state for desktop
-  const [regShow, setRegShow] = useState();
-
-  //button function for desktop
-  const toggleReg = () => {
-    setRegShow((prevRegShow) => !prevRegShow);
-  };
-
-  //Reg ref for desktop
-  let registerRef = useRef();
-
-  //Reg handle side effects for desktop
-  useEffect(() => {
-    document.removeEventListener(
-      "mousedown",
-      (e) => {
-        if (!registerRef.current.contains(e.target)) {
-          setRegShow(false);
-        }
-      },
-      []
-    );
-  });
-
-  //Reg state for mobile
-  const [regMobileShow, setRegMobileShow] = useState();
-
-  //button function for mobile
-  const toggleMobileReg = () => {
-    setRegMobileShow((prevRegShow) => !prevRegShow);
-  };
-
-  //LogIn ref for mobile
-  let regMobileRef = useRef();
-
-  //login handle side effects for mobile
-  useEffect(() => {
-    document.removeEventListener(
-      "mousedown",
-      (e) => {
-        if (!regMobileRef.current.contains(e.target)) {
-          setRegMobileShow(false);
-        }
-      },
-      []
-    );
-  });
-
-=======
->>>>>>> f948b75e0e200d5d405d81b8bc30f37959ce0fce
   const { favorite } = useContext(FavoriteContext);
 
   const { adjustWidthToggle, adjustWidth } = useContext(ProductContext);
