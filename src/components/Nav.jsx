@@ -3,10 +3,6 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 //import react icons
 import { PiBagThin, PiHeartThin } from "react-icons/pi";
 
-//import components
-import Login from "./Login";
-import Register from "./Register";
-
 //import link
 import { Link } from "react-router-dom";
 
@@ -51,12 +47,12 @@ import {
   ChevronDownIcon,
   Bars3Icon,
   XMarkIcon,
-  Square3Stack3DIcon,
 } from "@heroicons/react/24/outline";
 import { ProductContext } from "../contexts/ProductContext";
 
 //import react icons
-import { CiSearch } from "react-icons/ci";
+
+import ToggleLog from "./ToggleLog";
 
 const navListMenuItems = [
   {
@@ -173,7 +169,7 @@ function NavListMenu() {
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-             <p className="font-montserrat font-medium">Shop now</p>
+              <p className="font-montserrat font-medium">Shop now</p>
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -264,6 +260,7 @@ const Nav = () => {
 
   //login handle side effects for desktop
   useEffect(() => {
+<<<<<<< HEAD
     document.addEventListener(
       "mousedown",
       (e) => {
@@ -273,6 +270,13 @@ const Nav = () => {
       },
       []
     );
+=======
+    document.removeEventListener("mousedown", (e) => {
+      if (!LogInRef.current.contains(e.target)) {
+        setLogInShow(false);
+      }
+    });
+>>>>>>> f948b75e0e200d5d405d81b8bc30f37959ce0fce
   });
 
   //login state for mobile
@@ -288,13 +292,14 @@ const Nav = () => {
 
   //login handle side effects for mobile
   useEffect(() => {
-    document.addEventListener("mousedown", (e) => {
+    document.removeEventListener("mousedown", (e) => {
       if (!LogInMobileRef.current.contains(e.target)) {
         setLogInMobileShow(false);
       }
     });
   });
 
+<<<<<<< HEAD
   {
     /*Register Toggle */
   }
@@ -347,10 +352,11 @@ const Nav = () => {
     );
   });
 
+=======
+>>>>>>> f948b75e0e200d5d405d81b8bc30f37959ce0fce
   const { favorite } = useContext(FavoriteContext);
 
-const { adjustWidthToggle, adjustWidth } =
-  useContext(ProductContext);
+  const { adjustWidthToggle, adjustWidth } = useContext(ProductContext);
 
   return (
     <div className="flex justify-center relative">
@@ -448,38 +454,12 @@ const { adjustWidthToggle, adjustWidth } =
               </Button>
               <div className="relative">
                 {logInShow && (
-                  <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center  mt-14 bg-transparent">
-                    <Login />
+                  <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center ">
+                    <ToggleLog />
                   </div>
                 )}
               </div>
             </div>
-
-            {/*Register Toggle Button */}
-
-            {/* <div className="hidden gap-2 lg:flex justify-center items-center ">
-              <div
-                ref={registerRef}
-                className="absolute lg:right-[200px] xl:right-[250px] !rounded-sm"
-              >
-                <Button
-                  variant="text"
-                  size="sm"
-                  color="blue-gray"
-                  onClick={toggleReg}
-                  className="!rounded-sm"
-                >
-                  Register
-                </Button>
-                <div className="relative">
-                  {regShow && (
-                    <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center  mt-14 bg-transparent">
-                      <Register />
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div> */}
           </div>
           <IconButton
             variant="text"
@@ -513,37 +493,13 @@ const { adjustWidthToggle, adjustWidth } =
                   {logInMobileShow && (
                     <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid ">
                       <div className="  w-[50%] max-w-[500px] h-[80%] flex justify-center items-center">
-                        <Login />
+                        <ToggleLog />
                       </div>
                     </div>
                   )}
                 </div>
               </div>
             </div>
-
-            {/* <div className=" w-[100%]">
-              <div ref={regMobileRef}>
-                <Button
-                  onClick={toggleMobileReg}
-                  variant="outlined"
-                  size="sm"
-                  color="blue-gray"
-                  className="w-[100%]"
-                >
-                  Register
-                </Button>
-
-                <div className="relative">
-                  {regMobileShow && (
-                    <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid ">
-                      <div className="  w-[50%] max-w-[500px] h-[80%] flex justify-center items-center">
-                        <Register />
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div> */}
           </div>
         </Collapse>
       </Navbar>

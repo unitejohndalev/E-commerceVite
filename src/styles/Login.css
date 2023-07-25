@@ -7,4 +7,58 @@ opacity: 80%;
 
 
 
+.container{
+    position: relative;
+    width: 70vw;
+    
+    border-radius: 15px;
+    box-shadow: black;
+    margin-top: 4;
+}
+
+.signin-signup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 30px;
+   
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    min-width: 238px;
+    padding: 0 10px;
+    
+}
+
+.input-field{
+    width: 100%;
+  
+}
+
+.container ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    background-color: aquamarine;
+    z-index: 6;
+    transform: translateX(100%);
+}
+
+
+
+
+
+
 
