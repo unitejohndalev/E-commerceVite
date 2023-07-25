@@ -92,7 +92,7 @@ const Register = () => {
               </Stack>
 
               <div className="flex-col flex items-center justify-center  lg:gap-2 py-4">
-                <Button variant="outline" color="secondary" type="submit">
+                <Button variant="outlined" color="pink" type="submit">
                   Register
                 </Button>
               </div>

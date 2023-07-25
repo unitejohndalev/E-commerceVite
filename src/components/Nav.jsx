@@ -264,11 +264,15 @@ const Nav = () => {
 
   //login handle side effects for desktop
   useEffect(() => {
-    document.addEventListener("mousedown", (e) => {
-      if (!LogInRef.current.contains(e.target)) {
-        setLogInShow(false);
-      }
-    });
+    document.addEventListener(
+      "mousedown",
+      (e) => {
+        if (!LogInRef.current.contains(e.target)) {
+          setLogInShow(false);
+        }
+      },
+      []
+    );
   });
 
   //login state for mobile
@@ -308,11 +312,15 @@ const Nav = () => {
 
   //Reg handle side effects for desktop
   useEffect(() => {
-    document.addEventListener("mousedown", (e) => {
-      if (!registerRef.current.contains(e.target)) {
-        setRegShow(false);
-      }
-    });
+    document.removeEventListener(
+      "mousedown",
+      (e) => {
+        if (!registerRef.current.contains(e.target)) {
+          setRegShow(false);
+        }
+      },
+      []
+    );
   });
 
   //Reg state for mobile
@@ -328,11 +336,15 @@ const Nav = () => {
 
   //login handle side effects for mobile
   useEffect(() => {
-    document.addEventListener("mousedown", (e) => {
-      if (!regMobileRef.current.contains(e.target)) {
-        setRegMobileShow(false);
-      }
-    });
+    document.removeEventListener(
+      "mousedown",
+      (e) => {
+        if (!regMobileRef.current.contains(e.target)) {
+          setRegMobileShow(false);
+        }
+      },
+      []
+    );
   });
 
   const { favorite } = useContext(FavoriteContext);

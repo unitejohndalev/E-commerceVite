@@ -28,9 +28,9 @@ const Login = () => {
     if (password == "") {
       setErrorPassword(true);
     }
-    if (email && password) {
-      console.log(email, password);
-    }
+    // if (email && password) {
+    //   console.log(email, password);
+    // }
   };
   return (
     <React.Fragment>
@@ -113,7 +113,7 @@ const Login = () => {
                   size="small"
                   sx={{ minWidth: "50%", maxWidth: "80%" }}
                   value={email}
-                  onError={errorEmail}
+                  // onError={errorEmail}
                 />
                 <TextField
                   label="Enter your password"
