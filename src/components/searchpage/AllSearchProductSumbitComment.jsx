@@ -16,7 +16,7 @@ const AllSearchProductSumbitComment = ({ items }) => {
             </div>
             {items.map((itm) => {
               const { id, userRating, userName, userComment } = itm;
-              console.log(itm);
+        
               return (
                 <div
                   key={id}

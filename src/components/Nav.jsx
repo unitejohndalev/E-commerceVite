@@ -163,7 +163,7 @@ function NavListMenu() {
         className=""
       >
         <MenuHandler className="ml-5">
-          <Typography as="div" variant="small" className="font-normal ">
+          <Typography as="div" variant="small" className="font-normal">
             <ListItem
               className="flex items-center gap-2 py-2 pr-4 !rounded-sm"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -192,7 +192,7 @@ function NavListMenu() {
           </ul>
         </MenuList>
       </Menu>
-      <div className="block lg:hidden  ">
+      <div className="block lg:hidden ">
         <Collapse open={isMobileMenuOpen}>
           <div className="h-[55vh] overflow-auto no-scrollbar ">
             {renderItems}
@@ -205,7 +205,7 @@ function NavListMenu() {
 
 function NavList() {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 ">
       <NavListMenu />
     </List>
   );
@@ -260,6 +260,15 @@ const Nav = () => {
 
   //login handle side effects for desktop
   useEffect(() => {
+    document.addEventListener(
+      "mousedown",
+      (e) => {
+        if (!LogInRef.current.contains(e.target)) {
+          setLogInShow(false);
+        }
+      },
+      []
+    );
     document.removeEventListener("mousedown", (e) => {
       if (!LogInRef.current.contains(e.target)) {
         setLogInShow(false);
@@ -287,9 +296,59 @@ const Nav = () => {
     });
   });
 
-  const { favorite } = useContext(FavoriteContext);
+  {
+    /*Register Toggle */
+  }
 
-  const { adjustWidthToggle, adjustWidth } = useContext(ProductContext);
+  //reg state for desktop
+  const [regShow, setRegShow] = useState();
+
+  //button function for desktop
+  const toggleReg = () => {
+    setRegShow((prevRegShow) => !prevRegShow);
+  };
+
+  //Reg ref for desktop
+  let registerRef = useRef();
+
+  //Reg handle side effects for desktop
+  useEffect(() => {
+    document.removeEventListener(
+      "mousedown",
+      (e) => {
+        if (!registerRef.current.contains(e.target)) {
+          setRegShow(false);
+        }
+      },
+      []
+    );
+  });
+
+  //Reg state for mobile
+  const [regMobileShow, setRegMobileShow] = useState();
+
+  //button function for mobile
+  const toggleMobileReg = () => {
+    setRegMobileShow((prevRegShow) => !prevRegShow);
+  };
+
+  //LogIn ref for mobile
+  let regMobileRef = useRef();
+
+  //login handle side effects for mobile
+  useEffect(() => {
+    document.removeEventListener(
+      "mousedown",
+      (e) => {
+        if (!regMobileRef.current.contains(e.target)) {
+          setRegMobileShow(false);
+        }
+      },
+      []
+    );
+  });
+
+  const { favorite } = useContext(FavoriteContext);
 
   return (
     <div className="flex justify-center relative">
@@ -297,7 +356,7 @@ const Nav = () => {
         className={`fixed ${
           scrollDirection === "down" ? "-top-24" : "top-0"
         }  px-4 py-2 z-20 transition-all duration-500 !max-w-[100%]
-        !rounded-none`}
+        !rounded-none rel p-0`}
       >
         <div className="flex items-center text-blue-gray-900 relative w-[100%] ">
           <Typography
@@ -317,22 +376,13 @@ const Nav = () => {
             </Link>
           </Typography>
 
-          <>
-            <div
-              className={
-                adjustWidth === true
-                  ? "absolute cursor-pointer w-[45%] md:w-[50%] right-[110px]  md:right-[160px] lg:w-[40%] lg:right-[370px] xl:right-[580px] transition-all"
-                  : "absolute cursor-pointer w-[45%] md:w-[20%] right-[110px] md:right-[160px] lg:right-[370px] xl:right-[580px] transition-all"
-              }
-            >
-              {/* search bar */}
-
-              <AllSearchProductInfosMain />
-            </div>
-            <div className="hidden lg:block absolute lg:right-[130px] xl:right-[320px]">
+          <div className="flex items-center justify-center w-[100%] md:justify-normal lg:w-[65vw] xl:w-[50vw] lg:justify-between lg:gap-x-20 xl:relative xl:left-[300px]  ">
+            {/* search bar */}
+            <AllSearchProductInfosMain />
+            <div className="hidden lg:block">
               <NavList />
             </div>
-          </>
+          </div>
 
           <Link
             to={"/yourcart"}

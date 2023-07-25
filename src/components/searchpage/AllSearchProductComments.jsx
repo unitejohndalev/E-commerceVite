@@ -51,7 +51,7 @@ const AllSearchProductComments = () => {
           <div>
             <p className=" text-[1.2rem] font-semibold lg:text-[2rem]">Rate Product</p>
           </div>
-          <form action="" onSubmit={addItem} className="">
+          <form action="" onSubmit={addItem} className=" w-[100%] flex flex-col items-start p-0">
             <div className="">
               {[...Array(5)].map((star, index) => {
                 index += 1;
