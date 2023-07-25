@@ -437,7 +437,7 @@ const Nav = () => {
               </Button>
               <div className="relative">
                 {logInShow && (
-                  <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center ">
+                  <div className=" fixed flex  left-0   w-[100%] h-[500px]  justify-center items-center ">
                     <ToggleLog />
                   </div>
                 )}

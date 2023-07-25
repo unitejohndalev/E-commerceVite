@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 //Icons for button
 import GoogleIcon from "@mui/icons-material/Google";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import AppleIcon from "@mui/icons-material/Apple";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { Pinterest } from "@mui/icons-material";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -28,15 +29,12 @@ const Login = () => {
     if (password == "") {
       setErrorPassword(true);
     }
-    // if (email && password) {
-    //   console.log(email, password);
-    // }
   };
   return (
     <React.Fragment>
-      <div className=" flex flex-col lg:flex-row bg-deep-orange-50 rounded-lg mx-auto shadow-xl overflow-hidden   lg:h-[550px] ">
+      <div className=" flex flex-col lg:flex-row bg-deep-orange-50 rounded-sm mx-auto shadow-xl overflow-hidden   lg:h-[80vh]  ">
         {/* <!-- Left column container with background--> */}
-        <div className="w-full lg:w-[1/2] lg:mb-12 md:mb-0 max-w-3xl flex flex-col justify-center bg-image bg-no-repeat bg-cover bg-center h-[250px] lg:h-[550px] ">
+        <div className="w-full lg:w-[1/2] lg:mb-12 md:mb-0 max-w-3xl flex flex-col justify-center bg-image bg-no-repeat bg-cover bg-center h-[250px] lg:h-[80vh]  ">
           <h1 className=" text-black text-center  text-2xl lg:text-4xl font-medium">
             Welcome to Shoppy!
           </h1>
@@ -47,11 +45,11 @@ const Login = () => {
 
         {/* <!-- Right column container with form --> */}
 
-        <div className="w-[500px] lg:w-1/2 lg:p-2 h-[400px] ml-[-1rem] ">
+        <div className="w-[500px] lg:w-1/2 lg:p-2 h-[400px] ml-[-1rem] mt-[2rem] ">
           <form autoComplete="off" onSubmit={handleSubmit}>
-            <h1 className="font-semibold text-center text-black text-md lg:text-2xl mt-7 mb-5 lg:mt-6 lg:mb-5 lg:p-5 ">
+            <h2 className="font-semibold text-center text-black text-md lg:text-2xl mt-8 mb-5 lg:mt-6 lg:mb-2 lg:p-2 ">
               Login Form
-            </h1>
+            </h2>
 
             <div className=" justify-center flex gap-3 lg:mb-10 mb-5">
               {/*Google Button */}
@@ -82,10 +80,24 @@ const Login = () => {
                 </div>
               </Link>
 
-              {/*Apple Button */}
+              {/*Instagram Button */}
               <Link to="/">
                 <div className=" rounded-full flex items-center gap-3">
-                  <AppleIcon
+                  <InstagramIcon
+                    style={{
+                      fontSize: "2rem",
+                      padding: "none",
+
+                      color: "black",
+                    }}
+                  />
+                </div>
+              </Link>
+
+              {/*Pinterest Button */}
+              <Link to="/">
+                <div className=" rounded-full flex items-center gap-3">
+                  <Pinterest
                     style={{
                       fontSize: "2rem",
                       padding: "none",
@@ -130,9 +142,7 @@ const Login = () => {
 
             {/*Login Button */}
             <div className="flex-col flex items-center justify-center  lg:gap-2 py-4">
-              <Button className="rounded-full md" type="submit">
-                Login
-              </Button>
+              <Button type="submit">Login</Button>
             </div>
           </form>
           <p className=" text-black text-center text-xs gap-3 lg:mt-6 mt-1">
