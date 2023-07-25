@@ -30,9 +30,10 @@ const CloseButton = ({ closeToast }) => (
   <i className="material-icons" onClick={closeToast}></i>
 );
 
-
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
+
+
 
 const NikesHatProducts = () => {
   //get hat products from product context

@@ -458,6 +458,27 @@
         }
       ],
       "img": "https://herschel.com/content/dam/herschel/products/10796/10796-00001-OS_01.jpg.sthumbnails.2000.2500.webp"
-    }
+    },
+        {
+          "id": 124,
+          "name": "Nike Elemental",
+          "price": "37",
+          "bestSeller": false,
+          "status": "Just In",
+          "offprice": "125.29",
+          "gender": "Unisex",
+          "video3": "https://static.nike.com/a/videos/q_90/18a61723-d95e-401d-aa44-c28e7c0e15a7/video.mov",
+          "description": [
+            {
+              "id": 1,
+              "info": "Whether it's rushing to class or hanging out after school with friends, this backpack has the space to tackle it all. This bag features a large side pocket for water bottles as well as a front pocket to store quick-grab items. Adjustable padded straps make wearing this bag comfortable and easy.",
+              "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2c6537b6-0280-412c-8691-2e1590776975/elemental-kids-backpack-20l-ptK5V9.png",
+              "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/30d938af-61a0-42df-bee5-786733719123/elemental-kids-backpack-20l-ptK5V9.png",
+              "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c6919d4f-db75-4da4-82ec-598d5e2833a8/elemental-kids-backpack-20l-ptK5V9.png",
+              "img4": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/25fd11cd-4fc0-4d86-9463-fc5891f867af/elemental-kids-backpack-20l-ptK5V9.png"
+            }
+          ],
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/30d938af-61a0-42df-bee5-786733719123/elemental-kids-backpack-20l-ptK5V9.png"
+        }
   ]
 }

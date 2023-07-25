@@ -28,7 +28,7 @@ const ClothingProducts = lazy(() =>
 );
 
 const ShoeProducts = lazy(() =>
-  import("../pages/shoeproductpage/NikeProducts")
+  import("../pages/shoeproductpage/ShoeProducts")
 );
 
 const BagProducts = lazy(() => import("../pages/bagproductpage/BagProducts"));

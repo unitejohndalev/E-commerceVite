@@ -18,6 +18,7 @@
             ],
             "img": "https://lp2.hm.com/hmgoepprod?set=source[/d7/d5/d7d586d13aa1afb10eadc4d7ae006e67b75c4e18.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
         },
+       
         {
             "id": 57,
             "name": "Drawstring-waist puffer jacket",
@@ -777,6 +778,25 @@
                 }
             ],
             "img": "https://lp2.hm.com/hmgoepprod?set=source[/85/8a/858add0c134433efbce45ce9357d39970623c4f1.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+        }, 
+        {
+            "id": 125,
+            "name": "Nike Swoosh",
+            "price": 121.97,
+            "gender": "Men's Hoodies",
+            "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/35073f21-4d82-4f79-8c74-1d5ce13f9ed7/swoosh-mens-1-2-zip-fleece-hoodie-3J5Nn2.png",
+            "bestSeller": true,
+            "status": "Best Seller",
+            "video2": "https://static.nike.com/a/videos/q_90/4758a381-34fa-4b41-b655-c63e7b92eb3b/video.mov",
+            "description": [
+                {
+                    "id": 1,
+                    "info": "Made with soft fleece in a roomy fit for casual comfort, this Nike Swoosh 1/2-zip hoodie brings the bold Nike vibes to any outfit. Pair it up with our Nike Swoosh fleece pants for a uniform look, heavy on the Swoosh.",
+                    "img1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/35073f21-4d82-4f79-8c74-1d5ce13f9ed7/swoosh-mens-1-2-zip-fleece-hoodie-3J5Nn2.png",
+                    "img2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5d6f1cec-2b54-4b2c-9e1b-1251863ffd84/swoosh-mens-1-2-zip-fleece-hoodie-3J5Nn2.png",
+                    "img3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e38e5b46-ef4e-4a9b-b959-2ee81c2d222a/swoosh-mens-1-2-zip-fleece-hoodie-3J5Nn2.png"
+                }
+            ]
         }
     ]
 }

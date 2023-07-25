@@ -365,8 +365,8 @@ const Nav = () => {
             className="mr-4 cursor-pointer py-1.5 lg:mr-10 xl:mr-15"
           >
             <Link to={"/"}>
-              <div className=" grid-cols-3 flex items-center justify-between ">
-                <img className="w-auto h-14 " src={Logo} alt="Logo" />
+              <div className=" grid-cols-3 flex ml-2 md:ml-5 items-center justify-between ">
+                <img className="w-auto h-12 md:h-14 " src={Logo} alt="Logo" />
                 <span className="hidden md:flex font-primary py-4 text-lg text-gray-900 dark:text-white justify">
                   <p className="text-[2rem] font-montserrat font-light">
                     Shoppy

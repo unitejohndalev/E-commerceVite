@@ -8,6 +8,7 @@
             "img": "https://static.nike.com/a/images/t_default/abf1df44-8d47-410f-b17b-0d27cbe27a43/air-max-solo-mens-shoes-4SzqpT.png",
             "bestSeller": true,
             "status": "Best Seller",
+            "video1": "https://static.nike.com/a/videos/q_90/a36522fa-4ce6-40d8-a83a-38d074f2c9e4/video.mp4",
             "description": [
                 {
                     "id": 1,
@@ -18,6 +19,7 @@
                 }
             ]
         },
+              
         {
             "id": 2,
             "name": "Nike Air Max Pulse",
@@ -717,6 +719,7 @@
             "bestSeller": true,
             "status": "Best Seller",
             "gender": "Men's Cap",
+            "video": "https://static.nike.com/a/videos/q_90/02196197-59ad-4e45-9b55-85b42ac31c99/video.mp4",
             "description": [
                 {
                     "id": 1,
