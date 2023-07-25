@@ -144,5 +144,27 @@
                 }
             ]
         }
+            ,
+            {
+                "id": 142,
+                "name": "Burrard Organizer Tech",
+                "price": "50",
+                "bestSeller": false,
+                "status": "Just In",
+                "offprice": "25.29",
+                "gender": "Unisex",
+                "video4": "https://herschel.com/content/dam/herschel/products/11292/11292-01866-OS_03.mp4",
+                "description": [
+                    {
+                        "id": 1,
+                        "info": "Stay connected with the Burrard Organizer Tech. Reimagined with 100% recycled EcoSystem™ materials made from post-consumer water bottles, this organizer keeps your cables, chargers and small devices in place. This compact style opens out flat, providing easy access to your tech accessories on the go",
+                        "img1": "https://herschel.com/content/dam/herschel/products/11292/11292-01866-OS_01.jpg.sthumbnails.2000.2500.webp",
+                        "img2": "https://herschel.com/content/dam/herschel/products/11292/11292-01866-OS_02.jpg.sthumbnails.2000.2500.webp",
+                        "img3": "https://herschel.com/content/dam/herschel/products/11292/11292-01866-OS_04.jpg.sthumbnails.2000.2500.webp",
+                        "img4": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/25fd11cd-4fc0-4d86-9463-fc5891f867af/elemental-kids-backpack-20l-ptK5V9.png"
+                    }
+                ],
+                "img": "https://herschel.com/content/dam/herschel/products/11292/11292-01866-OS_01.jpg.sthumbnails.2000.2500.webp"
+            }
     ]
 }

@@ -1,21 +1,22 @@
 import React, { useContext } from 'react'
 
+
 //import product context
 import { ProductContext } from "../../contexts/ProductContext";
 
-const HeroShowProducts = () => {
-         const { shoeProducts } = useContext(ProductContext);
+const HeroAccProducts = () => {
+   const { AccessoriesProducts } = useContext(ProductContext);
 
-         const filteredShoeProduct = shoeProducts.filter((productVideo) => {
-           return productVideo.video1;
-         });
+   const filteredAccProduct = AccessoriesProducts.filter((productVideo) => {
+     return productVideo.video4;
+   });
+
   return (
     <div className="heroParent-container ">
       <div className="secondHeroParent-container">
         <div className="mapParent-container mt-0">
-          {filteredShoeProduct.map((product) => {
-            const { id, video1 } = product;
-     
+          {filteredAccProduct.map((product) => {
+            const { id, video4 } = product;
             return (
               <div key={id} className="mapHeroParent-container">
                 <div className="secondMapHeroParent-container">
@@ -36,7 +37,7 @@ const HeroShowProducts = () => {
                     loop
                     autoPlay={true}
                     muted
-                    src={video1}
+                    src={video4}
                   ></video>
                 </div>
               </div>
@@ -48,4 +49,4 @@ const HeroShowProducts = () => {
   );
 }
 
-export default HeroShowProducts
+export default HeroAccProducts
