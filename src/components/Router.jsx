@@ -18,7 +18,7 @@ import { Route, Routes } from "react-router-dom";
 const AllProductSearch = lazy(() =>
   import("../components/searchpage/AllSearchProductInfos")
 );
-const AllFavorite = lazy(() => import("../pages/favoritepage/FavoriteMain"))
+const AllFavorite = lazy(() => import("../pages/favoritepage/FavoriteMain"));
 
 const YourCartContext = lazy(() => import("../contexts/YourCartContext"));
 const HatProducts = lazy(() => import("../pages/hatproductpage/HatProducts"));
@@ -42,13 +42,10 @@ const FeatureProducts = lazy(() =>
 );
 const OffProducts = lazy(() => import("../pages/offproductpage/OffProducts"));
 const AboutUs = lazy(() => import("../pages/aboutuspage/AboutUs"));
-const ContactUs = lazy(() => import("../pages/contactuspage/ContactUsMain"))
-
-
+const ContactUs = lazy(() => import("../pages/contactuspage/ContactUsMain"));
 
 //Access
 import Login from "./Login";
-import Register from "./Register";
 
 const Router = () => {
   return (
@@ -58,7 +55,7 @@ const Router = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/allproductsearch/:id" element={<AllProductSearch />} />
-          <Route path="/allfavorite" element={<AllFavorite/>}/>
+          <Route path="/allfavorite" element={<AllFavorite />} />
           <Route path="/hatproducts" element={<HatProducts />} />
 
           {/* Hats pages brands*/}
@@ -75,23 +72,19 @@ const Router = () => {
 
           <Route path="/bagproducts" element={<BagProducts />} />
 
-
-
           <Route
             path="/accessoriesproducts"
             element={<AccessoriesProducts />}
           />
           {/* Accessories pages brands*/}
 
-        
           <Route path="/featureproducts" element={<FeatureProducts />} />
           <Route path="/offproducts" element={<OffProducts />} />
           <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/contactus" element={<ContactUs/>}/>
+          <Route path="/contactus" element={<ContactUs />} />
           <Route path="*" element={<ErrorPage />} />
 
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
         </Routes>
       </Suspense>
     </>
