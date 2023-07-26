@@ -2,9 +2,9 @@ import React from "react";
 import Footer from "../../components/Footer";
 
 //import aboutUs img
-import shoppingBags from "../../components/img/aboutus_img/shopping_Bags.svg"
-import shoppingOnline from "../../components/img/aboutus_img/online_Shopping.svg"
-import shoppingPurchase from "../../components/img/aboutus_img/successful_purchase.svg"
+import shoppingBags from "../../components/img/aboutus_img/shopping_Bags.svg";
+import shoppingOnline from "../../components/img/aboutus_img/online_Shopping.svg";
+import shoppingPurchase from "../../components/img/aboutus_img/successful_purchase.svg";
 
 const AboutUsContent = () => {
   return (

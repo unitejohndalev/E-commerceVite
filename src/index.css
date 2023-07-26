@@ -33,7 +33,7 @@
 }
 
 @layer components {
-.border-red {
+  .border-red {
     @apply border-solid border-2 border-red-800;
   }
 
@@ -50,7 +50,7 @@
   .mapProduct-container {
     @apply mt-1 mb-1 w-[170px] h-[250px] md:w-[285px] lg:w-[285px] font-montserrat shadow-xl rounded-md md:h-[370px] relative;
   }
-  
+
   .name-container {
     @apply text-[.9rem] md:text-[1.2rem] absolute w-[100%] text-center font-montserrat;
   }
@@ -69,7 +69,6 @@
     @apply font-light text-[.8rem] ml-2 font-montserrat;
   }
 
-
   /* FEATURED/OFFPRODUCTS HERO STYLES */
   .heroParent-container {
     @apply relative w-[100%] mb-10;
@@ -85,7 +84,7 @@
     @apply relative flex justify-center md:flex md:justify-center md:items-center h-[65vh] w-[350px] md:w-[768px] lg:w-[1024px];
   }
   .textHero-container {
-    @apply  text-red-800 absolute font-montserrat rounded-sm top-[-100px] md:top-0 md:flex flex-col justify-center md:left-5 md:h-[65vh] md:w-[350px] lg:w-[500px] md:off-bg md:text-white;
+    @apply text-red-800 absolute font-montserrat rounded-sm top-[-100px] md:top-0 md:flex flex-col justify-center md:left-5 md:h-[65vh] md:w-[350px] lg:w-[500px] md:off-bg md:text-white;
   }
   .secondTextHero-container {
     @apply py-10 flex flex-col justify-center items-center;
@@ -94,31 +93,29 @@
     @apply flex rounded-sm mt-10 md:mt-0 md:absolute md:right-5;
   }
 
-  
-
   /* FILTEREDMAIN STYLES */
   .filtermain-container {
-    @apply absolute top-0 w-[100%] 
+    @apply absolute top-0 w-[100%];
   }
 
-    .filtermainBtn-container {
-    @apply w-[100%] top-0 absolute
+  .filtermainBtn-container {
+    @apply w-[100%] top-0 absolute;
   }
 
-     .filterBtn-container {
-    @apply hidden md:flex absolute z-10 left-3 btn-bg px-5 py-2 rounded-sm text-white
+  .filterBtn-container {
+    @apply hidden md:flex absolute z-10 left-3 btn-bg px-5 py-2 rounded-sm text-white;
   }
 
   .pFilteredBtn {
-    @apply absolute z-[11] left-2 md:hidden
+    @apply absolute z-[11] left-2 md:hidden;
   }
 
   .filterFunctionProduct-container {
-    @apply flex flex-col mt-10 justify-center
+    @apply flex flex-col mt-10 justify-center;
   }
 
   .filterFunction-container {
-    @apply w-[100%] absolute top-[65px] mb-5 md:w-[768px] justify-start gap-x-5 lg:w-[1024px]
+    @apply w-[100%] absolute top-[65px] mb-5 md:w-[768px] justify-start gap-x-5 lg:w-[1024px];
   }
 }
 
@@ -142,6 +139,3 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-
-

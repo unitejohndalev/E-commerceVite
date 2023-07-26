@@ -3,7 +3,7 @@
         {
             "id": 1,
             "fTitle": "Title for product page",
-            "sTitle": "Title for 50%",
+            "sTitle": "Title for feature product",
             "fInfo": "some text",
             "sInfo": "some text",
             "fImg": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa7%2F4a%2Fa74a50552649395080930885c47c004f29dd1a00.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
@@ -13,7 +13,7 @@
         {
             "id": 2,
             "fTitle": "Title for product page",
-            "sTitle": "Title for 50%",
+            "sTitle": "Title for feature product",
             "fInfo": "some text",
             "sInfo": "some text",
             "fImg": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F01%2F25%2F012520c7dbafa604b7260fe674600f3496a072fc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
@@ -23,7 +23,7 @@
         {
             "id": 3,
             "fTitle": "Title for product page",
-            "sTitle": "Title for 50%",
+            "sTitle": "Title for feature product",
             "fInfo": "some text",
             "sInfo": "some text",
             "fImg": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3f%2Ff6%2F3ff63f8674620de187067746b1cfc3753ea10a7e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
@@ -33,7 +33,7 @@
         {
             "id": 4,
             "fTitle": "Title for product page",
-            "sTitle": "Title for 50%",
+            "sTitle": "Title for feature product",
             "fInfo": "some text",
             "sInfo": "some text",
             "fImg": "https://michaelkors.scene7.com/is/image/MichaelKors/30S0GEZB2V-0230_4?wid=558&hei=748&op_sharpen=1&resMode=sharp2&qlt=90",
@@ -43,7 +43,7 @@
         {
             "id": 5,
             "fTitle": "Title for product page",
-            "sTitle": "Title for 50%",
+            "sTitle": "Title for feature product",
             "fInfo": "some text",
             "sInfo": "some text",
             "fImg": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F26%2F9d%2F269d7335402df7f90d6b251301cb9d1df182145c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_accessories_belts%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
