@@ -376,7 +376,7 @@ const Nav = () => {
             </Link>
           </Typography>
 
-          <div className="flex items-center justify-center w-[100%] md:justify-normal lg:w-[65vw] xl:w-[50vw] lg:justify-between lg:gap-x-20 xl:relative xl:left-[300px]  ">
+          <div className="flex items-center justify-center md:w-[100%] md:justify-normal lg:w-[65vw] xl:w-[50vw] lg:justify-between lg:gap-x-20 xl:relative xl:left-[300px]  ">
             {/* search bar */}
             <AllSearchProductInfosMain />
             <div className="hidden lg:block">
