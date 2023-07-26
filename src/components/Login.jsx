@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "../styles/Login.css";
 import "../styles/Register.css";
 import { TextField, Stack } from "@mui/material";
@@ -11,9 +11,16 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Pinterest } from "@mui/icons-material";
 
+//import product context
+// import { ProductContext } from "../contexts/ProductContext";
+
 
 
 const Login = () => {
+  //destructure login state and toggle
+  // const {email, setEmail } = useContext(ProductContext);
+
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorEmail, setErrorEmail] = useState(false);
@@ -55,7 +62,6 @@ const Login = () => {
 
   const [logIn, setLogIn] = useState(true);
 
-
   //REGISTER BUTTON
   const logInToggle = () => {
     setLogIn((prev) => !prev); 
@@ -70,7 +76,7 @@ const Login = () => {
 
   return (
     <React.Fragment>
-      <div className="h-[100%]">
+   
         {logIn && (
           <div className=" flex flex-col lg:flex-row bg-deep-orange-50 rounded-sm mx-auto shadow-xl overflow-hidden   lg:h-[80vh]  ">
             {/* <!-- Left column container with background--> */}
@@ -354,13 +360,13 @@ const Login = () => {
               <p className=" text-black text-center text-xs lg:text-sm gap-3 lg:mt-6 mt-1">
                 Already have an account?
                 <span className="underline">
-                  <a onClick={() => regInToggle()}> Login here.</a>
+                  <button onClick={() => regInToggle()}> Login here.</button>
                 </span>
               </p>
             </div>
           </div>
         )}
-      </div>
+    
     </React.Fragment>
   );
 };
