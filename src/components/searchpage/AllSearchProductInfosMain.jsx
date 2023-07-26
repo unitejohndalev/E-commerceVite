@@ -27,7 +27,7 @@ const AllSearchProductInfosMain = () => {
             className={
               adjustWidth === true
                 ? "absolute placeholder:text-[1rem] placeholder:font-light placeholder:text-black placeholder:font-montserrat bg-primary/10 border-solid w-[40vw] left-0 h-[5vh] text-center rounded-sm outline-none md:w-[50vw] md:left-[60px] lg:w-[40vw] lg:left-[10px] xl:w-[25vw] xl:left-[55px] transition-all"
-                : "absolute placeholder:text-[1rem] placeholder:font-light placeholder:text-black placeholder:font-montserrat bg-primary/10 border-solid w-[40vw] left-0 h-[5vh] text-center rounded-sm outline-none md:w-[20vw] md:left-[300px] lg:left-[220px]  xl:w-[10vw] xl:left-[295px] transition-all"
+                : "absolute placeholder:text-[1rem] placeholder:font-light placeholder:text-black placeholder:font-montserrat bg-primary/10 border-solid w-[40vw] left-0 h-[5vh] text-center rounded-sm outline-none md:w-[20vw] md:left-[300px] lg:left-[220px] xl:w-[10vw] xl:left-[295px] transition-all"
             }
             type="text"
             ref={ref}

@@ -52,7 +52,7 @@ import { ProductContext } from "../contexts/ProductContext";
 
 //import react icons
 
-import ToggleLog from "./ToggleLog";
+import Login from "./Login";
 
 const navListMenuItems = [
   {
@@ -438,7 +438,7 @@ const Nav = () => {
               <div className="relative">
                 {logInShow && (
                   <div className=" fixed flex  left-0   w-[100%] h-[500px]  justify-center items-center ">
-                    <ToggleLog />
+                    <Login />
                   </div>
                 )}
               </div>

@@ -9,6 +9,8 @@ const ToggleButton = () => {
     setIsSignUp(!isSignUp);
   };
 
+ 
+
   return (
     <div className=" w-[80vw] mt-[20rem] h-[100vh]  ml-0  ">
       <div className="flex ml-auto top-[5rem] w-[100%]  ">
