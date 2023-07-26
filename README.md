@@ -109,3 +109,8 @@ Run the app<br/>
 use Network address and type it on your mobile phone<br/>
 
 `192.***.*.*:5173`
+
+<br/>
+install AOS for animation<br/>
+
+`npm i aos`

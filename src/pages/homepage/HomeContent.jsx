@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Footer from "../../components/Footer";
 import VideoSection from "../../assets/shoppy.mp4";
 
+//image import
+import Shoes from "../../components/img/shoes.png";
+import Bags from "../../components/img/herschel.jpg";
+import Hats from "../../components/img/hats.jpg";
+
+//import react-slick
+import Slider from "react-slick";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+
 //import home data
 import data from "../../data/Home.json";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "../../styles/animation.css";
+import { duration } from "@mui/material";
 
 const HomeContent = () => {
   const { homeContents } = data;
 
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="h-[100%] ">
-      <div className=" flex flex-col bg-cover h-[100vh] w-[100%] mt-[100px]">
+      {/* <div className=" flex flex-col bg-cover h-[100vh] w-[100%] mt-[100px]">
         <video
           loop
           autoPlay={true}
@@ -19,7 +36,7 @@ const HomeContent = () => {
           type="video/mp4"
           className="w-[100vw] h-[80vh]"
         />
-      </div>
+      </div> */}
 
       <div className=" flex justify-center mt-[100px] ">
         {/* wrapper container */}
@@ -56,41 +73,69 @@ const HomeContent = () => {
           </div>
           {/* PRODUCT SECTION, CAN EDIT ORDER*/}
           {/* first product section*/}
-          <div className="flex justify-center items-center w-[100%] lg:gap-x-5 relative mb-10 ">
-            <div className=" flex flex-col justify-center items-center md:w-[768px] lg:w-[1024px]  font-medium text-[2rem] ">
-              {homeContents.map((content, id) => {
-                const { fTitle, sTitle, fInfo, sInfo, fImg, sImg, btnText } =
-                  content;
-                return (
-                  <div key={id} className="relative flex w-[100%] md:gap-x-5 lg:w-[80%] justify-between  h-[80vh] mb-[100px]">
-                    <div className=" flex flex-col justify-center items-center w-[100%] lg:w-[80%]">
-                      <img className="h-[100%] w-[400px]" src={fImg} alt="" />
-                      <div className="absolute bottom-5 flex flex-col items-center">
-                        <h1 className="text-[2rem] mb-5">{fTitle}</h1>
-                        <p className="text-[.9rem] mb-5">{fInfo}</p>
-                        <button className="bg-red-800 text-white px-1 text-[1.3rem] ">
-                          {btnText}
-                        </button>
-                      </div>
-                    </div>
-                    <div className="hidden h-[100%] font-medium w-[100%] lg:w-[80%] text-[2rem] text-center md:flex  md:justify-center md:items-center ">
-                      <img className="h-[100%] w-[400px]" src={sImg} alt="" />
-                      <div className="absolute bottom-5 flex flex-col items-center">
-                        <h1 className="text-[2rem] mb-5">{sTitle}</h1>
-                        <p className="text-[.9rem] mb-5">{sInfo}</p>
-                        <button className="bg-red-800 text-white px-1 text-[1.3rem] ">
-                          {btnText}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+          <div className="flex justify-center items-center w-[100%]  relative mb-10 ">
+            <div className=" flex flex-col justify-center items-center md:w-[768px] lg:w-[1024px]  font-medium text-[2rem] "></div>
+          </div>
+          <div className="h-screen ">
+            <div className="bg-shoes bg-cover">
+              <div className="p-10 mt-10" data-aos="fade-right">
+                <h2 className=" mt-[20rem] mb-[1rem] text-white font-bold text-5xl justify-center">
+                  All brands of shoes are available.
+                </h2>
+                <br />
+                <p
+                  className="text-white text-3xl text-justify "
+                  data-aos="fade-left"
+                >
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  quia repellendus quo eligendi eos consectetur nam? Placeat,
+                  consequatur quae aperiam numquam id ea nobis dolorem quia
+                  omnis ex ipsum iure.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="h-screen">
+            <div className="bg-bags bg-cover">
+              <div className="p-10 mt-10" data-aos="fade-right">
+                <h2 className=" mt-[20rem] mb-[1rem] text-white font-bold text-5xl justify-center">
+                  Affordable new bag brands.
+                </h2>
+                <br />
+                <p
+                  className="text-white text-3xl text-justify "
+                  data-aos="fade-left"
+                >
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  quia repellendus quo eligendi eos consectetur nam? Placeat,
+                  consequatur quae aperiam numquam id ea nobis dolorem quia
+                  omnis ex ipsum iure.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="h-screen">
+            <div className="bg-hat bg-cover">
+              <div className="p-10 mt-10" data-aos="fade-right">
+                <h2 className=" mt-[20rem] mb-[1rem] text-white font-bold text-5xl justify-center">
+                  Hats available with new styles.
+                </h2>
+                <br />
+                <p
+                  className="text-white text-3xl justify-end text-justify "
+                  data-aos="fade-left"
+                >
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  quia repellendus quo eligendi eos consectetur nam? Placeat,
+                  consequatur quae aperiam numquam id ea nobis dolorem quia
+                  omnis ex ipsum iure.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-                    <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,24 @@
+.animation{
+   
+   
+}
+
+.bg-hat{
+    
+    height: 100%;
+    width: 100%;
+    background-image: url(../components/img/hats.jpg);
+}
+.bg-shoes{
+    height: 100%;
+    width: 100%;
+    background-image: url(../components/img/shoes.png);
+
+}
+
+.bg-bags{
+    height: 100%;
+    width: 100%;
+    background-image: url(../components/img/herschel.jpg);
+
+}

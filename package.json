@@ -15,6 +15,7 @@
     "@material-tailwind/react": "^2.0.4",
     "@mui/icons-material": "^5.14.0",
     "@mui/material": "^5.14.0",
+    "aos": "^2.3.4",
     "embla-carousel-autoplay": "^8.0.0-rc10",
     "embla-carousel-react": "^8.0.0-rc10",
     "react": "^18.2.0",
