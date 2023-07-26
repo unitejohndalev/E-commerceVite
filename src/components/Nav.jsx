@@ -474,10 +474,8 @@ const Nav = () => {
                 </Button>
                 <div className="relative">
                   {logInMobileShow && (
-                    <div className="fixed left-0 w-[100%] h-[500px] flex justify-center items-center border-solid ">
-                      <div className="  w-[50%] max-w-[500px] h-[80%] flex justify-center items-center">
-                        <Login />
-                      </div>
+                    <div className="left-0 w-[100%]  flex justify-center items-center border-solid ">
+                      <Login />
                     </div>
                   )}
                 </div>

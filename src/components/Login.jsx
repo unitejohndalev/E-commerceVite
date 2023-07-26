@@ -69,9 +69,9 @@ const Login = () => {
   return (
     <React.Fragment>
       {logIn && (
-        <div className=" mt-[10rem] w-[90%] flex  lg:flex-row bg-deep-orange-50 rounded-sm mx-auto shadow-xl overflow-hidden   lg:h-[80vh] border-1 border-black ">
+        <div className=" flex-col mt-[-9rem] lg:mt-[10rem] w-[90%] flex  lg:flex-row bg-deep-orange-50 rounded-sm mx-auto shadow-xl overflow-hidden   lg:h-[80vh] h-[90vh]  border-1 border-black ">
           {/* <!-- Left column container with background--> */}
-          <div className="w-full lg:w-[1/2] lg:mb-12 md:mb-0 max-w-3xl flex flex-col justify-center bg-image bg-no-repeat bg-cover bg-center h-[250px] lg:h-[80vh]  ">
+          <div className="w-full lg:w-[1/2] lg:mb-12 md:mb-0 max-w-3xl flex flex-col justify-center bg-image bg-no-repeat bg-cover bg-center  h-[80vh]  ">
             <h1 className=" text-black text-center  text-2xl lg:text-4xl font-medium">
               Welcome to Shoppy!
             </h1>
@@ -82,7 +82,7 @@ const Login = () => {
 
           {/* <!-- Right column container with form --> */}
 
-          <div className="w-[500px] lg:w-1/2 lg:p-2 h-[400px] ml-[-1rem] mt-[2rem] ">
+          <div className=" w-full lg:w-1/2 lg:p-2  lg:ml-[1rem] mt-[2rem]  ">
             <form autoComplete="off" onSubmit={handleSubmit}>
               <h2 className="font-semibold text-center text-black text-md lg:text-2xl mt-8 mb-5 lg:mt-6 lg:mb-2 lg:p-2 ">
                 Login Form
@@ -149,7 +149,7 @@ const Login = () => {
               <Stack
                 spacing={1}
                 direction="column"
-                sx={{ marginBottom: 4, ml: 8 }}
+                sx={{ marginBottom: 3, ml: 8 }}
               >
                 <TextField
                   label="Enter your email"
@@ -159,9 +159,9 @@ const Login = () => {
                   color="secondary"
                   type="email"
                   size="small"
-                  sx={{ minWidth: "50%", maxWidth: "80%" }}
                   value={email}
                   onError={errorEmail}
+                  sx={{ minWidth: "20%", maxWidth: "80%" }}
                 />
                 <TextField
                   label="Enter your password"
@@ -182,22 +182,23 @@ const Login = () => {
                 <Button type="submit">Login</Button>
               </div>
             </form>
-            <p className=" text-black text-center text-sm gap-3 lg:mt-6 mt-1">
+            <p className=" text-black text-center text-sm gap-3 lg:mt-6 mt-1 ">
               Need an account?
             </p>
-
-            <button
-              onClick={() => logInToggle()}
-              className="text-black border-5 ml-[12.3rem] mt-5 hover:bg-white rounded-lg border-separate p-2"
-            >
-              Register here.
-            </button>
+            <div className=" flex items-center justify-center  lg:gap-2 py-1">
+              <button
+                onClick={() => logInToggle()}
+                className="  mt-0 lg:mt-5 hover:bg-white text-black rounded-lg border-separate p-6 lg:p-2"
+              >
+                Register here.
+              </button>
+            </div>
           </div>
         </div>
       )}
       {RegIn && (
-        <div className=" mt-[10rem] w-[90%] flex  lg:flex-row bg-deep-orange-50 rounded-sm mx-auto shadow-xl overflow-hidden   lg:h-[80vh] border-1 border-black ">
-          <div className="w-full lg:w-[1/2] lg:mb-12 md:mb-0 max-w-3xl flex flex-col justify-center bg-imageReg bg-no-repeat bg-cover bg-center h-[250px] lg:h-[80vh] ">
+        <div className=" mt-[-9rem] flex-col lg:mt-[10rem] w-[90%] flex  lg:flex-row bg-deep-orange-50 rounded-sm mx-auto shadow-xl overflow-hidden  lg:h-[80vh] h-[90vh]  border-1 border-black ">
+          <div className="w-full lg:w-[1/2] lg:mb-12 md:mb-0 max-w-3xl flex flex-col justify-center bg-imageReg bg-no-repeat bg-cover bg-center  h-[80vh]  ">
             <h1 className=" text-black text-center  text-2xl lg:text-4xl font-medium">
               Welcome to Shoppy!
             </h1>
@@ -205,9 +206,9 @@ const Login = () => {
               Shop anywhere, buy everywhere.
             </p>
           </div>
-          <div className="w-[500px] lg:w-1/2 lg:p-2 h-[400px] ml-[-1rem]  ">
+          <div className=" w-full lg:w-1/2 lg:p-2  lg:ml-[1rem] mt-[2rem]  ">
             <form onSubmit={handleSubmitReg} action={<Link to="/login" />}>
-              <h2 className="font-semibold text-center text-black text-md lg:text-2xl mt-7 mb-5 lg:mt-6 lg:mb-2 lg:p-2 ">
+              <h2 className="font-semibold text-center text-black text-md lg:text-2xl mt-7 mb-5 lg:mt-[-1rem] lg:mb-2 lg:p-2 ">
                 Register Form
               </h2>
 
@@ -352,16 +353,17 @@ const Login = () => {
                 <Button type="submit">Register</Button>
               </div>
             </form>
-            <p className=" text-black text-center text-sm lg:text-sm gap-3 lg:mt-3 mt-1">
+            <p className=" text-black text-center text-sm lg:text-sm gap-3 lg:mt-3 mt-4">
               Already have an account?
             </p>
-            <button
-              onClick={() => regInToggle()}
-              className="text-black border-5 ml-[13.2rem]  hover:bg-white rounded-lg border-separate p-2"
-            >
-              {" "}
-              Login here.
-            </button>
+            <div className="flex-col flex items-center justify-center  lg:gap-2 py-1">
+              <button
+                onClick={() => regInToggle()}
+                className="   hover:bg-white text-black rounded-lg border-separate p-6 lg:p-2"
+              >
+                Login here.
+              </button>
+            </div>
           </div>
         </div>
       )}
