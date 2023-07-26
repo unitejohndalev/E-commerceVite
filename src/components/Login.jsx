@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import "../styles/Login.css";
-import "../styles/Register.css";
+
 import { TextField, Stack } from "@mui/material";
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
