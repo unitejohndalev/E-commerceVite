@@ -17,17 +17,17 @@ import ProductDescriptionProvider from "./contexts/ProductDescriptionContext.jsx
 import FavoriteProvider from "./contexts/FavoriteContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <FavoriteProvider>
-    <CartProvider>
-      <ProductProvider>
-        <ProductDescriptionProvider>
-          <React.StrictMode>
-            <Router>
+  <Router>
+    <FavoriteProvider>
+      <CartProvider>
+        <ProductProvider>
+          <ProductDescriptionProvider>
+            <React.StrictMode>
               <App />
-            </Router>
-          </React.StrictMode>
-        </ProductDescriptionProvider>
-      </ProductProvider>
-    </CartProvider>
-  </FavoriteProvider>
+            </React.StrictMode>
+          </ProductDescriptionProvider>
+        </ProductProvider>
+      </CartProvider>
+    </FavoriteProvider>
+  </Router>
 );
