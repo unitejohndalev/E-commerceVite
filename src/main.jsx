@@ -5,6 +5,7 @@ import "./index.css";
 
 //import router
 import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 //import product provider and wrap app in order for children to access data within it
 import ProductProvider from "./contexts/ProductContext.jsx";
@@ -17,7 +18,7 @@ import ProductDescriptionProvider from "./contexts/ProductDescriptionContext.jsx
 import FavoriteProvider from "./contexts/FavoriteContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <Router>
+  <HashRouter>
     <FavoriteProvider>
       <CartProvider>
         <ProductProvider>
@@ -29,5 +30,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         </ProductProvider>
       </CartProvider>
     </FavoriteProvider>
-  </Router>
+  </HashRouter>
 );
