@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 
-//import router
-import { BrowserRouter as Router } from "react-router-dom";
+//instead of using browser router
+//import hash router from react router dom and wrap the app
 import { HashRouter } from "react-router-dom";
 
 //import product provider and wrap app in order for children to access data within it
